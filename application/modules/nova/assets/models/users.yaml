@@ -1,0 +1,526 @@
+users:
+  get:
+    -
+      method: check_email()
+      status: active
+      scope: public
+      description: Check whether an email address exists in the database.
+      return: The method will return an integer of the user ID associated with the email address if the address exists or <kbd>FALSE</kbd> if no user with that email address exists.
+      parameters:
+        -
+          name: email
+          default: None
+          options: None
+          type: string
+          notes: The email address to search for
+    -
+      method: check_password()
+      status: active
+      scope: public
+      description: Check the validity of a password against what is in the database.
+      return: The method will return an object of the user information.
+      parameters:
+        -
+          name: email
+          default: None
+          options: None
+          type: string
+          notes: The email address to search for
+        -
+          name: password
+          default: None
+          options: None
+          type: string
+          notes: The password hash to compare with the database
+    -
+      method: checking_moderation()
+      status: active
+      scope: public
+      description: Check the the moderation status of a user for specific types of posts.
+      return: The method will return <dfn>pending</dfn> if the user is moderated or <dfn>activated</dfn> if the user is not moderated.
+      parameters:
+        -
+          name: type
+          default: None
+          options: post, log, news, post_comment, log_comment, news_comment, wiki_comment
+          type: string
+          notes: The type of entry being checked
+        -
+          name: data
+          default: None
+          options: None
+          type: array/integer
+          notes: An array or comma separated list of user IDs to check
+    -
+      method: get_command_staff_emails()
+      status: active
+      scope: public
+      description: Get the email addresses of anyone with a position whose type is <strong>senior</strong>, a.k.a. the command staff.
+      return: The method will return an array of email addresses or <kbd>FALSE</kbd> if no users are found.
+    -
+      method: get_crew_emails()
+      status: active
+      scope: public
+      description: Get the email addresses of the crew based on their preferences.
+      return: The method will return an array of email addresses or <kbd>FALSE</kbd> if no users are found.
+      parameters:
+        -
+          name: check
+          default: TRUE
+          options: TRUE/FALSE
+          type: boolean
+          notes: Whether to check for email preferences or not
+        -
+          name: name
+          default: None
+          options: None
+          type: string
+          notes: The preference key to check
+    -
+      method: get_email_address()
+      status: active
+      scope: public
+      description: Get an email address based on an ID.
+      return: The method will return a string with the email address or <kbd>FALSE</kbd> if no address was found.
+      parameters:
+        -
+          name: referer
+          default: None
+          options: character, user
+          type: string
+          notes: Whether the ID being checked is a character or user ID
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID to check
+    -
+      method: get_emails_with_access()
+      status: active
+      scope: public
+      description: Get all email address for users who have a certain access.
+      return: The method will return an array of email addresses or <kbd>FALSE</kbd> if no addresses were found.
+      parameters:
+        -
+          name: access
+          default: None
+          options: None
+          type: string
+          notes: A simple access URL to check for
+        -
+          name: level
+          default: None
+          options: None
+          type: integer
+          notes: A numeric page level; use an empty string to ignore page level
+    -
+      method: get_gm_emails()
+      status: active
+      scope: public
+      description: Get all email address for anyone with the game master flag.
+      return: The method will return an array of email addresses or <kbd>FALSE</kbd> if no addresses were found.
+    -
+      method: get_last_loa()
+      status: active
+      scope: public
+      description: Get the last LOA record for a user.
+      return: The method will return an object with the user LOA information.
+      parameters:
+        -
+          name: user
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of a user to check
+        -
+          name: blank
+          default: FALSE
+          options: TRUE/FALSE
+          type: boolean
+          notes: Whether to set the end date to NULL or not (useful for searching for active LOA records)
+    -
+      method: get_loa()
+      status: active
+      scope: public
+      description: Get the LOA status of a user.
+      return: The method will return a string with the LOA status of a user or <kbd>FALSE</kbd> if no user was found.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of a user to check
+    -
+      method: get_main_character()
+      status: active
+      scope: public
+      description: Get the character ID of a user's main character
+      return: The method will return an integer with the character ID of a user's main cahracter or <kbd>FALSE</kbd> if they have no main character.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of a user to check
+    -
+      method: get_main_characters()
+      status: active
+      scope: public
+      description: Get all users who have a main character.
+      return: The method will return an object with the information of all users with a main character.
+    -
+      method: get_my_links()
+      status: active
+      scope: public
+      description: Get a user's My Links from the database.
+      return: The method will return an array of menu IDs from the user's My Links field or <kbd>FALSE</kbd> if no user was found.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of a user to check
+    -
+      method: get_online_users()
+      status: active
+      scope: public
+      description: Get a list of the currently online users.
+      return: The method will return an array with the list of users who are currently online.
+      parameters:
+        -
+          name: time
+          default: 5
+          options: None
+          type: integer
+          notes: The number of minutes within which to check online activity
+    -
+      method: get_pref()
+      status: active
+      scope: public
+      description: Get a preference value for a given user.
+      return: The method will return a string with the value of the preference for the given user or <kbd>FALSE</kbd> if no preference exists.
+      parameters:
+        -
+          name: key
+          default: None
+          options: None
+          type: string
+          notes: The preference key to check
+        -
+          name: user
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of a user to check
+    -
+      method: get_user()
+      status: active
+      scope: public
+      description: Get a specific user from the database.
+      return: If a single value is passed in the second parameter, the method will return just that value. If an array if passed to the second parameter, the method will return an array with the values.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID to pull values for
+        -
+          name: return
+          default: None
+          options: None
+          type: array/string
+          notes: The values to pull back
+    -
+      method: get_user_details_by_email()
+      status: active
+      scope: public
+      description: Get a specific user from the database based on an email address.
+      return: The method will return an object with the information of the specific user.
+      parameters:
+        -
+          name: email
+          default: None
+          options: None
+          type: string
+          notes: An email address to use to pull user information
+    -
+      method: get_userid()
+      status: active
+      scope: public
+      description: Get a user ID based on a character ID.
+      return: The method will return an integer with the user ID of the specific user or <kbd>FALSE</kbd> if no user can be found.
+      parameters:
+        -
+          name: character
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the character to search for
+    -
+      method: get_userid_from_email()
+      status: active
+      scope: public
+      description: Get a user ID based on an email address.
+      return: The method will return an integer with the user ID of the specific user or <kbd>FALSE</kbd> if no user can be found.
+      parameters:
+        -
+          name: email
+          default: None
+          options: None
+          type: string
+          notes: An email address to use to pull user ID
+    -
+      method: get_users()
+      status: active
+      scope: public
+      description: Get all users in the system based on the status criteria passed to the method.
+      return: The method will return an object with the information about the users.
+      parameters:
+        -
+          name: status
+          default: active
+          options: active, inactive, pending, npc, none
+          type: string
+          notes: The status of the users to pull; use an empty string to pull all users
+    -
+      method: get_webmasters_emails()
+      status: active
+      scope: public
+      description: Get the email addresses of everyone with the webmaster flag.
+      return: The method will return an array of email address for every user who has the webmaster flag.
+
+  update:
+    -
+      method: update_all_user_prefs()
+      status: active
+      scope: public
+      description: Update all of a user's preferences.
+      return: The method returns the number of affected rows returned by the query.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the user to update
+        -
+          name: value
+          default: n
+          options: y, n
+          type: string
+          notes: The value to set all a user's preferences to
+    -
+      method: update_all_users()
+      status: active
+      scope: public
+      description: Update all users in the system.
+      return: The method returns the number of affected rows returned by the query.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use for updating the records
+        -
+          name: where
+          default: None
+          options: None
+          type: array
+          notes: An array with key/value pairs for building the where statement
+    -
+      method: update_first_launch()
+      status: active
+      scope: public
+      description: Update a user's first launch status.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the user to update
+    -
+      method: update_loa_record()
+      status: active
+      scope: public
+      description: Update a user's LOA record.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the user to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+    -
+      method: update_login_record()
+      status: active
+      scope: public
+      description: Update a user's login record.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the user to update
+        -
+          name: time
+          default: None
+          options: None
+          type: integer
+          notes: A UNIX timestamp of the user's last login
+    -
+      method: update_user()
+      status: active
+      scope: public
+      description: Update a user.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the user to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+    -
+      method: update_user_pref()
+      status: active
+      scope: public
+      description: Update a user's preference.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: user
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the user to update
+        -
+          name: key
+          default: None
+          options: None
+          type: string
+          notes: The user preference key to update
+        -
+          name: data
+          default: None
+          options: None
+          type: string
+          notes: The value to set the user preference to
+
+  create:
+    -
+      method: create_loa_record()
+      status: active
+      scope: public
+      description: Add an LOA record to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+    -
+      method: create_user()
+      status: active
+      scope: public
+      description: Add a user to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+    -
+      method: create_user_prefs()
+      status: active
+      scope: public
+      description: Create all of the user preference items in the database.
+      return: The method returns the number of affected rows returned by the query.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the user preference to create
+
+  delete:
+    -
+      method: delete_user()
+      status: active
+      scope: public
+      description: Delete a user from the database
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the user to delete
+
+  count:
+    -
+      method: count_all_users()
+      status: active
+      scope: public
+      description: Count all users in the database based on the status passed to the method.
+      return: The method returns the number of rows returned that match the criteria.
+      parameters:
+        -
+          name: status
+          default: active
+          options: active, inactive, pending, npc
+          type: string
+          notes: The status of the users to count
+    -
+      method: count_users()
+      status: active
+      scope: public
+      description: Count all users in the database based on timeframes.
+      return: The method returns the number of rows returned that match the criteria.
+      parameters:
+        -
+          name: timeframe
+          default: None
+          options: current, previous
+          type: string
+          notes: Whether to count users for the current month or previous month
+        -
+          name: this month
+          default: None
+          options: None
+          type: integer
+          notes: A UNIX timestamp of the start of the current month
+        -
+          name: last month
+          default: None
+          options: None
+          type: integer
+          notes: A UNIX timestamp of the start of the previous month

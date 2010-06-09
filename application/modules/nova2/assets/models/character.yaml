@@ -1,0 +1,29 @@
+character:
+  jelly:
+    -
+      method: active()
+      status: active
+      scope: public
+      description: Add a statement to pull all active characters from the database.
+      return: The method returns a Query Builder where statement that is used by Jelly's Builder class.
+
+    -
+      method: inactive()
+      status: active
+      scope: public
+      description: Add a statement to pull all inactive characters from the database.
+      return: The method returns a Query Builder where statement that is used by Jelly's Builder class.
+
+    -
+      method: npc()
+      status: active
+      scope: public
+      description: Add a statement to pull all non-playing characters from the database.
+      return: The method returns a Query Builder where statement that is used by Jelly's Builder class.
+
+    -
+      method: pending()
+      status: active
+      scope: public
+      description: Add a statement to pull all pending characters from the database.
+      return: The method returns a Query Builder where statement that is used by Jelly's Builder class.
