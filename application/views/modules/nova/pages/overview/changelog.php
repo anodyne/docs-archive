@@ -1,5 +1,37 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.0.6</h2>
+
+<p><strong>Release Date:</strong> &ndash;</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.0.6 update file</li>
+			<li>Updated jQuery UI to version 1.8.2</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Characters controller with information for the loading graphic and message on the bio management page</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Updated the bio management page to show a loading message (_base/admin/js/characters_bio_js.php)</li>
+			<li>Updated the bio management page to show a loading message (_base/admin/pages/characters_bio.php)</li>
+		</ul>
+	</li>
+<ul>
+	
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug where acceptance and rejection messages were went without the changes admins made to them</li>
+</ul>
+
 <h2>Version 1.0.5</h2>
 
 <p><strong>Release Date:</strong> June 6, 2010</p>
