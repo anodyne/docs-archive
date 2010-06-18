@@ -41,6 +41,7 @@
 				<li><?php echo anchor($this->module .'/overview/license/kohana', 'Kohana License Agreement');?></li>
 				<li><?php echo anchor($this->module .'/overview/requirements', 'Server &amp; Browser Requirements');?></li>
 				<!--<li><?php echo anchor($this->module .'/overview/faq', 'Frequently Asked Questions');?></li>-->
+				<li><?php echo anchor($this->module .'/overview/install', 'Install Guide');?></li>
 			</ul>
 		</div>
 		
