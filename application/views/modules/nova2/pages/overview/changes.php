@@ -7,7 +7,7 @@
 	<li>Added the Jelly ORM for database interaction</li>
 	<li>Requires PHP 5.2.4 or higher</li>
 	<li>Updated to jQuery 1.4.2 (up from version 1.4.2)</li>
-	<li>Updated to jQuery UI 1.8 (up from version 1.8)</li>
+	<li>Updated to jQuery UI 1.8.2 (up from version 1.8.2)</li>
 </ul>
 
 <h2>Nova Core</h2>
@@ -15,7 +15,7 @@
 <ul>
 	<li>Core Nova files have been moved into a module to further separate the application from the core</li>
 	<li>Moved update files into their own module</li>
-	<li>Moved upgrade files into their own module (does not ship with Nova 2, must be downloaded separately)</li>
+	<li>Moved upgrade files into their own module</li>
 	<li>Moved install files into their own module</li>
 </ul>
 
