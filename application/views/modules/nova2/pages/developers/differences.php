@@ -2,7 +2,7 @@
 
 <h2>Declaring a Controller Method</h2>
 
-<p>Kohana 3 uses the Zend naming convention for controller methods which prepends <em>action_</em> to the method name (you'll still access the method directly). Also, controller methods should be public functions.</p>
+<p>Kohana 3 uses the Zend naming convention for controller methods which prepends <dfn>action_</dfn> to the method name (you'll still access the method directly). Also, controller methods should be public functions.</p>
 
 <strong>In Nova 1:</strong>
 <pre>function name()
@@ -18,10 +18,14 @@
 
 <h2>Rendering Content to the View</h2>
 
-<p>Kohana 3 comes with its own template library, so there is no need for a third-party library to do templating like in Nova 1. Template and layout variables are defined in the controller's <em>before()</em> method and then its value is updated through the controller methods until it's finally output through the request object.</p>
+<p>Kohana 3 comes with its own template library, so there is no need for a third-party library to do templating like in Nova 1. Template and layout variables are defined in the controller's <dfn>before()</dfn> method and then its value is updated through the controller methods until it's finally output through the request object.</p>
 
 <strong>In Nova 1:</strong>
-<pre>// write the data to the template
+<pre>// assign some variables to be used in the view
+$data['foo'] = 'First Variable';
+$data['bar'] = 'Second Variable';
+
+// write the data to the template
 $this->template->write_view('content', $view_loc, $data);
 $this->template->write_view('javascript', $js_loc, $js_data);
 
@@ -34,6 +38,10 @@ $this->template->layout->content = View::factory('path/to/your/view/file');
 
 // assign the object a shorter variable to use in the method
 $data = $this->template->layout->content;
+
+// assign some variables to be used in the view
+$data->foo = 'First Variable';
+$data->bar = 'Second Variable';
 
 // send the response
 $this->request->response = $this->template;</pre>
@@ -70,10 +78,18 @@ $this->uri->segment(2);
 // would return the second segment of the URI (a.k.a. the method)</pre>
 
 <strong>In Nova 2:</strong>
-<pre>Request::Instance()->controller;
+<pre>Request::instance()->controller;
 // would return the first segment of the URI (a.k.a. the controller)
 
-Request::Instance()->action;
+Request::instance()->action;
+// would return the second segment of the URI (a.k.a. the method)</pre>
+
+<p>Alternatively, if you're working in the controller, you can use the request object directly instead of getting an instance of the request object. If you're in the view or a class, you'll have to use the above code.</p>
+
+<pre>$this->request->controller;
+// would return the first segment of the URI (a.k.a. the controller)
+
+$this->request->action;
 // would return the second segment of the URI (a.k.a. the method)</pre>
 
 <h2>Getting a Config Item</h2>
@@ -85,4 +101,7 @@ Request::Instance()->action;
 
 <strong>In Nova 2:</strong>
 <pre>Kohana::config('file.item');
-// this means you have a config file named file.php and an item with the name item</pre>
+// this means you have a config file named file.php and an item with the name item
+
+Kohana::config('nova.genre');
+// returns the genre from the <samp>application/config/nova.php</samp> file</pre>
