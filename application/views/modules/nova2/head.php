@@ -8,7 +8,7 @@
 		<!--<li><?php echo anchor($module .'/tutorials/index', img($images['tutorials']) .' Tutorials', '', TRUE);?></li>-->
 		<!--<li><?php echo anchor($module .'/libraries/index', img($images['libraries']) .' Libraries', '', TRUE);?></li>-->
 		<!--<li><?php echo anchor($module .'/helpers/index', img($images['helpers']) .' Helpers', '', TRUE);?></li>-->
-		<li><?php echo anchor($module .'/models/index', img($images['models']) .' Models', '', TRUE);?></li>
+		<!--<li><?php echo anchor($module .'/models/index', img($images['models']) .' Models', '', TRUE);?></li>-->
 		<li><a href="#" id="search-btn"><img src="<?php echo base_url() . APPFOLDER;?>/assets/magnifier.png" class="search-trigger" /></a></li>
 	</ul>
 </div>
