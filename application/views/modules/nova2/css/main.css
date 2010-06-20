@@ -371,8 +371,8 @@ code, pre {
 	color: #fff;
 	background: #fef1ec;
 	background: -moz-linear-gradient(top, #e65d5d, #cd0a0a);
-	background: -webkit-gradient(linear, left top, left bottom, from(#fef1ec), to(#cd0a0a));
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef1ec', endColorstr='#cd0a0a');
+	background: -webkit-gradient(linear, left top, left bottom, from(#e65d5d), to(#cd0a0a));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e65d5d', endColorstr='#cd0a0a');
 }
 .important {
 	border: 1px solid #f9dd34;
