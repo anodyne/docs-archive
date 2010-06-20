@@ -12,9 +12,9 @@
 <h2>Resources</h2>
 
 <ul>
-	<li><?php echo anchor($this->module .'/developers/images', 'Image Index');?> &ndash; a complete listing of all icons used by the system, their names and where they're found in the system. This is a great resource if you're using seamless substitution and you want to know where icons you're changing will be seen.</li>
-	<li><?php echo anchor($this->module .'/developers/fields', 'Database Fields Index');?> &ndash; a complete listing of all the database fields in the system.</li>
-	<li><?php echo anchor($this->module .'/developers/differences', 'Differences Between Nova 1 and Nova 2');?> &ndash; a listing of the coding differences between Nova 1 and Nova 2.</li>
+	<!--<li><?php echo anchor($this->module .'/developers/images', 'Image Index');?> &ndash; a complete listing of all icons used by the system, their names and where they're found in the system. This is a great resource if you're using seamless substitution and you want to know where icons you're changing will be seen.</li>-->
+	<!--<li><?php echo anchor($this->module .'/developers/fields', 'Database Fields Index');?> &ndash; a complete listing of all the database fields in the system.</li>-->
+	<li><?php echo anchor($this->module .'/developers/differences', 'Differences Between Nova 1 and Nova 2');?> &ndash; a listing of some of the coding differences between Nova 1 and Nova 2.</li>
 </ul>
 
 <!--<h2>Documentation</h2>
