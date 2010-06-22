@@ -12,7 +12,7 @@
 	<li>Your FTP username &amp; password</li>
 </ul>
 
-<p class="important">If you already have Nova installed and want to update to Nova 2, please see the update guide. If you have SMS and want to upgrade to Nova 2, please see the upgrade guide.</p>
+<p class="important">If you already have Nova installed and want to update to Nova 2, please see the update guide. If you have SMS and want to upgrade to Nova 2, please see the <?php echo anchor($this->router->fetch_module().'/overview/upgrade', 'upgrade guide');?>.</p>
 
 <h2><span class="install-step">1</span> Upload Nova</h2>
 
