@@ -2151,6 +2151,50 @@
 	</tbody>
 </table>
 
+<h2>nova_specs</h2>
+
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+	<thead>
+		<tr>
+			<th>Field</th>
+			<th>Field Information</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="td col1">specs_id</td>
+			<td class="td col2">INT(5)</td>
+			<td class="td col4">Unique ID for each record in the table (primary key)</td>
+		</tr>
+		<tr>
+			<td class="td col1">specs_name</td>
+			<td class="td col2">VARCHAR(255)</td>
+			<td class="td col4">The name of the specification item</td>
+		</tr>
+		<tr>
+			<td class="td col1">specs_order</td>
+			<td class="td col2">INT(5)</td>
+			<td class="td col4">The order of the specification item</td>
+		</tr>
+		<tr>
+			<td class="td col1">specs_display</td>
+			<td class="td col2">ENUM(y, n)</td>
+			<td class="td col4">Whether or not to display the specification item</td>
+		</tr>
+		<tr>
+			<td class="td col1">specs_images</td>
+			<td class="td col2">TEXT</td>
+			<td class="td col4">The images of the specification item</td>
+		</tr>
+		<tr>
+			<td class="td col1">specs_summary</td>
+			<td class="td col2">TEXT</td>
+			<td class="td col4">The summary of the specification item</td>
+		</tr>
+	</tbody>
+</table>
+
 <h2>nova_specs_data</h2>
 
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
@@ -2166,6 +2210,11 @@
 			<td class="td col1">data_id</td>
 			<td class="td col2">BIGINT(20)</td>
 			<td class="td col4">Unique ID for each record in the table (primary key)</td>
+		</tr>
+		<tr>
+			<td class="td col1">data_item</td>
+			<td class="td col2">INT(5)</td>
+			<td class="td col4">The numerical ID of the specification item the data is being stored for; correlates to <dfn>nova_specs</dfn></td>
 		</tr>
 		<tr>
 			<td class="td col1">data_field</td>
@@ -2524,6 +2573,11 @@
 			<td class="td col1">tour_summary</td>
 			<td class="td col2">TEXT</td>
 			<td class="td col4">The summary of the tour item</td>
+		</tr>
+		<tr>
+			<td class="td col1">tour_spec_item</td>
+			<td class="td col2">INT(5)</td>
+			<td class="td col4">The ID of the specification item the tour item is associated with</td>
 		</tr>
 	</tbody>
 </table>
