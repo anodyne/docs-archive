@@ -1108,6 +1108,32 @@
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
+<h2>create_promotion_record()</h2>
+
+<p>Adds a character promotion/demotion entry to the database. <strong>Since: 1.0.6</strong></p>
+
+<h4>Parameters</h4>
+
+<br />
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th>Parameter</th>
+		<th>Default Value</th>
+		<th>Options</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>data</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">An array of the information to be added to the database</td>
+	</tr>
+</table>
+
+<h4>Return</h4>
+
+<p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
+
 <?php
 /**
  * DELETING DATA */
