@@ -3,11 +3,11 @@
 <h2>System Core</h2>
 
 <ul>
-	<li>All new system core provided by Kohana (version 3.0.5)</li>
+	<li>All new system core provided by Kohana (version 3.0.6.2)</li>
 	<li>Added the Jelly ORM for database interaction</li>
 	<li>Requires PHP 5.2.4 or higher</li>
 	<li>Updated to jQuery 1.4.2 (up from version 1.4.2)</li>
-	<li>Updated to jQuery UI 1.8.2 (up from version 1.8.2)</li>
+	<li>Updated to jQuery UI 1.9.x (up from version 1.8.2)</li>
 </ul>
 
 <h2>Nova Core</h2>

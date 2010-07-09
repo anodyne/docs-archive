@@ -108,6 +108,10 @@
 
 <p>Once you've setup exactly what you want upgraded, you can click the <strong>Upgrade</strong> button at the bottom of the page. Nova will go through each item and upgrade them one at a time (a loading icon will appear next to the item that's currently being upgraded). Once the process is complete, a green icon will appear next to it if it was success and a red icon if it failed. Depending on how much data you have in your SMS system and the power of your server, this process can take up to 10 minutes to run. After everything has been upgraded, the button at the bottom will change to allow you to go to the next step of the process.</p>
 
+<h5>Potential Errors</h5>
+
+<p>Nova uses a wide array of checks to provide an accurate look at the success of the upgrade process. Unfortunately, sometimes things can go wrong. We've tested this extensively, but the possibility exists that not all items will be upgraded. If that's the case, the upgrade process will warn you that there was a problem. There is no way to know exactly which items weren't upgraded, just the number that were versus the number that weren't.</p>
+
 <h4><span class="install-substep">g</span> Passwords &amp; Admin Rights</h4>
 
 <p>Nova uses a much different (and more secure) way of storing passwords. Because of this, Nova <strong>cannot</strong> transfer passwords from the SMS format to the Nova format. In order for users to be able to log in, Nova has to update every user's password. You can use the text box provided in step 3 to set the new password. The password is case sensitive, so make sure you tell your users that when you give them the password. The first time they log in, they'll be prompted to change their password.</p>
