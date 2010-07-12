@@ -485,6 +485,20 @@ users:
           type: integer
           notes: A numeric ID of the user to delete
 
+    -
+      method: delete_user_pref_values()
+      status: active
+      scope: public
+      description: Delete a user's preferences from the database
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the user whose preferences should be deleted
+
   count:
     -
       method: count_all_users()
