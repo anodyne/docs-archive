@@ -8,17 +8,15 @@
 
 <h2>Step 2: Update the CodeIgniter Core</h2>
 
-<!--<p>Replace these files and directories in your <smap>core</smap> folder with the new versions:</p>
+<p class="critical"><strong>Warning:</strong> Most Windows FTP clients have serious issues overwriting files on a server. To prevent issues, make sure you delete the file(s) you want to overwrite then upload the new version(s).</p>
 
-<ul>
-	<li><dfn>core/codeigniter</dfn></li>
-	<li><dfn>core/database</dfn></li>
-	<li><dfn>core/helpers</dfn></li>
-	<li><dfn>core/language</dfn></li>
-	<li><dfn>core/libraries</dfn></li>
-</ul>-->
+<p>Replace these files and directories in your <smap>core</smap> folder with the new versions:</p>
 
-<p><em>There are no updates to the CodeIgniter core in Nova 1.0.6.</em></p>
+<ul class="changelog">
+	<li class="script">core/libraries/Upload.php</li>
+</ul>
+
+<!--<p><em>There are no updates to the CodeIgniter core in Nova 1.0.6.</em></p>-->
 
 <h2>Step 3: Update the Nova Core</h2>
 
@@ -30,10 +28,22 @@
 	<li class="folder">application/assets/install</li>
 	<li class="folder">application/assets/js</li>
 	<li class="folder">application/assets/update</li>
+	<li class="script">index.php</li>
 	<li class="script">application/config/constants.php</li>
+	<li class="script">application/controllers/base/admin_base.php</li>
 	<li class="script">application/controllers/base/characters_base.php</li>
+	<li class="script">application/controllers/base/messages_base.php</li>
+	<li class="script">application/controllers/base/personnel_base.php</li>
+	<li class="script">application/controllers/base/sim_base.php</li>
+	<li class="script">application/controllers/base/update_base.php</li>
+	<li class="script">application/controllers/base/user_base.php</li>
+	<li class="script">application/language/english/base_lang.php</li>
+	<li class="script">application/libraries/Auth.php</li>
+	<li class="script">application/models/base/characters_model_base.php</li>
+	<li class="script">application/models/base/users_model_base.php</li>
 	<li class="script">application/views/_base/admin/js/characters_bio_js.php</li>
 	<li class="script">application/views/_base/admin/pages/characters_bio.php</li>
+	<li class="script">application/views/_base/admin/pages/characters_create.php</li>
 </ul>
 
 <h2>Step 4: Run the Update Script</h2>

@@ -2,19 +2,50 @@
 
 <h2>Version 1.0.6</h2>
 
-<p><strong>Release Date:</strong> &ndash;</p>
+<p><strong>Release Date:</strong> July 14, 2010</p>
 
 <ul>
 	<li><span class="fontMedium bold">General</span>
 		<ul>
 			<li>Added the 1.0.6 update file</li>
 			<li>Updated jQuery UI to version 1.8.2</li>
+			<li>Updated jQuery Colorbox plugin to version 1.3.8</li>
+			<li>Updated the index file to turn down the error reporting since most of the issues are taken care of</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Controllers</span>
 		<ul>
+			<li>Updated the Admin controller to fix a bug where the udpate check tried to run even if the admin had told it not to</li>
 			<li>Updated the Characters controller with information for the loading graphic and message on the bio management page</li>
+			<li>Updated the Characters controller to fix an error when trying to delete a character</li>
+			<li>Updated the Characters controller to fix a bug where rank history wasn't being properly set</li>
+			<li>Updated the Messages controller to separate active and inactive users when composing a private message</li>
+			<li>Updated the Personnel controller to fix an error if only one character image was set on the character bio</li>
+			<li>Updated the Sim controller to fix an error when posting a mission comment</li>
+			<li>Updated the Sim controller to fix an error if only one image was set on the mission detail page</li>
+			<li>Updated the Sim controller to fix an error if only one image was set on the tour detail page</li>
+			<li>Updated the Update controller to fix an error thrown while updating the system for some users</li>
+			<li>Updated the User controller to fix a bug where user preferences weren't handled properly during activation/deactivation/deletion</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Languages</span>
+		<ul>
+			<li>Added labels_from key to base_lang</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Libraries</span>
+		<ul>
+			<li>Updated the Auth library to remove some debug code that was filling up the error logs</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Models</span>
+		<ul>
+			<li>Added method to the characters model for creating promotion records</li>
+			<li>Added method to the users model for removing user email preferences</li>
 		</ul>
 	</li>
 	
@@ -22,6 +53,9 @@
 		<ul>
 			<li>Updated the bio management page to show a loading message (_base/admin/js/characters_bio_js.php)</li>
 			<li>Updated the bio management page to show a loading message (_base/admin/pages/characters_bio.php)</li>
+			<li>Fixed bug where characters changing status to and from active wouldn't set the number of open slots for their position(s)  (_base/admin/pages/characters_bio.php)</li>
+			<li>Fixed bug where rank history wasn't being properly set  (_base/admin/pages/characters_bio.php)</li>
+			<li>Fixed bug the position dropdown menu when creating a character didn't just show open positions  (_base/admin/pages/characters_create.php)</li>
 		</ul>
 	</li>
 <ul>
@@ -30,6 +64,19 @@
 
 <ul>
 	<li>Fixed bug where acceptance and rejection messages were went without the changes admins made to them</li>
+	<li>Fixed bug where characters changing status to and from active wouldn't set the number of open slots for their position(s)</li>
+	<li>Fixed bug where rank history wasn't being properly set</li>
+	<li>Fixed bug where the position dropdown when creating characters didn't just show open positions</li>
+	<li>Fixed bug where turning off update notifications still attempt to run the check</li>
+	<li>Fixed bug where a user's email preferences remained active even after the user was set to inactive</li>
+	<li>Fixed bug where a user's email preferences weren't deleted when the user was deleted</li>
+	<li>Fixed error thrown when posting a mission post comment</li>
+	<li>Fixed error thrown when trying to delete a character</li>
+	<li>Fixed error thrown when updating the system</li>
+	<li>Fixed error thrown when there's only one mission image set on the mission detail page</li>
+	<li>Fixed error thrown when there's only one tour image set on the tour detail page</li>
+	<li>Fixed error thrown when there's only one character image set on the character bio page</li>
+	<li>Patched security bug in CI's upload class</li>
 </ul>
 
 <h2>Version 1.0.5</h2>
