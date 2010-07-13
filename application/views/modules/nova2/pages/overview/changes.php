@@ -3,11 +3,11 @@
 <h2>System Core</h2>
 
 <ul>
-	<li>All new system core provided by Kohana (version 3.0.6.2)</li>
+	<li>All new system core provided by Kohana (version 3.0.7)</li>
 	<li>Added the Jelly ORM for database interaction</li>
 	<li>Requires PHP 5.2.4 or higher</li>
 	<li>Updated to jQuery 1.4.2 (up from version 1.4.2)</li>
-	<li>Updated to jQuery UI 1.9.x (up from version 1.8.2)</li>
+	<li>Updated to jQuery UI 1.9-m2 (up from version 1.8.2)</li>
 </ul>
 
 <h2>Nova Core</h2>
@@ -37,6 +37,7 @@
 	<li>All-new setup process will write the database configuration file for you</li>
 	<li>All-new genre panel that lets you see the status of all of the genres available</li>
 	<li>Added the ability to uninstall genres from the system</li>
+	<li>All-new streamlined upgrade process with more details about what's happening and any issues that users may encounter</li>
 </ul>
 
 <h2>Login</h2>
