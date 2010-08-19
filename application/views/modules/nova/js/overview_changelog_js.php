@@ -1,16 +1,14 @@
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('.detailed').hide();
-		
-		$('.toggle').toggle(function(){
-			var id = $(this).attr('myid');
-			$('#' + id).slideDown();
-			$(this).html('Hide Details &raquo;');
+		$('.show_versions').toggle(function(){
+			var id = $(this).attr('myID');
+			$('#versions_' + id).slideDown();
+			$(this).find('span.action').html('Hide');
 			return false;
 		}, function(){
-			var id = $(this).attr('myid');
-			$('#' + id).slideUp();
-			$(this).html('Show Details &raquo;');
+			var id = $(this).attr('myID');
+			$('#versions_' + id).slideUp();
+			$(this).find('span.action').html('Show');
 			return false;
 		});
 	});

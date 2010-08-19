@@ -211,6 +211,14 @@ class Overview extends Controller {
 				$view = $this->viewpath .'update/106';
 
 				break;
+				
+			case 110:
+				$data['header'] = 'Updating From 1.0.6 to 1.1';
+				$data['sub'] = $page;
+
+				$view = $this->viewpath .'update/110';
+
+				break;
 			
 			case 'main':	
 			default:
