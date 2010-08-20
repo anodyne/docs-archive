@@ -41,6 +41,7 @@
 	<li class="script">application/models/base/posts_model_base.php</li>
 	<li class="script">application/models/base/specs_model_base.php</li>
 	<li class="script">application/models/base/tour_model_base.php</li>
+	<li class="script">application/models/base/users_model_base.php</li>
 	<li class="script">application/views/_base/admin/ajax/del_spec_item.php</li>
 	<li class="script">application/views/_base/admin/js/manage_specs_js.php</li>
 	<li class="script">application/views/_base/admin/js/manage_tour_js.php</li>
