@@ -24,6 +24,11 @@
 	<p class="answer hidden">You can add database tables and/or fields by going to the install center. If the system is installed, you'll be shown options for updating Nova, installing new genres, adding tables/fields to the database and uninstalling Nova.</p>
 </div>
 
+<div class="faq">
+	<p class="question bold">I'm not getting application emails from Nova. What happened?</p>
+	<p class="answer hidden">Hosts have all kinds of different policies about things like email and file writing. If your host requires that emails like the application emails come from an address on their own domain, you can fix that by simply changing the Default Email Address setting in Site Settings to your account email address.</p>
+</div>
+
 <h2>General</h2>
 
 <div class="faq">
