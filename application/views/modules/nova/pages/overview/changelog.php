@@ -2,7 +2,7 @@
 
 <h2>Version 1.1</h2>
 
-<p><strong>Release Date:</strong> August 27, 2010</p>
+<p><strong>Release Date:</strong> September 4, 2010</p>
 
 <ul>
 	<li><span class="fontMedium bold">General</span>
@@ -26,6 +26,7 @@
 			<li>Updated the Sim controller to tour items tied to specification items</li>
 			<li>Updated the Upgrade controller to account for the new schema changes</li>
 			<li>Updated the Upload controller to handle uploads for specification items</li>
+			<li>Updated the Upload controller to fix an error when deleting uploaded items</li>
 		</ul>
 	</li>
 	
@@ -105,6 +106,7 @@
 	<li>Fixed bug where mission post next/previous links could be wrong under certain circumstances</li>
 	<li>Fixed bug where news item next/previous links could be wrong under certain circumstances</li>
 	<li>Fixed bug where personal log next/previous links could be wrong under certain circumstances</li>
+	<li>Fixed an error about undefined class method when deleting uploaded items</li>
 </ul>
 
 <p class="bold fontMedium"><a href="#" class="show_versions" myID="1"><span class="action">Show</span> Nova 1.0.x Changelogs &raquo;</a></p>
