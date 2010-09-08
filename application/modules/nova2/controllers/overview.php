@@ -167,6 +167,14 @@ class Overview extends Controller
 				$view = $this->viewpath .'update/main';
 				
 				break;
+				
+			case 'nova1':
+				$data['header'] = 'Updating From Nova 1';
+				$data['sub'] = $page;
+				
+				$view = $this->viewpath .'update/nova1';
+				
+				break;
 		}
 		
 		CI::Library('template')->write('title', $data['header']. $this->title);

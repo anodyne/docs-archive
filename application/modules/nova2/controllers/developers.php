@@ -31,6 +31,19 @@ class Developers extends Controller
 		CI::Library('template')->render();
 	}
 	
+	public function conventions()
+	{
+		$data['header'] = 'Coding Conventions';
+		$data['sub'] = NULL;
+		
+		$view = $this->viewpath .'conventions';
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
+	
 	public function differences()
 	{
 		$data['header'] = 'Differences Between Nova 1 and Nova 2';

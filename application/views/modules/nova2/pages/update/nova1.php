@@ -1,5 +1,3 @@
-<?php # TODO: write the update guide ?>
-<?php # TODO: write the tutorial for turning modules on and off ?>
 <h1><?php echo $header;?></h1>
 
 <p>Don't let the size of the install guide scare you ... installing Nova on your server is actually a painless process that should only take a few minutes to complete (if you have all the pieces you need at the start). In order to install Nova on your server, you'll need the following information:</p>
