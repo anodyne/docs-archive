@@ -1,5 +1,40 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.1.1</h2>
+
+<p><strong>Release Date:</strong> -</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.1 update file</li>
+			<li>Updated jQuery UI to version 1.8.5</li>
+			<li>Updated the Thresher head include file to fix a presentation issue</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Login controller with some minor comment changes</li>
+			<li>Updated all of the controllers to fix a bug where Nova wouldn't display because it couldn't find the template file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Updated the tour item display page to only show the general items category if there are general tour items (_base/main/pages/sim_tour_all.php)</li>
+		</ul>
+	</li>
+</ul>
+	
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug where Nova wouldn't display because it couldn't find the template file</li>
+	<li>Fixed bug the General Items tour item category would be displayed even if there weren't any general tour items</li>
+	<li>Fixed bug where skins with dashboard handles were showing bullets and having weird spacing issues</li>
+</ul>
+
 <h2>Version 1.1</h2>
 
 <p><strong>Release Date:</strong> September 4, 2010</p>

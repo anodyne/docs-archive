@@ -7,7 +7,7 @@
 	<li>Dynamic web location variable</li>
 	<li>Normalized the database for greater speed and extensibility</li>
 	<li>Better database collation and character set</li>
-	<li>Updated to jQuery 1.4.2 (up from version 1.2.6)</li>
+	<li>Updated to jQuery 1.4 (up from version 1.2.6)</li>
 	<li>Updated to jQuery UI 1.8 (up from version 1.0)</li>
 	<li>Removed MagpieRSS</li>
 	<li>Removed phpSniff (browser detection)</li>
