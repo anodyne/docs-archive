@@ -2,13 +2,14 @@
 
 <h2>Version 1.1.1</h2>
 
-<p><strong>Release Date:</strong> -</p>
+<p><strong>Release Date:</strong> September 27, 2010</p>
 
 <ul>
 	<li><span class="fontMedium bold">General</span>
 		<ul>
 			<li>Added the 1.1 update file</li>
 			<li>Updated jQuery UI to version 1.8.5</li>
+			<li>Updated markItUp! plugin to version 1.1.8</li>
 			<li>Updated the Thresher head include file to fix a presentation issue</li>
 		</ul>
 	</li>
