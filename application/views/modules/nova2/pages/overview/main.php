@@ -43,6 +43,7 @@
 				<!--<li><?php echo anchor($this->module .'/overview/faq', 'Frequently Asked Questions');?></li>-->
 				<li><?php echo anchor($this->module .'/overview/install', 'Install Guide');?></li>
 				<li><?php echo anchor($this->module .'/overview/upgrade', 'Upgrade Guide');?></li>
+				<li><?php echo anchor($this->module .'/overview/update', 'Update Guide');?></li>
 			</ul>
 		</div>
 		
