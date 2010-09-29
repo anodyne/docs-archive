@@ -541,7 +541,7 @@ a#search-btn { height: 32px; }
 	float: left;
 	height: 16px;
 	width: 16px;
-	margin: 7px 8px 0 0;
+	margin: 8px 8px 0 0;
 }
 .sprite-no-right { margin-right: 0; }
 a:hover .icon-sprite { background-position: 0 -16px; }
@@ -552,3 +552,5 @@ a.active .icon-sprite { background-position: 0 -32px; }
 .icon-search		{ background-image: url('../images/nav/icon-search.png'); }
 .icon-tutorials		{ background-image: url('../images/nav/icon-tutorials.png'); }
 .icon-pages			{ background-image: url('../images/nav/icon-pages.png'); }
+.icon-classes		{ background-image: url('../images/nav/icon-code.png'); }
+.icon-tour			{ background-image: url('../images/nav/icon-tour.png'); }

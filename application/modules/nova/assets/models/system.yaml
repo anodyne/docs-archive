@@ -24,6 +24,44 @@ system:
       scope: public
       description: Get all system versions stored in the database.
       return: The method will return an object with the information for all the system versions.
+	-
+      method: get_ban()
+      status: active
+      scope: public
+      description: Get a specific ban from the database.
+      return: If a single value is passed in the second parameter, the method will return just that value. If an array if passed to the second parameter, the method will return an array with the values.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID to pull values for
+        -
+          name: return
+          default: None
+          options: None
+          type: array/string
+          notes: The values to pull back
+    -
+      method: get_bans()
+      status: active
+      scope: public
+      description: Get the ban items from the database.
+      return: The method will return either an object with the dataset or an array of IP addresses if FALSE is passed to the second parameter.
+      parameters:
+        -
+          name: level
+          default: None
+          options: None
+          type: integer
+          notes: The level of bans to retrieve; leave empty for all bans
+        -
+          name: return all
+          default: TRUE
+          options: TRUE/FALSE
+          type: boolean
+          notes: Whether to return all the data or just the IP address
     -
       method: get_current_version()
       status: active
@@ -356,6 +394,19 @@ system:
 
   create:
     -
+      method: add_ban()
+      status: active
+      scope: public
+      description: Insert a ban record to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful insertion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use for creating the record
+	-
       method: add_login_attempt()
       status: active
       scope: public
@@ -435,6 +486,19 @@ system:
           notes: The data to use for creating the record
 
   delete:
+    -
+      method: delete_ban()
+      status: active
+      scope: public
+      description: Delete a ban record from the database.
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the ban record to remove
     -
       method: delete_login_attempts()
       status: active
