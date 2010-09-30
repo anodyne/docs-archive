@@ -1,5 +1,51 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.1.2</h2>
+
+<p><strong>Release Date:</strong> &ndash;</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.1.2 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Site controller fix a bug with quick install</li>
+			<li>Updated the Site controller so that Nova doesn't try to update the skin_login field (which doesn't exist for users)</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Helpers</span>
+		<ul>
+			<li>Updated the Form helper to allow for disabled fields in dropdowns</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Fixed issues in the author selection process
+				<ul>
+					<li class="black">application/views/_base/admin/js/manage_posts_js.php</li>
+					<li class="black">application/views/_base/admin/js/write_missionpost_js.php</li>
+					<li class="black">application/views/_base/admin/pages/manage_posts.php</li>
+					<li class="black">application/views/_base/admin/pages/write_missionpost.php</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+	
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug where, under very strange circumstances, quick install wouldn't work properly</li>
+	<li>Fixed bug where Nova would try to update a field in the user table that didn't exist</li>
+	<li>Fixed issues with author selection for mission posts (thanks to Patrick for these fixes)</li>
+</ul>
+
 <h2>Version 1.1.1</h2>
 
 <p><strong>Release Date:</strong> September 27, 2010</p>
@@ -7,7 +53,7 @@
 <ul>
 	<li><span class="fontMedium bold">General</span>
 		<ul>
-			<li>Added the 1.1 update file</li>
+			<li>Added the 1.1.1 update file</li>
 			<li>Updated jQuery UI to version 1.8.5</li>
 			<li>Updated markItUp! plugin to version 1.1.8</li>
 			<li>Updated the Thresher head include file to fix a presentation issue</li>
