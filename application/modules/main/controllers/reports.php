@@ -201,6 +201,30 @@ class Reports extends Controller {
 		
 		CI::Library('template')->render();
 	}
+	
+	public function q210()
+	{
+		$data['header'] = 'Q2 2010';
+		
+		$view = $this->viewpath .'reports/2010_q2';
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
+	
+	public function q310()
+	{
+		$data['header'] = 'Q3 2010';
+		
+		$view = $this->viewpath .'reports/2010_q3';
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
 }
 
 /* End of file reports.php */

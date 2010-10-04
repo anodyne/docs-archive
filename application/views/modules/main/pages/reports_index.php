@@ -5,8 +5,8 @@
 <ul>
 	<li><?php echo anchor('main/reports/soa10', 'State of Anodyne Productions &ndash; January 2010');?></li>
 	<li><?php echo anchor('main/reports/q110', 'Anodyne Productions Quarterly Report &ndash; Q1 2010');?></li>
-	<!--<li><?php echo anchor('main/reports/q209', 'Anodyne Productions Quarterly Report &ndash; Q2 2009');?></li>
-	<li><?php echo anchor('main/reports/q309', 'Anodyne Productions Quarterly Report &ndash; Q3 2009');?></li>-->
+	<li><?php echo anchor('main/reports/q210', 'Anodyne Productions Quarterly Report &ndash; Q2 2010');?></li>
+	<li><?php echo anchor('main/reports/q310', 'Anodyne Productions Quarterly Report &ndash; Q3 2010');?></li>
 </ul>
 
 <h3>2009</h3>
