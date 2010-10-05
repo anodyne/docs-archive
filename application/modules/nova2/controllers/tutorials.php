@@ -12,7 +12,8 @@ class Tutorials extends Controller
 		parent::Controller();
 		
 		// set the variables
-		$this->title		= ' :: Nova User Guide';
+		$this->module		= $this->router->fetch_module();
+		$this->title		= ' :: Nova 2 User Guide';
 		$this->viewpath		= 'modules/'. $this->module .'/pages/tutorials/';
 		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/'. $this->module .'/images/';
 	}
@@ -34,65 +35,10 @@ class Tutorials extends Controller
 	{
 		switch ($this->uri->segment(4))
 		{
-			case 'appfolder':
-				$data['header'] = 'Changing the Application Folder';
-				$view = $this->viewpath .'adv_appfolder';
-				
-				break;
-				
-			case 'changeindex':
-				$data['header'] = 'Changing the Index File';
-				$view = $this->viewpath .'adv_changeindex';
-				
-				break;
-				
-			case 'changelang':
-				$data['header'] = 'Changing Language Items';
-				$view = $this->viewpath .'adv_changelang';
-				
-				break;
-				
-			case 'helpers':
-				$data['header'] = 'Creating &amp; Modifying Helpers';
-				$view = $this->viewpath .'adv_helpers';
-				
-				break;
-				
-			case 'libraries':
-				$data['header'] = 'Creating &amp; Modifying Libraries';
-				$view = $this->viewpath .'adv_libraries';
-				
-				break;
-				
-			case 'multipleapps':
-				$data['header'] = 'Running Multiple Applications of Nova';
-				$view = $this->viewpath .'adv_multipleapps';
-				
-				break;
-				
-			case 'rankset':
-				$data['header'] = 'Creating a Rank Set';
-				$view = $this->viewpath .'adv_rankset';
-				
-				break;
-				
-			case 'removeindex':
-				$data['header'] = 'Removing the Index File from the URL';
-				$view = $this->viewpath .'adv_removeindex';
-				
-				break;
-				
-			case 'translate':
-				$data['header'] = 'Translating Nova to Another Language';
-				$view = $this->viewpath .'adv_translate';
-				
-				break;
-				
-			case 'usinggithub':
-				$data['header'] = 'Nova &amp; Github';
-				$view = $this->viewpath .'adv_usinggithub';
-				
-				break;
+			case 'maintpage':
+				$data['header'] = 'Changing the Maintenance Mode Page';
+				$view = $this->viewpath .'adv_change_maint';
+			break;
 		}
 		
 		$data['sub'] = NULL;

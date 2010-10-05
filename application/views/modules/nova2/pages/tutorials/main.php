@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>The tutorials section is broken up into a series of different tutorials about different subjects. The material presented here will be updated with new tutorials as time allows and as new material is needed. Requests for tutorials should be submitted on the <a href="http://forums.anodyne-productions.com" target="_blank">Anodyne forums</a>.</p>
+<!--<p>The tutorials section is broken up into a series of different tutorials about different subjects. The material presented here will be updated with new tutorials as time allows and as new material is needed. Requests for tutorials should be submitted on the <a href="http://forums.anodyne-productions.com" target="_blank">Anodyne forums</a>.</p>
 
 <ul>
 	<li><a href="#" class="shortcut" myID="config">Configuring CodeIgniter &amp; Nova</a></li>
@@ -82,23 +82,14 @@
 	<li><?php echo anchor('nova/tutorials/models/1', 'What is a Model?');?></li>
 	<li><?php echo anchor('nova/tutorials/models/2', 'Creating a New Model Method');?></li>
 	<li><?php echo anchor('nova/tutorials/models/2', 'Working with Data From a Model');?></li>
-</ul>
+</ul>-->
 
 <h2 class="advanced">Advanced Tutorials</h2>
 
-<p><a href="#" class="backtop">Back to the Top</a></p>
+<!--<p><a href="#" class="backtop">Back to the Top</a></p>-->
 
-<p>While Nova is an incredibly flexible solution for running your RPG, there are undoubtedly situations where you may want to do something outside of Nova's original scope. Due to the CodeIgniter framework though, there are some advanced things that can be done with the system. The advanced tutorials will show you a few of those for anyone interested in doing more complex adjustments to and development with their copy of Nova.</p>
+<p>While Nova is an incredibly flexible solution for running your RPG, there are undoubtedly situations where you may want to do something outside of Nova's original scope. Due to the Kohana 3 framework though, there are some advanced things that can be done with the system. The advanced tutorials will show you a few of those for anyone interested in doing more complex adjustments to and development with their copy of Nova.</p>
 
 <ul>
-	<li><?php echo anchor('nova/tutorials/advanced/appfolder', 'Changing the Application Folder');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/changeindex', 'Changing the Index File');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/changelang', 'Changing Language Items');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/removeindex', 'Removing the Index File From the URL');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/multipleapps', 'Running Multiple Applications of Nova');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/helpers', 'Creating &amp; Modifying Helpers');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/libraries', 'Creating &amp; Modifying Libraries');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/translate', 'Translating Nova to Another Language');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/rankset', 'Creating a Rank Set');?></li>
-	<li><?php echo anchor('nova/tutorials/advanced/usinggithub', 'Nova &amp; Github');?></li>
+	<li><?php echo anchor($this->router->fetch_module().'/tutorials/advanced/maintpage', 'Changing the Maintenance Mode Page');?></li>
 </ul>
