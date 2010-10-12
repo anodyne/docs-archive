@@ -2,7 +2,7 @@
 
 <h2>Version 1.1.2</h2>
 
-<p><strong>Release Date:</strong> &ndash;</p>
+<p><strong>Release Date:</strong> 13 October 2010</p>
 
 <ul>
 	<li><span class="fontMedium bold">General</span>
