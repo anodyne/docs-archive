@@ -27,6 +27,10 @@
 <ul class="changelog">
 	<li class="folder">application/assets/install</li>
 	<li class="folder">application/assets/update</li>
+	<li class="script">application/assets/images/exclamation-red.png</li>
+	<li class="script">application/assets/js/jquery.js</li>
+	<li class="script">application/assets/js/jquery.ui.draggable.min.js</li>
+	<li class="script">application/assets/js/jquery.ui.droppable.min.js</li>
 	<li class="script">application/config/constants.php</li>
 	<li class="script">application/config/hooks.php</li>
 	<li class="script">application/controllers/base/ajax_base.php</li>
@@ -36,11 +40,19 @@
 	<li class="script">application/hooks/Utility.php</li>
 	<li class="script">application/language/english/base_lang.php</li>
 	<li class="script">application/language/english/text_lang.php</li>
+	<li class="script">application/models/base/depts_model_base.php</li>
 	<li class="script">application/models/base/system_model_base.php</li>
 	<li class="script">application/views/_base/admin/ajax/del_ban.php</li>
+	<li class="script">application/views/_base/admin/ajax/del_manifest.php</li>
 	<li class="script">application/views/_base/admin/js/site_bans_js.php</li>
+	<li class="script">application/views/_base/admin/js/site_manifests_js.php</li>
+	<li class="script">application/views/_base/admin/images/arrow-circle-double-135.png</li>
+	<li class="script">application/views/_base/admin/images/property-import.png</li>
 	<li class="script">application/views/_base/admin/pages/report_applications.php</li>
 	<li class="script">application/views/_base/admin/pages/site_bans.php</li>
+	<li class="script">application/views/_base/admin/pages/site_manifests.php</li>
+	<li class="script">application/views/_base/admin/pages/site_manifests_assign.php</li>
+	<li class="script">application/views/_base/main/pages/main_contact.php</li>
 	<li class="script">banned.php</li>
 </ul>
 

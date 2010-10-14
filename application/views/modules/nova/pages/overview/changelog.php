@@ -9,15 +9,18 @@
 		<ul>
 			<li>Added the 1.2 update file</li>
 			<li>Added a page that level 2 ban users are sent to when they try to view the site</li>
+			<li>Updated jQuery to version 1.4.3</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Controllers</span>
 		<ul>
 			<li>Updated the Main controller to show an applicant's IP address in the email sent to the game master</li>
+			<li>Updated the Main controller to use a simpler contact form with proper validation</li>
 			<li>Updated the Report controller to show an applicant's email address and IP address</li>
 			<li>Updated the Site controller to add a page for managing site bans</li>
 			<li>Updated the Ajax controller to handle deleting a ban</li>
+			<li>Updated the Ajax controller to handle updating the assigned manifest of a department</li>
 		</ul>
 	</li>
 	
@@ -37,7 +40,10 @@
 		<ul>
 			<li>Added labels_ban key to base_lang</li>
 			<li>Added labels_bans key to base_lang</li>
+			<li>Added labels_ipaddr key to base_lang</li>
+			<li>Added labels_manifests key to base_lang</li>
 			<li>Added misc_level1_only key to base_lang</li>
+			<li>Added labels_unassigned key to base_lang</li>
 			<li>Added text_bans key to text_lang</li>
 			<li>Added text_ban_join key to text_lang</li>
 		</ul>
@@ -48,6 +54,7 @@
 			<li>Added method to the system model to retrieve site bans</li>
 			<li>Added method to the system model to delete site bans</li>
 			<li>Added method to the system model to create site bans</li>
+			<li>Added methods to the departments model for dealing with multiple manifests</li>
 		</ul>
 	</li>
 	
@@ -60,7 +67,14 @@
 					<li class="black">_base/admin/pages/site_bans.php</li>
 				</ul>
 			</li>
+			<li>Added view files for manifest management
+				<ul>
+					<li class="black">_base/admin/js/site_manifests_js.php</li>
+					<li class="black">_base/admin/pages/site_manifests_assign.php</li>
+				</ul>
+			</li>
 			<li>Updated the application report to show the email address and IP address of applicants (_base/admin/pages/report_applications.php)</li>
+			<li>Updated the contact page to be simpler and use proper validation (_base/main/pages/main_contact.php)</li>
 		</ul>
 	</li>
 </ul>
