@@ -53,7 +53,7 @@ users:
           notes: An array or comma separated list of user IDs to check
     -
       method: get_command_staff_emails()
-      status: active
+      status: deprecated
       scope: public
       description: Get the email addresses of anyone with a position whose type is <strong>senior</strong>, a.k.a. the command staff.
       return: The method will return an array of email addresses or <kbd>FALSE</kbd> if no users are found.
@@ -302,7 +302,7 @@ users:
           notes: The status of the characters to pull
     -
       method: get_webmasters_emails()
-      status: active
+      status: deprecated
       scope: public
       description: Get the email addresses of everyone with the webmaster flag.
       return: The method will return an array of email address for every user who has the webmaster flag.

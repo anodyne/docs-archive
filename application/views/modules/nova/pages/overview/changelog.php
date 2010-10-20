@@ -1,195 +1,288 @@
 <h1><?php echo $header;?></h1>
 
-<h2>Version 1.1.2</h2>
+<h2>Version 1.2</h2>
 
-<p><strong>Release Date:</strong> 14 October 2010</p>
+<p><strong>Release Date:</strong> &ndash;</p>
 
 <ul>
 	<li><span class="fontMedium bold">General</span>
 		<ul>
-			<li>Added the 1.1.2 update file</li>
+			<li>Added the 1.2 update file</li>
+			<li>Added a page that level 2 ban users are sent to when they try to view the site</li>
+			<li>Added the jQuery UI draggable plugin</li>
+			<li>Added the jQuery UI droppable plugin</li>
+			<li>Updated jQuery to version 1.4.3</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Controllers</span>
 		<ul>
-			<li>Updated the Site controller fix a bug with quick install</li>
-			<li>Updated the Site controller so that Nova doesn't try to update the skin_login field (which doesn't exist for users)</li>
+			<li>Updated the Main controller to show an applicant's IP address in the email sent to the game master</li>
+			<li>Updated the Main controller to use a simpler contact form with proper validation</li>
+			<li>Updated the Report controller to show an applicant's email address and IP address</li>
+			<li>Updated the Site controller to add a page for managing site bans</li>
+			<li>Updated the Ajax controller to handle deleting a ban</li>
+			<li>Updated the Ajax controller to handle updating the assigned manifest of a department</li>
+			<li>Updated the Admin controller to fix a bug with users without an active character being shown in the activity panel</li>
 		</ul>
 	</li>
 	
-	<li><span class="fontMedium bold">Helpers</span>
+	<li><span class="fontMedium bold">Config</span>
 		<ul>
-			<li>Updated the Form helper to allow for disabled fields in dropdowns</li>
+			<li>Updated the hooks configuration file to call the ban hook after the browser hook is run</li>
 		</ul>
 	</li>
 	
-	<li><span class="fontMedium bold">Views</span>
+	<li><span class="fontMedium bold">Hooks</span>
 		<ul>
-			<li>Fixed issues in the author selection process
-				<ul>
-					<li class="black">application/views/_base/admin/js/manage_posts_js.php</li>
-					<li class="black">application/views/_base/admin/js/write_missionpost_js.php</li>
-					<li class="black">application/views/_base/admin/pages/manage_posts.php</li>
-					<li class="black">application/views/_base/admin/pages/write_missionpost.php</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
-	
-<h3>Bug Fixes</h3>
-
-<ul>
-	<li>Fixed bug where, under very strange circumstances, quick install wouldn't work properly</li>
-	<li>Fixed bug where Nova would try to update a field in the user table that didn't exist</li>
-	<li>Fixed issues with author selection for mission posts (thanks to Patrick for these fixes)</li>
-</ul>
-
-<h2>Version 1.1.1</h2>
-
-<p><strong>Release Date:</strong> September 27, 2010</p>
-
-<ul>
-	<li><span class="fontMedium bold">General</span>
-		<ul>
-			<li>Added the 1.1.1 update file</li>
-			<li>Updated jQuery UI to version 1.8.5</li>
-			<li>Updated markItUp! plugin to version 1.1.8</li>
-			<li>Updated the Thresher head include file to fix a presentation issue</li>
-		</ul>
-	</li>
-	
-	<li><span class="fontMedium bold">Controllers</span>
-		<ul>
-			<li>Updated the Login controller with some minor comment changes</li>
-			<li>Updated all of the controllers to fix a bug where Nova wouldn't display because it couldn't find the template file</li>
-		</ul>
-	</li>
-	
-	<li><span class="fontMedium bold">Views</span>
-		<ul>
-			<li>Updated the tour item display page to only show the general items category if there are general tour items (_base/main/pages/sim_tour_all.php)</li>
-		</ul>
-	</li>
-</ul>
-	
-<h3>Bug Fixes</h3>
-
-<ul>
-	<li>Fixed bug where Nova wouldn't display because it couldn't find the template file</li>
-	<li>Fixed bug the General Items tour item category would be displayed even if there weren't any general tour items</li>
-	<li>Fixed bug where skins with dashboard handles were showing bullets and having weird spacing issues</li>
-</ul>
-
-<h2>Version 1.1</h2>
-
-<p><strong>Release Date:</strong> September 4, 2010</p>
-
-<ul>
-	<li><span class="fontMedium bold">General</span>
-		<ul>
-			<li>Added the 1.1 update file</li>
-			<li>Added the FancyBox plugin</li>
-			<li>Added the jQuery Reflection plugin</li>
-			<li>Removed the ColorBox plugin</li>
-			<li>Removed the Reflection.js plugin</li>
-			<li>Updated jQuery UI to version 1.8.4</li>
-		</ul>
-	</li>
-	
-	<li><span class="fontMedium bold">Controllers</span>
-		<ul>
-			<li>Updated the Manage controller to handle managing multiple specification items</li>
-			<li>Updated the Manage controller to handle managing tour items associated with specification items</li>
-			<li>Updated the Messages controller to fix bug with the dropdown menus not being set properly when replying to a PM</li>
-			<li>Updated the Sim controller to fix bug with the ordering of missions inside mission groups</li>
-			<li>Updated the Sim controller to handle multiple specification items</li>
-			<li>Updated the Sim controller to tour items tied to specification items</li>
-			<li>Updated the Upgrade controller to account for the new schema changes</li>
-			<li>Updated the Upload controller to handle uploads for specification items</li>
-			<li>Updated the Upload controller to fix an error when deleting uploaded items</li>
+			<li>Updated the Utility hook to do a search for level 2 bans as the site is spinning up</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Languages</span>
 		<ul>
-			<li>Added specitem_select key to text_lang</li>
-			<li>Added specitem_empty_fields key to text_lang</li>
+			<li>Added labels_ban key to base_lang</li>
+			<li>Added labels_bans key to base_lang</li>
+			<li>Added labels_ipaddr key to base_lang</li>
+			<li>Added labels_manifests key to base_lang</li>
+			<li>Added misc_level1_only key to base_lang</li>
+			<li>Added labels_unassigned key to base_lang</li>
+			<li>Added text_bans key to text_lang</li>
+			<li>Added text_ban_join key to text_lang</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Models</span>
 		<ul>
-			<li>Fixed bug in the news model where the next/previous link IDs were wrong under certain circumstances</li>
-			<li>Fixed bug in the personal logs model where the next/previous link IDs were wrong under certain circumstances</li>
-			<li>Fixed bug in the posts model where the next/previous link IDs were wrong under certain circumstances</li>
-			<li>Updated the tour model to be able to handle associating tour items with specification items</li>
-			<li>Updated the specs model to be able to handle multiple specification items</li>
+			<li>Added method to the system model to retrieve site bans</li>
+			<li>Added method to the system model to delete site bans</li>
+			<li>Added method to the system model to create site bans</li>
+			<li>Added methods to the departments model for dealing with multiple manifests</li>
+			<li>Added method to the users model to pull users based on character status</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Views</span>
 		<ul>
-			<li>Updated the specs management page to handle multiple specification items and use FancyBox instead of ColorBox
+			<li>Added view files for ban management
 				<ul>
-					<li class="black">_base/admin/js/manage_specs_js.php</li>
-					<li class="black">_base/admin/pages/manage_specs.php</li>
-					<li class="black">_base/admin/pages/manage_specs_action.php</li>
+					<li class="black">_base/admin/ajax/del_ban.php</li>
+					<li class="black">_base/admin/js/site_bans_js.php</li>
+					<li class="black">_base/admin/pages/site_bans.php</li>
 				</ul>
 			</li>
-			<li>Updated the tour management page to handle tying tour items to specification items
+			<li>Added view files for manifest management
 				<ul>
-					<li class="black">_base/admin/js/manage_tour_js.php</li>
-					<li class="black">_base/admin/pages/manage_tour.php</li>
-					<li class="black">_base/admin/pages/manage_tour_action.php</li>
+					<li class="black">_base/admin/js/site_manifests_js.php</li>
+					<li class="black">_base/admin/pages/site_manifests_assign.php</li>
 				</ul>
 			</li>
-			<li>Updated the site settings page to use FancyBox instead of ColorBox (_base/admin/js/site_settings_js.php)</li>
-			<li>Updated the user options page to use FancyBox instead of ColorBox (_base/admin/js/user_options_js.php)</li>
-			<li>Updated the upload management page to handle uploads for specification items (_base/admin/pages/upload_manage.php)</li>
-			<li>Updated the character bio page to use FancyBox instead of ColorBox
-				<ul>
-					<li class="black">_base/main/js/personnel_character_js.php</li>
-					<li class="black">_base/main/pages/personnel_character.php</li>
-				</ul>
-			</li>
-			<li>Updated the missions page to use FancyBox instead of ColorBox
-				<ul>
-					<li class="black">_base/main/js/sim_missions_js.php</li>
-					<li class="black">_base/main/pages/sim_missions_one.php</li>
-				</ul>
-			</li>
-			<li>Updated the specifications page to handle multiple specification items
-				<ul>
-					<li class="black">_base/main/js/sim_specs.php</li>
-					<li class="black">_base/main/pages/sim_specs_all.php</li>
-					<li class="black">_base/main/pages/sim_specs_one.php</li>
-				</ul>
-			</li>
-			<li>Updated the tour page to handle tour items associated with specification items
-				<ul>
-					<li class="black">_base/main/js/sim_tour.php</li>
-					<li class="black">_base/main/pages/sim_tour_all.php</li>
-					<li class="black">_base/main/pages/sim_tour_one.php</li>
-				</ul>
-			</li>
-			<li>Updated the mission groups page to fix bug with missions not being ordered properly (_base/main/pages/sim_missions_groups_all.php)</li>
+			<li>Updated the application report to show the email address and IP address of applicants (_base/admin/pages/report_applications.php)</li>
+			<li>Updated the contact page to be simpler and use proper validation (_base/main/pages/main_contact.php)</li>
 		</ul>
 	</li>
 </ul>
-	
+
 <h3>Bug Fixes</h3>
 
 <ul>
-	<li>Fixed bug where ordered and unordered lists weren't properly styled in Thresher</li>
-	<li>Fixed bug in mission group pages where missions didn't respect the mission order that was set for them</li>
-	<li>Fixed bug where the private message dropdown didn't populate with an author when replying to a message</li>
-	<li>Fixed bug where mission post next/previous links could be wrong under certain circumstances</li>
-	<li>Fixed bug where news item next/previous links could be wrong under certain circumstances</li>
-	<li>Fixed bug where personal log next/previous links could be wrong under certain circumstances</li>
-	<li>Fixed an error about undefined class method when deleting uploaded items</li>
+	<li>Fixed bug where users without an active character are displayed in the activity warning panel on the ACP</li>
 </ul>
+
+<p class="bold fontMedium"><a href="#" class="show_versions" myID="11"><span class="action">Show</span> Nova 1.1.x Changelogs &raquo;</a></p>
+
+<div id="versions_11" class="hidden">
+	<h2>Version 1.1.2</h2>
+
+	<p><strong>Release Date:</strong> 14 October 2010</p>
+
+	<ul>
+		<li><span class="fontMedium bold">General</span>
+			<ul>
+				<li>Added the 1.1.2 update file</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Controllers</span>
+			<ul>
+				<li>Updated the Site controller fix a bug with quick install</li>
+				<li>Updated the Site controller so that Nova doesn't try to update the skin_login field (which doesn't exist for users)</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Helpers</span>
+			<ul>
+				<li>Updated the Form helper to allow for disabled fields in dropdowns</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Views</span>
+			<ul>
+				<li>Fixed issues in the author selection process
+					<ul>
+						<li class="black">application/views/_base/admin/js/manage_posts_js.php</li>
+						<li class="black">application/views/_base/admin/js/write_missionpost_js.php</li>
+						<li class="black">application/views/_base/admin/pages/manage_posts.php</li>
+						<li class="black">application/views/_base/admin/pages/write_missionpost.php</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+		
+	<h3>Bug Fixes</h3>
+
+	<ul>
+		<li>Fixed bug where, under very strange circumstances, quick install wouldn't work properly</li>
+		<li>Fixed bug where Nova would try to update a field in the user table that didn't exist</li>
+		<li>Fixed issues with author selection for mission posts (thanks to Patrick for these fixes)</li>
+	</ul>
+
+	<h2>Version 1.1.1</h2>
+
+	<p><strong>Release Date:</strong> September 27, 2010</p>
+
+	<ul>
+		<li><span class="fontMedium bold">General</span>
+			<ul>
+				<li>Added the 1.1 update file</li>
+				<li>Updated jQuery UI to version 1.8.5</li>
+				<li>Updated markItUp! plugin to version 1.1.8</li>
+				<li>Updated the Thresher head include file to fix a presentation issue</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Controllers</span>
+			<ul>
+				<li>Updated the Login controller with some minor comment changes</li>
+				<li>Updated all of the controllers to fix a bug where Nova wouldn't display because it couldn't find the template file</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Views</span>
+			<ul>
+				<li>Updated the tour item display page to only show the general items category if there are general tour items (_base/main/pages/sim_tour_all.php)</li>
+			</ul>
+		</li>
+	</ul>
+		
+	<h3>Bug Fixes</h3>
+
+	<ul>
+		<li>Fixed bug where Nova wouldn't display because it couldn't find the template file</li>
+		<li>Fixed bug the General Items tour item category would be displayed even if there weren't any general tour items</li>
+		<li>Fixed bug where skins with dashboard handles were showing bullets and having weird spacing issues</li>
+	</ul>
+
+	<h2>Version 1.1</h2>
+
+	<p><strong>Release Date:</strong> September 4, 2010</p>
+
+	<ul>
+		<li><span class="fontMedium bold">General</span>
+			<ul>
+				<li>Added the 1.1 update file</li>
+				<li>Added the FancyBox plugin</li>
+				<li>Added the jQuery Reflection plugin</li>
+				<li>Removed the ColorBox plugin</li>
+				<li>Removed the Reflection.js plugin</li>
+				<li>Updated jQuery UI to version 1.8.4</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Controllers</span>
+			<ul>
+				<li>Updated the Manage controller to handle managing multiple specification items</li>
+				<li>Updated the Manage controller to handle managing tour items associated with specification items</li>
+				<li>Updated the Messages controller to fix bug with the dropdown menus not being set properly when replying to a PM</li>
+				<li>Updated the Sim controller to fix bug with the ordering of missions inside mission groups</li>
+				<li>Updated the Sim controller to handle multiple specification items</li>
+				<li>Updated the Sim controller to tour items tied to specification items</li>
+				<li>Updated the Upgrade controller to account for the new schema changes</li>
+				<li>Updated the Upload controller to handle uploads for specification items</li>
+				<li>Updated the Upload controller to fix an error when deleting uploaded items</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Languages</span>
+			<ul>
+				<li>Added specitem_select key to text_lang</li>
+				<li>Added specitem_empty_fields key to text_lang</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Models</span>
+			<ul>
+				<li>Fixed bug in the news model where the next/previous link IDs were wrong under certain circumstances</li>
+				<li>Fixed bug in the personal logs model where the next/previous link IDs were wrong under certain circumstances</li>
+				<li>Fixed bug in the posts model where the next/previous link IDs were wrong under certain circumstances</li>
+				<li>Updated the tour model to be able to handle associating tour items with specification items</li>
+				<li>Updated the specs model to be able to handle multiple specification items</li>
+			</ul>
+		</li>
+		
+		<li><span class="fontMedium bold">Views</span>
+			<ul>
+				<li>Updated the specs management page to handle multiple specification items and use FancyBox instead of ColorBox
+					<ul>
+						<li class="black">_base/admin/js/manage_specs_js.php</li>
+						<li class="black">_base/admin/pages/manage_specs.php</li>
+						<li class="black">_base/admin/pages/manage_specs_action.php</li>
+					</ul>
+				</li>
+				<li>Updated the tour management page to handle tying tour items to specification items
+					<ul>
+						<li class="black">_base/admin/js/manage_tour_js.php</li>
+						<li class="black">_base/admin/pages/manage_tour.php</li>
+						<li class="black">_base/admin/pages/manage_tour_action.php</li>
+					</ul>
+				</li>
+				<li>Updated the site settings page to use FancyBox instead of ColorBox (_base/admin/js/site_settings_js.php)</li>
+				<li>Updated the user options page to use FancyBox instead of ColorBox (_base/admin/js/user_options_js.php)</li>
+				<li>Updated the upload management page to handle uploads for specification items (_base/admin/pages/upload_manage.php)</li>
+				<li>Updated the character bio page to use FancyBox instead of ColorBox
+					<ul>
+						<li class="black">_base/main/js/personnel_character_js.php</li>
+						<li class="black">_base/main/pages/personnel_character.php</li>
+					</ul>
+				</li>
+				<li>Updated the missions page to use FancyBox instead of ColorBox
+					<ul>
+						<li class="black">_base/main/js/sim_missions_js.php</li>
+						<li class="black">_base/main/pages/sim_missions_one.php</li>
+					</ul>
+				</li>
+				<li>Updated the specifications page to handle multiple specification items
+					<ul>
+						<li class="black">_base/main/js/sim_specs.php</li>
+						<li class="black">_base/main/pages/sim_specs_all.php</li>
+						<li class="black">_base/main/pages/sim_specs_one.php</li>
+					</ul>
+				</li>
+				<li>Updated the tour page to handle tour items associated with specification items
+					<ul>
+						<li class="black">_base/main/js/sim_tour.php</li>
+						<li class="black">_base/main/pages/sim_tour_all.php</li>
+						<li class="black">_base/main/pages/sim_tour_one.php</li>
+					</ul>
+				</li>
+				<li>Updated the mission groups page to fix bug with missions not being ordered properly (_base/main/pages/sim_missions_groups_all.php)</li>
+			</ul>
+		</li>
+	</ul>
+		
+	<h3>Bug Fixes</h3>
+
+	<ul>
+		<li>Fixed bug where ordered and unordered lists weren't properly styled in Thresher</li>
+		<li>Fixed bug in mission group pages where missions didn't respect the mission order that was set for them</li>
+		<li>Fixed bug where the private message dropdown didn't populate with an author when replying to a message</li>
+		<li>Fixed bug where mission post next/previous links could be wrong under certain circumstances</li>
+		<li>Fixed bug where news item next/previous links could be wrong under certain circumstances</li>
+		<li>Fixed bug where personal log next/previous links could be wrong under certain circumstances</li>
+		<li>Fixed an error about undefined class method when deleting uploaded items</li>
+	</ul>
+</div>
 
 <p class="bold fontMedium"><a href="#" class="show_versions" myID="1"><span class="action">Show</span> Nova 1.0.x Changelogs &raquo;</a></p>
 

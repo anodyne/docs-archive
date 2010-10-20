@@ -169,72 +169,70 @@ class Overview extends Controller {
 				$data['sub'] = $page;
 				
 				$view = $this->viewpath .'update/101';
-				
-				break;
+			break;
 				
 			case 102:
 				$data['header'] = 'Updating From 1.0.1 to 1.0.2';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/102';
-
-				break;
+			break;
 				
 			case 103:
 				$data['header'] = 'Updating From 1.0.2 to 1.0.3';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/103';
-
-				break;
+			break;
 				
 			case 104:
 				$data['header'] = 'Updating From 1.0.3 to 1.0.4';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/104';
-
-				break;
+			break;
 				
 			case 105:
 				$data['header'] = 'Updating From 1.0.4 to 1.0.5';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/105';
-
-				break;
+			break;
 				
 			case 106:
 				$data['header'] = 'Updating From 1.0.5 to 1.0.6';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/106';
-
-				break;
+			break;
 				
 			case 110:
 				$data['header'] = 'Updating From 1.0.6 to 1.1';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/110';
-
-				break;
+			break;
 				
 			case 111:
 				$data['header'] = 'Updating From 1.1 to 1.1.1';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/111';
-
-				break;
+			break;
 				
 			case 112:
 				$data['header'] = 'Updating From 1.1.1 to 1.1.2';
 				$data['sub'] = $page;
 
 				$view = $this->viewpath .'update/112';
+			break;
+			
+			case 120:
+				$data['header'] = 'Updating From 1.1.2 to 1.2';
+				$data['sub'] = $page;
 
-				break;
+				$view = $this->viewpath .'update/120';
+			break;
 			
 			case 'main':	
 			default:
@@ -242,8 +240,7 @@ class Overview extends Controller {
 				$data['sub'] = ($this->uri->segment(4) == 'main') ? $page : NULL;
 				
 				$view = $this->viewpath .'update/main';
-				
-				break;
+			break;
 		}
 		
 		CI::Library('template')->write('title', $data['header']. $this->title);
