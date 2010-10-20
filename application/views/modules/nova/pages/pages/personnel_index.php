@@ -6,6 +6,12 @@
 
 <p>For large manifests, a loading icon will be shown while Nova loads the manifest. Once the page is ready to be displayed, the loading graphic goes away and is replaced by the manifest. The image can be replaced by placing an image called loader.gif into your skin&rsquo;s image folder. Nova will recognize that it&rsquo;s there and use that instead of the system default.</p>
 
+<h2>Multiple Manifests</h2>
+
+<p>Nova 1.2 introduced the multiple manifest feature which allows admins to create different views of the characters on the sim. If there is only one manifest for the sim (the default), the manifest's header content will be shown followed by the normal manifest. If there are several manifests available, Nova will show a listing of the manifests with links to visit the other manifests.</p>
+
+<h2>The Manifest</h2>
+
 <p>Once the page has loaded, there are controls at the top of the page to control exactly what you see. The first line will show the item indicated. The following are the actions that will happen with each click:</p>
 
 <ul>

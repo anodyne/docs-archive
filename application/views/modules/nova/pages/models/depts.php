@@ -67,6 +67,56 @@
 
 <p>The method will return an object with all the information for the departments that match the criteria.</p>
 
+<h2>get_all_manifests()</h2>
+
+<p>Get all the manifests that match the criteria passed to the method.</p>
+
+<h4>Parameters</h4>
+
+<br />
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th>Parameter</th>
+		<th>Default Value</th>
+		<th>Options</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>display</strong></td>
+		<td class="td col2"><em>y</em></td>
+		<td class="td col3"><em>y, n, none</em></td>
+		<td class="td col4">What the display flag should be, or a blank string if you don't want to ignore the display flag</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>sort</strong></td>
+		<td class="td col2"><em>asc</em></td>
+		<td class="td col3"><em>asc, desc</em></td>
+		<td class="td col4">The order in which the results should be sorted</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>sort column</strong></td>
+		<td class="td col2"><em>manifest_order</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">Any column from the manifests table to sort by</td>
+	</tr>
+</table>
+
+<h4>Return</h4>
+
+<p>The method will return an object with all the information for the manifests that match the criteria.</p>
+
+<h2>get_default_manifest()</h2>
+
+<p>Gets the ID of the default manifest from the database.</p>
+
+<h4>Parameters</h4>
+
+<em>None</em>
+
+<h4>Return</h4>
+
+<p>The method will return the ID of the default manifest from the database.</p>
+
 <h2>get_dept()</h2>
 
 <p>Get a single department based on the ID passed to the method.</p>
@@ -86,6 +136,38 @@
 		<td class="td col2"><em>None</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">A numeric ID of the department to retrieve</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>return</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A string or array with the values to pull back</td>
+	</tr>
+</table>
+
+<h4>Return</h4>
+
+<p>If a single value is passed in the second parameter, the method will return just that value. If an array if passed to the second parameter, the method will return an array with the values.</p>
+
+<h2>get_manifest()</h2>
+
+<p>Get a single manifest based on the ID passed to the method.</p>
+
+<h4>Parameters</h4>
+
+<br />
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th>Parameter</th>
+		<th>Default Value</th>
+		<th>Options</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric ID of the manifest to retrieve</td>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>return</strong></td>
@@ -177,6 +259,38 @@
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
+<h2>update_manifest()</h2>
+
+<p>Update a manifest in the database.</p>
+
+<h4>Parameters</h4>
+
+<br />
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th>Parameter</th>
+		<th>Default Value</th>
+		<th>Options</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric ID of the manifest to be updated</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>data</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">An array of the information to updated</td>
+	</tr>
+</table>
+
+<h4>Return</h4>
+
+<p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
+
 <?php
 /**
  * CREATING DATA
@@ -188,6 +302,32 @@
 <h2>add_dept()</h2>
 
 <p>Add a department to the database.</p>
+
+<h4>Parameters</h4>
+
+<br />
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th>Parameter</th>
+		<th>Default Value</th>
+		<th>Options</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>data</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">An array of the information to add to the database</td>
+	</tr>
+</table>
+
+<h4>Return</h4>
+
+<p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
+
+<h2>add_manifest()</h2>
+
+<p>Add a manifest to the database.</p>
 
 <h4>Parameters</h4>
 
@@ -238,6 +378,32 @@
 		<td class="td col2"><em>None</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">A numeric ID of the department to be deleted</td>
+	</tr>
+</table>
+
+<h4>Return</h4>
+
+<p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
+
+<h2>delete_manifest()</h2>
+
+<p>Delete a manifest from the database.</p>
+
+<h4>Parameters</h4>
+
+<br />
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th>Parameter</th>
+		<th>Default Value</th>
+		<th>Options</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric ID of the manifest to be deleted</td>
 	</tr>
 </table>
 

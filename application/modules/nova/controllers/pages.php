@@ -760,6 +760,10 @@ class Pages extends Controller {
 				$data['header'] = 'Manifest';
 				$data['sub'] = $page;
 				
+				$data['related'] = array(
+					'nova/pages/site/manifests' => 'Site Manifests',
+				);
+				
 				$view = $this->viewpath .'personnel_index';
 				
 				break;
@@ -1336,6 +1340,27 @@ class Pages extends Controller {
 				);
 				
 				$view = $this->viewpath .'site_dockingsections';
+				
+				break;
+				
+			case 'manifests':
+				$data['header'] = 'Site Manifests';
+				$data['sub'] = $page;
+				
+				$data['related'] = array(
+					'nova/pages/personnel/index' => 'Manifest'
+				);
+				
+				$data['images'] = array(
+					'edit' => array(
+						'src' => $this->imagepath .'system/admin/icon-edit.png',
+						'alt' => 'edit'),
+					'delete' => array(
+						'src' => $this->imagepath .'system/admin/icon-delete.png',
+						'alt' => 'delete'),
+				);
+				
+				$view = $this->viewpath .'site_manifests';
 				
 				break;
 				

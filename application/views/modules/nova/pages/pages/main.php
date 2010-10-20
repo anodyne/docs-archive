@@ -199,6 +199,7 @@
 				<li><?php echo anchor('nova/pages/site/roles', 'Access Roles');?></li>
 				<li><?php echo anchor('nova/pages/site/settings', 'Settings');?></li>
 				<li><?php echo anchor('nova/pages/site/simtypes', 'Sim Types');?></li>
+				<li><?php echo anchor('nova/pages/site/manifests', 'Site Manifests');?></li>
 				<li><?php echo anchor('nova/pages/site/skincatalogue', 'Skin System Catalogue');?></li>
 				<li><?php echo anchor('nova/pages/site/specsform', 'Specs Form');?></li>
 				<li><?php echo anchor('nova/pages/site/specssections', 'Specs Sections');?></li>
