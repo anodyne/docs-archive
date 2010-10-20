@@ -288,6 +288,19 @@ users:
           type: string
           notes: The status of the users to pull; use an empty string to pull all users
     -
+      method: get_users_from_characters()
+      status: active
+      scope: public
+      description: Get all users in the system based on the status criteria of characters passed to the method.
+      return: The method will return an array of objects with the information about the users or FALSE if there are no characters that meet the criteria.
+      parameters:
+        -
+          name: status
+          default: active
+          options: active, inactive, pending, npc
+          type: string
+          notes: The status of the characters to pull
+    -
       method: get_webmasters_emails()
       status: active
       scope: public
