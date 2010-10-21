@@ -11,6 +11,7 @@
 			<li>Added a page that level 2 ban users are sent to when they try to view the site</li>
 			<li>Added the jQuery UI draggable plugin</li>
 			<li>Added the jQuery UI droppable plugin</li>
+			<li>Added seaQuest DSV to the available genres</li>
 			<li>Updated jQuery to version 1.4.3</li>
 		</ul>
 	</li>
@@ -23,13 +24,22 @@
 			<li>Updated the Site controller to add a page for managing site bans</li>
 			<li>Updated the Ajax controller to handle deleting a ban</li>
 			<li>Updated the Ajax controller to handle updating the assigned manifest of a department</li>
+			<li>Updated the Ajax controller to handle confirming duplication of a department</li>
 			<li>Updated the Admin controller to fix a bug with users without an active character being shown in the activity panel</li>
+			<li>Updated the Sim controller to show the manifest a department is associated with on the departments and positions page</li>
+			<li>Updated the Manage controller to allow for duplicating a department and its positions</li>
 		</ul>
 	</li>
 	
 	<li><span class="fontMedium bold">Config</span>
 		<ul>
 			<li>Updated the hooks configuration file to call the ban hook after the browser hook is run</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Helpers</span>
+		<ul>
+			<li>Updated the Form helper to show the manifest a department is associated with in both department and position dropdowns</li>
 		</ul>
 	</li>
 	
@@ -49,6 +59,8 @@
 			<li>Added labels_unassigned key to base_lang</li>
 			<li>Added text_bans key to text_lang</li>
 			<li>Added text_ban_join key to text_lang</li>
+			<li>Added text_duplicate_dept to text_lang</li>
+			<li>Updated text_manage_depts in text_lang</li>
 		</ul>
 	</li>
 	
@@ -59,6 +71,8 @@
 			<li>Added method to the system model to create site bans</li>
 			<li>Added methods to the departments model for dealing with multiple manifests</li>
 			<li>Added method to the users model to pull users based on character status</li>
+			<li>Updated the departments model to not optimize the add_dept() method because we need the insert ID at some points</li>
+			<li>Updated the positions model to fix a potential bug where a model method would return nothing at all</li>
 		</ul>
 	</li>
 	
@@ -74,11 +88,20 @@
 			<li>Added view files for manifest management
 				<ul>
 					<li class="black">_base/admin/js/site_manifests_js.php</li>
+					<li class="black">_base/admin/pages/site_manifests.php</li>
 					<li class="black">_base/admin/pages/site_manifests_assign.php</li>
 				</ul>
 			</li>
 			<li>Updated the application report to show the email address and IP address of applicants (_base/admin/pages/report_applications.php)</li>
 			<li>Updated the contact page to be simpler and use proper validation (_base/main/pages/main_contact.php)</li>
+			<li>Updated department management to handle duplicating departments
+				<ul>
+					<li class="black">_base/admin/ajax/add_dept.php</li>
+					<li class="black">_base/admin/ajax/dup_dept.php</li>
+					<li class="black">_base/admin/js/manage_depts_js.php</li>
+					<li class="black">_base/admin/pages/manage_depts.php</li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>
@@ -87,6 +110,7 @@
 
 <ul>
 	<li>Fixed bug where users without an active character are displayed in the activity warning panel on the ACP</li>
+	<li>Fixed a potential bug where a method in the positions model could return nothing at all under certain circumstances</li>
 </ul>
 
 <p class="bold fontMedium"><a href="#" class="show_versions" myID="11"><span class="action">Show</span> Nova 1.1.x Changelogs &raquo;</a></p>

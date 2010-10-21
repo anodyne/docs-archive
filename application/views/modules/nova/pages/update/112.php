@@ -27,7 +27,7 @@
 <ul class="changelog">
 	<li class="folder">application/assets/install</li>
 	<li class="folder">application/assets/update</li>
-	<li class="folder">application/controllers/base/site_base.php</li>
+	<li class="script">application/controllers/base/site_base.php</li>
 	<li class="script">application/config/constants.php</li>
 	<li class="script">application/helpers/MY_form_helper.php</li>
 	<li class="script">application/views/_base/admin/js/manage_posts_js.php</li>
