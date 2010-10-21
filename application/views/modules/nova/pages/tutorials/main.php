@@ -6,6 +6,7 @@
 	<li><a href="#" class="shortcut" myID="config">Configuring CodeIgniter &amp; Nova</a></li>
 	<li><a href="#" class="shortcut" myID="intro">Getting Started with Nova</a></li>
 	<li><a href="#" class="shortcut" myID="extending">Extending Nova</a></li>
+	<li><a href="#" class="shortcut" myID="practical">Practical Application Tutorials</a></li>
 	<li><a href="#" class="shortcut" myID="skinning">Skinning</a></li>
 	<li><a href="#" class="shortcut" myID="models">Models</a></li>
 	<li><a href="#" class="shortcut" myID="advanced">Advanced Tutorials</a></li>
@@ -50,6 +51,16 @@
 	<li><?php echo anchor('nova/tutorials/extending/5', 'Controller, Meet View');?><br /><br /></li>
 	<li><?php echo anchor('nova/tutorials/extending/6', 'Extending Nova: Replacing Pages');?></li>
 	<li><?php echo anchor('nova/tutorials/extending/7', 'Extending Nova: Replacing Models');?></li>
+</ul>
+
+<h2 class="practical">Practical Application</h2>
+
+<p><a href="#" class="backtop">Back to the Top</a></p>
+
+<p>These tutorials cover real world scenarios to give you practical applications to how to use some of Nova's advanced features for your own sim. Step-by-step, we'll go through replacing view files, overriding controllers and on until you can comfortably modify Nova through seamless substitution.</p>
+
+<ul>
+	<li><?php echo anchor('nova/tutorials/practical/replacingview', 'Replacing View Files');?></li>
 </ul>
 
 <h2 class="skinning">Skinning</h2>

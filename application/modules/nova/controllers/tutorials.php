@@ -277,6 +277,24 @@ class Tutorials extends Controller {
 		CI::Library('template')->render();
 	}
 	
+	public function practical()
+	{
+		switch ($this->uri->segment(4))
+		{
+			case 'replacingview':
+				$data['header'] = 'Replacing View Files';
+				$view = $this->viewpath .'prac_replacing_views';
+			break;
+		}
+		
+		$data['sub'] = NULL;
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
+	
 	public function skins()
 	{
 		switch ($this->uri->segment(4))
