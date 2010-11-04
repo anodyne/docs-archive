@@ -26,11 +26,9 @@
 
 <ul class="changelog">
 	<li class="folder">application/assets/install</li>
+	<li class="folder">application/assets/js</li>
 	<li class="folder">application/assets/update</li>
 	<li class="script">application/assets/images/exclamation-red.png</li>
-	<li class="script">application/assets/js/jquery.js</li>
-	<li class="script">application/assets/js/jquery.ui.draggable.min.js</li>
-	<li class="script">application/assets/js/jquery.ui.droppable.min.js</li>
 	<li class="script">application/config/constants.php</li>
 	<li class="script">application/config/hooks.php</li>
 	<li class="script">application/controllers/base/admin_base.php</li>
@@ -56,6 +54,7 @@
 	<li class="script">application/views/_base/admin/js/site_bans_js.php</li>
 	<li class="script">application/views/_base/admin/js/site_manifests_js.php</li>
 	<li class="script">application/views/_base/admin/images/arrow-circle-double-135.png</li>
+	<li class="script">application/views/_base/admin/images/icon-duplicate.png</li>
 	<li class="script">application/views/_base/admin/images/property-import.png</li>
 	<li class="script">application/views/_base/admin/pages/manage_depts.php</li>
 	<li class="script">application/views/_base/admin/pages/report_applications.php</li>
