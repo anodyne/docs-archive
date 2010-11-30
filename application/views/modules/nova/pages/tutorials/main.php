@@ -2,11 +2,18 @@
 
 <p>The tutorials section is broken up into a series of different tutorials about different subjects. The material presented here will be updated with new tutorials as time allows and as new material is needed. Requests for tutorials should be submitted on the <a href="http://forums.anodyne-productions.com" target="_blank">Anodyne forums</a>.</p>
 
+<h3>Before You Begin</h3>
+
+<p>Some of the tutorials include a lot of terms that may not be familiar to most people. Before starting in on tutorials, we recommend that you read through our exhaustive <?php echo anchor('nova/tutorials/intro/terms', 'glossary of terms');?>. Once you've gone through the glossary, you'll be able to understand the tutorials much easier.</p>
+
+<h3>Topics</h3>
+
 <ul>
 	<li><a href="#" class="shortcut" myID="config">Configuring CodeIgniter &amp; Nova</a></li>
 	<li><a href="#" class="shortcut" myID="intro">Getting Started with Nova</a></li>
-	<li><a href="#" class="shortcut" myID="extending">Extending Nova</a></li>
+	<li><a href="#" class="shortcut" myID="ref">Reference</a></li>
 	<li><a href="#" class="shortcut" myID="practical">Practical Application Tutorials</a></li>
+	<li><a href="#" class="shortcut" myID="extending">Extending Nova</a></li>
 	<li><a href="#" class="shortcut" myID="skinning">Skinning</a></li>
 	<li><a href="#" class="shortcut" myID="models">Models</a></li>
 	<li><a href="#" class="shortcut" myID="advanced">Advanced Tutorials</a></li>
@@ -37,6 +44,29 @@
 	<li><?php echo anchor('nova/tutorials/intro/backup', 'Backup Guide');?></li>
 </ul>
 
+<h2 class="ref">Reference</h2>
+
+<p><a href="#" class="backtop">Back to the Top</a></p>
+
+<p>This series of tutorials acts like a glossary of sorts for Nova. Definitions of some of the major items in Nova can be found here along with code examples of the different items. If you don't know what a term means, this is the place to go to find out what it means.</p>
+
+<ul>
+	<li><?php echo anchor('nova/tutorials/reference/controllers', 'Controllers');?></li>
+	<li><?php echo anchor('nova/tutorials/reference/libraries', 'Libraries');?></li>
+	<li><?php echo anchor('nova/tutorials/reference/views', 'Views');?></li>
+</ul>
+
+<h2 class="practical">Practical Application</h2>
+
+<p><a href="#" class="backtop">Back to the Top</a></p>
+
+<p>These tutorials cover real world scenarios to give you practical applications to how to use some of Nova's advanced features for your own sim. Step-by-step, we'll go through replacing view files, overriding controllers and on until you can comfortably modify Nova through seamless substitution.</p>
+
+<ul>
+	<li><?php echo anchor('nova/tutorials/practical/replacingview', 'Replacing View Files');?></li>
+	<li><?php echo anchor('nova/tutorials/practical/replacingpage', 'Replacing a Page');?></li>
+</ul>
+
 <h2 class="extending">Extending Nova</h2>
 
 <p><a href="#" class="backtop">Back to the Top</a></p>
@@ -51,16 +81,6 @@
 	<li><?php echo anchor('nova/tutorials/extending/5', 'Controller, Meet View');?><br /><br /></li>
 	<li><?php echo anchor('nova/tutorials/extending/6', 'Extending Nova: Replacing Pages');?></li>
 	<li><?php echo anchor('nova/tutorials/extending/7', 'Extending Nova: Replacing Models');?></li>
-</ul>
-
-<h2 class="practical">Practical Application</h2>
-
-<p><a href="#" class="backtop">Back to the Top</a></p>
-
-<p>These tutorials cover real world scenarios to give you practical applications to how to use some of Nova's advanced features for your own sim. Step-by-step, we'll go through replacing view files, overriding controllers and on until you can comfortably modify Nova through seamless substitution.</p>
-
-<ul>
-	<li><?php echo anchor('nova/tutorials/practical/replacingview', 'Replacing View Files');?></li>
 </ul>
 
 <h2 class="skinning">Skinning</h2>

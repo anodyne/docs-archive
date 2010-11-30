@@ -6,14 +6,14 @@ class Tutorials extends Controller {
 	private $viewpath;
 	private $imagepath;
 	
-	function __construct()
+	public function __construct()
 	{
-		parent::Controller();
+		parent::__construct();
 		
 		// set the variables
 		$this->title		= ' :: Nova User Guide';
 		$this->viewpath		= 'modules/nova/pages/tutorials/';
-		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/nova/images/';
+		$this->imagepath 	= base_url().APPFOLDER.'/views/modules/nova/images/';
 	}
 	
 	public function index()
@@ -224,6 +224,12 @@ class Tutorials extends Controller {
 				
 				break;
 				
+			case 'terms':
+				$data['header'] = 'Glossary of Terms';
+				$view = $this->viewpath .'intro_terms';
+				
+				break;
+				
 			case 'urls':
 				$data['header'] = 'Nova URLs';
 				$view = $this->viewpath .'intro_urls';
@@ -281,9 +287,42 @@ class Tutorials extends Controller {
 	{
 		switch ($this->uri->segment(4))
 		{
+			case 'replacingpage':
+				$data['header'] = 'Replacing a Page';
+				$view = $this->viewpath .'prac_replacing_page';
+			break;
+			
 			case 'replacingview':
 				$data['header'] = 'Replacing View Files';
 				$view = $this->viewpath .'prac_replacing_views';
+			break;
+		}
+		
+		$data['sub'] = NULL;
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
+	
+	public function reference()
+	{
+		switch ($this->uri->segment(4))
+		{
+			case 'controllers':
+				$data['header'] = 'Controllers';
+				$view = $this->viewpath .'ref_controllers';
+			break;
+			
+			case 'libraries':
+				$data['header'] = 'Libraries';
+				$view = $this->viewpath .'ref_libraries';
+			break;
+			
+			case 'views':
+				$data['header'] = 'Views';
+				$view = $this->viewpath .'ref_views';
 			break;
 		}
 		
