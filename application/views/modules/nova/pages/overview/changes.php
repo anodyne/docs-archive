@@ -28,6 +28,7 @@
 	<li>Added the ability to turn system email off</li>
 	<li>Added the ability to upload character, award, mission and tour images through the system</li>
 	<li>Added a maintenance mode for admins to use when updating or doing work on the system</li>
+	<li>Added a site ban control that allows admins to ban a user from applying or even viewing the site</li>
 	<li>Moved over to buttons instead of image buttons for better accessibility</li>
 	<li>Moved to a role-based system of user access control</li>
 	<li>Removed personalized menu and added a user panel with a user's links, characters and important information</li>
@@ -104,6 +105,7 @@
 	<li>Added the ability to have multiple playing characters</li>
 	<li>Added player bio that contains all information about a given player (only available to logged in users)</li>
 	<li>Added a View Awards page that lists all awards a character has been given</li>
+	<li>Added multiple manifest capabilities</li>
 	<li>Who nominated the character for an award is now stored and displayed</li>
 	<li>Character bios now only display the last 5 awards given</li>
 	<li>Chain of command can now include NPCs</li>
@@ -120,6 +122,9 @@
 	<li>Added a page to view the details of an award, including how many times it's been given and who's received that award</li>
 	<li>Added pagination to pages that list personal logs and mission posts</li>
 	<li>Added mission groups for grouping missions together into arcs, seasons, by topic or any other criteria</li>
+	<li>Added the ability to have multiple specification items</li>
+	<li>Added the ability to associate tour items with specification items</li>
+	<li>Added the ability to associate a deck listing with specification items</li>
 	<li>Moved mission summaries into the mission information page</li>
 	<li>Changed list logs and list posts page to pull all items, not just the last 25</li>
 	<li>Deck listing allows changing the order and names of decks</li>
