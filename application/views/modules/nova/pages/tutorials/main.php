@@ -64,7 +64,7 @@
 
 <ul>
 	<li><?php echo anchor('nova/tutorials/practical/replacingview', 'Replacing View Files');?></li>
-	<li><?php echo anchor('nova/tutorials/practical/replacingpage', 'Replacing a Page');?></li>
+	<li><?php echo anchor('nova/tutorials/practical/replacingpage', 'Replacing a Page');?>*</li>
 </ul>
 
 <h2 class="extending">Extending Nova</h2>
