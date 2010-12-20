@@ -62,9 +62,11 @@
 
 <p>These tutorials cover real world scenarios to give you practical applications to how to use some of Nova's advanced features for your own sim. Step-by-step, we'll go through replacing view files, overriding controllers and on until you can comfortably modify Nova through seamless substitution.</p>
 
+<p class="important"><strong>Note:</strong> It's our hope to greatly expand the set of practical application tutorials over the coming months. Make sure to check back for new tutorials. If you have suggestions for tutorials for this section, make sure to <a href="http://www.anodyne-productions.com/index.php/main/contact" target="_blank">drop us a line</a>.</p>
+
 <ul>
 	<li><?php echo anchor('nova/tutorials/practical/replacingview', 'Replacing View Files');?></li>
-	<li><?php echo anchor('nova/tutorials/practical/replacingpage', 'Replacing a Page');?>*</li>
+	<!--<li><?php echo anchor('nova/tutorials/practical/replacingpage', 'Replacing a Page');?>*</li>-->
 </ul>
 
 <h2 class="extending">Extending Nova</h2>

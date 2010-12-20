@@ -25,15 +25,15 @@
 
 <h2>Step 2: Update the CodeIgniter Core</h2>
 
-<!--<p>Replace these files and directories in your <samp>core</samp> folder with the new versions:</p>
+<p>Replace these files and directories in your <samp>core</samp> folder with the new versions:</p>
 	
 <p class="critical"><strong>Warning:</strong> Most Windows FTP clients have serious issues overwriting files on a server. To prevent issues, make sure you delete the file(s) you want to overwrite then upload the new version(s).</p>
 
 <ul class="changelog">
-	<li class="script"><input type="checkbox" /> <span>core/libraries/Upload.php</span></li>
-</ul>-->
+	<li class="script"><input type="checkbox" /> <span>core/libraries/Router.php</span></li>
+</ul>
 
-<p><em>There are no updates to the CodeIgniter core in Nova 1.2.</em></p>
+<!--<p><em>There are no updates to the CodeIgniter core in Nova 1.2.</em></p>-->
 
 <h2>Step 3: Update the Nova Core</h2>
 

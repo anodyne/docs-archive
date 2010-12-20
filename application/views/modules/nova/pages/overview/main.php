@@ -18,6 +18,7 @@
 				<li><?php echo anchor('nova/overview/upgrade', 'SMS Upgrade Guide');?></li>
 				<li><?php echo anchor('nova/overview/update', 'Updating Nova');?></li>
 				<li><?php echo anchor('nova/tutorials/intro/backup', 'Backup Guide');?></li>
+				<li><?php echo anchor('nova/overview/whatsnew', "What's New?");?></li>
 			</ul>
 		</div>
 		

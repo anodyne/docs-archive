@@ -261,6 +261,19 @@ class Overview extends Controller {
 		
 		CI::Library('template')->render();
 	}
+	
+	public function whatsnew()
+	{
+		$data['header'] = "What's New?";
+		$data['sub'] = NULL;
+		
+		$view = $this->viewpath .'overview/whatsnew';
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
 }
 
 /* End of file overview.php */

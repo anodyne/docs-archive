@@ -2,7 +2,7 @@
 
 <h2>Version 1.2</h2>
 
-<p><strong>Release Date:</strong> &ndash;</p>
+<p><strong>Release Date:</strong> &ndash; 20 December 2010</p>
 
 <ul>
 	<li><span class="fontMedium bold">General</span>
@@ -11,8 +11,12 @@
 			<li>Added a page that level 2 ban users are sent to when they try to view the site</li>
 			<li>Added the jQuery UI draggable plugin</li>
 			<li>Added the jQuery UI droppable plugin</li>
-			<li>Added seaQuest DSV to the available genres</li>
-			<li>Updated jQuery to version 1.4.3</li>
+			<li>Added the jQuery prettyPhoto plugin</li>
+			<li>Updated jQuery to version 1.4.4</li>
+			<li>Updated jQuery UI to version 1.8.7</li>
+			<li>Updated CodeIgniter to version 1.7.3</li>
+			<li>Updated jQuery markItUp! plugin to version 1.1.9</li>
+			<li>Removed the jQuery fancybox plugin</li>
 		</ul>
 	</li>
 	
@@ -57,10 +61,24 @@
 			<li>Added labels_manifests key to base_lang</li>
 			<li>Added misc_level1_only key to base_lang</li>
 			<li>Added labels_unassigned key to base_lang</li>
+			<li>Added labels_header to base_lang</li>
+			<li>Added labels_listings to base_lang</li>
+			<li>Added labels_refresh to base_lang</li>
+			<li>Updated email_content_private_message in email_lang</li>
+			<li>Added error_wcp_1 to error_lang</li>
 			<li>Added text_bans key to text_lang</li>
 			<li>Added text_ban_join key to text_lang</li>
 			<li>Added text_duplicate_dept to text_lang</li>
+			<li>Added text_manifest_delete_departments to text_lang</li>
+			<li>Added text_manifest to text_lang</li>
+			<li>Added text_manifest_assign to text_lang</li>
 			<li>Updated text_manage_depts in text_lang</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Libraries</span>
+		<ul>
+			<li>Updated the User Panel library to fix some errors thrown about counting characters posts and not being able to find the character</li>
 		</ul>
 	</li>
 	
@@ -111,6 +129,20 @@
 <ul>
 	<li>Fixed bug where users without an active character are displayed in the activity warning panel on the ACP</li>
 	<li>Fixed a potential bug where a method in the positions model could return nothing at all under certain circumstances</li>
+	<li>Fixed bug where the sample post in the join application email was just a massive wall of text</li>
+	<li>Fixed bug where specifications weren't properly upgraded during the SMS upgrade process</li>
+	<li>Fixed bug with a missing closing tag on the create characters page that created some display issues</li>
+	<li>Fixed bug where the timezone menu in site/settings pulled the wrong value to populate the field with</li>
+	<li>Fixed bug where the join page was pulling an image from the admin section</li>
+	<li>Fixed several spacing bugs in the admin section</li>
+	<li>Fixed several errors thrown throughout the system</li>
+	<li>Fixed bug where the flash message view couldn't be overwritten with seamless substitution</li>
+	<li>Fixed bug where post emails were sent out with the user's primary character name attached even if their primary character wasn't associated with the post</li>
+	<li>Fixed bug where the private message emails didn't have the content of the private message</li>
+	<li>Fixed errors thrown through the system related to not being able to count character posts</li>
+	<li>Fixed bug where personal logs didn't have the right date when they're saved first then posted</li>
+	<li>Fixed bug where pending users would appear in the dropdown of potential recipients for a private message</li>
+	<li>Fixed bug where changing a dynamic field form from text/textarea to dropdown wouldn't trigger the dropdown values section to open, rendering the field pretty much useless</li>
 </ul>
 
 <p class="bold fontMedium"><a href="#" class="show_versions" myID="11"><span class="action">Show</span> Nova 1.1.x Changelogs &raquo;</a></p>
