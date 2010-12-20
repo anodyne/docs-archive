@@ -30,6 +30,7 @@
 <p class="critical"><strong>Warning:</strong> Most Windows FTP clients have serious issues overwriting files on a server. To prevent issues, make sure you delete the file(s) you want to overwrite then upload the new version(s).</p>
 
 <ul class="changelog">
+	<li class="script"><input type="checkbox" /> <span>core/codeigniter/CodeIgniter.php</span></li>
 	<li class="script"><input type="checkbox" /> <span>core/libraries/Router.php</span></li>
 </ul>
 
