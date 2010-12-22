@@ -1,5 +1,38 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.2.1</h2>
+
+<p><strong>Release Date:</strong> &ndash; 23 December 2010</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.2.1 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Ajax controller to fix some errors being thrown</li>
+			<li>Updated the RSS feed controller to fix an error being thrown</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Fixed bug with positions disappearing when updating them (_base/admin/pages/manage_positions.php)</li>
+		</ul>
+	</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug with positions disappearing when updating them</li>
+	<li>Fixed errors thrown when trying to update character images when there aren't any images present</li>
+	<li>Fixed error thrown in the RSS feed</li>
+</ul>
+
 <h2>Version 1.2</h2>
 
 <p><strong>Release Date:</strong> &ndash; 20 December 2010</p>
