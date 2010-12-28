@@ -1,5 +1,37 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.2.2</h2>
+
+<p><strong>Release Date:</strong> &ndash; 30 December 2010</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.2.2 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Manage controller to allow sub departments to be managed</li>
+			<li>Updated the Write controller to fix a bug with how authors are displayed in the emails</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Fixed bug with managing sub departments (_base/admin/pages/manage_depts.php)</li>
+		</ul>
+	</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug where sub departments couldn't be managed from the department management page</li>
+	<li>Fixed bug where post authors weren't displayed properly in emails</li>
+</ul>
+
 <h2>Version 1.2.1</h2>
 
 <p><strong>Release Date:</strong> &ndash; 23 December 2010</p>
