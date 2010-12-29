@@ -44,6 +44,8 @@
 
 <p class="important"><strong>Note:</strong> To help you out when uploading files, we've included a checkbox to mark when you've deleted and uploaded a file to your server.</p>
 
+<p class="critical"><strong>Warning:</strong> Any admins who updated to Nova 1.2 prior to 29 December 2010 are affected by a bug where all access roles were granted system administrator access privileges. Due to the potentially highly dynamic nature of access roles, there is no automated fix for this. You will need to manually change your access roles back to level more appropriate to how you operate your sim. Questions about this should be directed to Anodyne through the forums or Anodyne's contact form. We apologize for this inconvenience.</p>
+
 <ul class="changelog">
 	<li class="folder"><input type="checkbox" /> <span>application/assets/install</span></li>
 	<li class="folder"><input type="checkbox" /> <span>application/assets/update</span></li>

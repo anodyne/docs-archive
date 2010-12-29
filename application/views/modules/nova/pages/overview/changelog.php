@@ -30,6 +30,7 @@
 <ul>
 	<li>Fixed bug where sub departments couldn't be managed from the department management page</li>
 	<li>Fixed bug where post authors weren't displayed properly in emails</li>
+	<li>Fixed bug in the 1.1.2 to 1.2 update file that would cause access issues</li>
 </ul>
 
 <h2>Version 1.2.1</h2>
