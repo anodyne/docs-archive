@@ -225,6 +225,18 @@ class Reports extends Controller {
 		
 		CI::Library('template')->render();
 	}
+	
+	public function soa11()
+	{
+		$data['header'] = 'State of Anodyne - 2011';
+		
+		$view = $this->viewpath .'reports/2011_soa';
+		
+		CI::Library('template')->write('title', $data['header']. $this->title);
+		CI::Library('template')->write_view('content', $view, $data);
+		
+		CI::Library('template')->render();
+	}
 }
 
 /* End of file reports.php */
