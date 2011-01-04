@@ -1,5 +1,35 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.2.3</h2>
+
+<p><strong>Release Date:</strong> &ndash; 04 January 2011</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.2.3 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Sim controller to fix bug with handling deck listings and multiple specification items</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Fixed bug with handling deck listings and multiple specification items (_base/main/pages/sim_decks.php)</li>
+		</ul>
+	</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug with handling deck listings and multiple specification items</li>
+</ul>
+
 <h2>Version 1.2.2</h2>
 
 <p><strong>Release Date:</strong> &ndash; 30 December 2010</p>
