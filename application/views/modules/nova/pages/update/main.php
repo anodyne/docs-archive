@@ -38,7 +38,7 @@
 
 <h3>Important Note</h3>
 
-<p class="critical">When uploading files to your server, there are some files you don't want to overwrite. Pay careful attention to the list below!</p>
+<p class="critical">When uploading files to your server, there are some files you <strong>do not</strong> want to overwrite. Pay careful attention to the list below!</p>
 
 <ul>
 	<li>application/assets/backups</li>
@@ -46,7 +46,7 @@
 	<li>application/assets/images (unless specified)</li>
 	<li>application/config/database.php</li>
 	<li>application/config/nova.php</li>
-	<li>application/controllers/base</li>
-	<li>application/models/base</li>
-	<li>application/views/_base</li>
+	<li>application/controllers (except the base directory, you want to overwrite that)</li>
+	<li>application/models (except the base directory, you want to overwrite that)</li>
+	<li>application/views (except the _base directory, you want to overwrite that)</li>
 </ul>
