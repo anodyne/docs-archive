@@ -51,6 +51,11 @@ class Tutorials extends Controller {
 				
 				break;
 				
+			case 'gitserver':
+				$data['header'] = 'Setting Up Git on Your Server for Updating';
+				$view = $this->viewpath .'adv_gitserver';
+			break;
+				
 			case 'helpers':
 				$data['header'] = 'Creating &amp; Modifying Helpers';
 				$view = $this->viewpath .'adv_helpers';
