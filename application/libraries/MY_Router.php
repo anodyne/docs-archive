@@ -1,241 +1,335 @@
-<?php (defined('BASEPATH')) OR exit('No direct script access allowed');
-
-/* PHP5 spl_autoload */
-spl_autoload_register('Modules::autoload');
-
-/* define the module locations and offset */
-Modules::$locations = array(
-	APPPATH.'modules/' => '../modules/',
-);
-
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * Modular Separation - PHP5
+ * Matchbox Router Class
+ * Copyright 2007, 2008, 2009 Zacharias Knudsen
+ * Documentation: http://codeigniter.com/wiki/Matchbox/
  *
- * Adapted from the CodeIgniter Core Classes
- * @copyright	Copyright (c) 2006, EllisLab, Inc.
- * @link		http://codeigniter.com
+ * This file is part of Matchbox.
  *
- * Description:
- * This library extends the CodeIgniter router class.
+ * Matchbox is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * Install this file as application/libraries/MY_Router.php
+ * Matchbox is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+ * License for more details.
  *
- * @copyright 	Copyright (c) Wiredesignz 2010-03-01
- * @version 	1.11
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- **/
- 
-class MY_Router extends CI_Router
-{
-	private $module;
-	
-	public function fetch_module() {
-		return $this->module;
-	}
-	
-	public function _validate_request($segments) {		
-		
-		/* locate module controller */
-		if ($located = $this->locate($segments)) return $located;
-		
-		/* use a default 404 controller */
-		if (isset($this->routes['404']) AND $segments = explode('/', $this->routes['404'])) {
-			if ($located = $this->locate($segments)) return $located;
-		}
-		
-		/* no controller found */
-		show_404();
-	}
-	
-	/** Locate the controller **/
-	public function locate($segments) {		
-		
-		$this->module = '';
-		$this->directory = '';
-		$ext = $this->config->item('controller_suffix').EXT;
-		
-		/* use module route if available */
-		if (isset($segments[0]) AND $routes = Modules::parse_routes($segments[0], implode('/', $segments))) {
-			$segments = $routes;
-		}
-	
-		/* get the segments array elements */
-		list($module, $directory, $controller) = array_pad($segments, 3, NULL);
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Matchbox.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-		foreach (Modules::$locations as $location => $offset) {
-		
-			/* module exists? */
-			if (is_dir($source = $location.$module.'/controllers/')) {
-				
-				$this->module = $module;
-				$this->directory = $offset.$module.'/controllers/';
-				
-				/* module sub-controller exists? */
-				if($directory AND is_file($source.$directory.$ext)) {
-					return array_slice($segments, 1);
-				}
-					
-				/* module sub-directory exists? */
-				if($directory AND is_dir($module_subdir = $source.$directory.'/')) {
-							
-					$this->directory .= $directory.'/';
+class MY_Router extends CI_Router {
 
-					/* module sub-directory controller exists? */
-					if(is_file($module_subdir.$directory.$ext)) {
-						return array_slice($segments, 1);
+	// {{{ Matchbox
+
+	var $_mb_module  = FALSE;
+	var $module      = FALSE;
+
+	function MY_Router()
+	{
+		$this->_mb_init();
+		parent::CI_Router();
+		log_message('debug', "Matchbox: Router Class Hooked");
+	}
+
+	function _mb_init()
+	{
+		// Set default values
+		$callers = array(
+			APPPATH.'libraries/Loader',
+			APPPATH.'libraries/MY_Config',
+			APPPATH.'libraries/MY_Language',
+			BASEPATH.'libraries/Parser',
+		);
+		$paths = array(
+			APPPATH.'modules',
+		);
+		$strict = FALSE;
+
+		// Load configuration file and merge with default data
+		$file = APPPATH.'config/matchbox'.EXT;
+		if (file_exists($file))
+		{
+			include($file);
+			if (isset($config) && is_array($config))
+			{
+				if (isset($config['callers']))
+				{
+					if ( ! is_array($config['callers']))
+					{
+						$config['callers'] = array($config['callers']);
 					}
-				
-					/* module sub-directory sub-controller exists? */
-					if($controller AND is_file($module_subdir.$controller.$ext))	{
-						return array_slice($segments, 2);
-					}
+					$callers = array_merge($callers, $config['callers']);
 				}
-			
-				/* module controller exists? */			
-				if(is_file($source.$module.$ext)) {
-					return $segments;
+				if (isset($config['paths']))
+				{
+					if ( ! is_array($config['paths']))
+					{
+						$config['paths'] = array($config['paths']);
+					}
+					$paths = $config['paths'];
+				}
+				if (isset($config['strict']))
+				{
+					$strict = $config['strict'];
 				}
 			}
 		}
-		
-		/* application controller exists? */			
-		if(is_file(APPPATH.'controllers/'.$module.$ext)) {
+
+		// Prepare data
+		foreach($callers as $key => $caller)
+		{
+			$callers[$key] = str_replace('\\', '/', realpath(str_replace(EXT, '', $caller).EXT));
+		}
+		foreach($paths as $key => $path)
+		{
+			$paths[$key] = str_replace('\\', '/', realpath($path)).'/';
+		}
+
+		// Assign data
+		$this->_mb_callers = $callers;
+		$this->_mb_paths   = $paths;
+		$this->_mb_strict  = $strict;
+	}
+
+	function _mb_module($module)
+	{
+		foreach ($this->_mb_paths as $path) {
+			if (is_dir($path.$module))
+			{
+				$this->_mb_module = $path.$module.'/';
+				$this->module     = $module;
+			}
+		}
+
+		if ($this->_mb_module === FALSE)
+		{
+			return FALSE;
+		}
+
+		// Fetch and ready module routing data
+		@include($this->_mb_module.'config/routes'.EXT);
+		if (isset($route) && is_array($route)) {
+			$this->routes = array_merge($this->routes, $route);
+		}
+		unset($route);
+
+		// Default controller
+		if (isset($this->routes['default_controller']) && $this->routes['default_controller'] !== '')
+		{
+			$this->_mb_default_controller = strtolower($this->routes['default_controller']);
+		} else {
+			$this->_mb_default_controller = FALSE;
+		}
+
+		return TRUE;
+	}
+
+	function _validate_request($segments)
+	{
+		// Regular non-modular requests are handled by stock CI code
+		if ($this->_mb_module === FALSE)
+		{
+			return parent::_validate_request($segments);
+		}
+
+		// Now we need to find the relative path to the module
+		$path  = '../';
+		$path1 = explode('/', trim(str_replace("\\", "/", realpath(APPPATH)), '/'));
+		$path2 = explode('/', trim($this->_mb_module.'controllers', '/'));
+		$size1 = count($path1);
+		$size2 = count($path2);
+		$diff  = $size1 - $size2;
+		for($i = 0; $i < min($size1, $size2); $i++)
+		{
+			if ($path1[$i] !== $path2[$i])
+			{
+				$path = '../'.$path.$path2[$i].'/';
+			}
+		}
+		$path = ($diff > 0 ? str_repeat('../', $diff) : '').$path.implode('/', array_slice($path2, $size1));
+		$this->set_directory($path);
+
+		$directory = $this->_mb_module.'controllers/';
+
+		// Does the controller exist in module controller root?
+		if (file_exists($directory.$segments[0].EXT))
+		{
 			return $segments;
 		}
-		
-		/* application sub-directory controller exists? */
-		if(is_file(APPPATH.'controllers/'.$module.'/'.$directory.$ext)) {
-			$this->directory = $module.'/';
-			return array_slice($segments, 1);
+
+		// At this point, the controller can only be in a sub-directory
+		if ( ! is_dir($directory.$segments[0]))
+		{
+			show_404($directory.$segments[0]);
 		}
-	}
-	
-	public function set_class($class) {
-		$this->class = $class.$this->config->item('controller_suffix');
-	}
-}
 
-class Modules 
-{
-	public static $routes, $locations;
-	
-	/** Library base class autoload **/
-	public static function autoload($class) {
-		
-		/* don't autoload CI_ or MY_ prefixed classes */
-		if (strstr($class, 'CI_') OR strstr($class, 'MY_')) return;
-			
-		if(is_file($location = APPPATH.'libraries/'.$class.EXT)) {
-			include_once $location;
-		}		
-	}
+		$this->set_directory($this->fetch_directory().$segments[0]);
+		$directory .= $segments[0].'/';
+		$segments  = array_slice($segments, 1);
 
-	/** Load a module file **/
-	public static function load_file($file, $path, $type = 'other', $result = TRUE)	{
-		$file = str_replace(EXT, '', $file);		
-		$location = $path.$file.EXT;
-		
-		if ($type === 'other') {		
-			
-			if (class_exists($file, FALSE))	{
-				log_message('debug', "File already loaded: {$location}");				
-				return $result;
-			}
-			
-			include_once $location;
-		} else { 
-		
-			/* load config or language array */
-			include $location;
-
-			if ( ! isset($$type) OR ! is_array($$type))				
-				show_error("{$location} does not contain a valid {$type} array");
-
-			$result = $$type;
-		}
-		log_message('debug', "File loaded: {$location}");
-		return $result;
-	}
-
-	/** 
-	* Find a file
-	* Scans for files located within modules directories.
-	* Also scans application directories for models and views.
-	* Generates fatal error if file not found.
-	**/
-	public static function find($file, $module, $base, $lang = '') {
-
-		$segments = explode('/', $file);
-
-		$file = array_pop($segments);
-		if ($base == 'libraries/') $file = ucfirst($file);
-		$file_ext = strpos($file, '.') ? $file : $file.EXT;
-		
-		$lang && $lang .= '/';
-		$path = ltrim(implode('/', $segments).'/', '/');
-		$module ? $modules[$module] = $path : $modules = array();
-
-		if ( ! empty($segments)) {
-			$modules[array_shift($segments)] = ltrim(implode('/', $segments).'/','/');
-		}	
-	
-		foreach (Modules::$locations as $location => $offset) {
-					
-			foreach($modules as $module => $subpath) {
-				$fullpath = $location.$module.'/'.$base.$lang.$subpath;
-				if (is_file($fullpath.$file_ext)) return array($fullpath, $file);
+		if (count($segments) > 0)
+		{
+			if ( ! file_exists($directory.$segments[0].EXT))
+			{
+				show_404($directory.$segments[0]);
 			}
 		}
-		
-		/* is the file in an application directory? */
-		if ($base == 'views/' OR $base == 'models/') {
-			if (is_file(APPPATH.$base.$path.$file_ext)) return array(APPPATH.$base.$path, $file);
-			show_error("Unable to locate the file: {$path}{$file_ext}");
+		else
+		{
+			$this->set_class($this->_mb_default_controller);
+			$this->set_method('index');
+
+			if ( ! file_exists($directory.$this->_mb_default_controller.EXT))
+			{
+				$this->directory2 = '';
+				return array();
+			}
 		}
 
-		return array(FALSE, $file);	
+		return $segments;
 	}
-	
-	/** Parse module routes **/
-	public static function parse_routes($module, $uri) {
-		
-		/* load the route file */
-		if ( ! isset(self::$routes[$module])) {
-			if (list($path) = self::find('routes', $module, 'config/') AND $path)
-				self::$routes[$module] = self::load_file('routes', $path, 'route');
+
+	// }}}
+
+	function _set_routing()
+	{
+		// Are query strings enabled in the config file?
+		// If so, we're done since segment based URIs are not used with query strings.
+		if ($this->config->item('enable_query_strings') === TRUE AND isset($_GET[$this->config->item('controller_trigger')]))
+		{
+			$this->set_class(trim($this->uri->_filter_uri($_GET[$this->config->item('controller_trigger')])));
+
+			if (isset($_GET[$this->config->item('function_trigger')]))
+			{
+				$this->set_method(trim($this->uri->_filter_uri($_GET[$this->config->item('function_trigger')])));
+			}
+
+			return;
 		}
 
-		if ( ! isset(self::$routes[$module])) return;
-			
-		/* parse module routes */
-		foreach (self::$routes[$module] as $key => $val) {						
-					
-			$key = str_replace(':any', '.+', str_replace(':num', '[0-9]+', $key));
-			
-			if (preg_match('#^'.$key.'$#', $uri)) {							
-				if (strpos($val, '$') !== FALSE AND strpos($key, '(') !== FALSE) {
-					$val = preg_replace('#^'.$key.'$#', $val, $uri);
+		// Load the routes.php file.
+		@include(APPPATH.'config/routes'.EXT);
+		$this->routes = ( ! isset($route) OR ! is_array($route)) ? array() : $route;
+		unset($route);
+
+		// Set the default controller so we can display it in the event
+		// the URI doesn't correlated to a valid controller.
+		$this->default_controller = ( ! isset($this->routes['default_controller']) OR $this->routes['default_controller'] == '') ? FALSE : strtolower($this->routes['default_controller']);	
+
+		// Fetch the complete URI string
+		$this->uri->_fetch_uri_string();
+
+		// Is there a URI string? If not, the default controller specified in the "routes" file will be shown.
+		if ($this->uri->uri_string == '')
+		{
+			if ($this->default_controller === FALSE)
+			{
+				show_error("Unable to determine what should be displayed. A default route has not been specified in the routing file.");
+			}
+
+			// {{{ Matchbox
+
+			if (strpos($this->default_controller, '/') !== FALSE)
+			{
+				$x = explode('/', $this->default_controller);
+
+				if ($this->_mb_module($x[0]))
+				{
+					$x = array_slice($x, 1);
 				}
 
-				return explode('/', $module.'/'.$val);
+				$this->set_class(end($x));
+				$this->set_method('index');
+				$this->_set_request($x);
+			}
+			else
+			{
+				$this->set_class($this->default_controller);
+				$x = array($this->default_controller, 'index');
+
+				if ($this->_mb_module($this->default_controller))
+				{
+					$x = explode('/', $this->_mb_default_controller);
+					$this->set_class(end($x));
+				}
+
+				$this->set_method('index');
+				$this->_set_request($x);
+			}
+
+			// }}}
+
+			// re-index the routed segments array so it starts with 1 rather than 0
+			$this->uri->_reindex_segments();
+
+			log_message('debug', "No URI present. Default controller set.");
+			return;
+		}
+		unset($this->routes['default_controller']);
+
+		// Do we need to remove the URL suffix?
+		$this->uri->_remove_url_suffix();
+
+		// Compile the segments into an array
+		$this->uri->_explode_segments();
+
+		// {{{ Matchbox
+
+		$segments = $this->uri->segments;
+		$module   = $segments[0].'/';
+
+		if ($this->_mb_module($segments[0]))
+		{
+			$this->uri->segments  = array_slice($this->uri->segments, 1);
+
+			if (count($segments) < 2)
+			{
+
+				if ($this->_mb_default_controller === FALSE)
+				{
+					if ($this->_mb_strict === TRUE)
+					{
+						show_error("Matchbox: Unable to determine what should be displayed. A default module route has not been specified in the module's routing file.");
+					}
+
+					$this->_mb_default_controller = $this->module;
+				}
+
+				if (strpos($this->_mb_default_controller, '/') !== FALSE)
+				{
+					$x = explode('/', $this->_mb_default_controller);
+
+					$this->set_class(end($x));
+					$this->set_method('index');
+					$this->_set_request($x);
+				}
+				else
+				{
+					$this->set_class($this->_mb_default_controller);
+					$this->set_method('index');
+					$this->_set_request(array($this->_mb_default_controller, 'index'));
+				}
+
+				$this->uri->_reindex_segments();
+
+				log_message('debug', "Matchbox: Only module present in URI. Default module controller set.");
+				return;
 			}
 		}
+
+		// }}}
+
+		// Parse any custom routing that may exist
+		$this->_parse_routes();		
+
+		// Re-index the segment array so that it starts with 1 rather than 0
+		$this->uri->_reindex_segments();
 	}
+
 }
+
+/* End of file MY_Router.php */
+/* Location: ./system/application/libraries/MY_Router.php */

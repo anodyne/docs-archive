@@ -1,46 +1,39 @@
 <?php
 
 class Main extends Controller {
-
-	public $title;
-	private $viewpath;
-	private $imagepath;
 	
-	function __construct()
+	protected $_template_pieces = array();
+	
+	public function __construct()
 	{
 		parent::Controller();
 		
-		// set the variables
-		$this->title		= ' :: AnodyneDocs';
-		$this->viewpath		= 'modules/main/pages/';
-		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/main/images/';
-		
-		// set the template
-		CI::Library('template')->set_template('main');
-		
 		// set the template file
-		CI::Library('template')->set_master_template('template');
+		Template::$file = 'template';
+		
+		// assign all of the items to the template with false values to prevent errors
+		$this->_template_pieces += array(
+			'content'		=> false,
+			'javascript'	=> false,
+			'ajax'			=> false,
+			'flash_message'	=> false,
+			'title'			=> false,
+		);
 	}
 	
 	public function index()
 	{
 		$data['header'] = 'Index';
 		
-		$data['images'] = array(
-			'nova' => array(
-				'src' => $this->imagepath .'nova.png',
-				'alt' => 'Nova'),
-			'sms' => array(
-				'src' => $this->imagepath .'sms.png',
-				'alt' => 'Nova'),
-		);
+		// assign the info the pieces array
+		$this->_template_pieces['content'] = $this->load->view('pages/main_index', $data, true);
+		$this->_template_pieces['title'] = $data['header'];
 		
-		$view = $this->viewpath .'main';
+		// assign the data to the template
+		Template::assign($this->_template_pieces);
 		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		// render the template
+		Template::render();
 	}
 	
 	public function credits()
@@ -55,6 +48,3 @@ class Main extends Controller {
 		CI::Library('template')->render();
 	}
 }
-
-/* End of file main.php */
-/* Location: ./application/modules/main/controllers/main.php */
