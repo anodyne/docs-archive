@@ -1,5 +1,43 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.2.4</h2>
+
+<p><strong>Release Date:</strong> &ndash; 25 January 2011</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.2.4 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the Characters controller to fix a bug with the character acceptance email</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Models</span>
+		<ul>
+			<li>Updated the Posts model to fix a bug where mission posts weren't accurately counted in some situations</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Fixed bug in IE7 with the manifest not loading (_base/main/js/personnel_index_js.php)</li>
+		</ul>
+	</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug with the character acceptance emails</li>
+	<li>Fixed bug in IE7 where the manifest wouldn't load</li>
+	<li>Fixed bug where mission posts weren't counted properly in some situations</li>
+</ul>
+
 <h2>Version 1.2.3</h2>
 
 <p><strong>Release Date:</strong> &ndash; 04 January 2011</p>
