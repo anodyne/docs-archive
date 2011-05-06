@@ -1,5 +1,0 @@
-<h1><?php echo $header;?></h1>
-
-<p>Because Nova hashes all its passwords and they can&rsquo;t be retrieved, we have developed a simple reset password feature. After being accepted to a sim, you can set a security question and answer and use those to identify yourself and have your new password sent to your email address. For security reasons, the security question answer is hashed just like passwords, so a user will need to remember their answer exactly as they put it in. Answers are case-sensitive.</p>
-
-<p>The first time you login with your new password, you will be prompted immediately to change your password to something you can remember. If you chose not to reset your password, you will be prompted to change it every time you login. Once you&rsquo;ve changed it from the modal dialog box, you won&rsquo;t be prompted again.</p>
