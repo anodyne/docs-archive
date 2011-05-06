@@ -200,6 +200,41 @@ p { text-shadow: 0 1px 0 rgba(255, 255, 255, .75); }
 .options-skinning div { background-image: url(images/skinning.png); }
 .options-code div { background-image: url(images/code.png); }
 
+.options-noicons {
+	margin: 1em 0;
+	padding: .5em;
+	display: block;
+	
+	color: #888 !important;
+	text-decoration: none;
+	border: 1px solid transparent !important;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.options-noicons span {
+	padding: 0 0 0 20px;
+	
+	background: transparent url(images/arrow-000-medium.png) no-repeat center left;
+	font-size: 1.9em;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+}
+.options-noicons em {
+	margin: 0 0 0 21px;
+	display: block;
+	
+	font-size: .95em;
+	font-style: normal;
+}
+.options-noicons:hover {
+	color: #466b8c !important;
+	border: 1px solid #2ebbf3 !important;
+	background: #c1dcf1 url(images/options-bg.png) repeat-x top left;
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .6);
+	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .6);
+}
+
 pre {
 	margin: 0 0 10px 0;
 	padding: .5em;
