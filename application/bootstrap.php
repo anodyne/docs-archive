@@ -122,8 +122,22 @@ Route::set('nova2', 'nova2(/<controller>(/<action>(/<id>)))')
 		'action' => 'index'
 	));
 	
+Route::set('nova1', 'nova1(/<controller>(/<action>(/<id>)))')
+	->defaults(array( 
+		'directory' => 'nova1', 
+		'controller' => 'overview', 
+		'action' => 'index'
+	));
+	
+Route::set('sms', 'sms(/<controller>(/<action>(/<id>)))')
+	->defaults(array( 
+		'directory' => 'sms', 
+		'controller' => 'overview', 
+		'action' => 'index'
+	));
+	
  Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
-		'controller' => 'welcome',
+		'controller' => 'main',
 		'action'     => 'index',
 	));

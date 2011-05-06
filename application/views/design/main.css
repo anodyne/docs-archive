@@ -23,52 +23,52 @@ header {
 }
 header .logo {
 	float: left;
-	margin: 40px 0 0 0;
-	height: 52px;
-	width: 251px;
+	margin: 34px 0 0 0;
+	height: 58px;
+	width: 396px;
 	
-	background: transparent url(images/sprite.png) no-repeat 0 -187px;
+	background: transparent url(images/sprite.png) no-repeat 0 -24px;
 }
 
 nav {
 	float: right;
 	margin: 56px 0 0 0;
 }
-nav ul { list-style: none; }
+nav ul {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
 nav ul li {
 	float: left;
-	margin: 0 20px 0 0;
+	margin: 0 20px 0 0 !important;
+	padding: 0 !important;
 }
 nav ul li:last-child { margin: 0; }
 nav ul li a {
 	display: inline-block;
-	height: 19px;
+	height: 26px;
 }
-#nav-aboutus {
-	width: 112px;
-	background: transparent url(images/sprite.png) no-repeat 0 -511px;
+#nav-home {
+	width: 60px;
+	background: transparent url(images/sprite.png) no-repeat 0 -90px;
 }
-#nav-aboutus:hover { background-position: 0 -539px; }
-#nav-products {
-	width: 112px;
-	background: transparent url(images/sprite.png) no-repeat 0 -566px;
+#nav-home:hover { background-position: 0 -122px; }
+#nav-nova1 {
+	width: 85px;
+	background: transparent url(images/sprite.png) no-repeat 0 -150px;
 }
-#nav-products:hover { background-position: 0 -593px; }
-#nav-news {
-	width: 72px;
-	background: transparent url(images/sprite.png) no-repeat 0 -620px;
+#nav-nova1:hover { background-position: 0 -183px; }
+#nav-nova2 {
+	width: 85px;
+	background: transparent url(images/sprite.png) no-repeat 0 -210px;
 }
-#nav-news:hover { background-position: 0 -647px; }
-#nav-support {
-	width: 102px;
-	background: transparent url(images/sprite.png) no-repeat 0 -674px;
+#nav-nova2:hover { background-position: 0 -242px; }
+#nav-sms {
+	width: 55px;
+	background: transparent url(images/sprite.png) no-repeat 0 -270px;
 }
-#nav-support:hover { background-position: 0 -701px; }
-#nav-contact {
-	width: 105px;
-	background: transparent url(images/sprite.png) no-repeat 0 -729px;
-}
-#nav-contact:hover { background-position: 0 -756px; }
+#nav-sms:hover { background-position: 0 -303px; }
 
 #content {
 	position: relative;
@@ -85,13 +85,13 @@ nav ul li a {
 	border-bottom: 1px solid #d5d5d5;
 }
 #content h2 {
-	margin: 0 0 10px 0;
+	margin: 10px 0;
 	color: #666;
 	font-size: 1.5em;
 	border: none;
 }
 #content h3 {
-	margin: 0 0 10px 0;
+	margin: 10px 0;
 	color: #888;
 	font-size: 1.2em;
 	border: none;
@@ -106,43 +106,24 @@ nav ul li a {
  */
 footer {
 	height: 50px;
-	
 	background: #577f98;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", helvetica, arial, sans-serif;
 }
-.footer-followus { width: 148px; }
-.footer-followicon {
-	width: 36px;
-	vertical-align: middle;
-	text-align: center;
-}
+.footer-anodyne { width: 275px; }
 .footer-copyright {
-	width: 711px;
+	width: 675px;
 	vertical-align: middle;
 	text-align: right;
-	color: #afb3bc;
+	color: #fff;
 	font-size: 90%;
 }
-.followus {
+.anodyne {
+	display: block;
 	margin: 16px 0 0 0;
 	height: 19px;
-	width: 148px;
-	
+	width: 275px;
 	background: transparent url(images/sprite.png) no-repeat 0 0;
 }
-.followicons {
-	display: block;
-	height: 26px;
-	width: 26px;
-	
-	text-decoration: none;
-}
-#follow-tumblr { background: transparent url(images/sprite.png) no-repeat 0 -22px; }
-#follow-tumblr:hover { background-position: 0 -49px; }
-#follow-twitter { background: transparent url(images/sprite.png) no-repeat 0 -76px; }
-#follow-twitter:hover { background-position: 0 -103px; }
-#follow-facebook { background: transparent url(images/sprite.png) no-repeat 0 -131px; }
-#follow-facebook:hover { background-position: 0 -157px; }
 
 /**
  * Miscellaneous styles for everything else
@@ -158,18 +139,8 @@ footer {
 a { color: #076cb0; }
 a:hover { color: #0d306f; }
 
-a.backtop-right, a.backtop-left {
-	height: 16px;
-	width: 16px;
-	
-	text-decoration: none;
-	background: transparent url(images/sprite.png) no-repeat 0 -787px;
-}
-a.backtop-right:hover, a.backtop-left:hover { background-position: 0 -814px; }
-a.backtop-right { float: right; }
-a.backtop-left { float: left; }
 a#tipsy, a#tipsy:hover {
-	color: #afb3bc;
+	color: #fff;
 	text-decoration: none;
 	border-bottom: 1px dotted;
 	cursor: help;
@@ -240,4 +211,15 @@ pre {
 	
 	border-radius: 3px;
 	-moz-border-radius: 3px;
+}
+
+strong { font-weight: bold; }
+
+ul {
+	margin: 10px;
+	padding: 10px;
+	list-style: square;
+}
+ul li {
+	margin: 3px 10px;
 }

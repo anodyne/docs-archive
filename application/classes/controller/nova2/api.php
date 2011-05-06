@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Nova2_Everything extends Controller_Template {
+class Controller_Nova2_Api extends Controller_Template {
 	
 	public function before()
 	{
@@ -19,8 +19,8 @@ class Controller_Nova2_Everything extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/everything/main');
+		$this->template->content = View::factory('components/pages/nova2/developers/api');
 		
-		$this->template->title.= 'Main';
+		$this->template->title.= 'API';
 	}
 }
