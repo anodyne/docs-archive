@@ -2,7 +2,7 @@
 
 <p>To access the documentation, use the links below.</p>
 
-<a href="<?php echo Url::site('nova2/start/index');?>" class="options-noicons">
+<a href="<?php echo Url::site('nova2/overview/index');?>" class="options-noicons">
 	<span>Nova 2</span>
 	<em>Nova 2 is the continued evolution of Anodyne's new flagship product. Utilizing a brand new, PHP 5 only system core, Nova 2 brings a new level of advancement "under the hood" and wide variety of tweaks to the system to make signficant improvements to Nova 1. This exhaustive user guide is your one-stop-shop to all things Nova 2. <strong>Note:</strong> Nova 2 is still under heavy development and constantly changing, so all material in this section should be considered beta and subject to change before Nova 2's final release.</em>
 </a>
