@@ -10,6 +10,12 @@
 		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.js"></script>
 		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.tipsy.js"></script>
 		
+		<!--[if !IE 7]>
+		<style type="text/css">
+			#container { display:table; height:100%; }
+		</style>
+		<![endif]-->
+		
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -27,29 +33,31 @@
 		</script>
 	</head>
 	<body>
-		<a name="top" class="top"></a>
-		<header>
-			<div class="wrapper">
-				<div class="logo"></div>
-				<nav>
-					<ul>
-						<li><a href="<?php echo Url::site();?>" id="nav-home"></a></li>
-						<li><a href="<?php echo Url::site('nova1');?>" id="nav-nova1"></a></li>
-						<li><a href="<?php echo Url::site('nova2');?>" id="nav-nova2"></a></li>
-						<li><a href="<?php echo Url::site('sms');?>" id="nav-sms"></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		
-		<div id="content">
-			<div class="wrapper">
-				<div class="inner">
-					<?php echo $content;?>
+		<div id="container">
+			<a name="top" class="top"></a>
+			<header>
+				<div class="wrapper">
+					<div class="logo"></div>
+					<nav>
+						<ul>
+							<li><a href="<?php echo Url::site();?>" id="nav-home"></a></li>
+							<li><a href="<?php echo Url::site('nova1');?>" id="nav-nova1"></a></li>
+							<li><a href="<?php echo Url::site('nova2');?>" id="nav-nova2"></a></li>
+							<li><a href="<?php echo Url::site('sms');?>" id="nav-sms"></a></li>
+						</ul>
+					</nav>
 				</div>
-			</div>
+			</header>
 			
-			<div style="clear:both;"></div>
+			<div id="content">
+				<div class="wrapper">
+					<div class="inner">
+						<?php echo $content;?>
+					</div>
+				</div>
+				
+				<div style="clear:both;"></div>
+			</div>
 		</div>
 		
 		<footer>
