@@ -11,7 +11,7 @@
 
 <h2>Step 1: Upload Nova</h2>
 
-<p>To begin the installation, you need to upload the Nova 2 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process.</p>
+<p>To begin the installation, you need to upload the Nova 2 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.</p>
 
 <h2>Step 2: Configure Nova</h2>
 
@@ -22,6 +22,8 @@
 <p>This is the part where everyone panics and says it's too complicated and difficult to get started. This is also the part where we prove you wrong.</p>
 
 <p>Setting up your connection to the database is dead simple. All you need to do is open your browser and navigate to the location on your server where you uploaded the Nova files. If your server was <strong>http://example.com</strong> and you uploaded Nova 2 to the root directory (often called www or public_html), then you'd navigate to <strong>http://example.com</strong> and you'd be automatically redirected to the Config Setup page. From this page, you'll be able to tell Nova the information for connecting to your database and then Nova will 1) attempt to connect to the database and make sure it can, then 2) write that information to a connection file. Pretty easy, huh?</p>
+
+<p>If for some reason your server doesn't support creating files from a web script, the setup process will show you the code to copy and paste into the database connection file.</p>
 
 <h3>Explaining the Options</h3>
 
