@@ -4,7 +4,7 @@
 
 <h2>Object-Oriented Programming</h2>
 
-<p>Object-oriented programming (OOP) is a programming paradigm that relies on using objects to design and build applications. When most people learn PHP, they learn the procedural way of coding which is just a top to bottom programming relies very little on outside classes and methods. There's nothing wrong with learning that way, but when it comes to building something like Nova, procedural coding just doesn't work as well. (SMS was a procedurally-built system.) Using OOP allows us to re-use a lot of our work and build applications in pieces.</p>
+<p>Object-oriented programming (OOP) is a programming paradigm that relies on using objects to design and build applications. When most people learn PHP, they learn the procedural way of coding which is just a top to bottom programming approach that relies very little on outside classes and methods. There's nothing wrong with learning that way, but when it comes to building something like Nova, procedural coding just doesn't work as well. (SMS was a procedurally-built system.) Using OOP allows us to re-use a lot of our work and build applications in pieces.</p>
 
 <p>When you think about objects, don't think of it as a programming concept, but instead, think of it like a car. Every car has a few things that don't change, like its manufacturer, model and year. In programming terms, those things that are set ahead of time are properties. Cars can also do things, like drive forward, drive backwards and play the radio, or in programming terms, methods that do things. So then how would a car object look like?</p>
 

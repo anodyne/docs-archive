@@ -253,6 +253,23 @@ dfn { background: #00620C; }
 var { background: #8F5B00; }
 kbd { background: #A70000; }
 
+.critical {
+	padding: 5px;
+	background: #c00;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0) !important;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+.important {
+	padding: 5px;
+	background: #febf01;
+	color: #222;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0) !important;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
 strong { font-weight: bold; }
 
 ul {

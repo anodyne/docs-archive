@@ -8,6 +8,5 @@
 	<li><a href="<?php echo Url::site('nova2/start/requirements');?>">Requirements</a></li>
 	<li><a href="<?php echo Url::site('nova2/start/install');?>">Fresh Install</a></li>
 	<li><a href="<?php echo Url::site('nova2/start/sms');?>">Upgrade from SMS 2</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/nova1');?>">Upgrade from Nova 1</a></li>
 	<li><a href="<?php echo Url::site('nova2/start/update');?>">Updating Nova</a></li>
 </ul>

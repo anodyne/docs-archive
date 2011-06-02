@@ -19,8 +19,39 @@ class Controller_Nova2_Api extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/developers/api');
+		$this->template->content = View::factory('components/pages/nova2/developers/api/index');
 		
 		$this->template->title.= 'API';
+	}
+	
+	public function action_methods()
+	{
+		$this->template->content = View::factory('components/pages/nova2/developers/api/methods');
+		
+		$this->template->title.= 'API Methods';
+	}
+	
+	public function action_using($type = '')
+	{
+		switch ($type)
+		{
+			case 'curl':
+				$view = 'components/pages/nova2/developers/api/use_curl';
+				$title = 'Using the API through cURL';
+			break;
+			
+			case 'simplexml':
+				$view = 'components/pages/nova2/developers/api/use_simplexml';
+				$title = 'Using the API through SimpleXML';
+			break;
+			
+			default:
+				$view = 'components/pages/nova2/developers/api/use';
+				$title = 'Using the API';
+			break;
+		}
+		$this->template->content = View::factory($view);
+		
+		$this->template->title.= $title;
 	}
 }
