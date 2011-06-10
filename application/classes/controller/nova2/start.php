@@ -19,9 +19,16 @@ class Controller_Nova2_Start extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/start/main');
+		$this->template->content = View::factory('components/pages/nova2/start/index');
 		
 		$this->template->title.= 'Getting Started';
+	}
+	
+	public function action_backup()
+	{
+		$this->template->content = View::factory('components/pages/nova2/start/backup');
+		
+		$this->template->title.= 'Backup Guide';
 	}
 	
 	public function action_install()
@@ -139,5 +146,12 @@ class Controller_Nova2_Start extends Controller_Template {
 		$this->template->content->title = $title;
 		
 		$this->template->title.= $title;
+	}
+	
+	public function action_whatsnew()
+	{
+		$this->template->content = View::factory('components/pages/nova2/start/whatsnew');
+		
+		$this->template->title.= "What's New in Nova 2";
 	}
 }

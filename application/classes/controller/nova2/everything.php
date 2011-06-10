@@ -24,6 +24,55 @@ class Controller_Nova2_Everything extends Controller_Template {
 		$this->template->title.= 'Main';
 	}
 	
+	public function action_changes($product = 'sms')
+	{
+		switch ($product)
+		{
+			default:
+			case 'sms':
+				$view = 'components/pages/nova2/everything/changes_sms';
+				$title = 'Changes Since SMS';
+			break;
+			
+			case 'nova':
+				$view = 'components/pages/nova2/everything/changes_nova';
+				$title = 'Changes Since Nova 1.2';
+			break;
+		}
+		
+		$this->template->content = View::factory($view);
+		
+		$this->template->title.= $title;
+	}
+	
+	public function action_configure($product = 'nova')
+	{
+		switch ($product)
+		{
+			default:
+			case 'nova':
+				$view = 'components/pages/nova2/everything/configure_nova';
+				$title = 'Configuring Nova';
+			break;
+			
+			case 'codeigniter':
+				$view = 'components/pages/nova2/everything/configure_ci';
+				$title = 'Configuring CodeIgniter';
+			break;
+		}
+		
+		$this->template->content = View::factory($view);
+		
+		$this->template->title.= $title;
+	}
+	
+	public function action_genres()
+	{
+		$this->template->content = View::factory('components/pages/nova2/everything/genres');
+		
+		$this->template->title.= 'Genres in Nova';
+	}
+	
 	public function action_godaddy()
 	{
 		$this->template->content = View::factory('components/pages/nova2/everything/godaddy');

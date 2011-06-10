@@ -177,6 +177,7 @@ em { font-style: italic; }
 }
 .options em {
 	margin: 0 0 0 70px;
+	padding: 0 0 7px 0;
 	display: block;
 	font-size: .95em;
 	font-style: normal;

@@ -4,11 +4,11 @@
 
 <h2>PHP</h2>
 
-<p>You will need a server that is running PHP, a dynamic web development language that Nova is built in. Nova 2 requires that your server has at least version <strong>5.1.0</strong> installed. If you have less than 5.1 installed, the installation will fail and you won't be allowed to continue. Some of the new features in Nova 2 take advantage of functions and methods built in to PHP 5.1.</p>
+<p>You will need a server that is running PHP, a dynamic web development language that Nova is built in. Nova 2 requires that your server has at least <dfn>PHP 5.1.0</dfn> installed. If you have less than 5.1 installed, the installation will fail and you won't be allowed to continue. Some of the new features in Nova 2 take advantage of functions and methods built in to PHP 5.1.</p>
 
 <h2>MySQL</h2>
 
-<p>You will need a server (and account) that has MySQL available. Nova is a database-driven system which means it needs a database (MySQL) to run. As long as you have MySQL 4.1 or higher, you should be fine. (Additionally, you can connect to MySQL through PHP's MySQLi functions if your hosting provider mentions that as an option.)</p>
+<p>You will need a server (and account) that has MySQL available. Nova is a database-driven system which means it needs a database (MySQL) to run. As long as you have <dfn>MySQL 4.1</dfn> or higher, you should be fine. (Additionally, you can connect to MySQL through PHP's MySQLi functions if your hosting provider mentions that as an option.)</p>
 
 <h2>A Browser</h2>
 
