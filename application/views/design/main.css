@@ -303,3 +303,5 @@ ol li { margin: 3px 10px; }
 }
 
 .alt { background: #eaeaea; }
+
+.hidden { display: none; }

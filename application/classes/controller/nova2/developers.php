@@ -19,7 +19,7 @@ class Controller_Nova2_Developers extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/developers/main');
+		$this->template->content = View::factory('components/pages/nova2/developers/index');
 		
 		$this->template->title.= 'Developers';
 	}

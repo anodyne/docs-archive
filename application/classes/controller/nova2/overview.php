@@ -19,7 +19,7 @@ class Controller_Nova2_Overview extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/overview/main');
+		$this->template->content = View::factory('components/pages/nova2/overview/index');
 		
 		$this->template->title.= 'Main';
 	}

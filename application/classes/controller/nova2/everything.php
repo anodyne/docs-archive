@@ -24,6 +24,13 @@ class Controller_Nova2_Everything extends Controller_Template {
 		$this->template->title.= 'Main';
 	}
 	
+	public function action_changelog()
+	{
+		$this->template->content = View::factory('components/pages/nova2/everything/changelog');
+		
+		$this->template->title.= 'Nova 2 Changelog';
+	}
+	
 	public function action_changes($product = 'sms')
 	{
 		switch ($product)
