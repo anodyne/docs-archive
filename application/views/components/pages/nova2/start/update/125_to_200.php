@@ -31,6 +31,7 @@
 	<li>Copy the <dfn>wiki.css</dfn> file from the appropriate skin (Pulsar for light-colored backgrounds and Titan for dark-colored backgrounds) and paste it into to your skin's <samp>wiki/css</samp> directory (if you've skinned the wiki).</li>
 	<li>Edit your skin's <dfn>main.css</dfn> stylesheet in the wiki section to add an import for the new <dfn>wiki.css</dfn> file you just pasted in. Save the file and make sure everything is uploaded to the server. (This new stylesheet controls the look and feel of the new Thresher Manage Pages section and the new category selection piece.)</li>
 	<li>If you don't like the colors used, you can change them from the <dfn>wiki.css</dfn> stylesheet.</li>
+	<li>Copy the <dfn>cat-add.png</dfn> image from the images directory of whichever skin you grabbed the <dfn>wiki.css</dfn> stylesheet from and paste it into your own wiki section images directory.</li>
 
 <h2>What About My Mods?</h2>
 

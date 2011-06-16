@@ -61,6 +61,7 @@
 
 <ul>
 	<li>Updated site messages to allow them to handle previously disallowed HTML characters (for embedding YouTube and Vimeo videos)</li>
+	<li>Updated the skin catalogue to allow admins to remove a skin with sections in it and have the pop-up let the admin choose which skin to update users with for each section being removed</li>
 	<li>Fixed an issue where some management pages wouldn't show proper error messages</li>
 </ul>
 
