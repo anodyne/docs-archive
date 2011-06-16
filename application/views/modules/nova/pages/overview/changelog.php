@@ -1,5 +1,44 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.2.5</h2>
+
+<p><strong>Release Date:</strong> &ndash; 16 June 2011</p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.2.5 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Controllers</span>
+		<ul>
+			<li>Updated the User controller to fix several issues with activating and deactivating users</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Helpers</span>
+		<ul>
+			<li>Updated the date helper to fix a fatal error that would be thrown sometimes</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Models</span>
+		<ul>
+			<li>Updated the Specs model to fix a bug with the specs form</li>
+		</ul>
+	</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed fatal error when creating dates under certain circumstances</li>
+	<li>Fixed bug where specification data wouldn't get added to the table for old items if a new field was added</li>
+	<li>Fixed bug where deactivated users would retain their account flags (sysadmin, game master, etc) and wouldn't have their access role changed</li>
+	<li>Fixed bug where reactivated users wouldn't have a reasonable access role</li>
+</ul>
+
 <h2>Version 1.2.4</h2>
 
 <p><strong>Release Date:</strong> &ndash; 25 January 2011</p>
