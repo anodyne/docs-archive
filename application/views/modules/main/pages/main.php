@@ -9,10 +9,10 @@
 	<em>Nova is the evolution of years of Anodyne's work in RPG management. Taking cues from SMS 2, Nova brings a great level of power, flexibility and control to increasingly easy to use system. Complete with several major features and a host of smaller gems, Nova is the ultimate RPG management tool. This exhaustive user guide is your one-stop-shop to all things Nova.</em>
 </a>
 
-<a href="<?php echo site_url('nova2/overview/index');?>" class="options">
+<!--<a href="<?php echo site_url('nova2/overview/index');?>" class="options">
 	<span>Nova 2</span>
 	<em>Nova 2 is the continued evolution of Anodyne's new flagship product. Utilizing a brand new, PHP5 only system core, Nova 2 brings a new level of advancement "under the hood" and wide variety of tweaks to the system to make signficant improvements to Nova 1. This exhaustive user guide is your one-stop-shop to all things Nova 2. <strong>Note:</strong> Nova 2 is still under heavy development and constantly changing, so all material in this section should be considered beta and subject to change before Nova 2's final release.</em>
-</a>
+</a>-->
 
 <a href="<?php echo site_url('sms/overview/index');?>" class="options">
 	<span>SMS 2</span>
