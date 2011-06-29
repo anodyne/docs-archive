@@ -28,7 +28,7 @@
 
 <h3>Create Categories On-the-Fly</h3>
 
-<p>Another one of the big things users told they wanted to be able to do was to create categories right from the create/edit page. Now you can. Don't have a category for what you want? Just create it then select it and your page will be using that category. Just getting started with Thresher and don't have any categories yet? Don't worry, Thresher will prompt you to create some categories right on the page.</p>
+<p>Another one of the big things users told us they wanted to be able to do was to create categories right from the create/edit page. Now you can. Don't have a category for what you want? Just create it then select it and your page will be using that category. Just getting started with Thresher and don't have any categories yet? Don't worry, Thresher will prompt you to create some categories right on the page.</p>
 
 <h3>User Experience Improvements</h3>
 
@@ -37,6 +37,19 @@
 <h3>Better Searching</h3>
 
 <p>This one is pretty self-explanatory. We've worked out several bugs that existed in the search features for Thresher so that you'll get more accurate search results. In addition, we've brought search front and center on the main page with an option to search the minute you land in Thresher.</p>
+
+<h2>Simplified Character/User Management</h2>
+
+<p>One of Nova 1's major features was the separation of users and characters, allowing a single user to control multiple characters. While this was a great feature, the management piece was a bit of a struggle for a lot of admins. It was all-to-easy to deactivate a character but leave the user active or vice versa. To help with this management headache, we've again borrowed from Nova 3's features to provide a dead-simple way to manage characters and users. If you want to take action on a character (activate, deactivate, make an NPC or make an NPC a playing character), admins will do so now with a series of buttons:</p>
+
+<ul>
+	<li><strong>Activating an Inactive Character</strong> &ndash; Only displayed with inactive characters, this button will not only activate an inactive character, but will also give admins the ability to activate the user if they're inactive, make the character the primary character for the user or even assign the character to a completely different user.</li>
+	<li><strong>Deactivating an Active Character</strong> &ndash; Only displayed with active character, this button will deactivate the active character and check the user for any other active characters. If the user doesn't have any other active characters, admins will have an option to deactivate the user right then and there. If the user does have other characters and the one being deactivated is their main character, a dropdown menu will allow admins to set a new main character for that user.</li>
+	<li><strong>Making an Active or Inactive Character an NPC</strong> &ndash; Displayed for both active and inactive characters, this button will move an active or inactive character to be an NPC. If the character in question is someone's main character, a dropdown menu will allow admins to set a new main character for that user. The character will continue to be associated with that user even as an NPC unless the admins selects the option to clear the user association. In the event that making an active character an NPC leaves a user without an active character, admins will have the option to deactivate the user as well.</li>
+	<li><strong>Making an NPC an Active Character</strong> &ndash; Only displayed for non-playing characters, this button will move an NPC to be an active character. Admins will be able to associate the character with a user or change the user the character is associated with in addition to setting the character to be the primary character. In the event a character is being associated with an inactive user, the option will be given to activate that user.</li>
+	<li><strong>Activating a User</strong> &ndash; Only displayed for inactive user accounts, this button will activate an inactive user as well providing admins with the ability to activate any of that user's inactive characters at the same time.</li>
+	<li><strong>Deactivating a User</strong> &ndash; Only displayed for active user accounts, this button will deactivate an active user as well as deactivate all of their active characters.</li>
+</ul>
 
 <h2>Nested Mission Groups</h2>
 
