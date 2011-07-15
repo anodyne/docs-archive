@@ -1,5 +1,39 @@
 <h1><?php echo $header;?></h1>
 
+<h2>Version 1.2.6</h2>
+
+<p><strong>Release Date:</strong> &ndash; 15 July 2011</p>
+
+<p><strong class="red fontMedium">This is a critical system update!</strong></p>
+
+<ul>
+	<li><span class="fontMedium bold">General</span>
+		<ul>
+			<li>Added the 1.2.6 update file</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Models</span>
+		<ul>
+			<li>Fixed bug where Nova wouldn't accurately pull character posts</li>
+		</ul>
+	</li>
+	
+	<li><span class="fontMedium bold">Views</span>
+		<ul>
+			<li>Fixed bug where the writing control panel had several incorrect links (_base/admin/pages/write_index.php)</li>
+		</ul>
+	</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed bug where Nova wouldn't accurately pull character posts</li>
+	<li>Fixed bug where the writing control panel had several incorrect links</li>
+	<li>Fixed several major security issues</li>
+</ul>
+
 <h2>Version 1.2.5</h2>
 
 <p><strong>Release Date:</strong> &ndash; 16 June 2011</p>

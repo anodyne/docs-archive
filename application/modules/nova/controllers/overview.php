@@ -269,6 +269,13 @@ class Overview extends Controller {
 				$view = $this->viewpath .'update/125';
 			break;
 			
+			case 126:
+				$data['header'] = 'Updating From 1.2.5 to 1.2.6';
+				$data['sub'] = $page;
+
+				$view = $this->viewpath .'update/126';
+			break;
+			
 			case 'main':	
 			default:
 				$data['header'] = 'Updating Nova';

@@ -9,6 +9,7 @@
 <p class="important"><strong>Note:</strong> These update notes only apply to the physical Nova files and not the database update portion. You can update the database from any version of Nova to a higher version.</p>
 
 <ul>
+	<li><?php echo anchor('nova/overview/update/126', 'Updating from 1.2.5 to 1.2.6');?></li>
 	<li><?php echo anchor('nova/overview/update/125', 'Updating from 1.2.4 to 1.2.5');?></li>
 	<li><?php echo anchor('nova/overview/update/124', 'Updating from 1.2.3 to 1.2.4');?></li>
 	<li><?php echo anchor('nova/overview/update/123', 'Updating from 1.2.2 to 1.2.3');?></li>
