@@ -62,7 +62,7 @@
 				<ul id="nav-main">
 					<li><a href="<?php echo site_url('main/index');?>"<?php if ($this->router->fetch_module() == 'main'): echo ' class="active-main"'; endif;?>>Home</a></li>
 					<li><a href="<?php echo site_url('nova/overview/index');?>"<?php if ($this->router->fetch_module() == 'nova'): echo ' class="active-nova"'; endif;?>>Nova</a></li>
-					<li><a href="<?php echo site_url('nova2/overview/index');?>"<?php if ($this->router->fetch_module() == 'nova2'): echo ' class="active-nova"'; endif;?>>Nova 2</a></li>
+					<!--<li><a href="<?php echo site_url('nova2/overview/index');?>"<?php if ($this->router->fetch_module() == 'nova2'): echo ' class="active-nova"'; endif;?>>Nova 2</a></li>-->
 					<li><a href="<?php echo site_url('sms/overview/index');?>"<?php if ($this->router->fetch_module() == 'sms'): echo ' class="active-sms"'; endif;?>>SMS</a></li>
 				</ul>
 				
