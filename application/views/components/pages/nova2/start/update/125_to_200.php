@@ -24,14 +24,27 @@
 
 <h2>What About My Skins?</h2>
 
-<p>Nova's skinning system didn't change for version 2, so any of your skins from Nova 1 should work with little modification (we say "little" modification because there was a small change that needs to be made to Thresher for Nova 2). For each of your Nova 1 skins you want to use in Nova 2, use the following steps to make sure they're working as expected in Nova 2.</p>
+<p>Nova's skinning system didn't change for version 2, so any of your skins from Nova 1 should work with little modification (we say "little" modification because there are some small changes that need to be made to Thresher and the admin system for Nova 2). For each of your Nova 1 skins you want to use in Nova 2, use the following steps to make sure they're working as expected in Nova 2.</p>
+
+<p class="important">Your skins will fall in to one of two categories: light or dark. If the skin you're updating uses a light-colored background, all of the materials you'll need to copy can be found in the Pulsar skin (<strong>application/views/default</strong>). If the skin you're updating uses a dark-colored background, all of the materials you'll need to copy can be found in the Titan skin (<strong>application/views/titan</strong>). If you've edited a skin taken off of AnodyneXtras, you can download the new copy of the skin now and uses the resources found in those skins as well.</p>
+
+<h3>Thresher Updates</h3>
 
 <ol>
-	<li>Determine if your skin uses a light-colored background or a dark-colored background. If you're using a light-colored background, your reference material for these steps will be the Pulsar skin located in <samp>application/views/default</samp>. If you're using a dark-colored background, your reference material for these steps will be the Titan skin located in <samp>application/views/titan</samp>.</li>
-	<li>Copy the <dfn>wiki.css</dfn> file from the appropriate skin (Pulsar for light-colored backgrounds and Titan for dark-colored backgrounds) and paste it into to your skin's <samp>wiki/css</samp> directory (if you've skinned the wiki).</li>
-	<li>Edit your skin's <dfn>main.css</dfn> stylesheet in the wiki section to add an import for the new <dfn>wiki.css</dfn> file you just pasted in. Save the file and make sure everything is uploaded to the server. (This new stylesheet controls the look and feel of the new Thresher Manage Pages section and the new category selection piece.)</li>
-	<li>If you don't like the colors used, you can change them from the <dfn>wiki.css</dfn> stylesheet.</li>
-	<li>Copy the <dfn>cat-add.png</dfn> image from the images directory of whichever skin you grabbed the <dfn>wiki.css</dfn> stylesheet from and paste it into your own wiki section images directory.</li>
+	<li>Copy the <dfn>wiki.css</dfn> file from the appropriate skin's <samp>wiki/css</samp> directory (mentioned above) and paste it into to your skin's <samp>wiki/css</samp> directory (if you've skinned the wiki).</li>
+	<li>Edit the <dfn>main.css</dfn> stylesheet in <samp>wiki/css</samp> and add an import statement at the end of the file for the new <dfn>wiki.css</dfn> file you just pasted in (you can simply copy and paste one of the import statements already in there). Save the file and make sure everything is uploaded to the server. (This new stylesheet controls the look and feel of the new Thresher Manage Pages section and the new category selection piece.)</li>
+	<li>If you don't like the colors used, you can change them from the <dfn>wiki.css</dfn> stylesheet you just added.</li>
+	<li>Copy the <dfn>cat-add.png</dfn> image from the <samp>wiki/images</samp> directory of whichever skin you're using as reference and paste it into your own <samp>wiki/images</samp> directory.</li>
+</ol>
+
+<h3>Admin Updates</h3>
+
+<ol>
+	<li>Copy the <dfn>jquery.chosen.css</dfn> file from the appropriate skin's <samp>admin/css</samp> directory (mentioned above) and paste it into to your skin's <samp>admin/css</samp> directory (if you've skinned the admin system).</li>
+	<li>Nova 2 will automatically look for this stylesheet and import if it exists, so you don't have to do anything else.</li>
+	<li>If you don't like the colors used, you can change them from the <dfn>jquery.chosen.css</dfn> stylesheet.</li>
+	<li>Copy the <dfn>chosen-sprite.png</dfn> image from the <samp>admin/images</samp> directory of whichever skin you're using as reference and paste it into your own <samp>admin/images</samp> directory.</li>
+</ol>
 
 <h2>What About My Mods?</h2>
 
