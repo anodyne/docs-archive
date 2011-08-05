@@ -7,9 +7,9 @@
 <p>There are several things you can do with Nova that we consider to be pretty basic. These tutorials will get you started with a few basic changes to Nova using code or some of Nova's built-in developer tools.</p>
 
 <ul>
-	<li>Using seamless substitution to change some system icons</li>
+	<li><a href="<?php echo Url::site('nova2/modify/changeicons');?>">Using seamless substitution to change some system icons</a></li>
 	<li>Using seamless substitution to add an image to a page</li>
-	<li>Changing language items for your system</li>
+	<li><a href="<?php echo Url::site('nova2/modify/language');?>">Changing language items for Nova</a></li>
 </ul>
 
 <h2>Intermediate Modifications</h2>

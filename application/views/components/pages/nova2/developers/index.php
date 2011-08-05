@@ -20,8 +20,8 @@
 	<em>Nova comes with a wide array of models, libraries and helpers for working with the system that you can use in your own work inside Nova.</em>
 </a>
 
-<a href="<?php echo Url::site('nova2/api/index');?>" class="options options-api">
+<!--<a href="<?php echo Url::site('nova2/api/index');?>" class="options options-api">
 	<div></div>
 	<span>The Nova API</span>
 	<em>Using Nova's RESTful API, developers can pull information out of Nova to display in other places, like a fleet site or blog.</em>
-</a>
+</a>-->

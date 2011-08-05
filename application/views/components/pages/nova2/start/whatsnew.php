@@ -59,6 +59,10 @@
 
 <p>Like Facebook and other sites, some of Nova's text areas (mainly when writing mission posts, personal logs and news items) will now expand as you type to give you a bigger canvas to compose your messages.</p>
 
+<h2>Brand-New Character Selection</h2>
+
+<p>One pages where you can select multiple characters (writing a mission post, editing a mission post, writing a private message, etc.), the UI was never that good. Select a user and click a link. Select another user and click a link. It was bulky and quite a pain to maintain. In Nova 2, we've changed the UI to be a lot more friendly. Now, just start typing a character name and the list will filter for you. Click the name and you're done. Want to remove a character from the list? Just click on the X next to their name.</p>
+
 <h2>Updates to Site Messages</h2>
 
 <p>One of the biggest complaints about Nova is that it makes adding content more difficult than it needs to be. For us, it's always been a security issue to allow script, audio, video, iframe and object tags in the site messages. There are just too many documented cases of people using those for malicious purposes. Sadly, our focus on security made it more difficult for games to do the things they could do before with SMS. That shouldn't be the case. Because of that, we've relented on this issue and now allow all of the previously disallowed HTML tags in site messages. That means that games can now link to YouTube and Vimeo media without having to use seamless substitution. We think this is a big win for our users, though it does come at a cost. You should make sure you absolutely trust the source of any code you put in to your site messages so there are no security issues.</p>
@@ -70,3 +74,9 @@
 <p>The first change you'll notice on the deck listing page is the new menu at the top that will let you quickly move from item to item without having to scroll forever. Games that have a lot of decks in their deck listing will find this especially handy.</p>
 
 <p>The second change is that decks are now displayed outside of a table. The previous table-based layout made the page look messy. Without tables, the deck listing flows a little better and makes it significantly easier to read, especially for games with lots of decks and even more content.</p>
+
+<h2>Post Locking</h2>
+
+<p>One of the most requested features since SMS 2 was the ability to "lock" a post when someone was working on it so that another user couldn't come in and overwrite the work being done. This was a tricky request and one that took a lot of time to come up with a good solution, but we've done it. Post locking relies on a very simple premise: when you start editing a post, no one else can edit it until you're done.</p>
+
+<p>Of course, it's significantly more complicated than that, but that's the basic idea. When you edit a post, you're granted a 5 minute lock. After 5 minutes, Nova will check to see if you're still editing the post. If you are, it'll renew the lock for another 5 minutes, but if you've walked away and left the page up, it'll auto-save your work and then release the lock. If you go to a post that's locked, you'll see a notification the post is locked and you won't be able to edit anything.</p>
