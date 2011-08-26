@@ -13,20 +13,5 @@
 <p>Use the update guides below for detailed instructions on how to update from one version to another. If you're running Nova 2 and want to update across multiple versions, you'll just need to remove the <samp>nova</samp> directory and upload a new copy. If you're running Nova 1 and want to update across multiple versions, you'll need to go through each update guide from the version you're on to the version you're going to (skipping the step where you run the update from the browser) and then after all the files are updated, do the system update from the browser.</p>
 
 <ul>
-	<li><a href="<?php echo Url::site('nova2/start/update/125_to_200');?>">Nova 1.2.5 to Nova 2.0</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/124_to_125');?>">Nova 1.2.4 to Nova 1.2.5</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/123_to_124');?>">Nova 1.2.3 to Nova 1.2.4</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/122_to_123');?>">Nova 1.2.2 to Nova 1.2.3</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/121_to_122');?>">Nova 1.2.1 to Nova 1.2.2</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/120_to_121');?>">Nova 1.2 to Nova 1.2.1</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/112_to_120');?>">Nova 1.1.2 to Nova 1.2</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/111_to_112');?>">Nova 1.1.1 to Nova 1.1.2</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/110_to_111');?>">Nova 1.1 to Nova 1.1.1</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/106_to_110');?>">Nova 1.0.6 to Nova 1.1</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/105_to_106');?>">Nova 1.0.5 to Nova 1.0.6</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/104_to_105');?>">Nova 1.0.4 to Nova 1.0.5</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/103_to_104');?>">Nova 1.0.3 to Nova 1.0.4</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/102_to_103');?>">Nova 1.0.2 to Nova 1.0.3</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/101_to_102');?>">Nova 1.0.1 to Nova 1.0.2</a></li>
-	<li><a href="<?php echo Url::site('nova2/start/update/100_to_101');?>">Nova 1.0 to Nova 1.0.1</a></li>
+	<li><a href="<?php echo Url::site('nova3/start/update/300_to_301');?>">Nova 3.0 to Nova 3.0.1</a></li>
 </ul>

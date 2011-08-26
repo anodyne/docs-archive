@@ -115,6 +115,13 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+Route::set('nova3', 'nova3(/<controller>(/<action>(/<id>)))')
+	->defaults(array( 
+		'directory' => 'nova3', 
+		'controller' => 'overview', 
+		'action' => 'index'
+	));
+	
 Route::set('nova2', 'nova2(/<controller>(/<action>(/<id>)))')
 	->defaults(array( 
 		'directory' => 'nova2', 

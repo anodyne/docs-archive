@@ -3,9 +3,9 @@
 		$("table.zebra tr:nth-child(odd)").addClass("alt");
 	});
 </script>
-<h1>Upgrading from Nova 1</h1>
+<h1>Upgrading from Nova 2</h1>
 
-- have to be running 1.2.5
+- have to be running 2.0 or higher
 - when you create the config file, you have to use the same database table prefix
 - be aware that the upgrade process will double the amount of space you're using in your database. if you have a limit on how much database space you have to use and you'll exceed that limit, you cannot upgrade to nova 3.
 
