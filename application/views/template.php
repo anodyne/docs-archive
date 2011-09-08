@@ -26,7 +26,9 @@ $controllers = array(
 	),
 	'nova3' => array(),
 	'satellite' => array(),
-	'sms' => array(),
+	'sms' => array(
+		'overview'		=> 'Overview',
+	),
 );
 
 ?><!DOCTYPE html>
