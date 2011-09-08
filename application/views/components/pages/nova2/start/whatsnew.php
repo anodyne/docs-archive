@@ -55,10 +55,6 @@
 
 <p>One of the final additions to Nova 1 was mission groups as a way to pull missions together. After seeing how people are using the feature, we've expanded mission groups to allow them to be nested down one level. This means you can now have groups inside groups. Along with this, we've completely re-written the user interface for viewing mission groups which will give users more information at a glance than before.</p>
 
-<h2>Expandable Text Areas</h2>
-
-<p>Like Facebook and other sites, some of Nova's text areas (mainly when writing mission posts, personal logs and news items) will now expand as you type to give you a bigger canvas to compose your messages.</p>
-
 <h2>Brand-New Character Selection</h2>
 
 <p>One pages where you can select multiple characters (writing a mission post, editing a mission post, writing a private message, etc.), the UI was never that good. Select a user and click a link. Select another user and click a link. It was bulky and quite a pain to maintain. In Nova 2, we've changed the UI to be a lot more friendly. Now, just start typing a character name and the list will filter for you. Click the name and you're done. Want to remove a character from the list? Just click on the X next to their name.</p>

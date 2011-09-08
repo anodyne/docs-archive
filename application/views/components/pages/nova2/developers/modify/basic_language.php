@@ -29,7 +29,9 @@
 <pre>$lang['global_mission'] = "episode";
 $lang['global_missions'] = "episodes";</pre>
 
-<p class="important"><strong>Important:</strong> Only change the value of the array item (what's on the right side of the equal side). If you change the key, your changes won't work.</p>
+<p>Make sure you're only changing the <strong>value</strong> of the array item (what's on the right side of the equal side). If you change the key, your changes won't work.</p>
+
+<p class="important">Why do I need to copy these into another file? Why not just change them in the first file? The short answer is <strong>because putting them in the application folder is the right way to do it</strong> (kinda like your Mom telling you "because I said so"). The longer answer is that the language folder in the Nova core will get replaced with every update, so unless you want to update your language items after every update, best to put the language changes in the application folder.</p>
 
 <h3>3. Upload Your Changes</h3>
 

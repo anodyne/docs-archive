@@ -18,19 +18,18 @@
 
 <h2>Version 2.0</h2>
 
-<p><strong>Release Date:</strong> 24 June 2011</p>
+<p><strong>Release Date:</strong> 29 September 2011</p>
 
 <ul>
 	<li><strong>General</strong>
 		<ul>
 			<li>All new file structure that further separates the Nova core from user modifications</li>
-			<li>Updated to jQuery 1.6.1</li>
-			<li>Updated to jQueryUI 1.8.13</li>
+			<li>Updated to jQuery 1.6.3</li>
+			<li>Updated to jQueryUI 1.8.16</li>
 			<li>Updated to jQuery Uniform 1.7.5</li>
 			<li>Updated to prettyPhoto 3.1.2</li>
 			<li>Updated to qTip2</li>
 			<li>Updated seamless substitution to be able to override email view files</li>
-			<li>Added the ability for textareas to "grow" as more text is added (like Facebook)</li>
 			<li>Added new process to write the database config file for you</li>
 			<li>Re-wrote the upgrade process to be shorter and simpler</li>
 			<li>Added the ability to upgrade SMS Database entries to Thresher pages</li>

@@ -14,7 +14,7 @@
 
 <h2>Intermediate Modifications</h2>
 
-<p>Now that you have a grasp on the basics behind using Nova's built-in tools to modify the system, let's take a tour through a few intermediate topis to change some more things about Nova.</p>
+<p>Now that you have a grasp on the basics behind using Nova's built-in tools to modify the system, let's take a tour through a few intermediate topics to change some more things about Nova.</p>
 
 <ul>
 	<li>Create a brand new page</li>
@@ -23,7 +23,6 @@
 	<li>Changing the application directory for your installation</li>
 	<li>Changing the index file for your installation</li>
 	<li>Translating Nova to another language</li>
-	<li>Configuring CodeIgniter</li>
 </ul>
 
 <h2>Advanced Modifications</h2>
@@ -38,5 +37,5 @@
 	<li>Running multiple Nova applications</li>
 	<li>Creating and modifying helpers</li>
 	<li>Creating and modifying libraries</li>
-	<li>Nova and Github</li>
+	<li><a href="<?php echo Url::site('nova2/modify/github');?>">Nova and Github</a></li>
 </ul>

@@ -14,7 +14,7 @@
 	<em>With HTML and CSS, you can transform Nova into something unique for your game. A good grasp of CSS is necessary for building new skins.</em>
 </a>
 
-<a href="<?php echo Url::site('nova2/developers/api');?>" class="options options-code">
+<a href="<?php echo Url::site('nova2/core/index');?>" class="options options-code">
 	<div></div>
 	<span>The Nova Core</span>
 	<em>Nova comes with a wide array of models, libraries and helpers for working with the system that you can use in your own work inside Nova.</em>

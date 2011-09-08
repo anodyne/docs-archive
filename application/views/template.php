@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+<?php
+
+// grab the current request object
+$request = Request::current();
+
+// set up the translation for directories
+$directories = array(
+	'nova1' 	=> 'Nova 1',
+	'nova2' 	=> 'Nova 2',
+	'nova3' 	=> 'Nova 3',
+	'satellite'	=> 'Satellite',
+	'sms'		=> 'SMS',
+);
+
+// set up the translation for controllers
+$controllers = array(
+	'nova1' => array(),
+	'nova2' => array(
+		'overview'		=> 'Overview',
+		'start'			=> 'Getting Started',
+		'developers'	=> 'Developers',
+		'everything'	=> 'The Kitchen Sink',
+		'modify'		=> 'Modifying Nova',
+		'skin'			=> 'Skinning Nova',
+		'core'			=> 'The Nova Core',
+	),
+	'nova3' => array(),
+	'satellite' => array(),
+	'sms' => array(),
+);
+
+?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -52,6 +83,24 @@
 			<div id="content">
 				<div class="wrapper">
 					<div class="inner">
+						<span class="breadcrumbs">
+							<ul>
+								<li><a href="<?php echo Url::site();?>">Home</a></li>
+								
+								<?php if ($request->directory()): ?>
+									<li><a href="<?php echo Url::site($request->directory());?>"><?php echo $directories[$request->directory()];?></a></li>
+									
+									<?php if ($request->controller()): ?>
+										<li>
+											<a href="<?php echo Url::site($request->directory().'/'.$request->controller());?>">
+												<?php echo $controllers[$request->directory()][$request->controller()];?>
+											</a>
+										</li>
+									<?php endif;?>
+								<?php endif;?>
+							</ul>
+						</span>
+						
 						<?php echo $content;?>
 					</div>
 				</div>

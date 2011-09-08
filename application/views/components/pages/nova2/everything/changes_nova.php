@@ -40,6 +40,12 @@
 	<li>Fixed bug where the join form could be submitted without an email address or password</li>
 </ul>
 
+<h3>Personnel</h3>
+
+<ul>
+	<li>Updated the user bio with a better interface</li>
+</ul>
+
 <h3>Sim</h3>
 
 <ul>
@@ -51,9 +57,18 @@
 <h3>Writing</h3>
 
 <ul>
+	<li>Added post locking</li>
 	<li>Updated textareas to expand as users type (like Facebook)</li>
 	<li>Updated the character dropdown to include who linked NPCs belong to on the Write Mission Post page</li>
-	<li>Minor interface tweaks</li>
+	<li>Updated the way characters are selected</li>
+	<li>User interface tweaks</li>
+	
+</ul>
+
+<h3>Private Messages</h3>
+
+<ul>
+	<li>Fixed bugs with subject lines when replying and forwarding private messages</li>
 	
 </ul>
 
@@ -76,6 +91,13 @@
 <h3>Character Management</h3>
 
 <ul>
+	<li>Updated character management to use a simpler system for activating/deactivating characters</li>
 	<li>Fixed bug where deactivated players wouldn't have their access level changed appropriately</li>
 	<li>Fixed bug where reactivated players wouldn't have their access level changed appropriately</li>
+</ul>
+
+<h3>User Management</h3>
+
+<ul>
+	<li>Updated user management to use a simpler system for activating/deactivating users</li>
 </ul>

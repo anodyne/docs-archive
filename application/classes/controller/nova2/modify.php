@@ -31,6 +31,13 @@ class Controller_Nova2_Modify extends Controller_Template {
 		$this->template->title.= 'Seamless Substitution: Changing Icons';
 	}
 	
+	public function action_github()
+	{
+		$this->template->content = View::factory('components/pages/nova2/developers/modify/adv_github');
+		
+		$this->template->title.= 'Nova and Github';
+	}
+	
 	public function action_language()
 	{
 		$this->template->content = View::factory('components/pages/nova2/developers/modify/basic_language');

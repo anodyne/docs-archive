@@ -1,8 +1,3 @@
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("table.zebra tr:nth-child(odd)").addClass("alt");
-	});
-</script>
 <h1>Upgrading from SMS 2</h1>
 
 <p>So you've been using SMS 2 since it came out or since you started your game. When Nova came out, you were hesitant to make the jump, but now that 2.0 is out, you decide that it's time to make the leap and start using Nova. But wait, what about the <em>years</em> of information you've accumulated in your SMS site? You don't want to lose that. We've already thought about that and have a simple solution to upgrade most (there are some pieces it just isn't possible to upgrade easily) of your SMS data to the newer Nova format.</p>
@@ -11,120 +6,127 @@
 
 <p>You probably read the part above about "most" of your SMS data being upgraded, but what exactly will and won't be upgraded? The table below will show you the different pieces and whether they'll be upgraded or not.</p>
 
-<table class="table100 zebra">
+<table class="zebra-striped">
+	<thead>
+		<tr>
+			<th class="blue">Item</th>
+			<th class="blue"></th>
+			<th class="blue">Description</th>
+		</tr>
+	</thead>
 	<tbody>
 		<tr>
-			<td class="smsupgrade-title">Access Levels</td>
+			<td width="25%">Access Levels</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>If you've made changes to the default access levels in SMS they will not be saved since Nova uses a new user access control system.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Awards</td>
+			<td>Awards</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>Any awards you've put in to SMS will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Award Nominations</td>
+			<td>Award Nominations</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>Award nominations that have been submitted will not be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Chain of Command</td>
+			<td>Chain of Command</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>Because of the complex way we move characters over to Nova and split out characters and users, the chain of command will not be upgraded.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Characters/Users</td>
+			<td>Characters/Users</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>Characters and users from SMS will be moved to the Nova format. Users will have their passwords and access level automatically reset.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Database Items</td>
+			<td>Database Items</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/exclamation.png" alt="some"></td>
 			<td>Nova doesn't have a "database" feature like SMS, instead, we've built a mini-wiki called Thresher that does similar things. Any of your database entries that are stored in the database will be converted to Thresher pages. Any content on external pages linked through the Database will not be converted.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Departments</td>
+			<td>Departments</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>Departments stored in SMS will not be upgraded to Nova. New departments will be created based on the genre selected.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Settings (Site Globals)</td>
+			<td>Settings (Site Globals)</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/exclamation.png" alt="some"></td>
 			<td>The following settings will be upgraded to Nova: <em>sim name, sim year, post count preference, email subject</em>.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Menu Items</td>
+			<td>Menu Items</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>SMS menu items will not be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Site Messages</td>
+			<td>Site Messages</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/exclamation.png" alt="some"></td>
 			<td>The following messages will be upgraded to Nova: <em>welcome message, sim message, join disclaimer, user accept email message, user reject email message, join sample post</em>.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Missions</td>
+			<td>Missions</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>All missions will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">News Items</td>
+			<td>News Items</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>All news items will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">News Categories</td>
+			<td>News Categories</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>All news categories will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Personal Logs</td>
+			<td>Personal Logs</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>All personal logs will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Positions</td>
+			<td>Positions</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>Positions stored in SMS will not be upgraded to Nova. New positions will be created based on the genre selected.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Mission Posts</td>
+			<td>Mission Posts</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/tick.png" alt="will"></td>
 			<td>All mission posts will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Private Messages</td>
+			<td>Private Messages</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>SMS private messages will not be upgraded.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Ranks</td>
+			<td>Ranks</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>Ranks stored in SMS will not be upgraded to Nova. New ranks will be created based on the genre selected.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Specifications</td>
+			<td>Specifications</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/exclamation.png" alt="some"></td>
 			<td>Only out-of-the-box specifications will be upgraded. If you have modified the specifications database table, your changes will not be upgraded.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Docking</td>
+			<td>Docking</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>Nova uses a new, highly dynamic form system and docking records will not be upgraded.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Strikes</td>
+			<td>Strikes</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>There is currently no way to handle strikes in Nova and SMS strikes will not be upgraded.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Tour</td>
+			<td>Tour</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/exclamation.png" alt="some"></td>
 			<td>Only out-of-the-box tour information will be upgraded. If you have modified the tour database table, your changes will not be upgraded.</td>
 		</tr>
 		<tr>
-			<td class="smsupgrade-title">Deck Listing</td>
+			<td>Deck Listing</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/cross.png" alt="will not"></td>
 			<td>The deck listing will not be upgraded.</td>
 		</tr>

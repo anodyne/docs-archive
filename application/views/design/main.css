@@ -17,7 +17,7 @@ body {
 header {
 	position: relative;
 	height: 130px;
-	background: #577f98 url(images/grid-light-blue.jpg) no-repeat top center;
+	background: #577f98 url(images/glass-light-blue.jpg) no-repeat top center;
 	box-shadow: inset 0 -3px 4px rgba(0, 0, 0, .2);
 	-moz-box-shadow: inset 0 -3px 4px rgba(0, 0, 0, .2);
 	-webkit-box-shadow: inset 0 -3px 4px rgba(0, 0, 0, .2);
@@ -243,59 +243,26 @@ pre {
 }
 
 samp, dfn, var, kbd {
-	padding: 3px;
-	background: purple;
-	color: #fff;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
-	border-radius: 2px;
-	-moz-border-radius: 2px;
+	font-weight: bold;
+	color: purple;
 }
-dfn { background: #00620C; }
-var { background: #8F5B00; }
-kbd { background: #A70000; }
-
-.critical {
-	padding: 5px;
-	background: #c00;
-	color: #fff;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0) !important;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-}
-.important {
-	padding: 5px;
-	background: #febf01;
-	color: #222;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0) !important;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-}
+dfn { color: #00620C; }
+var { color: #8F5B00; }
+kbd { color: #A70000; }
 
 strong { font-weight: bold; }
 
-ul {
+ul, ol {
 	margin: 10px;
 	padding: 10px;
 	list-style: square;
 }
-ul li { margin: 3px 10px; }
-
-ol {
-	margin: 10px;
-	padding: 10px;
-	list-style: decimal;
-}
-ol li { margin: 3px 10px; }
+ol { list-style: decimal; }
+ul li, ol li { margin: 3px 10px; }
+ul ul { margin: 0 10px; }
 
 #container td { vertical-align: middle; }
 
-.smsupgrade-title {
-	width: 20%;
-	vertical-align: middle;
-	font-weight: bold;
-	font-size: 1.1em;
-	padding: 0 5px;
-}
 .smsupgrade-icon {
 	width: 70px;
 	text-align: center;
@@ -305,3 +272,145 @@ ol li { margin: 3px 10px; }
 .alt { background: #eaeaea; }
 
 .hidden { display: none; }
+
+.important, .critical {
+	padding: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.critical {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3) !important;
+	background: #ed3131;
+	background: -moz-linear-gradient(top, #ed3131 0%, #db2800 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed3131), color-stop(100%,#db2800));
+	background: -webkit-linear-gradient(top, #ed3131 0%,#db2800 100%);
+	background: -o-linear-gradient(top, #ed3131 0%,#db2800 100%);
+	background: -ms-linear-gradient(top, #ed3131 0%,#db2800 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed3131', endColorstr='#db2800',GradientType=0 );
+	background: linear-gradient(top, #ed3131 0%,#db2800 100%);
+	color: #fff;
+	border: 1px solid #9E0000;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px #d4c6b8;
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px #d4c6b8;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px #d4c6b8;
+}
+.important {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3) !important;
+	background: #ffe266;
+	background: -moz-linear-gradient(top, #ffe266 0%, #e5b900 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe266), color-stop(100%,#e5b900));
+	background: -webkit-linear-gradient(top, #ffe266 0%,#e5b900 100%);
+	background: -o-linear-gradient(top, #ffe266 0%,#e5b900 100%);
+	background: -ms-linear-gradient(top, #ffe266 0%,#e5b900 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe266', endColorstr='#e5b900',GradientType=0 );
+	background: linear-gradient(top, #ffe266 0%,#e5b900 100%);
+	color: #725a00;
+	border-top: 1px solid #e0af00;
+	border-bottom: 1px solid #9d7d00;
+	border-left: 1px solid #b99100;
+	border-right: 1px solid #b99100;
+	box-shadow: inset 0 1px 0 #fffe77, 0 1px 1px #c8c7b7;
+	-moz-box-shadow: inset 0 1px 0 #fffe77, 0 1px 1px #c8c7b7;
+	-webkit-box-shadow: inset 0 1px 0 #fffe77, 0 1px 1px #c8c7b7;
+}
+
+/**
+ * Styles for the global breadcrumbs
+ */
+.breadcrumbs {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	padding: 5px 8px 5px 5px;
+	background: #e9e9e9;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .08), 0 1px 0 rgba(255, 255, 255, 1);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .08), 0 1px 0 rgba(255, 255, 255, 1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .08), 0 1px 0 rgba(255, 255, 255, 1);
+}
+.breadcrumbs ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.breadcrumbs ul li {
+	float: left;
+	margin: 0;
+	padding-left: 16px;
+	padding-right: 5px;
+	background-image: url(images/bc-bullet.png);
+	background-repeat: no-repeat;
+	background-position: 0 4px; 
+}
+.breadcrumbs ul li a {
+	text-decoration: none;
+	color: #999;
+	font-size: .9em;
+}
+.breadcrumbs ul li a:hover { color: #076cb0; }
+
+/**
+ * Styles for tables (from Bootstrap from Twitter)
+ */
+#container table {
+	width: 100%;
+	margin-bottom: 18px;
+	padding: 0;
+	border-collapse: separate;
+	font-size: 13px;
+}
+#container table th, #container table td {
+	padding: 10px 10px 9px;
+	line-height: 13.5px;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 1px solid #ddd;
+}
+#container table th {
+	padding-top: 9px;
+	font-weight: bold;
+	border-bottom-width: 2px;
+}
+#container .zebra-striped tbody tr:nth-child(odd) td {
+	background-color: #f9f9f9;
+}
+#container .zebra-striped tbody tr:hover td {
+	background-color: #f5f5f5;
+}
+#container .zebra-striped .header {
+	cursor: pointer;
+}
+#container .zebra-striped .header:after {
+	content: "";
+	float: right;
+	margin-top: 7px;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color: #000 transparent;
+	visibility: hidden;
+}
+#container .zebra-striped .headerSortUp, #container .zebra-striped .headerSortDown {
+	background-color: rgba(141, 192, 219, 0.25);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+#container .zebra-striped .header:hover:after {
+	visibility: visible;
+}
+
+#container table {
+	font-size: 14px;
+}
+#container table th {
+	font-size: 1.2em;
+}
+#container table th, #container table td {
+	line-height: 20px;
+}
+#container table .blue {
+	color: #076cb0;
+	border-bottom-color: #076cb0;
+}

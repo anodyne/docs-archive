@@ -56,9 +56,14 @@ class Controller_Nova2_Start extends Controller_Template {
 	{
 		switch ($version)
 		{
-			case '125_to_200':
-				$view = 'components/pages/nova2/start/update/125_to_200';
-				$title = 'Nova 1.2.5 to Nova 2.0';
+			case '126_to_200':
+				$view = 'components/pages/nova2/start/update/126_to_200';
+				$title = 'Nova 1.2.6 to Nova 2.0';
+			break;
+			
+			case '125_to_126':
+				$view = 'components/pages/nova2/start/update/125_to_126';
+				$title = 'Nova 1.2.5 to Nova 1.2.6';
 			break;
 			
 			case '124_to_125':
