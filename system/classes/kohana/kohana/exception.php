@@ -30,6 +30,11 @@ class Kohana_Kohana_Exception extends Exception {
 	public static $error_view = 'kohana/error';
 
 	/**
+	 * @var  string  error view content type
+	 */
+	public static $error_view_content_type = 'text/html';
+
+	/**
 	 * Creates a new translated exception.
 	 *
 	 *     throw new Kohana_Exception('Something went terrible wrong, :user',
@@ -48,15 +53,15 @@ class Kohana_Kohana_Exception extends Exception {
 			Kohana_Exception::$php_errors[E_DEPRECATED] = 'Deprecated';
 		}
 
-		// Save the unmodified code
-		// @link http://bugs.php.net/39615
-		$this->code = $code;
-
 		// Set the message
 		$message = __($message, $variables);
 
 		// Pass the message and integer code to the parent
 		parent::__construct($message, (int) $code);
+
+		// Save the unmodified code
+		// @link http://bugs.php.net/39615
+		$this->code = $code;
 	}
 
 	/**
@@ -128,6 +133,9 @@ class Kohana_Kohana_Exception extends Exception {
 				// Add this exception to the log
 				Kohana::$log->add(Log::ERROR, $error);
 
+				$strace = Kohana_Exception::text($e)."\n--\n" . $e->getTraceAsString();
+				Kohana::$log->add(Log::STRACE, $strace);
+
 				// Make sure the logs are written
 				Kohana::$log->write();
 			}
@@ -145,7 +153,7 @@ class Kohana_Kohana_Exception extends Exception {
 				// Make sure the proper http header is sent
 				$http_header_status = ($e instanceof HTTP_Exception) ? $code : 500;
 
-				header('Content-Type: text/html; charset='.Kohana::$charset, TRUE, $http_header_status);
+				header('Content-Type: '.Kohana_Exception::$error_view_content_type.'; charset='.Kohana::$charset, TRUE, $http_header_status);
 			}
 
 			if (Request::$current !== NULL AND Request::current()->is_ajax() === TRUE)
