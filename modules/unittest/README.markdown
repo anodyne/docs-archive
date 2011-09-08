@@ -9,28 +9,16 @@ I've chosen to do this because it's part of the PHPUnit coding conventions and i
 
 * [PHPUnit](http://www.phpunit.de/) >= 3.4
 
-### Optional extras
+## Usage
 
-* The [Archive module](http://github.com/BRMatt/kohana-archive) is required if you want to download code coverage reports from the web ui, however you can also view them without downloading.
+	$ phpunit --bootstrap=modules/unittest/bootstrap.php modules/unittest/tests.php
 
-## Installation
+Alternatively you can use a `phpunit.xml` to have a more fine grained control
+over which tests are included and which files are whitelisted.
 
-**Step 0**: Download this module!
+Make sure you only whitelist the highest files in the cascading filesystem, else
+you could end up with a lot of "class cannot be redefined" errors.  
 
-To get it from git execute the following command in the root of your project:
-
-	$ git submodule add git://github.com/kohana/unittest.git modules/unittest
-
-And watch the gitorious magic...
-
-Of course, you can always download the code from the [github project](http://github.com/kohana/unittest) as an archive.
-
-## Running the tests
-
-         $ phpunit --bootstrap=modules/unittest/bootstrap.php {tests}
-
-Where `{tests}` can either be a path to a folder of tests, or a path to the the `tests.php` (`modules/unittest/tests.php`)
-
-Please see the guide pages for more info.  An example of how we run the tests for the kohana project can be found in the [phing build script](https://github.com/kohana/kohana/blob/3.1/master/build.xml#L172).
-
-If you're looking for more info on running the core kohana tests then please see our [dev wiki](https://github.com/kohana/kohana/wiki/Unit-Testing-Kohana)
+If you use the `tests.php` testsuite loader then it will only whitelist the
+highest files. see `config/unittest.php` for details on configuring the
+`tests.php` whitelist.
