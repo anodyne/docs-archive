@@ -10,4 +10,5 @@
 	<li><a href="<?php echo Url::site('sms/overview/emails');?>">Dynamic Activation Emails</a></li>
 	<li><a href="<?php echo Url::site('sms/overview/ranks');?>">Creating New Ranks</a></li>
 	<li><a href="<?php echo Url::site('sms/overview/variables');?>">Fixing the Variables File</a></li>
+	<li><a href="<?php echo Url::site('sms/overview/access');?>">Fixing Broken CO Access</a></li>
 </ul>

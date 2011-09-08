@@ -24,6 +24,13 @@ class Controller_Sms_Overview extends Controller_Template {
 		$this->template->title.= 'Main';
 	}
 	
+	public function action_access()
+	{
+		$this->template->content = View::factory('components/pages/sms/tutorials_access');
+		
+		$this->template->title.= 'Fixing Broken Access';
+	}
+	
 	public function action_awards()
 	{
 		$this->template->content = View::factory('components/pages/sms/tutorials_awards');
