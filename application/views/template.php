@@ -1,7 +1,7 @@
 <?php
 
 // grab the current request object
-$request = Request::current();
+$req = Request::current();
 
 // set up the translation for directories
 $directories = array(
@@ -16,6 +16,9 @@ $directories = array(
 $controllers = array(
 	'nova1' => array(
 		'overview'		=> 'Overview',
+		'developers'	=> 'Developers',
+		'helpers'		=> 'Helpers',
+		'libraries'		=> 'Libraries',
 	),
 	'nova2' => array(
 		'overview'		=> 'Overview',
@@ -91,15 +94,23 @@ $controllers = array(
 							<ul>
 								<li><a href="<?php echo Url::site();?>">Home</a></li>
 								
-								<?php if ($request->directory()): ?>
-									<li><a href="<?php echo Url::site($request->directory());?>"><?php echo $directories[$request->directory()];?></a></li>
+								<?php if ($req->directory()): ?>
+									<li><a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
 									
-									<?php if ($request->controller()): ?>
+									<?php if ($req->controller()): ?>
 										<li>
-											<a href="<?php echo Url::site($request->directory().'/'.$request->controller());?>">
-												<?php echo $controllers[$request->directory()][$request->controller()];?>
+											<a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>">
+												<?php echo $controllers[$req->directory()][$req->controller()];?>
 											</a>
 										</li>
+										
+										<?php if ($req->param('id') and $req->param('id') != 'index'): ?>
+											<li>
+												<a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>">
+													<?php echo ucfirst($req->action());?>
+												</a>
+											</li>
+										<?php endif;?>
 									<?php endif;?>
 								<?php endif;?>
 							</ul>
