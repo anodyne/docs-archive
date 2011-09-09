@@ -1,10 +1,10 @@
-<h1><?php echo $header;?></h1>
+<h1>Form Helper</h1>
 
 <p>The Form Helper file contains functions that assist in working with forms.</p>
 
 <p class="critical"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_form_helper.php</samp> file in <samp>application/helpers</samp>. Do not edit the CodeIgniter core helper file!</p>
+<p class="important"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_form_helper.php</strong> file in <strong>application/helpers</strong>. Do not edit the CodeIgniter core helper file!</p>
 
 <h2>form_button</h2>
 
@@ -16,14 +16,14 @@
 
 <p>This new form helper generates a dropdown menu pre-populated with departments from the database.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>name</strong></td>
@@ -57,7 +57,7 @@
 	</tr>
 </table>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <p>This example would produce a dropdown of all departments in the database and name the select menu <var>dept</var>. By passing other parameters to the helper, we can change the data being shown, like pre-selecting a value.</p>
 
@@ -76,14 +76,14 @@
 
 <p>This new form helper generates a dropdown menu pre-populated with positions from the database.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>name</strong></td>
@@ -123,7 +123,7 @@
 	</tr>
 </table>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <p>This example would produce a dropdown of all positions in the database and name the select menu <var>position_1</var>. For <dfn>all</dfn> and <dfn>open</dfn> positions, optgroups are used to break the options up into their respective departments.</p>
 
@@ -158,14 +158,14 @@
 
 <p>This new form helper generates a dropdown menu pre-populated with ranks from the database.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>name</strong></td>
@@ -187,7 +187,7 @@
 	</tr>
 </table>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <p>This example would produce a dropdown of all ranks in the database and name the select menu <var>rank</var>. By passing other parameters to the helper, we can change the data being shown, like pre-selecting a value.</p>
 

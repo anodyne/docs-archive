@@ -1,151 +1,83 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
 
-class Helpers extends Controller {
-	
-	public $title;
-	private $viewpath;
+class Controller_Nova1_Helpers extends Controller_Template {
+
 	private $imagepath;
 	
-	function __construct()
+	public function before()
 	{
-		parent::Controller();
+		parent::before();
 		
-		// set the variables
-		$this->title		= ' :: Nova User Guide';
-		$this->viewpath		= 'modules/nova/pages/helpers/';
-		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/nova/images/';
+		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		
+		$this->template = View::factory('template');
+		$this->template->title = 'Nova 1 - ';
 	}
 	
-	public function index()
+	public function after()
 	{
-		$data['header'] = 'Helpers';
-		$data['sub'] = NULL;
+		$this->template->title.= ' :: AnodyneDocs';
 		
-		$view = $this->viewpath .'main';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->response->body($this->template);
 	}
 	
-	public function date()
+	public function action_index()
 	{
-		$data['header'] = 'Date Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'date';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/index');
+		$this->template->title.= 'Helpers';
 	}
 	
-	public function debug()
+	public function action_date()
 	{
-		$data['header'] = 'Debug Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'debug';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/date');
+		$this->template->title.= 'Date Helper';
 	}
 	
-	public function form()
+	public function action_debug()
 	{
-		$data['header'] = 'Form Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'form';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/debug');
+		$this->template->title.= 'Debug Helper';
 	}
 	
-	public function html()
+	public function action_form()
 	{
-		$data['header'] = 'HTML Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'html';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/form');
+		$this->template->title.= 'Form Helper';
 	}
 	
-	public function language()
+	public function action_html()
 	{
-		$data['header'] = 'Language Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'language';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/html');
+		$this->template->title.= 'HTML Helper';
 	}
 	
-	public function location()
+	public function action_language()
 	{
-		$data['header'] = 'Location Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'location';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/language');
+		$this->template->title.= 'Language Helper';
 	}
 	
-	public function panel()
+	public function action_location()
 	{
-		$data['header'] = 'Panel Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'panel';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/location');
+		$this->template->title.= 'Location Helper';
 	}
 	
-	public function url()
+	public function action_panel()
 	{
-		$data['header'] = 'URL Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'url';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/panel');
+		$this->template->title.= 'Panel Helper';
 	}
 	
-	public function utility()
+	public function action_url()
 	{
-		$data['header'] = 'Utility Helper';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'utility';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/helpers/url');
+		$this->template->title.= 'URL Helper';
+	}
+	
+	public function action_utility()
+	{
+		$this->template->content = View::factory('components/pages/nova1/helpers/utility');
+		$this->template->title.= 'Utility Helper';
 	}
 }
-
-/* End of file helpers.php */
-/* Location: ./application/modules/nova/controllers/helpers.php */

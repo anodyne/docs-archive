@@ -1,6 +1,6 @@
-<h1><?php echo $header;?></h1>
+<h1>Panel Helper</h1>
 
-<p>The Panel Helper file contains functions that assist in actions related to the <?php echo anchor('nova/libraries/userpanel', 'User Panel Library')?>.</p>
+<p>The Panel Helper file contains functions that assist in actions related to the <?php echo Html::anchor('nova1/libraries/userpanel', 'User Panel Library')?>.</p>
 
 <h2>Loading this Helper</h2>
 
@@ -14,14 +14,14 @@
 
 <p>Creates a link that controls the user dashboard.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>text</strong></td>
@@ -37,11 +37,11 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an anchor to use for controlling the dashboard panel.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>&lt;?php echo panel_dashboard(TRUE, img($image));</pre>
 
@@ -49,14 +49,14 @@
 
 <p>Creates a link to the private messages inbox along with notification controls.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>icon</strong></td>
@@ -90,11 +90,11 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an anchor to use for linking to the inbox.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>&lt;?php echo panel_inbox(FALSE, TRUE, TRUE, '[x]');
 
@@ -105,14 +105,14 @@ Inbox [2]</pre>
 
 <p>Creates a link to the writing control panel along with notification controls.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>icon</strong></td>
@@ -146,11 +146,11 @@ Inbox [2]</pre>
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an anchor to use for linking to the writing control panel.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>&lt;?php echo panel_writing(FALSE, TRUE, TRUE, '- x');
 

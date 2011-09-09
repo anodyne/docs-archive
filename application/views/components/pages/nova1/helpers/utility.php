@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Utility Helper</h1>
 
 <p>The Utility Helper file contains functions that assist in various actions your own code.</p>
 
@@ -12,14 +12,14 @@
 
 <p>The check memory helper aids in determining the size of the database and judging what the total memory consumption is against what the server&rsquo;s memory limit is.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>size</strong></td>
@@ -35,7 +35,7 @@
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>Returns <dfn>TRUE</dfn> if the server memory is greater than what Nova is consuming and <dfn>FALSE</dfn> if it isn&rsquo;t.</p>
 
@@ -43,14 +43,14 @@
 
 <p>The file size helper accepts a numerical input in bytes and converts it to megabytes for either displaying on the page or storing in the database or a flat file.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>size</strong></td>
@@ -60,11 +60,11 @@
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>This function returns the size of the file in megabytes for display or storage.</p>
 
-<h4>Example</h4>
+<h3>Example</h3>
 
 <pre>$size = file_size(1024000);
 
@@ -75,14 +75,14 @@
 
 <p>The check memory helper aids in determining the size of the database and judging what the total memory consumption is against what the server&rsquo;s memory limit is.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>message</strong></td>
@@ -98,11 +98,11 @@
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>Returns the parsed message.</p>
 
-<h4>Example</h4>
+<h3>Example</h3>
 
 <pre>$message = 'This message contains #number# dynamic tags that will be #action#.';
 
@@ -119,16 +119,16 @@ $content = parse_dynamic_message($message, $args);
 
 <p>The Who&rsquo;s Online helper does just what you&rsquo;d think it does, it returns a list of all current users who are logged in based on the timespan given.</p>
 
-<p class="important"><strong>Note:</strong> If you want to use this helper in your template file to show the list at the bottom of the page (or in any other location), you must first auto-load the utility helper as it is not automatically loaded by Nova. You can set the auto-load in <samp>application/config/autoload.php</samp> in the <var>helpers</var> array.</p>
+<p class="important"><strong>Note:</strong> If you want to use this helper in your template file to show the list at the bottom of the page (or in any other location), you must first auto-load the utility helper as it is not automatically loaded by Nova. You can set the auto-load in <strong>application/config/autoload.php</strong> in the <var>helpers</var> array.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>timespan</strong></td>
@@ -138,11 +138,11 @@ $content = parse_dynamic_message($message, $args);
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>This function returns a comma-separated string of the players&rsquo; main characters who are logged in.</p>
 
-<h4>Example</h4>
+<h3>Example</h3>
 
 <pre>&lt;?php echo whos_online($this->settings['online_timespan']);?>
 
@@ -155,14 +155,14 @@ Captain Jean-Luc Picard, Commander William Riker, Commander Worf</pre>
 
 <p class="important"><strong>Note:</strong> The backup function used consumes a lot of server memory. Large database will require a significantly higher server memory limit.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>prefix</strong></td>
@@ -174,7 +174,7 @@ Captain Jean-Luc Picard, Commander William Riker, Commander Worf</pre>
 		<td class="td col1"><strong>action</strong></td>
 		<td class="td col2"><em>download</em></td>
 		<td class="td col3"><em>download/save</em></td>
-		<td class="td col4">The action to be taken with the final zip archive of the backed up content. Downloading will offer the zip archive for download by the user and Save will save the zip archive to the server in the <samp>./application/assets/backups</samp> directory.</td>
+		<td class="td col4">The action to be taken with the final zip archive of the backed up content. Downloading will offer the zip archive for download by the user and Save will save the zip archive to the server in the <strong>./application/assets/backups</strong> directory.</td>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>name</strong></td>
@@ -184,13 +184,13 @@ Captain Jean-Luc Picard, Commander William Riker, Commander Worf</pre>
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>This function returns <dfn>TRUE</dfn> when the backup functions run and <dfn>FALSE</dfn> if they do not run. <strong>Note:</strong> Just because the function runs does not mean it does so successfully. If you use this helper, you will need to make sure the file exists after using the helper. In addition, the helper should be used alongside other utility helpers available for checking memory and file sizes.</p>
 
-<h4>Example</h4>
+<h3>Example</h3>
 
-<p>The following example is from the upgrade controller. This code grabs all tables with the <dfn>sms_</dfn> prefix and will generate a zip file with the name sms_backup.zip in the <samp>./application/assets/backups</samp> directory.</p>
+<p>The following example is from the upgrade controller. This code grabs all tables with the <dfn>sms_</dfn> prefix and will generate a zip file with the name sms_backup.zip in the <samp>application/assets/backups</samp> directory.</p>
 
 <pre>/* set the prefix */
 $prefix = 'sms_';
@@ -230,14 +230,14 @@ else
 
 <p class="important"><strong>Note:</strong> This function assumes the default set of position values found in an SMS installation. If a lot of changes have been made to the positions, this will not translate positions properly.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -247,7 +247,7 @@ else
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>This function returns the ID of the Nova position that relates to the SMS position passed to the function.</p>
 
@@ -255,10 +255,10 @@ else
 
 <p>This helper function will check to see if Nova can be run on the current server.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>This function returns a table with the components checked, required values, actual values and a result.</p>

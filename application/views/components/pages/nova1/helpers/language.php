@@ -1,23 +1,23 @@
-<h1><?php echo $header;?></h1>
+<h1>Language Helper</h1>
 
 <p>The Language Helper file contains functions that assist in working with language files.</p>
 
 <p class="critical"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_language_helper.php</samp> file in <samp>application/helpers</samp>. Do not edit the CodeIgniter core helper file!</p>
+<p class="important"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_language_helper.php</strong> file in <strong>application/helpers</strong>. Do not edit the CodeIgniter core helper file!</p>
 
 <h2>lang_output</h2>
 
 <p>Outputs text from a language file properly formatted with the parameters passed to the function.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>line</strong></td>
@@ -45,11 +45,11 @@
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>The string along with any HTML tags and classes.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>echo lang_output('text', 'h1', 'red');
 
@@ -65,14 +65,14 @@ The text in the $lang['text'] string</pre>
 
 <p>Outputs the text string properly formatted with the parameters passed to the function.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>line</strong></td>
@@ -100,11 +100,11 @@ The text in the $lang['text'] string</pre>
 	</tr>
 </table>
 
-<h4>Returns</h4>
+<h3>Returns</h3>
 
 <p>The string along with any HTML tags and classes.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>echo text_output($header, 'h1', 'page_head');
 
