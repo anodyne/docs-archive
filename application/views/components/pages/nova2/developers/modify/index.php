@@ -8,7 +8,7 @@
 
 <ul>
 	<li><a href="<?php echo Url::site('nova2/modify/changeicons');?>">Using seamless substitution to change some system icons</a></li>
-	<li>Using seamless substitution to add an image to a page</li>
+	<li><a href="<?php echo Url::site('nova2/modify/addimage');?>">Using seamless substitution to add an image to a page</a></li>
 	<li><a href="<?php echo Url::site('nova2/modify/language');?>">Changing language items for Nova</a></li>
 </ul>
 
@@ -17,11 +17,11 @@
 <p>Now that you have a grasp on the basics behind using Nova's built-in tools to modify the system, let's take a tour through a few intermediate topics to change some more things about Nova.</p>
 
 <ul>
-	<li>Create a brand new page</li>
+	<li><a href="<?php echo Url::site('nova2/modify/newpage');?>">Create a brand new page</a></li>
 	<li>Changing a page to display different information from the database</li>
 	<li>Creating Quick Install files for your skins and ranks</li>
-	<li>Changing the application directory for your installation</li>
-	<li>Changing the index file for your installation</li>
+	<li><a href="<?php echo Url::site('nova2/modify/changeappfolder');?>">Changing the name of application directory</a></li>
+	<li><a href="<?php echo Url::site('nova2/modify/changeindex');?>">Changing the index file</a></li>
 	<li>Translating Nova to another language</li>
 </ul>
 
