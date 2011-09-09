@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Input Library</h1>
 
 <p>The Input Class serves two purposes:</p>
 
@@ -11,4 +11,4 @@
 
 <p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This library has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_Input.php</samp> file in <samp>application/libraries</samp>. Do not edit the CodeIgniter core library file!</p>
+<p class="important"><strong>Note:</strong> This library has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_Input.php</strong> file in <strong>application/libraries</strong>. Do not edit the CodeIgniter core library file!</p>

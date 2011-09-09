@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>Nova&rsquo;s Thresher library handles all interaction between Thresher and the text coming out of the database.</p>
+<p>Nova's Thresher library handles all interaction between Thresher and the text coming out of the database.</p>
 
 <p class="critical"><strong>Note:</strong> This library is initialized automatically by Thresher so there is no need to do it manually.</p>
 
@@ -8,14 +8,14 @@
 
 <p>Parses the text passed to the method based on the parsing model set in the Thresher config file.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 <br />
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>text</strong></td>
@@ -25,6 +25,6 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>This method returns the finalized text after it's been parsed.</p>

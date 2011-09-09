@@ -1,138 +1,71 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
 
-class Libraries extends Controller {
-	
-	public $title;
-	private $viewpath;
+class Controller_Nova1_Libraries extends Controller_Template {
+
 	private $imagepath;
 	
-	function __construct()
+	public function before()
 	{
-		parent::Controller();
+		parent::before();
 		
-		// set the variables
-		$this->title		= ' :: Nova User Guide';
-		$this->viewpath		= 'modules/nova/pages/libraries/';
-		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/nova/images/';
+		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		
+		$this->template = View::factory('template');
+		$this->template->title = 'Nova 1 - ';
 	}
 	
-	public function index()
+	public function after()
 	{
-		$data['header'] = 'Libraries';
-		$data['sub'] = NULL;
+		$this->template->title.= ' :: AnodyneDocs';
 		
-		$view = $this->viewpath .'main';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->response->body($this->template);
 	}
 	
-	public function auth()
+	public function action_index()
 	{
-		$data['header'] = 'Auth Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'auth';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/index');
+		$this->template->title.= 'Libraries';
 	}
 	
-	public function input()
+	public function action_auth()
 	{
-		$data['header'] = 'Input Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'input';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/auth');
+		$this->template->title.= 'Auth Library';
 	}
 	
-	public function loader()
+	public function action_input()
 	{
-		$data['header'] = 'Loader Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'loader';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/input');
+		$this->template->title.= 'Input Library';
 	}
 	
-	public function menu()
+	public function action_loader()
 	{
-		$data['header'] = 'Menu Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'menu';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/loader');
+		$this->template->title.= 'Loader Library';
 	}
 	
-	public function simplepie()
+	public function action_menu()
 	{
-		$data['header'] = 'SimplePie';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'simplepie';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/menu');
+		$this->template->title.= 'Menu Library';
 	}
 	
-	public function template()
+	public function action_template()
 	{
-		$data['header'] = 'Template Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'template';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/template');
+		$this->template->title.= 'Template Library';
 	}
 	
-	public function uri()
+	public function action_uri()
 	{
-		$data['header'] = 'URI Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'uri';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/uri');
+		$this->template->title.= 'URI Library';
 	}
 	
-	public function userpanel()
+	public function action_userpanel()
 	{
-		$data['header'] = 'User Panel Library';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'userpanel';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/libraries/userpanel');
+		$this->template->title.= 'User Panel Library';
 	}
 }
-
-/* End of file libraries.php */
-/* Location: ./application/modules/nova/controllers/libraries.php */

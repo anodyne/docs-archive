@@ -1,6 +1,6 @@
-<h1><?php echo $header;?></h1>
+<h1>Menu Library</h1>
 
-<p>Nova&rsquo;s Menu library handles building all the menus throughout the system.</p>
+<p>Nova's Menu library handles building all the menus throughout the system.</p>
 
 <p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
@@ -8,14 +8,14 @@
 
 <p>Builds the menus based on the parameters passed to the method.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>type</strong></td>
@@ -31,11 +31,11 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an unordered list to be put into the template.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <p>To build the main navigation as seen in the main, sim, personnel, search admin and wiki sections, you can use the following code:</p>
 

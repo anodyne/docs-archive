@@ -1,6 +1,6 @@
-<h1><?php echo $header;?></h1>
+<h1>User Panel Library</h1>
 
-<p>Nova&rsquo;s User Panel library handles building the user panel shown when a user is logged in to the system.</p>
+<p>Nova's User Panel library handles building the user panel shown when a user is logged in to the system.</p>
 
 <p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
@@ -8,15 +8,15 @@
 
 <p>Builds the numbered panel in the user panel.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns the data to be used by the panel views</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>$this->user_panel->panel_1();</pre>
 
@@ -26,15 +26,15 @@
 
 <p>Builds the workflow handle object used by the user panel to display inbox count and writing entry counts.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns the rendered workflow handle.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>$this->user_panel->panel_workflow();</pre>
 
@@ -42,14 +42,14 @@
 
 <p>Builds a single anchor with necessary code to control the dashboard panel.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>text</strong></td>
@@ -65,11 +65,11 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an anchor to use for controlling the dashboard panel.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>&lt;?php echo $this->user_panel->workflow_dashboard(TRUE, img($image));</pre>
 
@@ -77,14 +77,14 @@
 
 <p>Builds a single anchor with necessary code to show the inbox link.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>icon</strong></td>
@@ -118,11 +118,11 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an anchor to use for linking to the inbox.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>&lt;?php echo $this->user_panel->workflow_inbox(FALSE, TRUE, TRUE, '[x]');
 
@@ -133,14 +133,14 @@ Inbox [2]</pre>
 
 <p>Builds a single anchor with necessary code to show the writing entries link.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>icon</strong></td>
@@ -174,11 +174,11 @@ Inbox [2]</pre>
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>Returns an anchor to use for linking to the writing control panel.</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <pre>&lt;?php echo $this->user_panel->workflow_writing(FALSE, TRUE, TRUE, '- x');
 
