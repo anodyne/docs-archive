@@ -1,4 +1,13 @@
-<h1><?php echo $header;?></h1>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var tables = $('h2').length;
+		var fields = $('table tbody tr').length;
+		
+		$('dfn.tables').html(tables);
+		$('var.fields').html(fields);
+	});
+</script>
+<h1>Database Field Index</h1>
 
 <p>A great deal of effort has gone in to Nova to make the database as fast and extensible as possible. Because of that, admins will notice the Nova database is significantly larger than SMS. Nova currently uses <dfn class="tables"></dfn> tables with <var class="fields"></var> fields to power the system. Below is an index of all the tables and all their fields along with simple descriptions.</p>
 
@@ -8,12 +17,12 @@
 
 <h2>nova_access_groups</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -37,12 +46,12 @@
 
 <h2>nova_access_pages</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -76,12 +85,12 @@
 
 <h2>nova_access_roles</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -110,12 +119,12 @@
 
 <h2>nova_applications</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -174,12 +183,12 @@
 
 <h2>nova_awards</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -223,12 +232,12 @@
 
 <h2>nova_awards_queue</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -277,12 +286,12 @@
 
 <h2>nova_awards_received</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -326,12 +335,12 @@
 
 <h2>nova_catalogue_ranks</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -395,12 +404,12 @@
 
 <h2>nova_catalogue_skins</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -429,12 +438,12 @@
 
 <h2>nova_catalogue_skinsecs</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -473,12 +482,12 @@
 
 <h2>nova_characters</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -552,12 +561,12 @@
 
 <h2>nova_characters_data</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -596,12 +605,12 @@
 
 <h2>nova_characters_fields</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -665,12 +674,12 @@
 
 <h2>nova_characters_promotions</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -719,12 +728,12 @@
 
 <h2>nova_characters_sections</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -753,12 +762,12 @@
 
 <h2>nova_characters_tabs</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -792,12 +801,12 @@
 
 <h2>nova_characters_values</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -836,12 +845,12 @@
 
 <h2>nova_coc</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -865,12 +874,12 @@
 
 <h2>nova_departments_<kbd>{genre}</kbd></h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -914,12 +923,12 @@
 
 <h2>nova_docking</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -963,12 +972,12 @@
 
 <h2>nova_docking_data</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1002,12 +1011,12 @@
 
 <h2>nova_docking_fields</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1071,12 +1080,12 @@
 
 <h2>nova_docking_sections</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1100,12 +1109,12 @@
 
 <h2>nova_docking_values</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1144,12 +1153,12 @@
 
 <h2>nova_login_attempts</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1178,12 +1187,12 @@
 
 <h2>nova_menu_categories</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1217,12 +1226,12 @@
 
 <h2>nova_menu_items</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1301,12 +1310,12 @@
 
 <h2>nova_messages</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1345,12 +1354,12 @@
 
 <h2>nova_mission_groups</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1379,12 +1388,12 @@
 
 <h2>nova_missions</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1453,12 +1462,12 @@
 
 <h2>nova_news</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1522,12 +1531,12 @@
 
 <h2>nova_news_categories</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1551,12 +1560,12 @@
 
 <h2>nova_news_comments</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1600,12 +1609,12 @@
 
 <h2>nova_personallogs</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1654,12 +1663,12 @@
 
 <h2>nova_personallogs_comments</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1703,12 +1712,12 @@
 
 <h2>nova_positions_<kbd>{genre}</kbd></h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1757,12 +1766,12 @@
 
 <h2>nova_posts</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1836,12 +1845,12 @@
 
 <h2>nova_posts_comments</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1885,12 +1894,12 @@
 
 <h2>nova_privmsgs</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1934,12 +1943,12 @@
 
 <h2>nova_privmsgs_to</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1978,12 +1987,12 @@
 
 <h2>nova_ranks_<kbd>{genre}</kbd></h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2027,12 +2036,12 @@
 
 <h2>nova_security_questions</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2051,12 +2060,12 @@
 
 <h2>nova_sessions</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2090,12 +2099,12 @@
 
 <h2>nova_settings</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2129,12 +2138,12 @@
 
 <h2>nova_sim_type</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2153,12 +2162,12 @@
 
 <h2>nova_specs</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2197,12 +2206,12 @@
 
 <h2>nova_specs_data</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2236,12 +2245,12 @@
 
 <h2>nova_specs_fields</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2310,12 +2319,12 @@
 
 <h2>nova_specs_sections</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2339,12 +2348,12 @@
 
 <h2>nova_specs_values</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2388,12 +2397,12 @@
 
 <h2>nova_system_components</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2427,12 +2436,12 @@
 
 <h2>nova_system_info</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2481,12 +2490,12 @@
 
 <h2>nova_system_versions</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2535,12 +2544,12 @@
 
 <h2>nova_tour</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2584,12 +2593,12 @@
 
 <h2>nova_tour_data</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2623,12 +2632,12 @@
 
 <h2>nova_tour_decks</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2657,12 +2666,12 @@
 
 <h2>nova_tour_fields</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2726,12 +2735,12 @@
 
 <h2>nova_tour_values</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2769,12 +2778,12 @@
 
 <h2>nova_uploads</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2818,12 +2827,12 @@
 
 <h2>nova_user_loa</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2867,12 +2876,12 @@
 
 <h2>nova_user_prefs</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2901,12 +2910,12 @@
 
 <h2>nova_user_prefs_values</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -2935,12 +2944,12 @@
 
 <h2>nova_users</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3144,12 +3153,12 @@
 
 <h2>nova_wiki_categories</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3173,12 +3182,12 @@
 
 <h2>nova_wiki_comments</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3222,12 +3231,12 @@
 
 <h2>nova_wiki_drafts</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -3291,12 +3300,12 @@
 
 <h2>nova_wiki_pages</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<thead>
 		<tr>
-			<th>Field</th>
-			<th>Field Information</th>
-			<th>Description</th>
+			<th class="blue">Field</th>
+			<th class="blue">Field Information</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
