@@ -14,7 +14,9 @@ $directories = array(
 
 // set up the translation for controllers
 $controllers = array(
-	'nova1' => array(),
+	'nova1' => array(
+		'overview'		=> 'Overview',
+	),
 	'nova2' => array(
 		'overview'		=> 'Overview',
 		'start'			=> 'Getting Started',
