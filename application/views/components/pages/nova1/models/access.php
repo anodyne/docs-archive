@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Access Model</h1>
 
 <p>The Access model provides access to the role database tables for storing, editing and retrieving access information.</p>
 
@@ -27,14 +27,14 @@
 
 <p>Grabs information about a specific role group.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -50,7 +50,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return information based on what was passed to it. If the return value is empty, an object will be returned with all data. If a single value is provided, the return will be the value of that field. Finally, if an array is provided, the return will be an array with the fields specified. If no data is found, the method will return <dfn>FALSE</dfn>.</p>
 
@@ -58,14 +58,14 @@
 
 <p>Grabs information about a specific role page.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -81,7 +81,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return information based on what was passed to it. If the return value is empty, an object will be returned with all data. If a single value is provided, the return will be the value of that field. Finally, if an array is provided, the return will be an array with the fields specified. If no data is found, the method will return <dfn>FALSE</dfn>.</p>
 
@@ -89,10 +89,10 @@
 
 <p>Grabs all of the page groups from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object with all the information about all page groups in the database.</p>
 
@@ -100,15 +100,15 @@
 
 <p>Goes out to the database with a comma-separated string of page IDs and pulls back their URLs and access levels as an array.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -118,7 +118,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an array containing page URLs as the keys and access levels as the values.</p>
 
@@ -126,15 +126,15 @@
 
 <p>Retrieves all players from the database that have the role ID given in the first parameter.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -144,7 +144,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an array with the main character IDs for all players who have the specified role ID. Returns <dfn>FALSE</dfn> if no data is found.</p>
 
@@ -152,15 +152,15 @@
 
 <p>Grabs all data about a given role.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -170,22 +170,22 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
-<p>The method will return the row&rsquo;s query object for use in your pages. Returns <dfn>FALSE</dfn> if no data is found.</p>
+<p>The method will return the row's query object for use in your pages. Returns <dfn>FALSE</dfn> if no data is found.</p>
 
 <h2>get_role_data()</h2>
 
 <p>Pulls back a comma-separated list of page IDs that someone with the role ID passed to the method has access to view.</p>
 
-<h4>Parameters</h4>
-<br />
+<h3>Parameters</h3>
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>role</strong></td>
@@ -195,7 +195,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return a comma-separated list of page IDs that can be passed to <dfn>get_pages()</dfn> to get an array of page URLs and access levels. Returns <dfn>FALSE</dfn> if no role data is found.</p>
 
@@ -203,11 +203,11 @@
 
 <p>Goes out to the database and pulls back all pages from the roles_pages table.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return a query object with all the records for use in your pages.</p>
 
@@ -215,11 +215,11 @@
 
 <p>Returns all roles used by the system.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return a query object with all the records for use in your pages.</p>
 
@@ -235,15 +235,15 @@
 
 <p>Updates a given group with the data passed to the method.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -259,7 +259,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -267,15 +267,15 @@
 
 <p>Updates a given page with the data passed to the method.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -291,7 +291,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -299,15 +299,15 @@
 
 <p>Updates a given page with the data passed to the method.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -323,7 +323,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -331,15 +331,15 @@
 
 <p>Updates a given role with the data passed to the method.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -355,7 +355,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -371,15 +371,15 @@
 
 <p>Creates an access group in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -389,7 +389,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -397,15 +397,15 @@
 
 <p>Creates an access page in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -415,7 +415,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -423,15 +423,15 @@
 
 <p>Creates an access role in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -441,7 +441,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -459,15 +459,15 @@
 
 <p>Deletes the group specified by the group ID passed to the first parameter.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -477,7 +477,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -487,15 +487,15 @@
 
 <p>Deletes the page specified by the page ID passed to the first parameter.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -505,7 +505,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>
 
@@ -515,15 +515,15 @@
 
 <p>Deletes the role specified by the role ID passed to the first parameter.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -533,6 +533,6 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The number of affected rows. If successful, the method will return 1. If the operation fails, the method will return 0.</p>

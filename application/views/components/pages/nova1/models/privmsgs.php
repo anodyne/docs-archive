@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Private Messages Model</h1>
 
 <p>The Private Messages model provides access to the private messages database tables for storing, editing deleting and retrieving private messages.</p>
 
@@ -28,15 +28,15 @@
 
 <p>Get the inbox for a given user.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -46,7 +46,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the private messages currently in a user's inbox.</p>
 
@@ -54,15 +54,15 @@
 
 <p>Get the outbox (sent messages) for a given user.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -72,7 +72,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the private messages currently in a user's outbox (sent messages).</p>
 
@@ -80,15 +80,15 @@
 
 <p>Get the content messages for a certain private message ID.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -98,7 +98,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the content messages for the given private message.</p>
 
@@ -106,15 +106,15 @@
 
 <p>Get a private message's recipient list.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -124,7 +124,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an array with a list of user ID who received the private message.</p>
 
@@ -132,15 +132,15 @@
 
 <p>Get a private message by its ID.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -150,7 +150,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the private message requested.</p>
 
@@ -166,15 +166,15 @@
 
 <p>Update the user-specific message item for a private message. This is used by Nova to change the read and display statuses of a user-specific message item.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -196,7 +196,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -204,15 +204,15 @@
 
 <p>Update a private message in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -228,7 +228,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -236,15 +236,15 @@
 
 <p>Update a user-specific message item for a private message in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -266,7 +266,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -282,15 +282,15 @@
 
 <p>Add a user-specific message item for a private message.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -300,7 +300,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -308,15 +308,15 @@
 
 <p>Add a private message to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -326,7 +326,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -352,15 +352,15 @@
 
 <p>Counts the number of unread private messages a user has.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -370,6 +370,6 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of private messages) returned by the query.</p>

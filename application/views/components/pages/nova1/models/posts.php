@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Posts Model</h1>
 
 <p>The Posts model provides access to the mission posts database tables for storing, editing deleting and retrieving post information.</p>
 
@@ -29,15 +29,15 @@
 
 <p>Get the email addresses of the authors of a given post.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>post</strong></td>
@@ -47,7 +47,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an array of email address if authors are found or <dfn>FALSE</dfn> if no authors are found.</p>
 
@@ -55,15 +55,15 @@
 
 <p>Get all a character's posts from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
@@ -79,7 +79,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the posts that match the criteria.</p>
 
@@ -87,15 +87,15 @@
 
 <p>Get a specific position from the database based on its ID.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -111,7 +111,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an integer with the ID of the next or previous mission post ID or <dfn>FALSE</dfn> if nothing is found.</p>
 
@@ -119,15 +119,15 @@
 
 <p>Get a specific mission post from the database based on its ID.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -143,7 +143,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>If a single value is passed in the second parameter, the method will return just that value. If an array if passed to the second parameter, the method will return an array with the values.</p>
 
@@ -151,15 +151,15 @@
 
 <p>Get a specific mission post comment from the database based on its ID.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -175,7 +175,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>If a single value is passed in the second parameter, the method will return just that value. If an array if passed to the second parameter, the method will return an array with the values.</p>
 
@@ -183,15 +183,15 @@
 
 <p>Get post comments from the database based on the mission posts they're associated with.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -219,7 +219,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the post comments that match the criteria.</p>
 
@@ -227,15 +227,15 @@
 
 <p>Get a specific number and subset of mission posts from the database. This method is used for generating data for paginated mission posts results.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>mission</strong></td>
@@ -269,7 +269,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the mission posts that match the criteria.</p>
 
@@ -277,15 +277,15 @@
 
 <p>Get saved mission posts for the entire system or for specific characters.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -301,7 +301,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the mission posts that match the criteria.</p>
 
@@ -317,15 +317,15 @@
 
 <p>Update a mission post in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -341,7 +341,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -349,15 +349,15 @@
 
 <p>Update a mission post comment in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -373,7 +373,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -389,15 +389,15 @@
 
 <p>Add a mission post comment to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -407,7 +407,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -415,15 +415,15 @@
 
 <p>Add a mission post to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -433,7 +433,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -451,15 +451,15 @@
 
 <p class="critical"><strong>Warning:</strong> To avoid orphan mission post comment records, Nova will also delete all mission post comments associated with the post you're attempting to delete.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -469,7 +469,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -477,15 +477,15 @@
 
 <p>Delete a mission post comment from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -495,7 +495,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -511,15 +511,15 @@
 
 <p>Counts the number of post comments associated with a mission post.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>status</strong></td>
@@ -535,7 +535,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of comments) returned by the query.</p>
 
@@ -543,15 +543,15 @@
 
 <p>Counts the number of mission posts in the system.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>mission</strong></td>
@@ -567,7 +567,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
@@ -575,15 +575,15 @@
 
 <p>Counts the number of mission posts a character has made.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
@@ -599,7 +599,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
@@ -607,15 +607,15 @@
 
 <p>Counts the number of posts in a given mission.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>mission</strong></td>
@@ -631,7 +631,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
@@ -639,15 +639,15 @@
 
 <p>Counts the number of mission posts between two dates.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>start</strong></td>
@@ -675,7 +675,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
@@ -683,15 +683,15 @@
 
 <p>Counts the number of mission posts that a user still needs to take action on.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -707,7 +707,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
@@ -715,15 +715,15 @@
 
 <p>Counts the number of mission post comments a user has made.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -733,7 +733,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of comments) returned by the query.</p>
 
@@ -741,15 +741,15 @@
 
 <p>Counts the number of mission posts a user has made.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -771,7 +771,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
@@ -787,15 +787,15 @@
 
 <p>Search for mission posts.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>component</strong></td>
@@ -811,6 +811,6 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the mission posts that match the search criteria.</p>

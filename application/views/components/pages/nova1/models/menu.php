@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Menu Model</h1>
 
 <p>The Menu model provides access to the menus database tables for storing, editing deleting and retrieving menu item and category information.</p>
 
@@ -23,15 +23,15 @@
 
 <p>Get menu items of a certain type or category.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>type</strong></td>
@@ -53,7 +53,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the menu items that match the criteria.</p>
 
@@ -61,15 +61,15 @@
 
 <p>Get a specific menu item based on its ID number.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -79,7 +79,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the menu item.</p>
 
@@ -87,15 +87,15 @@
 
 <p>Get all menu categories in the system.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>type</strong></td>
@@ -105,7 +105,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the menu categories.</p>
 
@@ -113,15 +113,15 @@
 
 <p>Get a specific menu category based on data passed to the method.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -137,7 +137,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the menu category.</p>
 
@@ -145,11 +145,11 @@
 
 <p>Get the categories used in the menu items table.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the menu categories.</p>
 
@@ -157,15 +157,15 @@
 
 <p>Get the menu items for a specific admin section.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>type</strong></td>
@@ -175,7 +175,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the menu items.</p>
 
@@ -191,15 +191,15 @@
 
 <p>Update a menu item in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -221,7 +221,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -229,15 +229,15 @@
 
 <p>Update a menu category in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -253,7 +253,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
@@ -269,15 +269,15 @@
 
 <p>Add a menu item to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -287,7 +287,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -295,15 +295,15 @@
 
 <p>Add a menu category to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -313,7 +313,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -329,15 +329,15 @@
 
 <p>Delete a menu item from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -347,7 +347,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -355,15 +355,15 @@
 
 <p>Delete a menu category from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -373,6 +373,6 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>

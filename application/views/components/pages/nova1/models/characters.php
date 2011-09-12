@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Characters Model</h1>
 
 <p>The Characters model provides access to the characters database tables for storing, editing deleting and retrieving characters.</p>
 
@@ -30,15 +30,15 @@
 
 <p>Get all the characters from the database that match a set of pre-defined criteria.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>status</strong></td>
@@ -54,7 +54,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the characters that match the criteria.</p>
 
@@ -62,15 +62,15 @@
 
 <p>Pull the author information from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
@@ -86,7 +86,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return a string of characters separated by an ampersand (&amp;).</p>
 
@@ -94,15 +94,15 @@
 
 <p>Pull the bio fields for a particular section or of a particular type.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>section</strong></td>
@@ -118,7 +118,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -126,15 +126,15 @@
 
 <p>Pull the details for a specific bio field.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -144,7 +144,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -152,15 +152,15 @@
 
 <p>Pull the details for a specific bio field value.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -170,7 +170,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -178,11 +178,11 @@
 
 <p>Pull all of the bio sections from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -190,15 +190,15 @@
 
 <p>Pull the details for a specific bio section.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -208,7 +208,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -216,15 +216,15 @@
 
 <p>Pull the details for a specific bio tab.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -234,7 +234,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -242,15 +242,15 @@
 
 <p>Pull the bio tabs from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>display</strong></td>
@@ -260,7 +260,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -268,15 +268,15 @@
 
 <p>If you have a field that uses a dropdown that has values, this method will pull back those values to use.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>field</strong></td>
@@ -286,7 +286,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with the requested information.</p>
 
@@ -294,15 +294,15 @@
 
 <p>Get a specific character from the database based on their ID.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -318,7 +318,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>If a single value is passed in the second parameter, the method will return just that value. If an array if passed to the second parameter, the method will return an array with the values.</p>
 
@@ -326,15 +326,15 @@
 
 <p>Get an array of email addresses for a given set of characters.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -344,7 +344,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an array where the key is the user ID and the value is their email address.</p>
 
@@ -352,15 +352,15 @@
 
 <p>Get a character's name along with their rank if so requested.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
@@ -382,7 +382,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method cleans the data to make sure only the information needed is displayed and returns a string with the character name.</p>
 
@@ -390,15 +390,15 @@
 
 <p>Get all characters that hold a specific position.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>position</strong></td>
@@ -414,7 +414,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object with the requested information.</p>
 
@@ -422,15 +422,15 @@
 
 <p>Get a list of characters in the system that include everyone except a specific user.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -440,7 +440,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object with the requested information.</p>
 
@@ -448,11 +448,11 @@
 
 <p>Get the chain of command listing.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object with the requested information.</p>
 
@@ -460,15 +460,15 @@
 
 <p>Get all data associated with a specific field for a specific character.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>field</strong></td>
@@ -484,7 +484,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object with the requested information.</p>
 
@@ -492,15 +492,15 @@
 
 <p>Get all of a user's characters.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -522,7 +522,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object if the third parameter is passed <dfn>object</dfn> or an array if <dfn>array</dfn> is passed with the requested information. The method will return <dfn>FALSE</dfn> if no information is available.</p>
 
@@ -530,15 +530,15 @@
 
 <p>Get the rank history for a specific user's characters.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
@@ -548,7 +548,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns an object with the requested information.</p>
 
@@ -564,15 +564,15 @@
 
 <p>Updates a dynamic form database field.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -588,7 +588,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows. In a successful update query, this number should be <dfn>1</dfn>.</p>
 
@@ -596,15 +596,15 @@
 
 <p>Updates a dynamic form database field value option.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -620,7 +620,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows. In a successful update query, this number should be <dfn>1</dfn>.</p>
 
@@ -628,15 +628,15 @@
 
 <p>Updates a bio section.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -652,7 +652,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows. In a successful update query, this number should be <dfn>1</dfn>.</p>
 
@@ -660,15 +660,15 @@
 
 <p>Updates a bio tab.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -684,7 +684,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows. In a successful update query, this number should be <dfn>1</dfn>.</p>
 
@@ -692,15 +692,15 @@
 
 <p>Updates a given character's main information (does not include dynamic data).</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -716,7 +716,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows. In a successful update query, this number should be <dfn>1</dfn>.</p>
 
@@ -724,15 +724,15 @@
 
 <p>Updates a given character's dynamic bio information (does not include main data).</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>field</strong></td>
@@ -754,7 +754,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows.</p>
 
@@ -762,15 +762,15 @@
 
 <p>Updates all of a given character's dynamic bio information (does not include main data).</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -792,7 +792,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows.</p>
 
@@ -800,15 +800,15 @@
 
 <p>Updates the bio fields from their old section to a new section (in the instance of deleting a section).</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>old ID</strong></td>
@@ -824,7 +824,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows.</p>
 
@@ -832,15 +832,15 @@
 
 <p>Updates the bio sections from their old tab to a new tab (in the instance of deleting a tab).</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>old ID</strong></td>
@@ -856,7 +856,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows.</p>
 
@@ -872,15 +872,15 @@
 
 <p>Adds a bio field to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -890,7 +890,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -898,15 +898,15 @@
 
 <p>Adds data to a given bio field in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -916,7 +916,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query.</p>
 
@@ -924,15 +924,15 @@
 
 <p>Adds a field value option to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -942,7 +942,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -950,15 +950,15 @@
 
 <p>Adds a field section to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -968,7 +968,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -976,15 +976,15 @@
 
 <p>Adds a section tab to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -994,7 +994,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -1002,15 +1002,15 @@
 
 <p>Adds a character and their main information to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -1020,7 +1020,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -1028,15 +1028,15 @@
 
 <p>Adds all of the character data to the database as blank values.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
@@ -1052,7 +1052,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query.</p>
 
@@ -1060,15 +1060,15 @@
 
 <p>Adds character data to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -1078,7 +1078,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query.</p>
 
@@ -1086,15 +1086,15 @@
 
 <p>Adds a chain of command entry to the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -1104,7 +1104,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -1112,15 +1112,15 @@
 
 <p>Adds a character promotion/demotion entry to the database. <strong>Since: 1.0.6</strong></p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -1130,7 +1130,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
@@ -1145,15 +1145,15 @@
 
 <p>Deletes a bio field from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1163,7 +1163,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1171,15 +1171,15 @@
 
 <p>Deletes a bio field value option from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1189,7 +1189,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1197,15 +1197,15 @@
 
 <p>Deletes a bio section from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1215,7 +1215,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1223,15 +1223,15 @@
 
 <p>Deletes a bio tab from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1241,7 +1241,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1249,15 +1249,15 @@
 
 <p>Deletes a character and their main information from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1267,7 +1267,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1275,15 +1275,15 @@
 
 <p>Deletes a character's dynamic data from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1299,7 +1299,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query.</p>
 
@@ -1307,15 +1307,15 @@
 
 <p>Deletes a character field from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>field</strong></td>
@@ -1325,7 +1325,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1333,15 +1333,15 @@
 
 <p>Deletes a chain of command entry from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -1351,7 +1351,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
 
@@ -1359,11 +1359,11 @@
 
 <p>Clears out the chain of command table.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
 <p><em>None</em></p>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query.</p>
 
@@ -1379,15 +1379,15 @@
 
 <p>Counts the number of characters with the sim and optionally includes the ability to filter that by how many characters were on the sim in a given timeframe as well.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>type</strong></td>
@@ -1415,6 +1415,6 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method returns the number of rows (number of characters) returned by the query.</p>

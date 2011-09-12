@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Users Model</h1>
 
 <p>The Users model provides access to the users database tables for storing, editing deleting and retrieving user information.</p>
 
@@ -40,16 +40,16 @@
 			<p><?php echo $m['description'];?></p>
 			
 			<?php if (isset($m['parameters'])): ?>
-				<h4>Parameters</h4>
-				<br />
+				<h3>Parameters</h3>
+				
 				<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 					<thead>
 						<tr>
-							<th>Parameter</th>
-							<th>Data Type</th>
-							<th>Default Value</th>
-							<th>Options</th>
-							<th>Description</th>
+							<th class="blue">Parameter</th>
+							<th class="blue">Data Type</th>
+							<th class="blue">Default Value</th>
+							<th class="blue">Options</th>
+							<th class="blue">Description</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -66,7 +66,7 @@
 				</table>
 			<?php endif;?>
 			
-			<h4>Return</h4>
+			<h3>Return</h3>
 			<p><?php echo $m['return'];?></p>
 		<?php endforeach;?>
 	<?php endforeach;?>

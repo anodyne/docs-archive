@@ -1,337 +1,170 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
 
-class Models extends Controller {
-	
-	public $title;
-	private $viewpath;
+class Controller_Nova1_Models extends Controller_Template {
+
 	private $imagepath;
-	private $modelpath;
 	
-	function __construct()
+	public function before()
 	{
-		parent::Controller();
+		parent::before();
 		
-		// set the variables
-		$this->title		= ' :: Nova User Guide';
-		$this->viewpath		= 'modules/nova/pages/models/';
-		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/nova/images/';
-		$this->modelpath	= APPPATH .'modules/'. $this->router->fetch_module() .'/assets/models/';
+		$this->imagepath = Url::base().'application/views/design/images/nova1/';
 		
-		// pull in the sfYaml file
-		include_once APPPATH .'assets/yaml/sfYaml.php';
+		$this->template = View::factory('template');
+		$this->template->title = 'Nova 1 - ';
+		
+		// load Spyc
+		Kohana::load(Kohana::find_file('vendor', 'spyc/spyc'));
 	}
 	
-	public function index()
+	public function after()
 	{
-		$data['header'] = 'Models';
-		$data['sub'] = NULL;
+		$this->template->title.= ' :: AnodyneDocs';
 		
-		$view = $this->viewpath .'main';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->response->body($this->template);
 	}
 	
-	public function access()
+	public function action_index()
 	{
-		$data['header'] = 'Access Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'access';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/index');
+		$this->template->title.= 'Models';
 	}
 	
-	public function applications()
+	public function action_access()
 	{
-		$data['header'] = 'Applications Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'applications';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/access');
+		$this->template->title.= 'Access Model';
 	}
 	
-	public function awards()
+	public function action_applications()
 	{
-		$data['header'] = 'Awards Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'awards';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/applications');
+		$this->template->title.= 'Applications Model';
 	}
 	
-	public function characters()
+	public function action_awards()
 	{
-		$data['header'] = 'Characters Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'characters';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/awards');
+		$this->template->title.= 'Awards Model';
 	}
 	
-	public function depts()
+	public function action_characters()
 	{
-		$data['header'] = 'Departments Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'depts';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/characters');
+		$this->template->title.= 'Characters Model';
 	}
 	
-	public function docking()
+	public function action_depts()
 	{
-		$data['header'] = 'Docking Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'docking';
-		
-		$data['model'] = sfYaml::load($this->modelpath .'docking.yaml');
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/depts');
+		$this->template->title.= 'Departments Model';
 	}
 	
-	public function menu()
+	public function action_docking()
 	{
-		$data['header'] = 'Menu Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'menu';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/docking');
+		$this->template->content->model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova1/models/docking', 'yaml'));
+		$this->template->title.= 'Docking Model';
 	}
 	
-	public function messages()
+	public function action_menu()
 	{
-		$data['header'] = 'Messages Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'messages';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/menu');
+		$this->template->title.= 'Menu Model';
 	}
 	
-	public function missions()
+	public function action_messages()
 	{
-		$data['header'] = 'Missions Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'missions';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/messages');
+		$this->template->title.= 'Messages Model';
 	}
 	
-	public function news()
+	public function action_missions()
 	{
-		$data['header'] = 'News Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'news';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/missions');
+		$this->template->title.= 'Missions Model';
 	}
 	
-	public function personallogs()
+	public function action_news()
 	{
-		$data['header'] = 'Personal Logs Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'personallogs';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/news');
+		$this->template->title.= 'News Model';
 	}
 	
-	public function positions()
+	public function action_personallogs()
 	{
-		$data['header'] = 'Positions Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'positions';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/personallogs');
+		$this->template->title.= 'Personal Logs Model';
 	}
 	
-	public function posts()
+	public function action_positions()
 	{
-		$data['header'] = 'Posts Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'posts';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/positions');
+		$this->template->title.= 'Positions Model';
 	}
 	
-	public function privmsgs()
+	public function action_posts()
 	{
-		$data['header'] = 'Private Messages Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'privmsgs';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/posts');
+		$this->template->title.= 'Posts Model';
 	}
 	
-	public function ranks()
+	public function action_privmsgs()
 	{
-		$data['header'] = 'Ranks Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'ranks';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/privmsgs');
+		$this->template->title.= 'Private Messages Model';
 	}
 	
-	public function rss()
+	public function action_ranks()
 	{
-		$data['header'] = 'RSS Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'rss';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/ranks');
+		$this->template->title.= 'Ranks Model';
 	}
 	
-	public function settings()
+	public function action_rss()
 	{
-		$data['header'] = 'Settings Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'settings';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/rss');
+		$this->template->title.= 'RSS Model';
 	}
 	
-	public function specs()
+	public function action_settings()
 	{
-		$data['header'] = 'Specifications Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'specs';
-		
-		$data['model'] = sfYaml::load($this->modelpath .'specs.yaml');
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/settings');
+		$this->template->title.= 'Settings Model';
 	}
 	
-	public function system()
+	public function action_specs()
 	{
-		$data['header'] = 'System Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'system';
-		
-		$data['model'] = sfYaml::load($this->modelpath .'system.yaml');
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/specs');
+		$this->template->content->model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova1/models/specs', 'yaml'));
+		$this->template->title.= 'Specifications Model';
 	}
 	
-	public function tour()
+	public function action_system()
 	{
-		$data['header'] = 'Tour Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'tour';
-		
-		$data['model'] = sfYaml::load($this->modelpath .'tour.yaml');
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/system');
+		$this->template->content->model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova1/models/system', 'yaml'));
+		$this->template->title.= 'System Model';
 	}
 	
-	public function users()
+	public function action_tour()
 	{
-		$data['header'] = 'Users Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'users';
-		
-		$data['model'] = sfYaml::load($this->modelpath .'users.yaml');
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/tour');
+		$this->template->content->model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova1/models/tour', 'yaml'));
+		$this->template->title.= 'Tour Model';
 	}
 	
-	public function wiki()
+	public function action_users()
 	{
-		$data['header'] = 'Wiki Model';
-		$data['sub'] = NULL;
-		
-		$view = $this->viewpath .'wiki';
-		
-		$data['model'] = sfYaml::load($this->modelpath .'wiki.yaml');
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/models/users');
+		$this->template->content->model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova1/models/users', 'yaml'));
+		$this->template->title.= 'Users Model';
+	}
+	
+	public function action_wiki()
+	{
+		$this->template->content = View::factory('components/pages/nova1/models/wiki');
+		$this->template->content->model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova1/models/wiki', 'yaml'));
+		$this->template->title.= 'Wiki Model';
 	}
 }
-
-/* End of file models.php */
-/* Location: ./application/modules/nova/controllers/models.php */

@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Applications Model</h1>
 
 <p>The Applications model provides access to the applications database table for storing, editing counting and retrieving application records. You cannot delete application records.</p>
 
@@ -27,15 +27,15 @@
 
 <p>Pull a specific application from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -45,7 +45,7 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for the application record.</p>
 
@@ -53,10 +53,10 @@
 
 <p>Pull all application records from the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 <em>None</em>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return an object with all the information for every application record.</p>
 
@@ -72,15 +72,15 @@
 
 <p>Update an application in the database for the sake of record-keeping. This action happens by default when someone is approved or rejected.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>ID</strong></td>
@@ -102,11 +102,11 @@
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return the query object from the operation.</p>
 
-<h4>Example</h4>
+<h3>Example</h3>
 
 <pre>$character = 1;
 
@@ -129,15 +129,15 @@ $apps = $this->apps->update_application($character, $app_array);</pre>
 
 <p>Insert an application into the database for the sake of record-keeping. This action happens by default with every application received by the system.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 
-<br />
+
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<tr>
-		<th>Parameter</th>
-		<th>Default Value</th>
-		<th>Options</th>
-		<th>Description</th>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>data</strong></td>
@@ -147,11 +147,11 @@ $apps = $this->apps->update_application($character, $app_array);</pre>
 	</tr>
 </table>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return the number of affected rows. In a normal case, this will be 1. If no rows are returned, then the query has failed.</p>
 
-<h4>Example</h4>
+<h3>Example</h3>
 
 <pre>$app_array = array(
 	'app_email' => $email,
@@ -175,9 +175,9 @@ $apps = $this->apps->insert_application($app_array);</pre>
 
 <p>Counts all application records in the database.</p>
 
-<h4>Parameters</h4>
+<h3>Parameters</h3>
 <em>None</em>
 
-<h4>Return</h4>
+<h3>Return</h3>
 
 <p>The method will return the number of application records stored in the database.</p>
