@@ -1,222 +1,77 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
 
-class Tour extends Controller {
-	
-	public $title;
-	private $viewpath;
+class Controller_Nova1_Tour extends Controller_Template {
+
 	private $imagepath;
 	
-	function __construct()
+	public function before()
 	{
-		parent::Controller();
+		parent::before();
 		
-		// set the variables
-		$this->title		= ' :: Nova User Guide';
-		$this->viewpath		= 'modules/nova/pages/tour/';
-		$this->imagepath 	= base_url() . APPFOLDER .'/views/modules/nova/images/';
+		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		
+		$this->template = View::factory('template');
+		$this->template->title = 'Nova 1 - ';
 	}
 	
-	public function index()
+	public function after()
 	{
-		$data['header'] = 'Take a Tour';
-		$data['sub'] = NULL;
+		$this->template->title.= ' :: AnodyneDocs';
 		
-		$data['images'] = array(
-			'translate' => array(
-				'src' => $this->imagepath .'tour/locale.png',
-				'alt' => 'internationalization',
-				'class' => 'tour-icon'),
-			'forms' => array(
-				'src' => $this->imagepath .'tour/ui-text-field.png',
-				'alt' => 'dynamic forms',
-				'class' => 'tour-icon'),
-			'characters' => array(
-				'src' => $this->imagepath .'tour/users.png',
-				'alt' => 'characters',
-				'class' => 'tour-icon'),
-			'writing' => array(
-				'src' => $this->imagepath .'tour/notebook--pencil.png',
-				'alt' => 'writing',
-				'class' => 'tour-icon'),
-			'substitute' => array(
-				'src' => $this->imagepath .'tour/arrow-circle-double-135.png',
-				'alt' => 'seamless substitution',
-				'class' => 'tour-icon'),
-			'smiley' => array(
-				'src' => $this->imagepath .'tour/smiley.png',
-				'alt' => 'smiley face',
-				'class' => 'tour-icon'),
-			'wiki' => array(
-				'src' => $this->imagepath .'tour/application-text.png',
-				'alt' => 'wiki page',
-				'class' => 'tour-icon'),
-			'changes' => array(
-				'src' => $this->imagepath .'tour/clipboard-list.png',
-				'alt' => 'clipboard',
-				'class' => 'tour-icon'),
-			'genre' => array(
-				'src' => $this->imagepath .'tour/direction.png',
-				'alt' => 'genre',
-				'class' => 'tour-icon'),
-		);
-		
-		$view = $this->viewpath .'main';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->response->body($this->template);
 	}
 	
-	public function characters()
+	public function action_index()
 	{
-		$data['header'] = 'Nova Tour: Characters';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/characters.png',
-			'alt' => 'characters'
-		);
-		
-		$view = $this->viewpath .'characters';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/index');
+		$this->template->title.= 'Take a Tour';
 	}
 	
-	public function forms()
+	public function action_characters()
 	{
-		$data['header'] = 'Nova Tour: Dynamic Forms';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/forms.png',
-			'alt' => 'dynamic forms'
-		);
-		
-		$view = $this->viewpath .'forms';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/characters');
+		$this->template->title.= 'Nova Tour: Characters';
 	}
 	
-	public function genres()
+	public function action_forms()
 	{
-		$data['header'] = 'Nova Tour: Genres';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/genres.jpg',
-			'alt' => 'genres'
-		);
-		
-		$view = $this->viewpath .'genres';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/forms');
+		$this->template->title.= 'Nova Tour: Dynamic Forms';
 	}
 	
-	public function internationalization()
+	public function action_genres()
 	{
-		$data['header'] = 'Nova Tour: Internationalization';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/internationalization.png',
-			'alt' => 'internationalization'
-		);
-		
-		$view = $this->viewpath .'internationalization';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/genres');
+		$this->template->title.= 'Nova Tour: Genres';
 	}
 	
-	public function littlethings()
+	public function action_internationalization()
 	{
-		$data['header'] = "Nova Tour: It's the Little Things";
-		$data['sub'] = NULL;
-		
-		$data['images'] = array(
-			'view' => array(
-				'src' => $this->imagepath .'image-view.png',
-				'alt' => 'view image'),
-			'magnifier' => array(
-				'src' => $this->imagepath .'magnifier.png',
-				'alt' => ''),
-		);
-		
-		$view = $this->viewpath .'little_things';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		CI::Library('template')->write_view('javascript', 'modules/nova/js/tour_js');
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/internationalization');
+		$this->template->title.= 'Nova Tour: Internationalization';
 	}
 	
-	public function seamless()
+	public function action_littlethings()
 	{
-		$data['header'] = 'Nova Tour: Seamless Substitution';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/seamless.jpg',
-			'alt' => 'seamless substitution'
-		);
-		
-		$view = $this->viewpath .'seamless';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/little_things');
+		$this->template->title.= "Nova Tour: It's the Little Things";
 	}
 	
-	public function wiki()
+	public function action_seamless()
 	{
-		$data['header'] = 'Nova Tour: Thresher';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/wiki.png',
-			'alt' => 'wiki'
-		);
-		
-		$view = $this->viewpath .'wiki';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/seamless');
+		$this->template->title.= 'Nova Tour: Seamless Substitution';
 	}
 	
-	public function writing()
+	public function action_wiki()
 	{
-		$data['header'] = 'Nova Tour: Writing';
-		$data['sub'] = NULL;
-		
-		$data['image'] = array(
-			'src' => $this->imagepath .'tour/writing.png',
-			'alt' => 'writing'
-		);
-		
-		$view = $this->viewpath .'writing';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tour/wiki');
+		$this->template->title.= 'Nova Tour: Thresher';
+	}
+	
+	public function action_writing()
+	{
+		$this->template->content = View::factory('components/pages/nova1/tour/writing');
+		$this->template->title.= 'Nova Tour: Writing';
 	}
 }
-
-/* End of file tour.php */
-/* Location: ./application/modules/nova/controllers/tour.php */

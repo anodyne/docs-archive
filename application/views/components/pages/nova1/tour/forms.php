@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Nova Tour: Dynamic Forms</h1>
 
 <div class="tour">
 	<div class="tour-left">
@@ -8,14 +8,14 @@
 	</div>
 	
 	<div class="tour-right">
-		<?php echo img($image);?>
+		<?php echo Html::image('application/views/design/images/nova1/tour/forms.png');?>
 	</div>
 </div>
 
 <div class="float-right">
-	<?php echo anchor('nova/tour/writing', '&laquo; Writing', array('class' => 'button-normal'));?>
+	<?php echo Html::anchor('nova1/tour/writing', '&laquo; Writing', array('class' => 'btn-tour'));?>
 	&nbsp;&nbsp;&nbsp;&nbsp;
-	<?php echo anchor('nova/tour/seamless', 'Seamless Substitution &raquo;', array('class' => 'button-normal'));?>
+	<?php echo Html::anchor('nova1/tour/seamless', 'Seamless Substitution &raquo;', array('class' => 'btn-tour'));?>
 </div>
 
 &nbsp;

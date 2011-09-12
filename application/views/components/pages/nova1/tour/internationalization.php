@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1>Nova Tour: Internationalization</h1>
 
 <div class="tour">
 	<div class="tour-left">
@@ -6,14 +6,14 @@
 	</div>
 	
 	<div class="tour-right">
-		<?php echo img($image);?>
+		<?php echo Html::image('application/views/design/images/nova1/tour/internationalization.png');?>
 	</div>
 </div>
 
 <div class="float-right">
-	<?php echo anchor('nova/tour/wiki', '&laquo; Thresher Mini-Wiki', array('class' => 'button-normal'));?>
+	<?php echo Html::anchor('nova1/tour/wiki', '&laquo; Thresher Mini-Wiki', array('class' => 'btn-tour'));?>
 	&nbsp;&nbsp;&nbsp;&nbsp;
-	<?php echo anchor('nova/tour/littlethings', 'All the Little Things... &raquo;', array('class' => 'button-normal'));?>
+	<?php echo Html::anchor('nova1/tour/littlethings', 'All the Little Things... &raquo;', array('class' => 'btn-tour'));?>
 </div>
 
 &nbsp;
