@@ -19,6 +19,9 @@ $controllers = array(
 		'developers'	=> 'Developers',
 		'helpers'		=> 'Helpers',
 		'libraries'		=> 'Libraries',
+		'models'		=> 'Models',
+		'tour'			=> 'Take a Tour',
+		'tutorials'		=> 'Tutorials',
 	),
 	'nova2' => array(
 		'overview'		=> 'Overview',
