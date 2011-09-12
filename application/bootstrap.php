@@ -121,7 +121,7 @@ Route::set('nova2', 'nova2(/<controller>(/<action>(/<id>)))')
 		'controller' => 'overview', 
 		'action' => 'index'
 	));
-	
+
 Route::set('nova1', 'nova1(/<controller>(/<action>(/<id>)))')
 	->defaults(array( 
 		'directory' => 'nova1', 
