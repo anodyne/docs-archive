@@ -28,7 +28,7 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/1', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/1', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/3', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/3', 'Next Tutorial &#187;');?>
 </p>

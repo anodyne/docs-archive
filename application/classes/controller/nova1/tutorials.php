@@ -1,424 +1,366 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
 
-class Tutorials extends Controller {
-	
-	public $title;
-	private $viewpath;
+class Controller_Nova1_Tutorials extends Controller_Template {
+
 	private $imagepath;
 	
-	public function __construct()
+	public function before()
 	{
-		parent::__construct();
+		parent::before();
 		
-		// set the variables
-		$this->title		= ' :: Nova User Guide';
-		$this->viewpath		= 'modules/nova/pages/tutorials/';
-		$this->imagepath 	= base_url().APPFOLDER.'/views/modules/nova/images/';
+		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		
+		$this->template = View::factory('template');
+		$this->template->title = 'Nova 1 - ';
 	}
 	
-	public function index()
+	public function after()
 	{
-		$data['header'] = 'Tutorials';
-		$data['sub'] = NULL;
+		$this->template->title.= ' :: AnodyneDocs';
 		
-		$view = $this->viewpath .'main';
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->response->body($this->template);
 	}
 	
-	public function advanced()
+	public function action_index()
 	{
-		switch ($this->uri->segment(4))
+		$this->template->content = View::factory('components/pages/nova1/tutorials/index');
+		$this->template->title.= 'Tutorials';
+	}
+	
+	public function action_advanced()
+	{
+		switch ($this->request->param('id'))
 		{
 			case 'appfolder':
-				$data['header'] = 'Changing the Application Folder';
-				$view = $this->viewpath .'adv_appfolder';
-				
-				break;
+				$header = 'Changing the Application Folder';
+				$view = 'adv_appfolder';
+			break;
 				
 			case 'changeindex':
-				$data['header'] = 'Changing the Index File';
-				$view = $this->viewpath .'adv_changeindex';
-				
-				break;
+				$header = 'Changing the Index File';
+				$view = 'adv_changeindex';
+			break;
 				
 			case 'changelang':
-				$data['header'] = 'Changing Language Items';
-				$view = $this->viewpath .'adv_changelang';
-				
-				break;
+				$header = 'Changing Language Items';
+				$view = 'adv_changelang';
+			break;
 				
 			case 'gitserver':
-				$data['header'] = 'Setting Up Git on Your Server for Updating';
-				$view = $this->viewpath .'adv_gitserver';
+				$header = 'Setting Up Git on Your Server for Updating';
+				$view = 'adv_gitserver';
 			break;
 				
 			case 'helpers':
-				$data['header'] = 'Creating &amp; Modifying Helpers';
-				$view = $this->viewpath .'adv_helpers';
-				
-				break;
+				$header = 'Creating &amp; Modifying Helpers';
+				$view = 'adv_helpers';
+			break;
 				
 			case 'libraries':
-				$data['header'] = 'Creating &amp; Modifying Libraries';
-				$view = $this->viewpath .'adv_libraries';
-				
-				break;
+				$header = 'Creating &amp; Modifying Libraries';
+				$view = 'adv_libraries';
+			break;
 				
 			case 'multipleapps':
-				$data['header'] = 'Running Multiple Applications of Nova';
-				$view = $this->viewpath .'adv_multipleapps';
-				
-				break;
+				$header = 'Running Multiple Applications of Nova';
+				$view = 'adv_multipleapps';
+			break;
 				
 			case 'rankset':
-				$data['header'] = 'Creating a Rank Set';
-				$view = $this->viewpath .'adv_rankset';
-				
-				break;
+				$header = 'Creating a Rank Set';
+				$view = 'adv_rankset';
+			break;
 				
 			case 'removeindex':
-				$data['header'] = 'Removing the Index File from the URL';
-				$view = $this->viewpath .'adv_removeindex';
-				
-				break;
+				$header = 'Removing the Index File from the URL';
+				$view = 'adv_removeindex';
+			break;
 				
 			case 'translate':
-				$data['header'] = 'Translating Nova to Another Language';
-				$view = $this->viewpath .'adv_translate';
-				
-				break;
+				$header = 'Translating Nova to Another Language';
+				$view = 'adv_translate';
+			break;
 				
 			case 'usinggithub':
-				$data['header'] = 'Nova &amp; Github';
-				$view = $this->viewpath .'adv_usinggithub';
-				
-				break;
+				$header = 'Nova &amp; Github';
+				$view = 'adv_usinggithub';
+			break;
+			
+			default:
+				$this->request->redirect('nova1/tutorials/index');
+			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function config()
+	public function action_config()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 'ci':
-			default:
-				$data['header'] = 'CodeIgniter Configuration';
-				$view = $this->viewpath .'config_ci';
-				
-				break;
+				$header = 'CodeIgniter Configuration';
+				$view = 'config_ci';
+			break;
 				
 			case 'nova':
-				$data['header'] = 'Nova Configuration';
-				$view = $this->viewpath .'config_nova';
-				
-				break;
+				$header = 'Nova Configuration';
+				$view = 'config_nova';
+			break;
+			
+			default:
+				$this->request->redirect('nova1/tutorials/index');
+			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function extending()
+	public function action_extending()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 1:
-			default:
-				$data['header'] = 'Tutorial: An Introduction to Extending Nova';
-				$view = $this->viewpath .'extending_1';
-				
-				break;
+				$header = 'Tutorial: An Introduction to Extending Nova';
+				$view = 'extending_1';
+			break;
 				
 			case 2:
-				$data['header'] = 'Tutorials: Templates &amp; Views, Oh My!';
-				$view = $this->viewpath .'extending_2';
-				
-				break;
+				$header = 'Tutorials: Templates &amp; Views, Oh My!';
+				$view = 'extending_2';
+			break;
 				
 			case 3:
-				$data['header'] = 'Tutorials: Models, Ooh La La';
-				$view = $this->viewpath .'extending_3';
-				
-				break;
+				$header = 'Tutorials: Models, Ooh La La';
+				$view = 'extending_3';
+			break;
 				
 			case 4:
-				$data['header'] = 'Tutorials: Models, Ooh La La, Part 2';
-				$view = $this->viewpath .'extending_4';
-				
-				break;
+				$header = 'Tutorials: Models, Ooh La La, Part 2';
+				$view = 'extending_4';
+			break;
 				
 			case 5:
-				$data['header'] = 'Tutorials: Controller, Meet View';
-				$view = $this->viewpath .'extending_5';
-				
-				break;
+				$header = 'Tutorials: Controller, Meet View';
+				$view = 'extending_5';
+			break;
 				
 			case 6:
-				$data['header'] = 'Extending Nova: Replacing Pages';
-				$view = $this->viewpath .'extending_6';
-				
-				break;
+				$header = 'Extending Nova: Replacing Pages';
+				$view = 'extending_6';
+			break;
 				
 			case 7:
-				$data['header'] = 'Extending Nova: Replacing Models';
-				$view = $this->viewpath .'extending_7';
-				
-				break;
+				$header = 'Extending Nova: Replacing Models';
+				$view = 'extending_7';
+			break;
+			
+			default:
+				$this->request->redirect('nova1/tutorials/index');
+			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function intro()
+	public function action_intro()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 'backup':
-				$data['header'] = 'Backup Guide';
-				$view = $this->viewpath .'intro_backup';
-				
-				break;
+				$header = 'Backup Guide';
+				$view = 'intro_backup';
+			break;
 				
 			case 'folders':
-				$data['header'] = 'The Folder Structure';
-				$view = $this->viewpath .'intro_folders';
-				
-				$data['images'] = array(
-					'application' => array(
-						'src' => APPFOLDER .'/views/modules/nova/images/folders-application.png',
-						'alt' => 'application folders',
-						'title' => 'Application Folder Structure',
-						'style' => 'float: left; margin-right: 28px; margin-left: 5px;'),
-					'core' => array(
-						'src' => APPFOLDER .'/views/modules/nova/images/folders-core.png',
-						'alt' => 'core folders',
-						'title' => 'Core Folder Structure',
-						'style' => 'float: left; margin-right: 28px; margin-left: 5px;'),
-					'root' => array(
-						'src' => APPFOLDER .'/views/modules/nova/images/folders-root.png',
-						'alt' => 'root folders',
-						'title' => 'Nova Root Folder Structure',
-						'style' => 'float: left; margin-right: 28px; margin-left: 5px;'),
-				);
-				
-				break;
+				$header = 'The Folder Structure';
+				$view = 'intro_folders';
+			break;
 				
 			case 'genres':
-				$data['header'] = 'Genres in Nova';
-				$view = $this->viewpath .'intro_genres';
-				
-				break;
+				$header = 'Genres in Nova';
+				$view = 'intro_genres';
+			break;
 				
 			case 'terms':
-				$data['header'] = 'Glossary of Terms';
-				$view = $this->viewpath .'intro_terms';
-				
-				break;
+				$header = 'Glossary of Terms';
+				$view = 'intro_terms';
+			break;
 				
 			case 'urls':
-				$data['header'] = 'Nova URLs';
-				$view = $this->viewpath .'intro_urls';
-				
-				break;
+				$header = 'Nova URLs';
+				$view = 'intro_urls';
+			break;
 				
 			case 'versioning':
-				$data['header'] = 'Versioning in Nova';
-				$view = $this->viewpath .'intro_versioning';
+				$header = 'Versioning in Nova';
+				$view = 'intro_versioning';
+			break;
 				
-				break;
+			default:
+				$this->request->redirect('nova1/tutorials/index');
+			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function models()
+	public function action_models()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 1:
-			default:
-				$data['header'] = 'Tutorial: What is a Model?';
-				$view = $this->viewpath .'models_1';
-				
-				break;
+				$header = 'Tutorial: What is a Model?';
+				$view = 'models_1';
+			break;
 				
 			case 2:
-				$data['header'] = 'Tutorials: Creating a New Model Method';
-				$view = $this->viewpath .'models_2';
-				
-				break;
+				$header = 'Tutorials: Creating a New Model Method';
+				$view = 'models_2';
+			break;
 				
 			case 3:
-				$data['header'] = 'Tutorials: Working with Data From a Model';
-				$view = $this->viewpath .'models_3';
+				$header = 'Tutorials: Working with Data From a Model';
+				$view = 'models_3';
+			break;
 				
-				break;
+			default:
+				$this->request->redirect('nova1/tutorials/index');
+			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function practical()
+	public function action_practical()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 'replacingpage':
-				$data['header'] = 'Replacing a Page';
-				$view = $this->viewpath .'prac_replacing_page';
+				$header = 'Replacing a Page';
+				$view = 'prac_replacing_page';
 			break;
 			
 			case 'replacingview':
-				$data['header'] = 'Replacing View Files';
-				$view = $this->viewpath .'prac_replacing_views';
+				$header = 'Replacing View Files';
+				$view = 'prac_replacing_views';
+			break;
+			
+			default:
+				$this->request->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function reference()
+	public function action_reference()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 'controllers':
-				$data['header'] = 'Controllers';
-				$view = $this->viewpath .'ref_controllers';
+				$header = 'Controllers';
+				$view = 'ref_controllers';
 			break;
 			
 			case 'libraries':
-				$data['header'] = 'Libraries';
-				$view = $this->viewpath .'ref_libraries';
+				$header = 'Libraries';
+				$view = 'ref_libraries';
 			break;
 			
 			case 'views':
-				$data['header'] = 'Views';
-				$view = $this->viewpath .'ref_views';
+				$header = 'Views';
+				$view = 'ref_views';
+			break;
+			
+			default:
+				$this->request->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function skins()
+	public function action_skins()
 	{
-		switch ($this->uri->segment(4))
+		switch ($this->request->param('id'))
 		{
 			case 1:
-			default:
-				$data['header'] = 'Anatomy of a Skin';
-				$view = $this->viewpath .'skins_1';
-				
-				break;
+				$header = 'Anatomy of a Skin';
+				$view = 'skins_1';
+			break;
 				
 			case 2:
-				$data['header'] = 'Inside Seamless Substitution';
-				$view = $this->viewpath .'skins_2';
-				
-				break;
+				$header = 'Inside Seamless Substitution';
+				$view = 'skins_2';
+			break;
 				
 			case 3:
-				$data['header'] = 'Anatomy of a Template File';
-				$view = $this->viewpath .'skins_3';
-				
-				break;
+				$header = 'Anatomy of a Template File';
+				$view = 'skins_3';
+			break;
 				
 			case 4:
-				$data['header'] = 'Anatomy of a Skin Section';
-				$view = $this->viewpath .'skins_4';
-				
-				break;
+				$header = 'Anatomy of a Skin Section';
+				$view = 'skins_4';
+			break;
 				
 			case 5:
-				$data['header'] = 'Nova &amp; jQuery UI Widgets';
-				$view = $this->viewpath .'skins_5';
-				
-				break;
+				$header = 'Nova &amp; jQuery UI Widgets';
+				$view = 'skins_5';
+			break;
 				
 			case 6:
-				$data['header'] = 'Nova &amp; Javascript';
-				$view = $this->viewpath .'skins_6';
-				
-				break;
+				$header = 'Nova &amp; Javascript';
+				$view = 'skins_6';
+			break;
 			
 			case 7:
-				$data['header'] = 'Creating a Skin, Part 1';
-				$view = $this->viewpath .'skins_7';
-				
-				break;
+				$header = 'Creating a Skin, Part 1';
+				$view = 'skins_7';
+			break;
 				
 			case 8:
-				$data['header'] = 'Creating a Skin, Part 2';
-				$view = $this->viewpath .'skins_8';
-				
-				break;
+				$header = 'Creating a Skin, Part 2';
+				$view = 'skins_8';
+			break;
 				
 			case 9:
-				$data['header'] = 'Creating a Skin, Part 3';
-				$view = $this->viewpath .'skins_9';
-				
-				break;
+				$header = 'Creating a Skin, Part 3';
+				$view = 'skins_9';
+			break;
 				
 			case 10:
-				$data['header'] = 'Creating a Skin, Part 4';
-				$view = $this->viewpath .'skins_10';
-				
-				break;
+				$header = 'Creating a Skin, Part 4';
+				$view = 'skins_10';
+			break;
 				
 			case 11:
-				$data['header'] = 'Creating a Skin, Part 5';
-				$view = $this->viewpath .'skins_11';
+				$header = 'Creating a Skin, Part 5';
+				$view = 'skins_11';
+			break;
 				
-				break;
+			default:
+				$this->request->redirect('nova1/tutorials/index');
+			break;
 		}
 		
-		$data['sub'] = NULL;
-		
-		CI::Library('template')->write('title', $data['header']. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/tutorials/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 }
-
-/* End of file tutorials.php */
-/* Location: ./application/modules/nova/controllers/tutorials.php */

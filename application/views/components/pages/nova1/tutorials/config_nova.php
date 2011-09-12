@@ -6,7 +6,7 @@
 
 <h2>Meta Data</h2>
 
-<p>Nova comes with some default meta data, but admins can change the data to their preference through variables in the <samp>./application/config/nova.php</samp> file. By default, Nova ships with the following meta data:</p>
+<p>Nova comes with some default meta data, but admins can change the data to their preference through variables in the <samp>application/config/nova.php</samp> file. By default, Nova ships with the following meta data:</p>
 
 <ul>
 	<li><strong>Description</strong> &ndash; Anodyne Productions' premier online RPG management software</li>
@@ -16,7 +16,7 @@
 
 <h2>RSS Settings</h2>
 
-<p>Nova allows people (crew and otherwise) to subscribe to RSS feeds with mission posts, personal logs, and news items. There are several options for configuring these in <samp>./application/config/nova.php</samp>. More information about the configuration options can be found in the RSS Feeds page.</p>
+<p>Nova allows people (crew and otherwise) to subscribe to RSS feeds with mission posts, personal logs, and news items. There are several options for configuring these in <samp>application/config/nova.php</samp>. More information about the configuration options can be found in the RSS Feeds page.</p>
 
 <h2>Thresher Settings</h2>
 

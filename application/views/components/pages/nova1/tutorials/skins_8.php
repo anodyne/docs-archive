@@ -8,17 +8,17 @@
 
 <h3>Tweaking ThemeRoller Settings</h3>
 
-<h4>Corner Radius</h4>
+<h3>Corner Radius</h3>
 
 <p>I want to give my skin more of a rounded appearance, so let's change the corner radius field to <strong>8px</strong>. Once you click anywhere outside of the field, you'll see the content update to reflect the change. This goes for everything in ThemeRoller.</p>
 
-<h4>Header/Toolbar</h4>
+<h3>Header/Toolbar</h3>
 
 <p>I want to give my headers a little more pop, so let's add a background image to the header/toolbar element. Clicking on the gray to the right of the color will give you a small pop-up where you can select a background pattern. I'm going to choose the wave pattern and change the percentage to <strong>60%</strong>.</p>
 
 <p>Next, I want to darken up the border around the header/toolbar elements a little bit so it pops out from the page. Let's change the border color to <kbd>#8f2d2d</kbd>.</p>
 
-<h4>Clickable: Hover State</h4>
+<h3>Clickable: Hover State</h3>
 
 <p>We're moving now! Next, let's make the hover state of stuff a little more complimentary to the rest of our theme. We'll do that by changing the background color of the hover state to <kbd>#faefef</kbd> and the border color to <kbd>#f3d8d8</kbd>. Once the content refreshes (it'll do it automatically), you can hover over the elements and see the changes and how we're using a soft pink color to compliment the hard reds we're using elsewhere.</p>
 
@@ -32,7 +32,7 @@
 
 <h3>Modifying Our Theme</h3>
 
-<p>Open up <samp>ui/development-bundle/themes/anodyne</samp> from the folder on your desktop. You'll see a directory of images and several CSS files. In order to use the widget theme, we'll need to make a minor change to the way the UI widgets reference images since Nova stores stylesheets and images in their own folders. Open <dfn>jquery.ui.theme.css</dfn> and do a search for all references to <strong>(images</strong> and replace those with <strong>(../images</strong>. That'll ensure Nova is looking in the right place for the image the widgets need.</p>
+<p>Open up <samp>ui/development-bundle/themes/anodyne</samp> from the folder on your desktop. You'll see a directory of images and several CSS files. In order to use the widget theme, we'll need to make a minor change to the way the UI widgets reference images since Nova stores stylesheets and images in their own folders. Open <dfn>jquery.ui.theme.css</dfn> and do a search for all references to <strong>(images</strong> and replace those with <strong>(.images</strong>. That'll ensure Nova is looking in the right place for the image the widgets need.</p>
 
 <h3>Uploading Our Theme</h3>
 
@@ -44,7 +44,7 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/7', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/7', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/9', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/9', 'Next Tutorial &#187;');?>
 </p>

@@ -178,7 +178,7 @@ else
 	$this->template->render();
 }</pre>
 
-<h4>Ternary Operators</h4>
+<h3>Ternary Operators</h3>
 
 <p>We can clean up the code a little more by using ternary operators. In that instance, your block of logic would be reduced to a single line of code:</p>
 
@@ -224,7 +224,7 @@ if ($this->auth->get_access_level() == 2)
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/5', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/5', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/extending/7', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/7', 'Next Tutorial &#187;');?>
 </p>

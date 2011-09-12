@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>We've done the heavy lifting in the controller and model so far and we have all our information. Now, it's time to spit that data out into our view file so that people can see the list of ranks we have available. We'll start by opening the view file we created in our second tutorial. To recap, the view (located at <samp>./appplication/views/_base/main/pages/main_ranks.php</samp>) should look like this:</p>
+<p>We've done the heavy lifting in the controller and model so far and we have all our information. Now, it's time to spit that data out into our view file so that people can see the list of ranks we have available. We'll start by opening the view file we created in our second tutorial. To recap, the view (located at <samp>appplication/views/_base/main/pages/main_ranks.php</samp>) should look like this:</p>
 
 <pre>&lt;?php echo text_output($header, 'h1', 'page_head');?>
 &lt;?php echo text_output($message);?></pre>
@@ -38,7 +38,7 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/4', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/4', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/extending/6', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/6', 'Next Tutorial &#187;');?>
 </p>

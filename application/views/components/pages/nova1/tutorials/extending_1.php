@@ -29,5 +29,5 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/2', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/2', 'Next Tutorial &#187;');?>
 </p>

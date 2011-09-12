@@ -26,23 +26,23 @@
 
 <p>If we drill down into the main directory, there are four more directories: css, js, images and pages (plus an index.html file). These directories are pretty self-explanatory and will contain the CSS files, Javascript files, images and pages for a skin section. This directory structure is maintained is both <dfn>_base</dfn> and <dfn>_base_override</dfn> (neither contain the CSS directory though).</p>
 
-<h4>AJAX</h4>
+<h3>AJAX</h3>
 
 <p>The AJAX directory contains all of the AJAX view pages the skin section will use. The default skin doesn't have anything in this folder because we choose to use the system defaults found in the <dfn>_base</dfn> directory. If you wanted to change the behavior of an AJAX file (mostly the modal windows), you would simply copy the file from <dfn>_base</dfn> and put it into your skin section's AJAX directory (or <dfn>_base_override</dfn> if you want to verride for the entire system) and make any changes you want. In order for seamless substitution to work, the AJAX file has to be named identically to the file in <dfn>_base</dfn>!</p>
 
-<h4>CSS</h4>
+<h3>CSS</h3>
 
 <p>The CSS directory contains all of the stylesheets your skin section will use. For the default skin, we've chosen to break them up into different files. You don't have to do that for your skin. You can leave them in one or break them up even further. When you start your own skin, it's always a good idea to start with the default skin as that has everything you'll need, including stylesheets for the jQuery UI tabs and other classes used extensively throughout Nova.</p>
 
-<h4>JS</h4>
+<h3>JS</h3>
 
 <p>The JS directory contains all of the Javascript view files the system uses. The default skin doesn't have anything in this folder because we choose to use the system defaults found in the <dfn>_base</dfn> directory. If you wanted to change the Javascript behavior or add to it, you would simply copy the file from <dfn>_base</dfn> and put it into your skin section's JS directory (or <dfn>_base_override</dfn> if you want to override for the entire system) and make any changes you want. In order for seamless substitution to work, the JS file has be named identically to the file in <dfn>_base</dfn>!</p>
 
-<h4>Images</h4>
+<h3>Images</h3>
 
 <p>The skin's images folder serves two purposes. First, it can contain any icons found in the <dfn>_base</dfn> directory in the event you want change the default icons used by the system. In addition, any skin-specific image files, like background images and other skin images and components, would be put in the skin's images directory. In order for seamless substitution to work, the image file has be named identically to the file in <dfn>_base</dfn>!</p>
 
-<h4>Pages</h4>
+<h3>Pages</h3>
 
 <p>The skin's pages folder holds the guts of the system. All view pages are found in <dfn>_base</dfn>, but using seamless substitution, you can copy and paste the view file from <dfn>_base</dfn> to your skin (or <dfn>_base_override</dfn>), make any changes you want and the system will use the version in your skin or <dfn>_base_override</dfn> before using the <dfn>_base</dfn> version. This is a great tool if you want to add images to your pages or make any other changes as it'll ensure that even when Nova gets updated, your changes stay intact through the update. In order for seamless substitution to work, the page file has be named identically to the file in <dfn>_base</dfn>!</p>
 
@@ -52,5 +52,5 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/2', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/2', 'Next Tutorial &#187;');?>
 </p>

@@ -8,7 +8,7 @@
 
 <p>If your server runs a little slower and is creating some lag situations that you want to hide from your users, you can easily add a loader to your page using a little extra HTML markup and some jQuery code.</p>
 
-<p>For this example, let's use the missions page and let's work in the <samp>_base_override</samp> directory. Start by copying the sim_missions_js.php file from <samp>./application/views/_base/main/js</samp> to <samp>./application/views/_base_override/main/js</samp> and the sim_missions_all.php file from <samp>./application/views/_base/main/pages</samp> to <samp>./application/views/_base_override/main/pages</samp>. Copying the files is important because it means we won't lose any of the existing functionality.</p>
+<p>For this example, let's use the missions page and let's work in the <samp>_base_override</samp> directory. Start by copying the sim_missions_js.php file from <samp>application/views/_base/main/js</samp> to <samp>application/views/_base_override/main/js</samp> and the sim_missions_all.php file from <samp>application/views/_base/main/pages</samp> to <samp>application/views/_base_override/main/pages</samp>. Copying the files is important because it means we won't lose any of the existing functionality.</p>
 
 <p>To start, we need to wrap the content of our page with a simple loaded div that'll be hidden at the start. Make sure the sim_missions_all.php view file looks like this:</p>
 
@@ -69,7 +69,7 @@ $('#loaded').removeClass('hidden');</pre>
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/5', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/5', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/7', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/7', 'Next Tutorial &#187;');?>
 </p>

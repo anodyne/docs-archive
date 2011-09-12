@@ -39,7 +39,7 @@
 	Powered by &lt;strong>&lt;?php echo APP_NAME;?>&lt;/strong> from
 	&lt;a href="http://www.anodyne-productions.com" target="_blank">Anodyne Productions&lt;/a> | 
 	
-	&lt;?php echo anchor('main/credits', 'Site Credits');?> |
+	&lt;?php echo Html::anchor('main/credits', 'Site Credits');?> |
 	Skin created by &lt;strong>David VanScott&lt;/strong>
 &lt;/div></pre>
 
@@ -73,7 +73,7 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/6', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/6', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/8', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/8', 'Next Tutorial &#187;');?>
 </p>

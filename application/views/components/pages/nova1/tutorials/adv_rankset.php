@@ -10,17 +10,17 @@
 
 <h2>The Steps</h2>
 
-<h4>1. Get the Ranks</h4>
+<h3>1. Get the Ranks</h3>
 
 <p>The first step is to download the rank set from Kuro-RPG. For this tutorial, we're going to use the white color version. Once you have the rank set, make sure you've unzipped it to your Desktop.</p>
 
 <p class="important"><strong>Note:</strong> Star Trek canon dictates that non-commissioned officers have different dress uniforms, but for the sake of brevity and clarity, we are ignoring that for this tutorial.</p>
 
-<h4>2. Create Our Folder</h4>
+<h3>2. Create Our Folder</h3>
 
 <p>We need a place to put our rank set, so create a folder called <samp>dress</samp> on your Desktop.</p>
 
-<h4>3. Grab the Blank Images</h4>
+<h3>3. Grab the Blank Images</h3>
 
 <p>We're going to start by grabbing all of the necessary blank images. In the Kuro-RPG folder, find the images that have a <dfn>-blank.png</dfn> ending. The ones we're looking for are:</p>
 
@@ -36,11 +36,11 @@
 	<li>y-blank.png</li>
 </ul>
 
-<h4>4. Create the Blank Image</h4>
+<h3>4. Create the Blank Image</h3>
 
 <p>Copy the <dfn>b-blank.png</dfn> image and rename it to <kbd>blank.png</kbd>.</p>
 
-<h4>5. Grab the Marine Ranks</h4>
+<h3>5. Grab the Marine Ranks</h3>
 
 <p>Open the <samp>marine</samp> directory from the Kuro-RPG folder. We want to copy all of the Marine ranks from here over to our folder. The items we're looking for here are the <dfn>g-</dfn> ranks. Copy the following <dfn>g-</dfn> items over to our folder:</p>
 
@@ -71,7 +71,7 @@
 	<li>w4.png</li>
 </ul>
 
-<h4>5. Grab the Naval Ranks</h4>
+<h3>5. Grab the Naval Ranks</h3>
 
 <p>Now that we have our Marine ranks transferred over to our folder, let's focus on the naval ranks. Open the <samp>naval-gold</samp> directory from the Kuro-RPG folder. We want to copy all of the colored ranks from here over to our folder. The items we're looking for here are the <dfn>c-</dfn>, <dfn>r-</dfn>, <dfn>s-</dfn>, <dfn>t-</dfn>, <dfn>v-</dfn> and <dfn>y-</dfn>, ranks. Copy the following items from each color over to our folder:</p>
 
@@ -109,11 +109,11 @@
 
 <p>Once those have been copied over, we need to finish up the Marine ranks. To finish the Marine ranks, grab the cadet ranks (c0, c1, c2, c3 and c4) from the <dfn>g-</dfn> group and copy them to our folder.</p>
 
-<h4>6. Create the Preview Image</h4>
+<h3>6. Create the Preview Image</h3>
 
 <p>Copy the <dfn>r-o6.png</dfn> image and rename it to <kbd>preview.png</kbd>.</p>
 
-<h4>7. Create the Rank Quick Install File</h4>
+<h3>7. Create the Rank Quick Install File</h3>
 
 <p>If you want to use the Nova Quick Install feature, you can create the <samp>rank.yml</samp> file in the directory. To create the Quick Install file, create a file called rank.yml and insert the following text inside:</p>
 

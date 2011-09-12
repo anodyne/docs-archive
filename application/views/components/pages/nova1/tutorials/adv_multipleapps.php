@@ -12,11 +12,11 @@
 
 <p>For each RPG in your group, you would make the following changes:</p>
 
-<h4>1. Rename the application folder</h4>
+<h3>1. Rename the application folder</h3>
 
 <p>The first step is to upload a copy of Nova to your server and rename the application folder to <strong>enterprise</strong> (or whatever your RPG's names are). As you'll see shortly, the reason we do this is so that in the event a new version of Nova comes out that the Enterprise game master wants to update to that the Excelsior game master doesn't want to update to, the Enterprise GM can still do the update without affecting the Excelsior site (that is unless the CodeIgniter version changes, but that's a completely different issue).</p>
 
-<h4>2. Change the application folder variable</h4>
+<h3>2. Change the application folder variable</h3>
 
 <p>Each copy of Nova references the application folder by name, allowing you to easily change the name and location of the folder. (CodeIgniter, by default, stores the application folder inside the core, which is normally called system instead of core. For Nova, we've renamed the system folder for security reasons and moved the application folder outside of the CI core.) To change this variable, we have to open <samp>index.php</samp> which is located in the root Nova folder.</p>
 
@@ -24,7 +24,7 @@
 
 <pre>$app_folder = 'enterprise';</pre>
 
-<h4>3. Rename the index file</h4>
+<h3>3. Rename the index file</h3>
 
 <p>Now that we've changed the application folder, we need to change the index file. In this instance, rename <samp>index.php</samp> to <dfn>enterprise.php</dfn>. This allows us to get to the Enterprise site by going to http://ships.1stfleet.com/enterprise.php. The other RPGs would be referenced by going to excelsior.php and voyager.php.</p>
 
@@ -40,13 +40,13 @@
    license_nova.txt
    voyager.php</pre>
 
-<h4>4. Update the Nova config file</h4>
+<h3>4. Update the Nova config file</h3>
 
 <p>Like the application folder, CodeIgniter references the index file as well so it can be changed to. The index file reference can be found in <samp>application/config/config.php</samp>. Once open, you need to find the <var>$config['index_page']</var> line and change it to read:</p>
 
 <pre>$config['index_page'] = 'enterprise.php';</pre>
 
-<h4>5. Update the database connections</h4>
+<h3>5. Update the database connections</h3>
 
 <p>Almost there! Since we have three separate RPGs, we'll want them to use their own databases. Nova allows one of two solutions in this case. First, you can run all three RPGs from the same database, just changing the prefix to separate the RPGs from each other. The second option is to use separate databases (if you have them). We'll show you both solutions here.</p>
 
@@ -62,6 +62,6 @@
 
 <pre>$db['default']['database'] = "1stfleet_ships_enterprise";</pre>
 
-<h4>6. Upload your files</h4>
+<h3>6. Upload your files</h3>
 
 <p>With the changes complete, save the files and upload them to your server, overwriting the existing files. You'll access your site now by going to http://ships.1stfleet.com/enterprise.php.</p>

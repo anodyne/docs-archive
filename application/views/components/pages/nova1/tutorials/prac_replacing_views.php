@@ -26,7 +26,7 @@
 	&lt;?php echo text_output($label['news'], 'h2', 'page-subhead');?>
 	
 	&lt;?php foreach ($news as $value): ?>
-		&lt;h4>&lt;?php echo anchor('main/viewnews/' . $value['id'], RARROW .' '. $value['title']);?>&lt;/h4>
+		&lt;h3>&lt;?php echo Html::anchor('main/viewnews/' . $value['id'], RARROW .' '. $value['title']);?>&lt;/h3>
 		
 		&lt;p class="gray fontSmall bold">
 			&lt;?php echo $label['posted'] .' '. $value['date'];?>
@@ -88,7 +88,7 @@
 	&lt;?php echo text_output($label['news'], 'h2', 'page-subhead');?>
 	
 	&lt;?php foreach ($news as $value): ?>
-		&lt;h4>&lt;?php echo anchor('main/viewnews/' . $value['id'], RARROW .' '. $value['title']);?>&lt;/h4>
+		&lt;h3>&lt;?php echo Html::anchor('main/viewnews/' . $value['id'], RARROW .' '. $value['title']);?>&lt;/h3>
 		
 		&lt;p class="gray fontSmall bold">
 			&lt;?php echo $label['posted'] .' '. $value['date'];?>

@@ -32,7 +32,7 @@
 
 <h3>Prep the Files</h3>
 
-<p>Before you upload the files, you need to make one change to the stylesheet and everything will work beautifully. Open the <strong>jquery.ui.theme.css</strong> file and do a simple search and replace. You want to search for <strong>(images</strong> (including the opening parenthesis) and replace it with <dfn>(../images</dfn> (including the open parenthesis). This ensures that Nova looks in the right place for the theme images.</p>
+<p>Before you upload the files, you need to make one change to the stylesheet and everything will work beautifully. Open the <strong>jquery.ui.theme.css</strong> file and do a simple search and replace. You want to search for <strong>(images</strong> (including the opening parenthesis) and replace it with <dfn>(.images</dfn> (including the open parenthesis). This ensures that Nova looks in the right place for the theme images.</p>
 
 <h3>Upload the Files</h3>
 
@@ -46,7 +46,7 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/4', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/4', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/6', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/6', 'Next Tutorial &#187;');?>
 </p>

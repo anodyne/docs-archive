@@ -34,7 +34,7 @@ $view_loc = view_location('main_ranks', $this->skin, 'main');</pre>
 
 <p>One of the advantages of the view_location helper is that it checks the current skin to see if there's a view in the skin's pages directory with that name. If it finds a file, it'll use the skin's version of the file instead of whatever's in _base. For creating a new page, that doesn't do us a lot of good, because then other skins can't use it. However, when we get into modifying existing pages, that'll become a huge part because it allows us to "overwrite" the _base view file with our own, meaning our skin can have a unique layout for a page and it doesn't ever affect the system default.</p>
 
-<p>Back to our new view file. The <dfn>text_output()</dfn> part is a helper that will generate our HTML for us.  The first parameter you see is the variable we're passing from the controller (which doesn't exist just yet).  The second parameter is the element you want the text to be wrapped in.  You can use any HTML element here (h1, h2, h3, h4, h5, h6, p, div, span, quote, etc.). In addition, if you don't want it to have an element, you can simply put nothing in between those single quotes.  Finally, the third parameter (which is optional), tells the helper what class to put on the element.  In this case, we're putting our text in an H1 element with a class of page-head.  That's it. If we tried to load the page now, it would generate a few errors though, so let's keep powering through and finish this tutorial up!</p>
+<p>Back to our new view file. The <dfn>text_output()</dfn> part is a helper that will generate our HTML for us.  The first parameter you see is the variable we're passing from the controller (which doesn't exist just yet).  The second parameter is the element you want the text to be wrapped in.  You can use any HTML element here (h1, h2, h3, h3, h5, h6, p, div, span, quote, etc.). In addition, if you don't want it to have an element, you can simply put nothing in between those single quotes.  Finally, the third parameter (which is optional), tells the helper what class to put on the element.  In this case, we're putting our text in an H1 element with a class of page-head.  That's it. If we tried to load the page now, it would generate a few errors though, so let's keep powering through and finish this tutorial up!</p>
 
 <p>Back in main.php, we're going to add two new lines of code after we declare <var>$view_loc</var>:</p>
 
@@ -47,7 +47,7 @@ $data['message'] = "This is the page where I'm going to see all my rank images!"
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/1', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/1', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/extending/3', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/3', 'Next Tutorial &#187;');?>
 </p>

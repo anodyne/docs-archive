@@ -2,7 +2,7 @@
 
 <p>Static pages are all well in good, but Nova has a wealth of information stored in the database and we want to be able to pull that information out and use it on our new page, right? Absolutely. So now we have to dive in and start messing around with models. In CodeIgniter, models are the way we interact with the database. The model does the heavy lift and sends an object back to the controller method. From there, we can parse the information out and use it in our method and view.</p>
 
-<p>We could use an existing model method for this project, but that would defeat the purpose of learning how to really extend Nova, so we're going to create a new model method and introduce you to Active Record. Much like the controllers directory has a <samp>base</samp> folder, the models folder is the same way. Like the controllers, Anodyne does all of its work in the base folder, allowing you to add or modify model methods without touching core files. The same rules that apply to controllers apply to models. So let's open up <samp>./application/models/ranks_model.php</samp> in a text editor and create a new method after the constructor.</p>
+<p>We could use an existing model method for this project, but that would defeat the purpose of learning how to really extend Nova, so we're going to create a new model method and introduce you to Active Record. Much like the controllers directory has a <samp>base</samp> folder, the models folder is the same way. Like the controllers, Anodyne does all of its work in the base folder, allowing you to add or modify model methods without touching core files. The same rules that apply to controllers apply to models. So let's open up <samp>application/models/ranks_model.php</samp> in a text editor and create a new method after the constructor.</p>
 
 <pre>function get_rank_list()
 {
@@ -42,7 +42,7 @@ return $query;</pre>
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/2', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/2', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/extending/4', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/4', 'Next Tutorial &#187;');?>
 </p>

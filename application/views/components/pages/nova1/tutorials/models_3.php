@@ -148,5 +148,5 @@ if ($character !== FALSE)
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/models/2', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/models/2', '&#171; Previous Tutorial');?>
 </p>

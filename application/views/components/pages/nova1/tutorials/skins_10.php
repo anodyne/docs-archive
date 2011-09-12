@@ -31,11 +31,9 @@ View News pages!&lt;/p>&lt;br /></pre>
 
 <p>These are just a few examples of how you can skin Nova with only a few changes to the stylesheets. There's plenty more you can do and the other skins available for Nova show some of the variations that are possible with a little patience and experimenting!</p>
 
-<p>You can <a href="<?php echo base_url() . APPFOLDER;?>/assets/nova/skin-anodyne.zip" target="_blank">download</a> this skin for reference or if you're having trouble.</p>
-
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/9', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/9', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/11', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/11', 'Next Tutorial &#187;');?>
 </p>

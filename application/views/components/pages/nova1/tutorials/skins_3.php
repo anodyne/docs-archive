@@ -84,7 +84,7 @@ $css = 'main.css'; /* the name of the main css file */</pre>
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/skins/2', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/2', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/skins/4', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/skins/4', 'Next Tutorial &#187;');?>
 </p>

@@ -83,14 +83,14 @@ $data['ranks'][$rank->rank_id]['image'] = $rank->rank_image;</pre>
 	[1] => Array(
 		[name] => Admiral
 		[image] => Array (
-			[src] => ./application/assets/common/ds9/ranks/default/r-a4.png,
+			[src] => application/assets/common/ds9/ranks/default/r-a4.png,
 			[alt] => Admiral
 		)
 	),
 	[2] => Array(
 		[name] => Vice Admiral
 		[image] => Array (
-			[src] => ./application/assets/common/ds9/ranks/default/r-a3.png,
+			[src] => application/assets/common/ds9/ranks/default/r-a3.png,
 			[alt] => Vice Admiral
 		)
 	)
@@ -143,7 +143,7 @@ $data['ranks'][$rank->rank_id]['image'] = $rank->rank_image;</pre>
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/3', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/3', '&#171; Previous Tutorial');?>
 	&nbsp; &middot; &nbsp;
-	<?php echo anchor('nova/tutorials/extending/5', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/5', 'Next Tutorial &#187;');?>
 </p>

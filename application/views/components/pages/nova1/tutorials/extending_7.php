@@ -2,5 +2,5 @@
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/extending/6', '&#171; Previous Tutorial');?>
+	<?php echo Html::anchor('nova1/tutorials/extending/6', '&#171; Previous Tutorial');?>
 </p>

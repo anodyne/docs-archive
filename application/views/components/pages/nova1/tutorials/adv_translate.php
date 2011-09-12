@@ -10,7 +10,7 @@
 
 <h3>Creating the Language Directory</h3>
 
-<p>The first thing to do is duplicate the english directory found in <samp>./application/language</samp> and rename the folder to the language you're translating. For this example, we'll use <kbd>spanish</kbd>. Once the directory is created, you will need to go through each language file in the directory and translate the strings one by one. In the process of developing Nova, we tried to do everything as one and two word groups to help translators. While the base language file may be several hundred lines long, each line usually only has one word on it to translate.</p>
+<p>The first thing to do is duplicate the english directory found in <samp>application/language</samp> and rename the folder to the language you're translating. For this example, we'll use <kbd>spanish</kbd>. Once the directory is created, you will need to go through each language file in the directory and translate the strings one by one. In the process of developing Nova, we tried to do everything as one and two word groups to help translators. While the base language file may be several hundred lines long, each line usually only has one word on it to translate.</p>
 
 <h3>Translate the CodeIgniter Core</h3>
 
@@ -22,12 +22,12 @@
 
 <p>The following definitions are used in the language files to give us properly formatted HTML entities for different characters. These items shouldn't be translated and should be used in place of the items they replace.</p>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
 	<tr>
-		<th>Item</th>
-		<th>Replacement</th>
-		<th>Final Output</th>
-		<th>Description</th>
+		<th class="blue">Item</th>
+		<th class="blue">Replacement</th>
+		<th class="blue">Final Output</th>
+		<th class="blue">Description</th>
 	</tr>
 	<tr>
 		<td class="td col1">></td>

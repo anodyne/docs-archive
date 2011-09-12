@@ -6,7 +6,7 @@
 
 <h2>Creating Your Own Helpers</h2>
 
-<p>In this case, we're going to create a helper that prints out a string of text based on a parameter passed to the helper. To start, we're going to create a new file in <samp>./application/helpers</samp> named <dfn>enterprise_helper.php</dfn>. <kbd>You must suffix your helper files with the _helper name or they won't work!</kbd></p>
+<p>In this case, we're going to create a helper that prints out a string of text based on a parameter passed to the helper. To start, we're going to create a new file in <samp>application/helpers</samp> named <dfn>enterprise_helper.php</dfn>. <kbd>You must suffix your helper files with the _helper name or they won't work!</kbd></p>
 
 <pre>&lt;php
 
@@ -64,7 +64,7 @@ echo $string;
 	{
 		if ($condition)
 		{
-			return anchor($uri, $title, $attributes);
+			return Html::anchor($uri, $title, $attributes);
 		}
 		
 		return FALSE;

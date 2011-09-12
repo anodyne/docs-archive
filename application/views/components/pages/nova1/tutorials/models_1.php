@@ -21,5 +21,5 @@ $award = $this->awards->get_award($id);</pre>
 
 <br />
 <p>
-	<?php echo anchor('nova/tutorials/models/2', 'Next Tutorial &#187;');?>
+	<?php echo Html::anchor('nova1/tutorials/models/2', 'Next Tutorial &#187;');?>
 </p>
