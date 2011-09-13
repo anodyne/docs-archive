@@ -6,7 +6,7 @@
 
 <p>Because of the potential for this page to get long, we've also included a quick search feature that allows you to quickly and easily filter results based on what you type. To use the quick search, simply begin typing in the search box above the pages and Thresher will filter the results that you want.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage categories in Thresher, a user needs to have <kbd>wiki/categories</kbd> permissions.</p>
 
@@ -20,4 +20,4 @@
 
 <h2>Deleting a Page</h2>
 
-<p>Deleting a page is only a matter of clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> and confirming you want to delete the page by clicking <strong>Submit</strong>. If you decide that you don&rsquo;t want to delete the page, you can get out of the modal window by either clicking the X in the upper corner, hitting escape on your keyboard or clicking anywhere outside the window.</p>
+<p>Deleting a page is only a matter of clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> and confirming you want to delete the page by clicking <strong>Submit</strong>. If you decide that you don't want to delete the page, you can get out of the modal window by either clicking the X in the upper corner, hitting escape on your keyboard or clicking anywhere outside the window.</p>

@@ -2,9 +2,9 @@
 
 <p>Pages are at the heart of Thresher, so managing the creation and editing of pages is an incredibly easy and straightforward process.</p>
 
-<p class="important"><strong>Note:</strong> More information about configuring Thresher can be found in the <?php echo anchor('nova/tutorials/config/nova', 'Configuring Nova');?> page.</p>
+<p class="important"><strong>Note:</strong> More information about configuring Thresher can be found in the <?php echo Html::anchor('nova1/tutorials/config/nova', 'Configuring Nova');?> page.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to create or edit pages in Thresher, a user needs to have <kbd>wiki/page</kbd> permissions.</p>
 

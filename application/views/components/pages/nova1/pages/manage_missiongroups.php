@@ -2,7 +2,7 @@
 
 <p>Mission groups are a new way to organize missions to group related missions together to make it easier for users to move through mission archives. Game masters can choose to group mission together by arc, season, topic or anything else they want. By simply select the proper mission group from the mission management page, missions will be organized together regardless of whether they're consecutive missions or not.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage mission groups, you must have <kbd>manage/missions</kbd> permissions.</p>
 

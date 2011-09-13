@@ -2,7 +2,7 @@
 
 <p>Thresher organizes all its pages into categories to make them easy to find. Unlike a traditional wiki that will let you create categories on the fly, Thresher requires a category to exist before it can be used for categorizing a wiki page.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage categories in Thresher, a user needs to have <kbd>wiki/categories</kbd> permissions.</p>
 
@@ -16,6 +16,6 @@
 
 <h2>Deleting a Category</h2>
 
-<p>Deleting a category is only a matter of clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> and confirming you want to delete the category by clicking <strong>Submit</strong>. If you decide that you don&rsquo;t want to delete the category, you can get out of the modal window by either clicking the X in the upper corner, hitting escape on your keyboard or clicking anywhere outside the window.</p>
+<p>Deleting a category is only a matter of clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> and confirming you want to delete the category by clicking <strong>Submit</strong>. If you decide that you don't want to delete the category, you can get out of the modal window by either clicking the X in the upper corner, hitting escape on your keyboard or clicking anywhere outside the window.</p>
 
 <p class="critical"><strong>Warning:</strong> Deleting categories will affect any wiki pages that have that category. We recommend you manually clear out a category of its pages before deleting the category.</p>

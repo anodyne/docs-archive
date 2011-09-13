@@ -1,10 +1,10 @@
 <h1><?php echo $header;?></h1>
 
-<p>In Nova, menu items are driven entirely out of the database, meaning that menus can be updated from within Nova instead of through an HTML or PHP file. In order for the system to remain as dynamic as possible, menu items are rendered as text and styled with CSS. The use of images isn&rsquo;t supported in this version of Nova.</p>
+<p>In Nova, menu items are driven entirely out of the database, meaning that menus can be updated from within Nova instead of through an HTML or PHP file. In order for the system to remain as dynamic as possible, menu items are rendered as text and styled with CSS. The use of images isn't supported in this version of Nova.</p>
 
 <p>The menu management page is accessible from the admin sub menu under the Site category. Once on the page, you will see 3 tabs that break the menu items up into manageable groups: main navigation, sub navigation and admin sub navigation. Within each tab, menu items are ordered by their order value and include the name, URL and an indicator if the menu item is set not to display. Icons to the right give you the ability to edit (the icons with the pencil) and delete (the icons with the red minus sign) that particular menu item.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage menu items, a user needs to have <kbd>site/menus</kbd> permissions.</p>
 
@@ -27,8 +27,8 @@
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder">
 	<thead>
 		<tr>
-			<th>Field Name</th>
-			<th>Description</th>
+			<th class="blue">Field Name</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -38,7 +38,7 @@
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Link</strong></td>
-			<td class="td">The URL that Nova uses to figure out where to send a user when they&rsquo;ve clicked the link. For onsite links, only the end of the URL is necessary. For instance, if you created a new link to go back to the main page, you would only need to put the URL as main/index. You do not need the rest of the URL and putting it in will break the link. For offsite links, you must put the entire URL.</td>
+			<td class="td">The URL that Nova uses to figure out where to send a user when they've clicked the link. For onsite links, only the end of the URL is necessary. For instance, if you created a new link to go back to the main page, you would only need to put the URL as main/index. You do not need the rest of the URL and putting it in will break the link. For offsite links, you must put the entire URL.</td>
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Link Type</strong></td>
@@ -95,19 +95,19 @@
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Login Requirement</strong></td>
-			<td class="td">Nova allows you to specify a login requirement. Your options are to only show a menu item if a user is logged in or logged out. In addition, selecting NONE will show the menu item regardless of a user&rsquo;s logged in status.</td>
+			<td class="td">Nova allows you to specify a login requirement. Your options are to only show a menu item if a user is logged in or logged out. In addition, selecting NONE will show the menu item regardless of a user's logged in status.</td>
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Use Access Control</strong></td>
-			<td class="td">Nova allows you to specify whether that particular menu item should use access control to determine if it&rsquo;s shown or not. This will generally only be used for admin sub navigation items.</td>
+			<td class="td">Nova allows you to specify whether that particular menu item should use access control to determine if it's shown or not. This will generally only be used for admin sub navigation items.</td>
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Access</strong></td>
-			<td class="td">If you have told Nova that you want a menu item to use access control, you must specify an access URL. For instance, if you created a new page at admin/foo that uses it&rsquo;s own access level, you would put admin/foo in to the access field. Nova will check to make sure the user has the proper permissions before showing the menu item. You can additionally set a URL that is not the same as your menu item. If you were to create a menu item for accessing the Menu Categories page, you would set the access URL to site/menus since the menu category page doesn&rsquo;t use its own access URL.</td>
+			<td class="td">If you have told Nova that you want a menu item to use access control, you must specify an access URL. For instance, if you created a new page at admin/foo that uses it's own access level, you would put admin/foo in to the access field. Nova will check to make sure the user has the proper permissions before showing the menu item. You can additionally set a URL that is not the same as your menu item. If you were to create a menu item for accessing the Menu Categories page, you would set the access URL to site/menus since the menu category page doesn't use its own access URL.</td>
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Sim Type</strong></td>
-			<td class="td">You can tell Nova what type of sim your menu item relates to. In most cases, it&rsquo;ll be all. However, if you have a docking request form, you could set the sim type to base. If you were to change your sim type (from the Site Settings page) from base to ship, Nova will make sure to turn off all base menu items and turn on any ship-specific items.</td>
+			<td class="td">You can tell Nova what type of sim your menu item relates to. In most cases, it'll be all. However, if you have a docking request form, you could set the sim type to base. If you were to change your sim type (from the Site Settings page) from base to ship, Nova will make sure to turn off all base menu items and turn on any ship-specific items.</td>
 		</tr>
 	</tbody>
 </table>

@@ -2,7 +2,7 @@
 
 <p>Nova provides the ultimate control for users by allowing them to upload images to the server for use in character biographies, awards, missions and tour items. This feature ensures that admins no longer have to manually manage the process, and instead, can let their players do all the legwork of getting their images on the server.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to upload images to the server, a user needs to have <kbd>upload/index</kbd> permissions as well as one of the following:</p>
 

@@ -8,11 +8,8 @@
 
 <h2>Re-Ordering the Chain of Command</h2>
 
-<p>You can change the order of the chain of command by simply clicking and holding on the gray box with the character&rsquo;s name and dragging it up or down to the position you want. Proceed to re-order the list until you&rsquo;re satisfied, then click update. Like adding a character to the list, Nova uses AJAX to seamlessly update the database without the need to refresh your page.</p>
+<p>You can change the order of the chain of command by simply clicking and holding on the gray box with the character's name and dragging it up or down to the position you want. Proceed to re-order the list until you're satisfied, then click update. Like adding a character to the list, Nova uses AJAX to seamlessly update the database without the need to refresh your page.</p>
 
 <h2>Removing from the Chain of Command</h2>
 
 <p>Removing a character from the chain of command is as simple as clicking the X on the right side of the gray box with their name. Nova will go out to the database and remove them from the list then fade the box with their name out of view.</p>
-
-<br />
-<p class="related"><strong>See Also</strong>: <?php echo anchor('nova/pages/personnel/coc', 'Chain of Command');?></p>

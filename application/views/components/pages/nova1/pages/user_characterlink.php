@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>One of Nova's biggest features is the ability to associate multiple characters with a single player, allowing players to post as a playing character or even as one of their NPCs. The number of playing characters and NPCs that can be associated with a single account is set in the <?php echo anchor('nova/pages/site/settings', 'Site Settings');?> page.</p>
+<p>One of Nova's biggest features is the ability to associate multiple characters with a single player, allowing players to post as a playing character or even as one of their NPCs. The number of playing characters and NPCs that can be associated with a single account is set in the <?php echo Html::anchor('nova1/pages/site/settings', 'Site Settings');?> page.</p>
 
 <p>At the top of the page, a player info section shows you which account you're currently editing. If you don't want to edit that account, simply click on the All Players link. Below the player info section is a section listing all the current characters associated with that player. From here, you can remove a character or change the main character for that account. Finally, at the bottom of the page are two tabs with playing and non-playing characters. The listings in each of these tabs are for characters and NPCs who are not currently assigned to a player.</p>
 
@@ -8,7 +8,7 @@
 
 <p>The link character page can be accessed from the admin sub navigation menu or from a user's account page.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to update the characters tied to a user account, you need to have <kbd>user/account</kbd> permissions with level 2 access.</p>
 

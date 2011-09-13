@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>Online RPGs rely heavily on written materials to give players a sense of the world they&rsquo;re inhabiting. Nova makes it easy to do that with the tour feature. Built like the join/bio form, portions of the tour page are driven by the database, allowing game masters to add fields to their tour items with little hassle.</p>
+<p>Online RPGs rely heavily on written materials to give players a sense of the world they're inhabiting. Nova makes it easy to do that with the tour feature. Built like the join/bio form, portions of the tour page are driven by the database, allowing game masters to add fields to their tour items with little hassle.</p>
 
 <p>By default, visiting the tour page will show a list of tour items whose display flags are set to yes. The name of the tour item is also a link to a more detailed page. Additionally, a brief summary is found to the right of the title.</p>
 

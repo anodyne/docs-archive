@@ -2,17 +2,17 @@
 
 <p>The all players page gives admins a list of all players in the system as well as options for administering the players' accounts, viewing their player bio or deleting players from the system.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to view the player listing, you need to have level 2 <kbd>user/account</kbd> permissions.</p>
 
 <h2>Editing a Player</h2>
 
-<p>To edit a player, click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of their name. You will be redirected to the <?php echo anchor('nova/pages/user/account', 'Edit Account');?> page where you can edit the user's account.</p>
+<p>To edit a player, click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of their name. You will be redirected to the <?php echo Html::anchor('nova1/pages/user/account', 'Edit Account');?> page where you can edit the user's account.</p>
 
 <h2>Viewing a Player Bio</h2>
 
-<p>To view a player's biography, click on the <a href="#" class='tip' tooltip='<?php echo img($images['view']);?>'>view icon</a> to the right of their name. You will redirected to their <?php echo anchor('nova/pages/personnel/player', 'Player Biography');?> page.</p>
+<p>To view a player's biography, click on the <a href="#" class='tip' tooltip='<?php echo img($images['view']);?>'>view icon</a> to the right of their name. You will redirected to their <?php echo Html::anchor('nova1/pages/personnel/player', 'Player Biography');?> page.</p>
 
 <h2>Deleting a Player</h2>
 

@@ -6,6 +6,6 @@
 
 <p>Below the content are three links: reply, reply to all, and forward. These three links allow you to respond to the private message in their respective ways. A reply will only be sent to the person who sent you the private message. A reply to all will be sent to all the recipients of the private message plus the author. A forward will allow you to forward that private message to someone else.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to access all the private messaging features, a user need only have <kbd>messages/index</kbd> privileges.</p>

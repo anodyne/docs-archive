@@ -2,7 +2,7 @@
 
 <p>Nova makes it easy to customize the docking form to just about anything you want. The final fields are then rendered on the docking request form that another GM would fill out. Through Nova's docking form management pages, admins can update the fields used as well as the sections. This gives admins an unparalleled level of control and customization at their fingertips. Updating the docking form is incredibly easy.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage the docking request form, a user needs to have <kbd>site/dockingform</kbd> permissions.</p>
 

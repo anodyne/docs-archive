@@ -4,6 +4,6 @@
 
 <p>The change your status, you simply set your status, give a duration and reason for the game masters then click submit. Your status will be changed immediately and if system email is turned on, an email will be sent to the game masters with the details of the notification.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
-<p>In order to request an LOA, you need to have <kbd>user/account</kbd> permissions with either access level 1 or 2. There are no differences between level 1 and level 2 access. You can only request an LOA for yourself, admins wishing to change someone&rsquo;s LOA status should use the admin tab of the <?php echo anchor('nova/pages/user/account', 'User Account');?> page.</p>
+<p>In order to request an LOA, you need to have <kbd>user/account</kbd> permissions with either access level 1 or 2. There are no differences between level 1 and level 2 access. You can only request an LOA for yourself, admins wishing to change someone's LOA status should use the admin tab of the <?php echo Html::anchor('nova1/pages/user/account', 'User Account');?> page.</p>

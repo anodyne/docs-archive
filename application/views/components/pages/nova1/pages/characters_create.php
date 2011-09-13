@@ -2,7 +2,7 @@
 
 <p>Nova provides the ability to create a character independent of a player. This is handy for creating NPCs and playing characters to be linked to a player's record. By default, every player has the permissions to create a new character. NPCs are immediately put on the manifest but playing characters go into a pending queue that must be approved by an admin before they can be made available. After approving a playing character that was submitted by a player who is not an admin, the character will immediately be available for their use.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to create a character, you must have <kbd>characters/create</kbd> privileges. In order to have unfettered access to create NPCs and playing characters, you must have level 2 access. All other players are given level 1 access by default.</p>
 

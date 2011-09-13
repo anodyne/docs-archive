@@ -8,7 +8,7 @@
 
 <p>The email players will receive has the author, the subject and the message. If someone has chosen not to receive email notifications of news items and will have to manually look through news items the next time they login to Nova. All crew will receive both public and private news items.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to write a news item, a user needs <kbd>write/newsitem</kbd> privileges.</p>
 
@@ -18,4 +18,4 @@
 
 <h2>Deleting News Items</h2>
 
-<p>You can only delete a news item from the write pages if it&rsquo;s in the saved status. If you decide you don&rsquo;t want to do a news item that you&rsquo;ve already saved, just click Delete and it will be deleted. After deleting the saved news item, you will be redirected to the Admin Control Panel after 5 seconds.</p>
+<p>You can only delete a news item from the write pages if it's in the saved status. If you decide you don't want to do a news item that you've already saved, just click Delete and it will be deleted. After deleting the saved news item, you will be redirected to the Admin Control Panel after 5 seconds.</p>

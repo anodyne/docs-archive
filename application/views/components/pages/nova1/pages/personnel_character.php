@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>The character bio page contains each character&rsquo;s biographical information. From the character bio page, any piece of information about the character can be seen. In addition, registered users who are logged in will also have access to the character&rsquo;s player bio which will display information about the player who plays that character. No player personal information is provided on the character bio page.</p>
+<p>The character bio page contains each character's biographical information. From the character bio page, any piece of information about the character can be seen. In addition, registered users who are logged in will also have access to the character's player bio which will display information about the player who plays that character. No player personal information is provided on the character bio page.</p>
 
 <h2>Basic Info</h2>
 

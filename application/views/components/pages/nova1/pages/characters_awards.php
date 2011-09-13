@@ -12,4 +12,4 @@
 
 <h2>Removing an Award</h2>
 
-<p>If you make a mistake and need to remove an award from a character, you can do so from the All Received Awards tab. Nova will display all the received in character awards. If the character is associated with a player who has any out of character awards, the out of character awards will be displayed in a separate section at the top. To remove an award from a character, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['remove']);?>'>remove icon</a> and Nova will remove the award.</p>
+<p>If you make a mistake and need to remove an award from a character, you can do so from the All Received Awards tab. Nova will display all the received in character awards. If the character is associated with a player who has any out of character awards, the out of character awards will be displayed in a separate section at the top. To remove an award from a character, simply click on the remove icon and Nova will remove the award.</p>

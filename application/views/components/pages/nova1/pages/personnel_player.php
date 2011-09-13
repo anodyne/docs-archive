@@ -6,19 +6,19 @@
 
 <p>The basic info tab gives the most basic information about the player. Information included in the tab is real name, date of birth (if provided), their location (if provided), email address, any instant messenger handles they might have provided, their timezone, any interests they may have provided and a brief biography if they chose to complete it.</p>
 
-<p>Beneath the player&rsquo;s timezone is a calcuation of the time difference between your timezone and theirs. This is determined based on the individual user&rsquo;s timezone setting which can be changed in their account settings. After changing this setting, you must log out and log back in to see the changes.</p>
+<p>Beneath the player's timezone is a calcuation of the time difference between your timezone and theirs. This is determined based on the individual user's timezone setting which can be changed in their account settings. After changing this setting, you must log out and log back in to see the changes.</p>
 
 <h2>Character Info</h2>
 
-<p>The character info tab gives an overview of the characters associated with the player. The list will show all active characters and how long they&rsquo;ve been active for. In addition, there are also sections for NPCs and inactive characters. This view allows a user to get a quick overview of all the characters that have been played by the player. Clicking on the character name will take the user to that character&rsquo;s bio page.</p>
+<p>The character info tab gives an overview of the characters associated with the player. The list will show all active characters and how long they've been active for. In addition, there are also sections for NPCs and inactive characters. This view allows a user to get a quick overview of all the characters that have been played by the player. Clicking on the character name will take the user to that character's bio page.</p>
 
 <h2>Rank History</h2>
 
-<p>The rank history tab gives an overview of each character&rsquo;s promotion and demotion history. These values are calculated based on the rank order. If a character&rsquo;s previous rank has a higher order than their current one, they&rsquo;ve been demoted. If a character&rsquo;s previous rank has a lower order than their current one, they&rsquo;ve been promoted. All information about promotions and demotions are tracked in their own database table.</p>
+<p>The rank history tab gives an overview of each character's promotion and demotion history. These values are calculated based on the rank order. If a character's previous rank has a higher order than their current one, they've been demoted. If a character's previous rank has a lower order than their current one, they've been promoted. All information about promotions and demotions are tracked in their own database table.</p>
 
 <h2>Stats</h2>
 
-<p>The stats tab provides a variety of statistics about the player including: how long ago they joined, their last login, their last post, the total number of mission posts and their averages for as long as they&rsquo;ve been on the RPG and their total number of personal logs plus their averages for as long as they&rsquo;ve been on the RPG.</p>
+<p>The stats tab provides a variety of statistics about the player including: how long ago they joined, their last login, their last post, the total number of mission posts and their averages for as long as they've been on the RPG and their total number of personal logs plus their averages for as long as they've been on the RPG.</p>
 
 <h2>Posting Info</h2>
 

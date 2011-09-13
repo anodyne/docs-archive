@@ -1,8 +1,8 @@
 <h1><?php echo $header;?></h1>
 
-<p>Positions are a central component to Nova and are likely to be one of those things you update on a more frequent basis than departments or ranks. Because of that, we&rsquo;ve tried to highligh the things you&rsquo; likely to be changing most often: the name and number of open slots. Everything else is hidden by default with a simple More button that will show the rest of the entry. The top of the Position Management page has a simple box with all the departments. Clicking on a department will show that department&rsquo;s positions for you to update. Like other features in Nova, it&rsquo;s possible to create your own positions, edit existing positions and delete positions.</p>
+<p>Positions are a central component to Nova and are likely to be one of those things you update on a more frequent basis than departments or ranks. Because of that, we've tried to highligh the things you' likely to be changing most often: the name and number of open slots. Everything else is hidden by default with a simple More button that will show the rest of the entry. The top of the Position Management page has a simple box with all the departments. Clicking on a department will show that department's positions for you to update. Like other features in Nova, it's possible to create your own positions, edit existing positions and delete positions.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage positions, you need to have <kbd>manage/positions</kbd> permissions.</p>
 

@@ -14,7 +14,7 @@
 
 <p>The email players will receive has the authors, the subject, the timeline, the location and the message. If someone has chosen not to receive email notifications of mission posts they will have to manually look through mission posts the next time they login to Nova. In the event that more than 1 of a user's characters are listed, the first of their characters in the author field will be used for determining which character the post comes from.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to write a mission post, a user needs <kbd>write/missionpost</kbd> privileges.</p>
 

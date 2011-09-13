@@ -1,12 +1,12 @@
 <h1><?php echo $header;?></h1>
 
-<p>Nova gives users the freedom to select from a variety of skins to use when they&rsquo;re logged in. Managing the skins available to your players has never been easier with a few simple clicks. Once you have uploaded the skin to your <dfn>views</dfn> folder, you can create new entries in Nova for making the skins available to everyone.</p>
+<p>Nova gives users the freedom to select from a variety of skins to use when they're logged in. Managing the skins available to your players has never been easier with a few simple clicks. Once you have uploaded the skin to your <dfn>views</dfn> folder, you can create new entries in Nova for making the skins available to everyone.</p>
 
 <p>Nova breaks presentation down in to two distinct elements: skins and sections. A skin is a collection of sections. Because of the way Nova is built, skin developers can choose to develop one section of a skin or all of them if they so choose. The sections that are available to be skinned in Nova are the main section, admin section, login pages and the wiki. You have to have a skin created before you can add sections to it. Once both the skin and sections are added, the crew will be able to view and use those skin sections.</p>
 
 <p>The default skin sections are highlighted with a <a href="#" class='tip' tooltip='<?php echo img($images['default']);?>'>green icon</a>.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage the system skin catalogue, a user needs to have <kbd>site/catalogueskins</kbd> permissions.</p>
 
@@ -22,15 +22,15 @@
 
 <h2>Adding a Skin</h2>
 
-<p>To create a skin, click on the <strong>Add Skin</strong> link at the top of the page. A pop-up window will appear with all the information you need to complete to build the skin. You will need to provide a name for the skin, it&rsquo;s location on the server (just the name of the folder) and its credits. Once all the information is filled in, click <strong>Submit</strong> and Nova will create your skin record. Once the record is created, you can add sections to it.</p>
+<p>To create a skin, click on the <strong>Add Skin</strong> link at the top of the page. A pop-up window will appear with all the information you need to complete to build the skin. You will need to provide a name for the skin, it's location on the server (just the name of the folder) and its credits. Once all the information is filled in, click <strong>Submit</strong> and Nova will create your skin record. Once the record is created, you can add sections to it.</p>
 
 <p class="important"><strong>Note:</strong> Always provide credits for your skin. If you use any icons or images that need to receive credit, this is where you should do it. Since sections do not use credits, put all your credits for all sections in the skin credits.</p>
 
 <h2>Adding a Skin Section</h2>
 
-<p>To create a new skin section, simply click the <strong>Add Skin Section</strong> link near the top of the page. A pop-up window will appear with all the fields you need to fill-in. After supplying the section (main, admin, login, wiki), the skins, a preview image, its status and whether it&rsquo;s the default for that section, click <strong>Submit</strong> and your skin section will be created. Once created, players will be able to use the sections for their own display preferences.</p>
+<p>To create a new skin section, simply click the <strong>Add Skin Section</strong> link near the top of the page. A pop-up window will appear with all the fields you need to fill-in. After supplying the section (main, admin, login, wiki), the skins, a preview image, its status and whether it's the default for that section, click <strong>Submit</strong> and your skin section will be created. Once created, players will be able to use the sections for their own display preferences.</p>
 
-<p class="important"><strong>Note:</strong> Nova includes the ability to set a skin section as being &ldquo;in development&rdquo;. If a skin section status is set to that, only those with permissions to the skin catalogue will be able to use that skin section, allowing skin developers to work on skins without interfering with players skin choices.</p>
+<p class="important"><strong>Note:</strong> Nova includes the ability to set a skin section as being "in development". If a skin section status is set to that, only those with permissions to the skin catalogue will be able to use that skin section, allowing skin developers to work on skins without interfering with players skin choices.</p>
 
 <h2>Editing a Skin</h2>
 
@@ -48,4 +48,4 @@
 
 <h2>Deleting a Skin Section</h2>
 
-<p>To delete a skin section, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of skins. A pop-up window will appear confirming that you want to delete that role page. If you want to delete the role page, you will need to select a new skin so that Nova can update anyone currently using the skin section you&rsquo;re trying to delete. This helps prevent presentation errors. When you&rsquo;re done, simply click <strong>Submit</strong>. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
+<p>To delete a skin section, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of skins. A pop-up window will appear confirming that you want to delete that role page. If you want to delete the role page, you will need to select a new skin so that Nova can update anyone currently using the skin section you're trying to delete. This helps prevent presentation errors. When you're done, simply click <strong>Submit</strong>. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>

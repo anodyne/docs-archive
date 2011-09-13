@@ -2,7 +2,7 @@
 
 <p>To avoid pages of information without any rhyme or reason, Nova uses sections to break up relevant information into groups to make the docking form easier to read. Sections, are built on the fly from the database, meaning they can be changed to whatever you want through a simple interface. If you want a section that doesn't have a title, you can accomplish this by setting the section's name to a blank field.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage the docking form sections, a user needs to have <kbd>site/dockingform</kbd> permissions.</p>
 

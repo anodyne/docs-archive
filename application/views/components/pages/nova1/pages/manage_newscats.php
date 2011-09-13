@@ -2,7 +2,7 @@
 
 <p>Awards are a great way to reward and recognize players for their accomplishments, both in character and out of character. Nova comes with a system that allows admins to create awards and issue them to members of the crew with little to no effort. </p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage news categories, you need to have <kbd>manage/newscats</kbd> permissions.</p>
 

@@ -1,14 +1,14 @@
 <h1><?php echo $header;?></h1>
 
-<p>Nova makes it easy to customize character bio pages (and similarly the join form) to just about anything you want. Through Nova&rsquo;s character biography management pages, admins can update the fields used, the sections and even the tabs (only used on the biography page). This gives admins an unparalleled level of control and customization at their fingertips. Updating the bio/join form is incredibly easy.</p>
+<p>Nova makes it easy to customize character bio pages (and similarly the join form) to just about anything you want. Through Nova's character biography management pages, admins can update the fields used, the sections and even the tabs (only used on the biography page). This gives admins an unparalleled level of control and customization at their fingertips. Updating the bio/join form is incredibly easy.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage the bio form, a user needs to have <kbd>site/bioform</kbd> permissions.</p>
 
 <h2>Adding a Field</h2>
 
-<p>To add a field to the biography/join form, simply click on the Add Bio Field link. A pop-up window will give you fields to fill in information. After providing a page label, type, the order and whether it&rsquo;s displayed or not, you can customize additional details, like class, ID and rows (for textareas only). In addition, if you&rsquo;ve selected Dropdown Menu as the type, you can specify the values in the menu at the bottom of the page. Values for the dropdown menus should be in a simple comma separated list with the value going into the database first then the label in menu second. New values should go on a new line. Once you&rsquo;re finished, click Submit and Nova will create the field.</p>
+<p>To add a field to the biography/join form, simply click on the Add Bio Field link. A pop-up window will give you fields to fill in information. After providing a page label, type, the order and whether it's displayed or not, you can customize additional details, like class, ID and rows (for textareas only). In addition, if you've selected Dropdown Menu as the type, you can specify the values in the menu at the bottom of the page. Values for the dropdown menus should be in a simple comma separated list with the value going into the database first then the label in menu second. New values should go on a new line. Once you're finished, click Submit and Nova will create the field.</p>
 
 <p>Fields created through the interface will be seen on both the character biography page as well as the join form. Nova does not provide the ability to just show a field on one of the pages.</p>
 

@@ -2,4 +2,4 @@
 
 <p>The Departments &amp; Positions page in Nova gives an overview of all the departments and their positions. When a user comes to the page, they are presented with a list of departments and their descriptions. If that department has any positions, a link will appear at the end of the description giving the user to hide and show the positions for that department. Sub-departments are also shown indented under the department they are part of. If the sub-department has positions, the same link is presented to hide and show their positions.</p>
 
-<p>After showing a department or sub-department&rsquo;s positions, a table of positions and their descriptions will slide in to view. You can open additional department position listings without closing the one you&rsquo;re looking at. Clicking on the link a second time will close the listing for that department.</p>
+<p>After showing a department or sub-department's positions, a table of positions and their descriptions will slide in to view. You can open additional department position listings without closing the one you're looking at. Clicking on the link a second time will close the listing for that department.</p>

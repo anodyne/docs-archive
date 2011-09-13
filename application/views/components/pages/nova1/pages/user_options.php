@@ -2,7 +2,7 @@
 
 <p>Nova gives players control over the look and feel of the system once they're logged in through the Site Options page. From this page you can change your personalized links, update the rank set you see around the site and change your skin options for the main, admin and wiki sections.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to update your site options, you need to have <kbd>user/account</kbd> permissions with either access level 1 or 2. Site options cannot be updated for other players, only the player themselves can make those changes.</p>
 

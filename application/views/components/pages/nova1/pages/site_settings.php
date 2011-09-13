@@ -2,7 +2,7 @@
 
 <p>Site Settings is where admins can update the various settings that control parts of Nova. In addition, Nova allows admins to create their own settings whose keys can be used in user-created pages or extended pages. User-created settings can be updated from the User-Created Settings tab which is visible if at least one user-created setting exists. More information about user-created settings can be found below.</p>
 
-<h4>Permissions</h4>
+<h3>Permissions</h3>
 
 <p>In order to manage system settings, a user needs to have <kbd>site/settings</kbd> permissions.</p>
 
@@ -11,10 +11,10 @@
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<thead>
 		<tr>
-			<th>Setting</th>
-			<th>Key</th>
-			<th>Default</th>
-			<th>Description</th>
+			<th class="blue">Setting</th>
+			<th class="blue">Key</th>
+			<th class="blue">Default</th>
+			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -52,7 +52,7 @@
 			<td class="td col1"><strong>Maintenance Mode</strong></td>
 			<td class="td col2">maintenance</td>
 			<td class="td col3"><em>Off</em></td>
-			<td class="td">Whether maintenance mode is turned on or off. When active, maintenance mode only allows system administrators to log in. More information about maintenance mode can be found <?php echo anchor('nova/pages/login/maintenance', 'here');?>.</td>
+			<td class="td">Whether maintenance mode is turned on or off. When active, maintenance mode only allows system administrators to log in. More information about maintenance mode can be found <?php echo Html::anchor('nova1/pages/login/maintenance', 'here');?>.</td>
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Date Format</strong></td>
@@ -136,7 +136,7 @@
 			<td class="td col1"><strong>Number of Awards on Bio</strong></td>
 			<td class="td col2">bio_num_awards</td>
 			<td class="td col3"><em>10</em></td>
-			<td class="td">The number of awards that display a player&rsquo;s awards section of their player bio</td>
+			<td class="td">The number of awards that display a player's awards section of their player bio</td>
 		</tr>
 		<tr>
 			<td class="td col1"><strong>Number of Logs to List</strong></td>
@@ -178,10 +178,10 @@
 			<td class="td col1"><strong>Use Mission Notes</strong></td>
 			<td class="td col2">use_mission_notes</td>
 			<td class="td col3"><em>y</em></td>
-			<td class="td">Whether or not to use the system&rsquo;s mission notes</td>
+			<td class="td">Whether or not to use the system's mission notes</td>
 		</tr>
 		<tr>
-			<td class="td col1"><strong>Who&rsquo;s Online Timespan</strong></td>
+			<td class="td col1"><strong>Who's Online Timespan</strong></td>
 			<td class="td col2">online_timespan</td>
 			<td class="td col3"><em>5</em></td>
 			<td class="td">The number of minutes to use as a baseline for who is currently logged in</td>
@@ -197,6 +197,6 @@
 
 <h2>User-Created Settings</h2>
 
-<p>In addition, Nova allows admins to create their own system settings. Why? With Nova&rsquo;s extensible nature, there are bound to be situations where a new page is created and an admin wants to be able to update something right from the Site Settings page. User-created settings allow admins to create their own settings and then programmatically put them into their pages and update them right from the Site Settings page with all the other system settings.</p>
+<p>In addition, Nova allows admins to create their own system settings. Why? With Nova's extensible nature, there are bound to be situations where a new page is created and an admin wants to be able to update something right from the Site Settings page. User-created settings allow admins to create their own settings and then programmatically put them into their pages and update them right from the Site Settings page with all the other system settings.</p>
 
 <p>The Site Settings page has a link near the top of the page for managing user-created settings. From that page, admins can create, edit and delete their settings. A setting is made up of a key, a value and a label. The key is a short and simple series of words with no spaces that Nova uses to reference the setting from the database. The value is the value of the setting. The label is the label that will be printed next to the setting on the Site Settings page as well as in the list of user-created settings. User-created settings can only use a simple form input field. Nova does not have the ability to set dropdown menus or radio buttons for user-created settings.</p>
