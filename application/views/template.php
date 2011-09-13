@@ -22,6 +22,7 @@ $controllers = array(
 		'models'		=> 'Models',
 		'tour'			=> 'Take a Tour',
 		'tutorials'		=> 'Tutorials',
+		'pages'			=> 'Page Guides',
 	),
 	'nova2' => array(
 		'overview'		=> 'Overview',
@@ -107,7 +108,7 @@ $controllers = array(
 											</a>
 										</li>
 										
-										<?php if ($req->param('id') and $req->param('id') != 'index'): ?>
+										<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
 											<li>
 												<a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>">
 													<?php echo ucfirst($req->action());?>
