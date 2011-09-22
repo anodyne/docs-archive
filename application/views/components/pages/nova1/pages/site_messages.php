@@ -14,11 +14,11 @@
 
 <h2>Editing a Message</h2>
 
-<p>Nova displays all messages in the database in a simple list that gives the description, the message key and the first 25 words of the message. Links to the right let an admin edit or delete the message. Clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> will open the message details in a Facebox window and you'll be presented with a short form to update the message information. Clicking Submit after you're done editing will save the changes. All changes take effect immediately.</p>
+<p>Nova displays all messages in the database in a simple list that gives the description, the message key and the first 25 words of the message. Links to the right let an admin edit or delete the message. Clicking on the edit icon</a> will open the message details in a Facebox window and you'll be presented with a short form to update the message information. Clicking Submit after you're done editing will save the changes. All changes take effect immediately.</p>
 
 <h2>Deleting a Message</h2>
 
-<p>You can delete any site message listed in the Messages page by clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the abbreviated message text. You will be prompted to verify that you want to delete that message. If you click submit, the message will be deleted from the database and cannot be recovered. Use caution when deleting site messages. If you delete the wrong one, Nova will throw errors if you haven't edited view files properly.</p>
+<p>You can delete any site message listed in the Messages page by clicking on the delete icon</a> to the right of the abbreviated message text. You will be prompted to verify that you want to delete that message. If you click submit, the message will be deleted from the database and cannot be recovered. Use caution when deleting site messages. If you delete the wrong one, Nova will throw errors if you haven't edited view files properly.</p>
 
 <h2>Using Your Own Messages</h2>
 

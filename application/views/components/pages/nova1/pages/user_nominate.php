@@ -10,11 +10,11 @@
 
 <h3>Approving</h3>
 
-<p>To approve an award nomination, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['approve']);?>'>approve award nomination icon</a> to the right of the character name and award. A modal window will pop-up asking you if you're sure you want to approve the award. After clicking <strong>Submit</strong>, Nova will make the necessary changes and the award will appear in the player/character bio.</p>
+<p>To approve an award nomination, simply click on the approve award nomination icon to the right of the character name and award. A modal window will pop-up asking you if you're sure you want to approve the award. After clicking <strong>Submit</strong>, Nova will make the necessary changes and the award will appear in the player/character bio.</p>
 
 <h3>Rejecting</h3>
 
-<p>To reject an award nomination, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['reject']);?>'>reject award nomination icon</a> to the right of the character name and award. A modal window will pop-up asking you if you're sure you want to reject the award. After clicking <strong>Submit</strong>, Nova will make the necessary changes to the database. Nova will keep a copy of the nomination for the award nomination report, but the award will not appear anywhere on the site.</p>
+<p>To reject an award nomination, simply click on the reject award nomination icon to the right of the character name and award. A modal window will pop-up asking you if you're sure you want to reject the award. After clicking <strong>Submit</strong>, Nova will make the necessary changes to the database. Nova will keep a copy of the nomination for the award nomination report, but the award will not appear anywhere on the site.</p>
 
 <h2>Permissions</h2>
 

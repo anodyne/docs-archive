@@ -8,7 +8,7 @@
 
 <p>The page view is where most people will spend their time when using Thresher. From this page, users can read the page, view the page history and, if logged in, comment on the wiki page. In addition, admins can revert a wiki page to a previous draft of the page if they so choose.</p>
 
-<p>Below the wiki page title, logged in users will be shown the <a href="#" class='tip' tooltip='<?php echo img($images['comment']);?>'>add comment icon</a> where they can add their comments to a wiki page. Below the comments section is the summary (if one exists) of the page. This is a good way to let users know exactly what the page is about before they start reading.</p>
+<p>Below the wiki page title, logged in users will be shown the add comment icon where they can add their comments to a wiki page. Below the comments section is the summary (if one exists) of the page. This is a good way to let users know exactly what the page is about before they start reading.</p>
 
 <h3>History</h3>
 
@@ -16,7 +16,7 @@
 
 <h3>Reverting To a Previous Draft</h3>
 
-<p>If a user is logged in, the <a href="#" class='tip' tooltip='<?php echo img($images['revert']);?>'>revert icon</a> will appear to the right of each history entry. Clicking on the revert icon will create a new draft that's a duplicate of the one clicked and set it to the page's current draft. This can be useful if someone makes changes to page and they need to be removed.</p> 
+<p>If a user is logged in, the revert icon will appear to the right of each history entry. Clicking on the revert icon will create a new draft that's a duplicate of the one clicked and set it to the page's current draft. This can be useful if someone makes changes to page and they need to be removed.</p> 
 
 <h3>Comments</h3>
 
@@ -32,4 +32,4 @@
 
 <h2>Viewing a Draft</h2>
 
-<p>In addition to being able to view a full page, you can also view a specific draft of a wiki page by clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['view']);?>'>view icon</a> from the history tab when viewing a wiki page. Unlike viewing a page, viewing a draft does not include tabs with comments and history. (The reason for this is that comments and history are page-level items, not draft-level items.) In addition to the author of the draft, Thresher will display the categories associated with that draft and the content of the draft.</p>
+<p>In addition to being able to view a full page, you can also view a specific draft of a wiki page by clicking on the view icon from the history tab when viewing a wiki page. Unlike viewing a page, viewing a draft does not include tabs with comments and history. (The reason for this is that comments and history are page-level items, not draft-level items.) In addition to the author of the draft, Thresher will display the categories associated with that draft and the content of the draft.</p>

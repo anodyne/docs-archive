@@ -16,11 +16,11 @@
 
 <h2>Editing a Menu Item</h2>
 
-<p>To edit a menu item, click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the table of menu items. A modal window will open giving you a wide variety of fields that are populated with the current data for that menu item. (Full explanations of the options are available below.) Once you have updated all the fields you want to, click Submit and Nova will updated your menu item in the database. You must have a name, URL, category and type in order to update a menu item!</p>
+<p>To edit a menu item, click on the edit icon to the right of the table of menu items. A modal window will open giving you a wide variety of fields that are populated with the current data for that menu item. (Full explanations of the options are available below.) Once you have updated all the fields you want to, click Submit and Nova will updated your menu item in the database. You must have a name, URL, category and type in order to update a menu item!</p>
 
 <h2>Deleting a Menu Item</h2>
 
-<p>To delete a menu item, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the table of menu items. A modal window will open confirming that you do in fact want to delete the menu item. Clicking Submit will delete the menu item from the database. If you do not want to delete that menu item, you can hit Escape, click anywhere outside of the modal window or click on the X in the upper left corner of the modal window.</p>
+<p>To delete a menu item, click on the delete icon to the right of the table of menu items. A modal window will open confirming that you do in fact want to delete the menu item. Clicking Submit will delete the menu item from the database. If you do not want to delete that menu item, you can hit Escape, click anywhere outside of the modal window or click on the X in the upper left corner of the modal window.</p>
 
 <h2>Menu Item Options</h2>
 

@@ -14,14 +14,14 @@
 
 <h2>Adding a Character</h2>
 
-<p>To add a character to someone's account, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['add']);?>'>add user</a> icon to the right of their name in the listing of characters. Nova will add the character to the player's account. If the player doesn't have any characters associated with their account, the character you add will be set as their main character. In order for those changes to take affect, the player must log out and log back in.</p>
+<p>To add a character to someone's account, simply click on the add user icon to the right of their name in the listing of characters. Nova will add the character to the player's account. If the player doesn't have any characters associated with their account, the character you add will be set as their main character. In order for those changes to take affect, the player must log out and log back in.</p>
 
 <p>Nova will not allow more characters to be added than is specified in Site Settings. By default, Nova will allow each player to have one playing character and three non-playing characters. If those numbers have been reached, the add user icons will not be displayed. Attempting to manually add the characters through the URL will also not work. The only way to get the characters associated with the account is to change the settings for allowed characters.</p>
 
 <h2>Deleting a Character</h2>
 
-<p>To remove a character from someone's account, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['remove']);?>'>remove user</a> icon to the right of their name at the top of the page. Nova will remove the character from the player's account. In order for those changes to take affect, the player must log out and log back in.</p>
+<p>To remove a character from someone's account, simply click on the remove user icon to the right of their name at the top of the page. Nova will remove the character from the player's account. In order for those changes to take affect, the player must log out and log back in.</p>
 
 <h2>Changing the Main Character</h2>
 
-<p>You can change an account's main character by clicking on the <a href="#" class='tip' tooltip='<?php echo img($images['star']);?>'>star</a> icon to the right of their name at the top of the page. Only playing characters can be set as a main character, so the star icon will not appear next to NPCs. In order for the change to take affect, the player must log out and log back in.</p>
+<p>You can change an account's main character by clicking on the star icon to the right of their name at the top of the page. Only playing characters can be set as a main character, so the star icon will not appear next to NPCs. In order for the change to take affect, the player must log out and log back in.</p>

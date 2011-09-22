@@ -4,7 +4,7 @@
 
 <p>Nova breaks presentation down in to two distinct elements: skins and sections. A skin is a collection of sections. Because of the way Nova is built, skin developers can choose to develop one section of a skin or all of them if they so choose. The sections that are available to be skinned in Nova are the main section, admin section, login pages and the wiki. You have to have a skin created before you can add sections to it. Once both the skin and sections are added, the crew will be able to view and use those skin sections.</p>
 
-<p>The default skin sections are highlighted with a <a href="#" class='tip' tooltip='<?php echo img($images['default']);?>'>green icon</a>.</p>
+<p>The default skin sections are highlighted with a green icon.</p>
 
 <h3>Permissions</h3>
 
@@ -34,18 +34,18 @@
 
 <h2>Editing a Skin</h2>
 
-<p>To edit a skin, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the list of skins. A modal window will pop-up with all the fields you can edit. After updating the fields you want, just click Submit and your skin will be updated.</p>
+<p>To edit a skin, simply click on the edit icon to the right of the list of skins. A modal window will pop-up with all the fields you can edit. After updating the fields you want, just click Submit and your skin will be updated.</p>
 
 <h2>Editing a Skin Section</h2>
 
-<p>To edit a skin section, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the list of skins. A pop-up window will appear with all the fields you can edit. After updating the fields you want, just click <strong>Submit</strong> and your skin section will be updated.</p>
+<p>To edit a skin section, simply click on the edit icon to the right of the list of skins. A pop-up window will appear with all the fields you can edit. After updating the fields you want, just click <strong>Submit</strong> and your skin section will be updated.</p>
 
 <h2>Deleting a Skin</h2>
 
 <p class="critical"><strong>Warning:</strong> You must delete all skin sections from a skin before you will be allowed to delete it. In addition, make sure that you have changed all skin section defaults before deleting a skin!</p>
 
-<p>To delete a skin, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of skins. A modal window will pop-up confirming that you want to delete that skin. If you want to delete the skin, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p> 
+<p>To delete a skin, click on the delete icon to the right of the list of skins. A modal window will pop-up confirming that you want to delete that skin. If you want to delete the skin, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p> 
 
 <h2>Deleting a Skin Section</h2>
 
-<p>To delete a skin section, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of skins. A pop-up window will appear confirming that you want to delete that role page. If you want to delete the role page, you will need to select a new skin so that Nova can update anyone currently using the skin section you're trying to delete. This helps prevent presentation errors. When you're done, simply click <strong>Submit</strong>. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
+<p>To delete a skin section, click on the delete icon to the right of the list of skins. A pop-up window will appear confirming that you want to delete that role page. If you want to delete the role page, you will need to select a new skin so that Nova can update anyone currently using the skin section you're trying to delete. This helps prevent presentation errors. When you're done, simply click <strong>Submit</strong>. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>

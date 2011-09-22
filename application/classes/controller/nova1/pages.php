@@ -542,783 +542,278 @@ class Controller_Nova1_Pages extends Controller_Template {
 		$this->template->title.= $header;
 	}
 	
-	public function site()
+	public function action_site()
 	{
-		$page = 'Site';
-		
 		switch ($this->request->param('id'))
 		{
-			case 'index':
 			default:
+			case 'index':
 				$header = 'Site';
-				$data['sub'] = ($this->request->param('id') == 'main') ? $page : NULL;
-				
 				$view = 'site_main';
-				
-				break;
+			break;
 				
 			case 'bioform':
 				$header = 'Bio Form Management';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/biosections' => 'Bio Form Sections',
-					'nova/pages/site/biotabs' => 'Bio Form Tabs'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_bioform';
-				
-				break;
+			break;
 				
 			case 'biosections':
 				$header = 'Bio Form Sections';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/bioform' => 'Bio Form Management',
-					'nova/pages/site/biotabs' => 'Bio Form Tabs'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_biosections';
-				
-				break;
+			break;
 				
 			case 'biotabs':
 				$header = 'Bio Form Tabs';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/bioform' => 'Bio Form Management',
-					'nova/pages/site/biosections' => 'Bio Form Sections'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-tab-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-tab-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_biotabs';
-				
-				break;
+			break;
 				
 			case 'dockingform':
 				$header = 'Docking Form';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/dockingsections' => 'Docking Sections',
-					'nova/pages/sim/dockingrequest' => 'Docking Request',
-					'nova/pages/sim/docked' => 'Docked Items',
-					'nova/pages/manage/docked' => 'Docked Item Management',
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_dockingform';
-				
-				break;
+			break;
 				
 			case 'dockingsections':
 				$header = 'Docking Sections';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/dockingform' => 'Docking Form',
-					'nova/pages/sim/dockingrequest' => 'Docking Request',
-					'nova/pages/sim/docked' => 'Docked Items',
-					'nova/pages/manage/docked' => 'Docked Item Management'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_dockingsections';
-				
-				break;
+			break;
 				
 			case 'manifests':
 				$header = 'Site Manifests';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/personnel/index' => 'Manifest'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/icon-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/icon-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_manifests';
-				
-				break;
+			break;
 				
 			case 'menucats':
 				$header = 'Menu Categories';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/menus' => 'Menu Management'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_menucats';
-				
-				break;
+			break;
 				
 			case 'menus':
 				$header = 'Menu Management';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/menucats' => 'Menu Categories'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/menu-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/menu-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_menus';
-				
-				break;
+			break;
 				
 			case 'messages':
 				$header = 'Messages &amp; Titles';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/message-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/message-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_messages';
-				
-				break;
+			break;
 				
 			case 'rankcatalogue':
 				$header = 'Rank Set System Catalogue';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/manage/ranks' => 'Rank Management',
-					'nova/pages/user/options' => 'User Site Options'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/catalogue-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/catalogue-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_rankcatalogue';
-				
-				break;
+			break;
 				
 			case 'rolegroups':
 				$header = 'Access Role Page Groups';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/roles' => 'Access Roles',
-					'nova/pages/site/rolepages' => 'Access Role Pages'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/group-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/group-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_rolegroups';
-				
-				break;
+			break;
 				
 			case 'rolepages':
 				$header = 'Access Role Pages';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/roles' => 'Access Roles',
-					'nova/pages/site/rolegroups' => 'Access Role Page Groups'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/page-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/page-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_rolepages';
-				
-				break;
+			break;
 				
 			case 'roles':
 				$header = 'Access Roles';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/rolepages' => 'Access Role Pages',
-					'nova/pages/site/rolegroups' => 'Access Role Page Groups'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/role-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/role-delete.png',
-						'alt' => 'delete'),
-					'view' => array(
-						'src' => $this->imagepath .'system/admin/role-view.png',
-						'alt' => 'view'),
-				);
-				
 				$view = 'site_roles';
-				
-				break;
+			break;
 				
 			case 'settings':
 				$header = 'Settings';
-				$data['sub'] = $page;
-				
 				$view = 'site_settings';
-				
-				break;
+			break;
 				
 			case 'simtypes':
 				$header = 'Sim Types';
-				$data['sub'] = $page;
-				
 				$view = 'site_simtypes';
-				
-				break;
+			break;
 				
 			case 'skincatalogue':
 				$header = 'Skin Catalogue';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/user/options' => 'User Site Options'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/catalogue-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/catalogue-delete.png',
-						'alt' => 'delete'),
-					'default' => array(
-						'src' => $this->imagepath .'system/admin/icon-green-small.png',
-						'alt' => 'default'),
-				);
-				
 				$view = 'site_skincatalogue';
-				
-				break;
+			break;
 				
 			case 'specsform':
 				$header = 'Specs Form';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/specssections' => 'Specs Sections',
-					'nova/pages/sim/specs' => 'Specs',
-					'nova/pages/manage/specs' => 'Specs Management'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_specsform';
-				
-				break;
+			break;
 				
 			case 'specssections':
 				$header = 'Specs Sections';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/specsform' => 'Specs Form',
-					'nova/pages/sim/specs' => 'Specs',
-					'nova/pages/manage/specs' => 'Specs Management'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-section-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_specssections';
-				
-				break;
+			break;
 				
 			case 'tourform':
 				$header = 'Tour Form';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/sim/tour' => 'Tour',
-					'nova/pages/manage/tour' => 'Tour Management'
-				);
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/forms-field-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'site_tourform';
-				
-				break;
+			break;
 		}
 		
-		CI::Library('template')->write('title', $header. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function upload()
+	public function action_upload()
 	{
-		$page = 'Upload';
-		
 		switch ($this->request->param('id'))
 		{
-			case 'main':
 			default:
+			case 'main':
 				$header = 'Upload';
-				$data['sub'] = ($this->request->param('id') == 'main') ? $page : NULL;
-				
 				$view = 'upload_main';
+			break;
 				
 			case 'index':
 				$header = 'Upload Images';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/upload/manage' => 'Manage Uploads',
-				);
-				
 				$view = 'upload_index';
-				
-				break;
+			break;
 				
 			case 'manage':
 				$header = 'Manage Uploads';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/upload/index' => 'Upload Images',
-				);
-				
 				$view = 'upload_manage';
-				
-				break;
+			break;
 		}
 		
-		CI::Library('template')->write('title', $header. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function user()
+	public function action_user()
 	{
-		$page = 'User';
-		
 		switch ($this->request->param('id'))
 		{
-			case 'index':
 			default:
+			case 'index':
 				$header = 'User';
-				$data['sub'] = ($this->request->param('id') == 'main') ? $page : NULL;
-				
 				$view = 'user_main';
+			break;
 				
 			case 'account':
 				$header = 'Account';
-				$data['sub'] = $page;
-				
 				$view = 'user_account';
-				
-				break;
+			break;
 				
 			case 'all':
 				$header = 'All Players';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'delete' => array(
-						'src' => $this->imagepath .'system/admin/user-delete.png',
-						'alt' => 'delete user'),
-					'view' => array(
-						'src' => $this->imagepath .'system/admin/user-view.png',
-						'alt' => 'view user'),
-					'edit' => array(
-						'src' => $this->imagepath .'system/admin/user-edit.png',
-						'alt' => 'edit user')
-				);
-				
 				$view = 'user_all';
-				
-				break;
+			break;
 				
 			case 'link':
 				$header = 'Link Characters to Account';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'star' => array(
-						'src' => $this->imagepath .'system/admin/icon-star.png',
-						'alt' => 'star'),
-					'add' => array(
-						'src' => $this->imagepath .'system/admin/user-add.png',
-						'alt' => 'add user'),
-					'remove' => array(
-						'src' => $this->imagepath .'system/admin/user-delete.png',
-						'alt' => 'remove user')
-				);
-				
 				$view = 'user_characterlink';
-				
-				break;
+			break;
 				
 			case 'nominate':
 				$header = 'Nominate for Award';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/sim/awards' => 'Crew Awards',
-					'nova/pages/manage/awards' => 'Manage Crew Awards',
-				);
-				
-				$data['images'] = array(
-					'approve' => array(
-						'src' => $this->imagepath .'system/admin/award-approve.png',
-						'alt' => 'approve'),
-					'reject' => array(
-						'src' => $this->imagepath .'system/admin/award-reject.png',
-						'alt' => 'reject'),
-				);
-				
 				$view = 'user_nominate';
-				
-				break;
+			break;
 				
 			case 'options':
 				$header = 'Site Options';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/site/rankcatalogue' => 'Rank Catalogue',
-					'nova/pages/site/skincatalogue' => 'Skin Catalogue',
-				);
-				
 				$view = 'user_options';
-				
-				break;
+			break;
 				
 			case 'status':
 				$header = 'Request LOA';
-				$data['sub'] = $page;
-				
 				$view = 'user_status';
-				
-				break;
+			break;
 		}
 		
-		CI::Library('template')->write('title', $header. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function wiki()
+	public function action_wiki()
 	{
-		$page = 'Thresher';
-		
 		switch ($this->request->param('id'))
 		{
-			case 'index':
 			default:
+			case 'index':
 				$header = 'Thresher';
-				$data['sub'] = ($this->request->param('id') == 'main') ? $page : NULL;
-				
 				$view = 'wiki_main';
-				
-				break;
+			break;
 				
 			case 'main':
 				$header = 'Thresher Main Page';
-				$data['sub'] = $page;
-				
 				$view = 'wiki_index';
-				
-				break;
+			break;
 				
 			case 'categories':
 				$header = 'Categories Listing';
-				$data['sub'] = $page;
-				
 				$view = 'wiki_categories';
-				
-				break;
+			break;
 				
 			case 'category':
 				$header = 'Category Page Listing';
-				$data['sub'] = $page;
-				
 				$view = 'wiki_category';
-				
-				break;
+			break;
 				
 			case 'managecategories':
 				$header = 'Manage Categories';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/wiki/icon-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/wiki/icon-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'wiki_managecategories';
-				
-				break;
+			break;
 				
 			case 'managepages':
 				$header = 'Manage Pages';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'edit' => array(
-						'src' => $this->imagepath .'system/wiki/page-edit.png',
-						'alt' => 'edit'),
-					'delete' => array(
-						'src' => $this->imagepath .'system/wiki/page-delete.png',
-						'alt' => 'delete'),
-				);
-				
 				$view = 'wiki_managepages';
-				
-				break;
+			break;
 				
 			case 'page':
 				$header = 'Create/Edit Page';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'view' => array(
-						'src' => $this->imagepath .'system/wiki/page-view.png',
-						'alt' => 'view'),
-					'revert' => array(
-						'src' => $this->imagepath .'system/wiki/page-revert.png',
-						'alt' => 'revert'),
-					'comment' => array(
-						'src' => $this->imagepath .'system/wiki/comment-add.png',
-						'alt' => 'add comment'),
-				);
-				
 				$view = 'wiki_page';
-				
-				break;
+			break;
 				
 			case 'recent':
 				$header = 'Recent Changes';
-				$data['sub'] = $page;
-				
 				$view = 'wiki_recent';
-				
-				break;
+			break;
 				
 			case 'view':
 				$header = 'View Page/Draft';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'view' => array(
-						'src' => $this->imagepath .'system/wiki/page-view.png',
-						'alt' => 'view'),
-					'revert' => array(
-						'src' => $this->imagepath .'system/wiki/page-revert.png',
-						'alt' => 'revert'),
-					'comment' => array(
-						'src' => $this->imagepath .'system/wiki/comment-add.png',
-						'alt' => 'add comment'),
-				);
-				
 				$view = 'wiki_view';
-				
-				break;
+			break;
 		}
 		
-		CI::Library('template')->write('title', $header. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 	
-	public function write()
+	public function action_write()
 	{
-		$page = 'Write';
-		
 		switch ($this->request->param('id'))
 		{
-			case 'index':
 			default:
+			case 'index':
 				$header = 'Index';
-				$data['sub'] = ($this->request->param('id') == 'main') ? $page : NULL;
-				
 				$view = 'write_main';
-				
-				break;
+			break;
 				
 			case 'main':
 				$header = 'Writing Control Panel';
-				$data['sub'] = $page;
-				
-				$data['images'] = array(
-					'unread' => array(
-						'src' => $this->imagepath .'system/admin/icon-green-small.png',
-						'alt' => 'unread'),
-				);
-				
 				$view = 'write_index';
-				
-				break;
+			break;
 				
 			case 'missionpost':
 				$header = 'Mission Post';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/sim/viewpost' => 'View Post',
-					'nova/pages/sim/listposts' => 'Mission Posts Listing',
-					'nova/pages/manage/posts' => 'Mission Post Management'
-				);
-				
 				$view = 'write_missionpost';
-				
-				break;
+			break;
 				
 			case 'newsitem':
 				$header = 'News Item';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/main/news' => 'News',
-					'nova/pages/main/viewnews' => 'View News Item',
-					'nova/pages/manage/news' => 'News Item Management',
-					'nova/pages/manage/newscats' => 'News Category Management'
-				);
-				
 				$view = 'write_newsitem';
-				
-				break;
+			break;
 				
 			case 'personallog':
 				$header = 'Personal Log';
-				$data['sub'] = $page;
-				
-				$data['related'] = array(
-					'nova/pages/sim/viewlog' => 'View Personal Log',
-					'nova/pages/sim/listlogs' => 'Personal Logs Listing',
-					'nova/pages/manage/logs' => 'Personal Log Management'
-				);
-				
 				$view = 'write_personallog';
-				
-				break;
+			break;
 		}
 		
-		CI::Library('template')->write('title', $header. $this->title);
-		CI::Library('template')->write_view('content', $view, $data);
-		
-		CI::Library('template')->render();
+		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content->header = $header;
+		$this->template->title.= $header;
 	}
 }
-
-/* End of file pages.php */
-/* Location: ./application/modules/nova/controllers/pages.php */

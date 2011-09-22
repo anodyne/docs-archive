@@ -12,12 +12,12 @@
 
 <h2>Editing an Access Role</h2>
 
-<p>To edit an access role, click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the list of roles. A new page will appear with fields populated with the name and description of the role. The rest of the page has tables with page names and URLs. To edit the role, simply select the pages you want that role to have access to and click Submit. Doing so will updated the role to the database and make it available to assign players to.</p>
+<p>To edit an access role, click on the edit icon to the right of the list of roles. A new page will appear with fields populated with the name and description of the role. The rest of the page has tables with page names and URLs. To edit the role, simply select the pages you want that role to have access to and click Submit. Doing so will updated the role to the database and make it available to assign players to.</p>
 
 <h2>Deleting an Access Role</h2>
 
-<p>To delete an access role, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of roles. A modal window will pop up confirming that you want to delete that role. If you want to delete the role, you have to first select a new role to assign all users to who currently have the role you want to delete. Once you've clicked Submit, the role will be removed from the database. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
+<p>To delete an access role, click on the delete icon to the right of the list of roles. A modal window will pop up confirming that you want to delete that role. If you want to delete the role, you have to first select a new role to assign all users to who currently have the role you want to delete. Once you've clicked Submit, the role will be removed from the database. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
 
 <h2>Viewing Players in an Access Role</h2>
 
-<p>You can view the players who have a given access role by clicking the <a href="#" class='tip' tooltip='<?php echo img($images['view']);?>'>view icon</a> for the specific role. A modal window will pop up with a list of all the main characters of the players who have that role. You can add/remove a player from a role from the user/roles page.</p>
+<p>You can view the players who have a given access role by clicking the view icon for the specific role. A modal window will pop up with a list of all the main characters of the players who have that role. You can add/remove a player from a role from the user/roles page.</p>

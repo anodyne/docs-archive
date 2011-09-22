@@ -14,8 +14,8 @@
 
 <h2>Editing an Access Page Group</h2>
 
-<p>To edit an access page group, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the list of role pages. A modal window will pop-up with all the fields you can edit. After updating the fields you want, just click Submit and your role page group will be updated.</p>
+<p>To edit an access page group, simply click on the edit icon to the right of the list of role pages. A modal window will pop-up with all the fields you can edit. After updating the fields you want, just click Submit and your role page group will be updated.</p>
 
 <h2>Deleting an Access Page Group</h2>
 
-<p>To delete an access page group, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of role pages. A modal window will pop-up confirming that you want to delete that role page group. If you want to delete the role page, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
+<p>To delete an access page group, click on the delete icon to the right of the list of role pages. A modal window will pop-up confirming that you want to delete that role page group. If you want to delete the role page, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>

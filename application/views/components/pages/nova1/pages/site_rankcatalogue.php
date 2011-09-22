@@ -14,12 +14,12 @@
 
 <h2>Editing a Rank Set</h2>
 
-<p>To edit a rank set, simply click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the list of rank sets. A modal window will appear with all the fields you can edit. After updating the fields you want, just click Submit and your role page will be updated. If you don't want to edit that particulare rank set, you can close the window by hitting Escape, clicking anywhere outside of the modal window or clicking the X icon in the upper lefthand corner of the modal window.</p>
+<p>To edit a rank set, simply click on the edit icon to the right of the list of rank sets. A modal window will appear with all the fields you can edit. After updating the fields you want, just click Submit and your role page will be updated. If you don't want to edit that particulare rank set, you can close the window by hitting Escape, clicking anywhere outside of the modal window or clicking the X icon in the upper lefthand corner of the modal window.</p>
 
 <p class="critical"><strong>Warning:</strong> Editing rank sets will affect the entire system, is permanent and cannot be undone. Use caution when editing rank sets!</p>
 
 <h2>Deleting a Rank Set</h2>
 
-<p>To delete a rank set, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the list of rank sets. A modal window will appear confirming that you want to delete that rank set. Because user management and rank management rely on the rank catalogue, you will be prompted to select another rank set to update anyone using the rank set you're trying to delete to. If you're sure you want to delete the rank set, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
+<p>To delete a rank set, click on the delete icon to the right of the list of rank sets. A modal window will appear confirming that you want to delete that rank set. Because user management and rank management rely on the rank catalogue, you will be prompted to select another rank set to update anyone using the rank set you're trying to delete to. If you're sure you want to delete the rank set, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p>
 
 <p class="critical"><strong>Warning:</strong> Deleting rank sets will affect the entire system, is permanent and cannot be undone. Use caution when deleting rank sets!</p>

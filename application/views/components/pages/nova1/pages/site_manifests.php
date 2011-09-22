@@ -12,12 +12,8 @@
 
 <h2>Editing a Manifest</h2>
 
-<p>To edit a manifest, click on the <a href="#" class='tip' tooltip='<?php echo img($images['edit']);?>'>edit icon</a> to the right of the name. A model window will open and you'll be given fields that have the current values for the name, order, default, display, description and header content. Once you have changed the fields, click Submit and the entry will be updated in the database.</p>
+<p>To edit a manifest, click on the edit icon to the right of the name. A model window will open and you'll be given fields that have the current values for the name, order, default, display, description and header content. Once you have changed the fields, click Submit and the entry will be updated in the database.</p>
 
 <h2>Deleting a Manifest</h2>
 
-<p>To delete a manifest, click on the <a href="#" class='tip' tooltip='<?php echo img($images['delete']);?>'>delete icon</a> to the right of the name. A model window will open to confirm whether you want to delete the manifest. Clicking Submit will delete the manifest and move all departments assigned to the manifest to an unassigned status. If you do not want to delete the manifest, you can hit Escape, click outside the modal window or click the X in the upper lefthand corner.</p>
-
-<h2>Assigning Departments to a Manifest</h2>
-
-<p></p>
+<p>To delete a manifest, click on the delete icon to the right of the name. A model window will open to confirm whether you want to delete the manifest. Clicking Submit will delete the manifest and move all departments assigned to the manifest to an unassigned status. If you do not want to delete the manifest, you can hit Escape, click outside the modal window or click the X in the upper lefthand corner.</p>
