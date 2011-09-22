@@ -198,13 +198,13 @@ em { font-style: italic; }
 }
 .options:hover div { background-position: 0 -48px; }
 
-.options-started div { background-image: url(images/wand.png); }
-.options-everything div { background-image: url(images/book.png); }
-.options-developers div { background-image: url(images/developers.png); }
-.options-api div { background-image: url(images/api.png); }
-.options-modifying div { background-image: url(images/modifying.png); }
-.options-skinning div { background-image: url(images/skinning.png); }
-.options-code div { background-image: url(images/code.png); }
+.options-started div { background-image: url(images/nova2/wand.png); }
+.options-everything div { background-image: url(images/nova2/book.png); }
+.options-developers div { background-image: url(images/nova2/developers.png); }
+.options-api div { background-image: url(images/nova2/api.png); }
+.options-modifying div { background-image: url(images/nova2/modifying.png); }
+.options-skinning div { background-image: url(images/nova2/skinning.png); }
+.options-code div { background-image: url(images/nova2/code.png); }
 
 .options-noicons {
 	margin: 1em 0;
