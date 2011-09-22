@@ -52,7 +52,7 @@ $controllers = array(
 		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.js"></script>
 		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.tipsy.js"></script>
 		
-		<!--[if !IE 7]>
+		<!--[if IE 8]>
 		<style type="text/css">
 			#container { display:table; height:100%; }
 		</style>
