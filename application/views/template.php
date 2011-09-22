@@ -49,7 +49,7 @@ $controllers = array(
 		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/main.css">
 		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/jquery.tipsy.css">
 		
-		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.js"></script>
+		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.tipsy.js"></script>
 		
 		<!--[if IE 8]>
