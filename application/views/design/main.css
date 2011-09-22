@@ -444,6 +444,28 @@ li.removed { background: transparent url('images/nova1/minus-button.png') no-rep
 .tour-list { font-size: 120%; }
 .tour-list li { margin: 0 0 4px 0; }
 
+.main-left { width: 47%; }
+.main-right { float: right; width: 47%; }
+.main-panel {
+	margin: 0 0 20px 0;
+	min-height: 235px;
+	border: 1px solid #bbb;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.main-panel h4 {
+	margin: 0 !important;
+	padding: 3px 5px;
+	background-color: #ccc;
+	color: #444 !important;
+	border-bottom: 1px solid #bbb !important;
+}
+.main-panel p { padding: .5em; }
+
+.pages-panel { min-height: 175px !important; }
+
 .btn-tour {
 	padding: 7px 15px;
 	background: #cee9fd;
