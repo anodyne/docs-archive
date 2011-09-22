@@ -52,9 +52,9 @@ class Controller_Nova2_Start extends Controller_Template {
 		$this->template->title.= 'Upgrade from SMS 2';
 	}
 	
-	public function action_update($version = '')
+	public function action_update()
 	{
-		switch ($version)
+		switch ($this->request->param('id'))
 		{
 			case '126_to_200':
 				$view = 'components/pages/nova2/start/update/126_to_200';
