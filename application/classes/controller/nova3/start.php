@@ -24,13 +24,6 @@ class Controller_Nova3_Start extends Controller_Template {
 		$this->template->title.= 'Getting Started';
 	}
 	
-	public function action_backup()
-	{
-		$this->template->content = View::factory('components/pages/nova3/start/backup');
-		
-		$this->template->title.= 'Backup Guide';
-	}
-	
 	public function action_install()
 	{
 		$this->template->content = View::factory('components/pages/nova3/start/install');
@@ -64,13 +57,6 @@ class Controller_Nova3_Start extends Controller_Template {
 		$this->template->content->title = $title;
 		
 		$this->template->title.= $title;
-	}
-	
-	public function action_upgrade()
-	{
-		$this->template->content = View::factory('components/pages/nova3/start/upgrade');
-		
-		$this->template->title.= 'Upgrade from Nova 2';
 	}
 	
 	public function action_whatsnew()

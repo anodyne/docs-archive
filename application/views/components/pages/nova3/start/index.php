@@ -7,7 +7,6 @@
 <ul>
 	<li><a href="<?php echo Url::site('nova3/start/whatsnew');?>">What's New in Nova 3</a></li>
 	<li><a href="<?php echo Url::site('nova3/start/requirements');?>">Requirements</a></li>
-	<li><a href="<?php echo Url::site('nova3/start/backup');?>">Backup Guide</a></li>
 	<li><a href="<?php echo Url::site('nova3/start/install');?>">Fresh Install</a></li>
 	<li><a href="<?php echo Url::site('nova3/start/upgrade');?>">Upgrade from Nova 2</a></li>
 </ul>

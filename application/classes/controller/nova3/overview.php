@@ -1,13 +1,13 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Nova2_Overview extends Controller_Template {
+class Controller_Nova3_Overview extends Controller_Template {
 	
 	public function before()
 	{
 		parent::before();
 		
 		$this->template = View::factory('template');
-		$this->template->title = 'Nova 2 - ';
+		$this->template->title = 'Nova 3 - ';
 	}
 	
 	public function after()
@@ -19,8 +19,8 @@ class Controller_Nova2_Overview extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/overview/index');
-		
+		$this->template->content = View::factory('components/pages/nova3/overview/index');
+
 		$this->template->title.= 'Main';
 	}
 }

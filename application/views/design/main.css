@@ -32,7 +32,7 @@ header .logo {
 
 nav {
 	float: right;
-	margin: 56px 0 0 0;
+	margin: 52px 0 0 0;
 }
 nav ul {
 	margin: 0 !important;
@@ -41,7 +41,7 @@ nav ul {
 }
 nav ul li {
 	float: left;
-	margin: 0 20px 0 0 !important;
+	margin: 0 15px 0 0 !important;
 	padding: 0 !important;
 }
 nav ul li:last-child { margin: 0; }
@@ -50,25 +50,35 @@ nav ul li a {
 	height: 26px;
 }
 #nav-home {
-	width: 60px;
+	width: 61px;
 	background: transparent url(images/sprite.png) no-repeat 0 -90px;
 }
-#nav-home:hover { background-position: 0 -122px; }
+#nav-home:hover { background-position: 0 -120px; }
 #nav-nova1 {
-	width: 85px;
+	width: 81px;
 	background: transparent url(images/sprite.png) no-repeat 0 -150px;
 }
-#nav-nova1:hover { background-position: 0 -183px; }
+#nav-nova1:hover { background-position: 0 -180px; }
 #nav-nova2 {
-	width: 85px;
+	width: 81px;
 	background: transparent url(images/sprite.png) no-repeat 0 -210px;
 }
-#nav-nova2:hover { background-position: 0 -242px; }
+#nav-nova2:hover { background-position: 0 -240px; }
 #nav-sms {
-	width: 55px;
+	width: 54px;
 	background: transparent url(images/sprite.png) no-repeat 0 -270px;
 }
-#nav-sms:hover { background-position: 0 -303px; }
+#nav-sms:hover { background-position: 0 -300px; }
+#nav-nova3 {
+	width: 81px;
+	background: transparent url(images/sprite.png) no-repeat 0 -330px;
+}
+#nav-nova3:hover { background-position: 0 -360px; }
+#nav-satellite {
+	width: 114px;
+	background: transparent url(images/sprite.png) no-repeat 0 -390px;
+}
+#nav-satellite:hover { background-position: 0 -420px; }
 
 #content {
 	position: relative;
@@ -207,8 +217,9 @@ em { font-style: italic; }
 .options-code div { background-image: url(images/nova2/code.png); }
 
 .options-noicons {
-	margin: 1em 0;
+	margin: .5em 0;
 	padding: .5em;
+	width: 50%;
 	display: block;
 	color: #888 !important;
 	text-decoration: none;
@@ -217,16 +228,8 @@ em { font-style: italic; }
 	-moz-border-radius: 3px;
 }
 .options-noicons span {
-	padding: 0 0 0 20px;
-	background: transparent url(images/arrow-000-medium.png) no-repeat center left;
-	font-size: 1.9em;
+	font-size: 1.4em;
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
-}
-.options-noicons em {
-	margin: 0 0 0 21px;
-	display: block;
-	font-size: .95em;
-	font-style: normal;
 }
 .options-noicons:hover {
 	color: #466b8c !important;

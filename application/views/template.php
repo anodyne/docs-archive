@@ -33,7 +33,15 @@ $controllers = array(
 		'skin'			=> 'Skinning Nova',
 		'core'			=> 'The Nova Core',
 	),
-	'nova3' => array(),
+	'nova3' => array(
+		'overview'		=> 'Overview',
+		'start'			=> 'Getting Started',
+		'developers'	=> 'Developers',
+		'everything'	=> 'The Kitchen Sink',
+		'modify'		=> 'Modifying Nova',
+		'skin'			=> 'Skinning Nova',
+		'core'			=> 'The Nova Core',
+	),
 	'satellite' => array(),
 	'sms' => array(
 		'overview'		=> 'Overview',
@@ -83,9 +91,11 @@ $controllers = array(
 					<nav>
 						<ul>
 							<li><a href="<?php echo Url::site();?>" id="nav-home"></a></li>
-							<li><a href="<?php echo Url::site('nova1');?>" id="nav-nova1"></a></li>
+							<!--<li><a href="<?php echo Url::site('nova1');?>" id="nav-nova1"></a></li>-->
 							<li><a href="<?php echo Url::site('nova2');?>" id="nav-nova2"></a></li>
+							<!--<li><a href="<?php echo Url::site('nova3');?>" id="nav-nova3"></a></li>-->
 							<li><a href="<?php echo Url::site('sms');?>" id="nav-sms"></a></li>
+							<!--<li><a href="<?php echo Url::site('satellite');?>" id="nav-satellite"></a></li>-->
 						</ul>
 					</nav>
 				</div>
