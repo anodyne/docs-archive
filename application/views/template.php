@@ -54,11 +54,12 @@ $controllers = array(
 		<meta charset="utf-8">
 		<title><?php echo $title;?></title>
 		
+		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/bootstrap.change.css">
 		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/main.css">
-		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/jquery.tipsy.css">
 		
 		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery-1.6.4.min.js"></script>
-		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery.tipsy.js"></script>
+		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/bootstrap-twipsy.js"></script>
 		
 		<!--[if IE 8]>
 		<style type="text/css">
@@ -72,12 +73,9 @@ $controllers = array(
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('#tipsy').tipsy({
-					gravity: 'se',
-					fade: true,
+				$('.tip').twipsy({
 					delayOut: 500,
-					offset: 25,
-					opacity: 0.9
+					offset: 2
 				});
 			});
 		</script>
@@ -104,31 +102,21 @@ $controllers = array(
 			<div id="content">
 				<div class="wrapper">
 					<div class="inner">
-						<span class="breadcrumbs">
-							<ul>
-								<li><a href="<?php echo Url::site();?>">Home</a></li>
+						<ul class="breadcrumb">
+							<li><a href="<?php echo Url::site();?>">Home</a></li>
+							
+							<?php if ($req->directory()): ?>
+								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
 								
-								<?php if ($req->directory()): ?>
-									<li><a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
+								<?php if ($req->controller()): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
 									
-									<?php if ($req->controller()): ?>
-										<li>
-											<a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>">
-												<?php echo $controllers[$req->directory()][$req->controller()];?>
-											</a>
-										</li>
-										
-										<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
-											<li>
-												<a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>">
-													<?php echo ucfirst($req->action());?>
-												</a>
-											</li>
-										<?php endif;?>
+									<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
 									<?php endif;?>
 								<?php endif;?>
-							</ul>
-						</span>
+							<?php endif;?>
+						</ul>
 						
 						<?php echo $content;?>
 					</div>
@@ -145,7 +133,7 @@ $controllers = array(
 						<tr>
 							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com" target="_blank" class="anodyne"></a></td>
 							<td class="footer-copyright">
-								<a href="" id="tipsy" title="Icons used were created by Drew Wilson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality created jQuery Tipsy.">Credits</a>
+								<a href="" class="tip" title="Icons used were created by Drew Wilson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality created Bootstrap from Twitter.">Credits</a>
 								&nbsp; | &nbsp;
 								&copy; <?php echo date('Y');?> Anodyne Productions.
 							</td>
