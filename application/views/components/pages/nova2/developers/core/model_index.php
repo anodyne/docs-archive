@@ -34,7 +34,6 @@
 	<li><?php echo Html::anchor('nova2/core/models/posts', 'Posts');?></li>
 	<li><?php echo Html::anchor('nova2/core/models/privmsgs', 'Private Messages');?></li>
 	<li><?php echo Html::anchor('nova2/core/models/ranks', 'Ranks');?></li>
-	<li><?php echo Html::anchor('nova2/core/models/rss', 'RSS');?></li>
 	<li><?php echo Html::anchor('nova2/core/models/settings', 'Settings');?></li>
 	<li><?php echo Html::anchor('nova2/core/models/specs', 'Specs');?></li>
 	<li><?php echo Html::anchor('nova2/core/models/system', 'System');?></li>
