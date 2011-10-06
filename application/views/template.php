@@ -107,6 +107,9 @@ $controllers = array(
 							
 							<?php if ($req->directory()): ?>
 								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
+								<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
+								<?php endif;?>
 								
 								<?php if ($req->controller()): ?>
 									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>

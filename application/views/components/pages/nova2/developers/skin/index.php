@@ -4,36 +4,56 @@
 
 <h2>Before You Get Started</h2>
 
-<p>Before you dive in to creating a great skin for your game, there are a few things you may want to familiarize yourself with. The links below will explain some of the concepts behind skinning in Nova as well as provide some resources for learning HTML and CSS to help you as you work your way through building your own skin.</p>
+<p>Before you dive in to creating a great skin for your game, there are a few things you'll need to familiarize yourself with. The links below will explain some of the concepts behind skinning in Nova as well as provide some resources for learning HTML and CSS to help you as you work your way through building your own skin.</p>
 
 <ul>
-	<li>Understanding seamless substitution</li>
-	<li>Anatomy of a Nova skin</li>
+	<!--<li>Understanding seamless substitution</li>
+	<li>Anatomy of a Nova skin</li>-->
 	<li><a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML</a> (w3schools)</li>
 	<li><a href="http://www.w3schools.com/css/default.asp" target="_blank">CSS</a> (w3schools)</li>
-</ul>
+</ul><br>
 
-<h2>Basic Skinning</h2>
-
-<p>There are several things you can do with Nova that we consider to be pretty basic. These tutorials will get you started with a few basic changes to Nova using code or some of Nova's built-in developer tools.</p>
-
-<ul>
-	<li>Changing colors and fonts in a skin</li>
-	<li>Adding/changing the header image of a skin</li>
-</ul>
-
-<h2>Intermediate Skinning</h2>
-
-<p>Now that you have a grasp on the basics behind using Nova's built-in tools to modify the system, let's take a tour through a few intermediate topis to change some more things about Nova.</p>
-
-<ul>
-	<li>Creating a new skin</li>
-</ul>
-
-<h2>Advanced Skinning</h2>
-
-<p>With a whole slew of tutorials behind you, it's time to tackle the tough stuff. It may be difficult, but these are where Nova's developer tools really shine.</p>
-
-<ul>
-	<li>Using icons in the main navigation</li>
-</ul>
+<div class="row">
+	<div class="span-one-third">
+		<div class="n2-col-header">
+			<img src="<?php echo Url::base();?>application/views/design/images/nova2/basic.png" alt="">
+			<h1>Basic Skinning</h1>
+		</div>
+		
+		<p class="n2-sub-text">With only a little knowledge of HTML and CSS required, you can do some pretty basic things with Nova skins to customize them to match your tastes. These tutorials will get you started with a few basic changes to a skin to get you comfortable for future tutorials.</p>
+		
+		<ul>
+			<!--<li>Change colors and fonts in a skin</li>
+			<li>Add/change the header image of a skin</li>-->
+			<li><em>No basic skinning tutorials available</em></li>
+		</ul>
+	</div>
+	
+	<div class="span-one-third">
+		<div class="n2-col-header">
+			<img src="<?php echo Url::base();?>application/views/design/images/nova2/intermediate.png" alt="">
+			<h1>Intermediate Skinning</h1>
+		</div>
+		
+		<p class="n2-sub-text">Now that you've gotten your feet wet with some of the basic changes to a skin, let's dive in a little deeper and look at some intermediate skinning topics to take your small tweaks and turn them in to a more unique skin for your game.</p>
+		
+		<ul>
+			<!--<li>Create a new skin</li>-->
+			<li><em>No intermediate skinning tutorials available</em></li>
+		</ul>
+	</div>
+	
+	<div class="span-one-third">
+		<div class="n2-col-header">
+			<img src="<?php echo Url::base();?>application/views/design/images/nova2/advanced.png" alt="">
+			<h1>Advanced Skinning</h1>
+		</div>
+		
+		<p class="n2-sub-text">With the basic and intermediate topics behind us, it's time to tackle the tough stuff that really makes a skin unique. These are the more difficult of the tutorials and will require solid understanding of HTML and CSS as well as how Nova works.</p>
+		
+		<ul>
+			<!--<li>Using icons in the main navigation</li>-->
+			<li><em>No advanced skinning tutorials available</em></li>
+		</ul>
+	</div>
+</div>
