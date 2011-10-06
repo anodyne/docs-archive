@@ -1,6 +1,6 @@
 <h1>Nova 2 Requirements</h1>
 
-<p>We've worked hard to make sure Nova's requirements are as wide open as possible so more people can use it, but there are still a few requirements that you should verify before you try to install Nova 2. In the event the server you're going to be installing Nova on doesn't support some or all of these things, you should contact your hosting provider and ask them about the possibility of upgrading these items.</p>
+<p>We've worked hard to make sure Nova's requirements are as broad as possible so as many people as possible can use it for their games. Still, there are a few requirements that you should verify before installing Nova 2. In the event the server you're going to be installing Nova on doesn't support some or all of these things, you should contact your hosting provider and ask them about the possibility of upgrading these items.</p>
 
 <h2>PHP</h2>
 

@@ -4,20 +4,26 @@
 
 <p><strong>Please note:</strong> Due to difficulty with keeping them accurate as Nova changes through updates, we've discontinued page guides for Nova 2. The Nova 1 page guides still exist for those who want to access them, though the information is likely out of date at this point.</p><br>
 
-<a href="<?php echo Url::site('nova2/start/index');?>" class="options options-started">
-	<div></div>
-	<span>Getting Started</span>
-	<em>Get up and running with Nova 2 in no time with tutorials for doing a fresh install, upgrading from SMS, updating from Nova 1 and more!</em>
-</a>
-
-<a href="<?php echo Url::site('nova2/everything/index');?>" class="options options-everything">
-	<div></div>
-	<span>The Kitchen Sink</span>
-	<em>Have questions about Nova 2? Need information about the ins and outs of the system? Everything else you'll need to know about Nova 2 is here.</em>
-</a>
-
-<a href="<?php echo Url::site('nova2/developers/index');?>" class="options options-developers">
-	<div></div>
-	<span>Developers</span>
-	<em>Skinning, modifications and advanced tutorials are just a few ways developers can extend Nova 2 and make it unique for your own game.</em>
-</a>
+<div class="row">
+	<div class="span-one-third">
+		<a href="<?php echo Url::site('nova2/start/index');?>" class="n2-options n2-options-started">
+			<div></div>
+			<h1>Getting Started</h1>
+		</a>
+		<p class="n2-sub-text">Get up and running with Nova 2 in no time with tutorials for doing a fresh install, upgrading from SMS, updating from Nova 1 and more!</p>
+	</div>
+	<div class="span-one-third">
+		<a href="<?php echo Url::site('nova2/everything/index');?>" class="n2-options n2-options-everything">
+			<div></div>
+			<h1>The Kitchen Sink</h1>
+		</a>
+		<p class="n2-sub-text">Have questions about Nova 2? Need information about the ins and outs of the system? Everything else you'll need to know about Nova 2 is here.</p>
+	</div>
+	<div class="span-one-third">
+		<a href="<?php echo Url::site('nova2/developers/index');?>" class="n2-options n2-options-developers">
+			<div></div>
+			<h1>Developers</h1>
+		</a>
+		<p class="n2-sub-text">Skinning, modifications and advanced tutorials are just a few ways developers can extend Nova 2 and make it unique for your own game.</p>
+	</div>
+</div>

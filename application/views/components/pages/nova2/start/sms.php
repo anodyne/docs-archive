@@ -10,7 +10,7 @@
 	<thead>
 		<tr>
 			<th class="blue">Item</th>
-			<th class="blue"></th>
+			<th class="blue">Status</th>
 			<th class="blue">Description</th>
 		</tr>
 	</thead>

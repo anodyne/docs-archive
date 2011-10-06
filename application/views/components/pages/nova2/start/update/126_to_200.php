@@ -6,6 +6,8 @@
 
 <p>Once you've finished backing up your stuff, remove all of the files in your site.</p>
 
+<p class="critical">When we say remove, we mean it. Delete every Nova file on your server and <strong>then</strong> upload the new copy. If you don't do this, there's no telling what could go wrong.</p>
+
 <h2>Step 2: Upload Nova 2</h2>
 
 <p>Now that you've got an empty directory (kinda scary to hit that delete button, huh?), it's time to upload Nova 2 to your site. It may take a few minutes since there are a lot of files that will need to be uploaded. In addition, if you have any skins you want, you can upload those from the backups on your desktop to the <samp>application/views</samp> directory on your server.</p>

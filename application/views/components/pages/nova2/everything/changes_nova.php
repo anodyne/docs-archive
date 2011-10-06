@@ -4,6 +4,7 @@
 
 <ul>
 	<li>All new file structure that's easier to update</li>
+	<li>Updated to CodeIgniter 2.0.3 (up from version 1.7.3)</li>
 	<li>Updated to jQuery 1.6 (up from version 1.4)</li>
 	<li>Removed the banned.php file and replaced it with a messages.php file that handles more errors than just bans</li>
 	<li>Re-wrote the license to be even more flexible</li>

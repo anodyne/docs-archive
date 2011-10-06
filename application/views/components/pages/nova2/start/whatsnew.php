@@ -2,9 +2,9 @@
 
 <h2>New File Structure</h2>
 
-<p>One of the biggest reasons for Nova 2 was to vastly improve the file structure of Nova. We've heard from our customers that updating Nova is difficult and time consuming. For a product that promises to "get you back to playing your game" that's unacceptable. We went back to the drawing board with our file structure to make sure updating Nova is dead simple and we think we've nailed it.</p>
+<p>One of the biggest reasons for doing Nova 2 was to improve the file structure of Nova. We've heard from people that updating Nova is difficult and time consuming. For a product that promises to "get you back to playing your game" that's unacceptable. We went back to the drawing board with our file structure to make sure updating Nova is dead simple and we think we've nailed it.</p>
 
-<p>When it comes time to update Nova, all you'll need to do is delete the <samp>nova</samp> directory and upload the newer copy. After that, just run the update script from your web browser like you would normally and you're done. In, out and back to your game.</p>
+<p>When it comes time to update Nova, all you'll need to do is delete the <samp>nova</samp> directory and upload the newer copy. After that, just run the update script from your web browser like you would normally and you're done. No more wading through files and making sure you don't accidentally update a file you shouldn't. In, out and back to your game.</p>
 
 <h2>New Database Configuration Process</h2>
 
@@ -24,7 +24,7 @@
 
 <h3>Brand New Category Selection Interface</h3>
 
-<p>Let's be honest, a listing of checkboxes wasn't much of an interface for selecting categories for a page. Now, a more elegant solution makes it easier to categorize your pages.</p>
+<p>Let's be honest, a list of checkboxes wasn't much of an interface for selecting categories. Now, a more elegant solution makes it easier to categorize your pages.</p>
 
 <h3>Create Categories On-the-Fly</h3>
 
@@ -32,7 +32,7 @@
 
 <h3>User Experience Improvements</h3>
 
-<p>We're always looking to make the user experience of our products better than before. In Thresher R2, we've made viewing a wiki page a much better and simpler experience. In addition, we've overhauled the Manage Pages section with a whole new user interface that puts more controls at admins fingertips and allows filtering pages by restrictions, the type of page and more. All in all, you'll be pleasantly surprised with the new interface for managing your Thresher pages.</p>
+<p>We're always looking to make the user experience of our products better than before. In Thresher R2, we've made viewing a wiki page a much better and simpler experience. In addition, we've overhauled the Manage Pages section with a whole new user interface that puts more controls at admins fingertips and allows filtering pages by restrictions, the type of page and more.</p>
 
 <h3>Better Searching</h3>
 
@@ -40,11 +40,11 @@
 
 <h2>Simplified Character/User Management</h2>
 
-<p>One of Nova 1's major features was the separation of users and characters, allowing a single user to control multiple characters. While this was a great feature, the management piece was a bit of a struggle for a lot of admins. It was all-to-easy to deactivate a character but leave the user active or vice versa. To help with this management headache, we've again borrowed from Nova 3's features to provide a dead-simple way to manage characters and users. If you want to take action on a character (activate, deactivate, make an NPC or make an NPC a playing character), admins will do so now with a series of buttons:</p>
+<p>One of Nova 1's major features was the separation of users and characters, allowing a single user to control multiple characters. While this was a great feature, the management piece was a bit of a struggle for a lot of admins. It was all-to-easy to deactivate a character but leave the user active or vice versa. To help with this management headache, we've borrowed from Nova 3's planned features to provide a dead-simple way to manage characters and users. If you want to take action on a character (activate, deactivate, make an NPC or make an NPC a playing character), admins will do so now with a series of buttons:</p>
 
 <ul>
 	<li><strong>Activating an Inactive Character</strong> &ndash; Only displayed with inactive characters, this button will not only activate an inactive character, but will also give admins the ability to activate the user if they're inactive, make the character the primary character for the user or even assign the character to a completely different user.</li>
-	<li><strong>Deactivating an Active Character</strong> &ndash; Only displayed with active character, this button will deactivate the active character and check the user for any other active characters. If the user doesn't have any other active characters, admins will have an option to deactivate the user right then and there. If the user does have other characters and the one being deactivated is their main character, a dropdown menu will allow admins to set a new main character for that user.</li>
+	<li><strong>Deactivating an Active Character</strong> &ndash; Only displayed with active characters, this button will deactivate the active character and check the user for any other active characters. If the user doesn't have any other active characters, admins will have an option to deactivate the user right then and there. If the user does have other characters and the one being deactivated is their main character, a dropdown menu will allow admins to set a new main character for that user.</li>
 	<li><strong>Making an Active or Inactive Character an NPC</strong> &ndash; Displayed for both active and inactive characters, this button will move an active or inactive character to be an NPC. If the character in question is someone's main character, a dropdown menu will allow admins to set a new main character for that user. The character will continue to be associated with that user even as an NPC unless the admins selects the option to clear the user association. In the event that making an active character an NPC leaves a user without an active character, admins will have the option to deactivate the user as well.</li>
 	<li><strong>Making an NPC an Active Character</strong> &ndash; Only displayed for non-playing characters, this button will move an NPC to be an active character. Admins will be able to associate the character with a user or change the user the character is associated with in addition to setting the character to be the primary character. In the event a character is being associated with an inactive user, the option will be given to activate that user.</li>
 	<li><strong>Activating a User</strong> &ndash; Only displayed for inactive user accounts, this button will activate an inactive user as well providing admins with the ability to activate any of that user's inactive characters at the same time.</li>
@@ -57,7 +57,7 @@
 
 <h2>Brand-New Character Selection</h2>
 
-<p>One pages where you can select multiple characters (writing a mission post, editing a mission post, writing a private message, etc.), the UI was never that good. Select a user and click a link. Select another user and click a link. It was bulky and quite a pain to maintain. In Nova 2, we've changed the UI to be a lot more friendly. Now, just start typing a character name and the list will filter for you. Click the name and you're done. Want to remove a character from the list? Just click on the X next to their name.</p>
+<p>On pages where you can select multiple characters (writing a mission post, editing a mission post, writing a private message, etc.), the UI was never that good. Select a user and click a link. Select another user and click a link. It was bulky and quite a pain to maintain. In Nova 2, we've changed the UI to be a lot more friendly. Now, just start typing a character name and the list will filter for you. Click the name and you're done. Want to remove a character from the list? Just click on the X next to their name.</p>
 
 <h2>Updates to Site Messages</h2>
 

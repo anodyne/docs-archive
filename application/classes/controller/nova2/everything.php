@@ -31,9 +31,9 @@ class Controller_Nova2_Everything extends Controller_Template {
 		$this->template->title.= 'Nova 2 Changelog';
 	}
 	
-	public function action_changes($product = 'sms')
+	public function action_changes()
 	{
-		switch ($product)
+		switch ($this->request->param('id'))
 		{
 			default:
 			case 'sms':
@@ -52,9 +52,9 @@ class Controller_Nova2_Everything extends Controller_Template {
 		$this->template->title.= $title;
 	}
 	
-	public function action_configure($product = 'nova')
+	public function action_configure()
 	{
-		switch ($product)
+		switch ($this->request->param('id'))
 		{
 			default:
 			case 'nova':
