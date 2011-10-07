@@ -8,7 +8,6 @@
 
 <h3>Parameters</h3>
 
-
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
 		<th class="blue">Parameter</th>
@@ -28,12 +27,11 @@
 
 <p>The method will return an array of email address if authors are found or <dfn>FALSE</dfn> if no authors are found.</p>
 
-<h2>get_character_posts()</h2>
+<h2><span class="label warning">UPDATED</span> get_character_posts()</h2>
 
 <p>Get all a character's posts from the database.</p>
 
 <h3>Parameters</h3>
-
 
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
@@ -53,6 +51,18 @@
 		<td class="td col2"><em>0</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">The number of posts to limit the return to; use zero to return all posts</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>status</strong></td>
+		<td class="td col2"><em>activated</em></td>
+		<td class="td col3"><em>activated, saved, pending, none</em></td>
+		<td class="td col4">The status of posts to pull</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>offset</strong></td>
+		<td class="td col2"><em>0</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The offset to use in the LIMIT query</td>
 	</tr>
 </table>
 
@@ -282,6 +292,43 @@
 
 <p>The method will return an object with all the information for the mission posts that match the criteria.</p>
 
+<h2><span class="label success">NEW</span> get_user_posts()</h2>
+
+<p>Get mission posts for a specific user.</p>
+
+<h3>Parameters</h3>
+
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric user ID</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>limit</strong></td>
+		<td class="td col2"><em>0</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The number by which to limit the query; use zero for no limit</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>status</strong></td>
+		<td class="td col2"><em>activated</em></td>
+		<td class="td col3"><em>activated, pending, saved, none</em></td>
+		<td class="td col4">The status of logs to pull</td>
+	</tr>
+</table>
+
+<h3>Return</h3>
+
+<p>The method will return an object with all the information for the mission posts that match the criteria.</p>
+
 <?php
 /**
  * UPDATING DATA
@@ -347,6 +394,43 @@
 		<td class="td col2"><em>None</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">An array of the information to updated</td>
+	</tr>
+</table>
+
+<h3>Return</h3>
+
+<p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
+
+<h2><span class="label success">NEW</span> update_post_lock()</h2>
+
+<p>Update a mission post lock in the database.</p>
+
+<h3>Parameters</h3>
+
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>post</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric ID of the post to be updated</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>user</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric ID of the user to update the post with</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>retain</strong></td>
+		<td class="td col2"><em>TRUE</em></td>
+		<td class="td col3"><em>TRUE/FALSE</em></td>
+		<td class="td col4">Whether to retain the post lock</td>
 	</tr>
 </table>
 
@@ -580,12 +664,11 @@
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
-<h2>count_mission_posts()</h2>
+<h2><span class="label warning">UPDATED</span> count_mission_posts()</h2>
 
 <p>Counts the number of posts in a given mission.</p>
 
 <h3>Parameters</h3>
-
 
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
@@ -605,6 +688,12 @@
 		<td class="td col2"><em>None</em></td>
 		<td class="td col3"><em>single, multiple</em></td>
 		<td class="td col4">The preferred method of counting posts (single or multiple)</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>status</strong></td>
+		<td class="td col2"><em>activated</em></td>
+		<td class="td col3"><em>activated, saved, pending, none</em></td>
+		<td class="td col4">The status of posts to pull</td>
 	</tr>
 </table>
 

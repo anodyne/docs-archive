@@ -359,3 +359,11 @@ tour:
           options: None
           type: integer
           notes: A numeric ID of the field value to be removed
+
+  count:
+    -
+      method: <span class="label success">NEW</span> count_deck_items()
+      status: active
+      scope: public
+      description: Find the number of unique deck items in the database.
+      return: The method returns the number of deck items.

@@ -1,4 +1,4 @@
-<h1><?php echo $header;?></h1>
+<h1><?php echo $header;?> Model</h1>
 
 <?php foreach ($model as $value): ?>
 	<?php foreach ($value as $k => $v): ?>

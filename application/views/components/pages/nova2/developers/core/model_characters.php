@@ -1000,7 +1000,7 @@
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
-<h2>create_character_data_fields()</h2>
+<h2><span class="label warning">UPDATED</span> create_character_data_fields()</h2>
 
 <p>Adds all of the character data to the database as blank values.</p>
 
@@ -1016,15 +1016,15 @@
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
-		<td class="td col2"><em>None</em></td>
+		<td class="td col2">0</td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">A numeric character ID</td>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>user</strong></td>
-		<td class="td col2"><em>None</em></td>
+		<td class="td col2">0</td>
 		<td class="td col3"><em>None</em></td>
-		<td class="td col4">A numeric user ID. If there is no user associated with the character, you can pass <dfn>NULL</dfn> to this parameter.</td>
+		<td class="td col4">A numeric user ID. If there is no user associated with the character, you can pass <dfn>0</dfn> to this parameter.</td>
 	</tr>
 </table>
 

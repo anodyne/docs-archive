@@ -54,11 +54,6 @@ class Controller_Nova2_Core extends Controller_Template {
 				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/docking', 'yaml'));
 			break;
 			
-			case 'specs':
-				$title = 'Specs';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/specs', 'yaml'));
-			break;
-			
 			case 'system':
 				$title = 'System';
 				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/system', 'yaml'));

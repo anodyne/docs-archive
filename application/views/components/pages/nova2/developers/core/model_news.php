@@ -34,6 +34,43 @@
 
 <p>The method will return an object with all the information for the news items that match the criteria.</p>
 
+<h2><span class="label success">NEW</span> get_character_news()</h2>
+
+<p>Get news items for a specific character.</p>
+
+<h3>Parameters</h3>
+
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The numeric ID of the character being requested</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>limit</strong></td>
+		<td class="td col2">0</td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">How many items to limit the results to</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>status</strong></td>
+		<td class="td col2">activated</td>
+		<td class="td col3"><em>activated, pending, saved, none</em></td>
+		<td class="td col4">What status to limit the results to</td>
+	</tr>
+</table>
+
+<h3>Return</h3>
+
+<p>The method will return an object with all the information for the news items that match the criteria.</p>
+
 <h2>get_link_id()</h2>
 
 <p>Get the next or previous ID for the next/previous links.</p>

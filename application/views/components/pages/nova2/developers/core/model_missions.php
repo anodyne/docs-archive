@@ -2,24 +2,36 @@
 
 <h1>Get Data</h1>
 
-<h2>get_all_mission_groups()</h2>
+<h2><span class="label warning">UPDATED</span> get_all_mission_groups()</h2>
 
 <p>Get all the mission groups out of the database.</p>
 
 <h3>Parameters</h3>
 
-<p><em>None</em></p>
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>parent</strong></td>
+		<td class="td col2">0</td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The numeric ID of the parent group to pull</td>
+	</tr>
+</table>
 
 <h3>Return</h3>
 
 <p>The method will return an object with all the information for the mission groups in the database.</p>
 
-<h2>get_all_missions()</h2>
+<h2><span class="label warning">UPDATED</span> get_all_missions()</h2>
 
 <p>Get all the missions out of the database.</p>
 
 <h3>Parameters</h3>
-
 
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
@@ -34,6 +46,12 @@
 		<td class="td col3"><em>completed, current, upcoming, none</em></td>
 		<td class="td col4">The status of the missions to pull; use a blank string to pull all missions</td>
 	</tr>
+	<tr>
+		<td class="td col1"><strong>group</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The ID of the mission group to pull</td>
+	</tr>
 </table>
 
 <h3>Return</h3>
@@ -45,7 +63,6 @@
 <p>Get a specific mission from the database based on its ID.</p>
 
 <h3>Parameters</h3>
-
 
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
@@ -333,3 +350,36 @@
 <h3>Return</h3>
 
 <p>The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.</p>
+
+<?php
+/**
+ * COUNTING DATA
+ */
+?>
+
+<h1>Count Data</h1>
+
+<h2><span class="label success">NEW</span> count_mission_groups()</h2>
+
+<p>Count mission groups.</p>
+
+<h3>Parameters</h3>
+
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric ID of the parent group to be pulled</td>
+	</tr>
+</table>
+
+<h3>Return</h3>
+
+<p>The method returns the number of mission groups.</p>

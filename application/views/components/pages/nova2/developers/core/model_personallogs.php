@@ -2,12 +2,11 @@
 
 <h1>Get Data</h1>
 
-<h2>get_character_logs()</h2>
+<h2><span class="label warning">UPDATED</span> get_character_logs()</h2>
 
 <p>Get personal logs by a specific character.</p>
 
 <h3>Parameters</h3>
-
 
 <table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
 	<tr>
@@ -27,6 +26,18 @@
 		<td class="td col2"><em>0</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">The number of items to limit the result set to</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>status</strong></td>
+		<td class="td col2"><em>activated</em></td>
+		<td class="td col3"><em>activated, saved, pending, none</em></td>
+		<td class="td col4">The status of logs to pull</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>offset</strong></td>
+		<td class="td col2"><em>0</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The offset to use in the LIMIT query</td>
 	</tr>
 </table>
 
@@ -243,6 +254,43 @@
 		<td class="td col2"><em>0</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">The number by which to limit the query; use zero for no limit</td>
+	</tr>
+</table>
+
+<h3>Return</h3>
+
+<p>The method will return an object with all the information for the personal logs that match the criteria.</p>
+
+<h2><span class="label success">NEW</span> get_user_logs()</h2>
+
+<p>Get personal logs for a specific user.</p>
+
+<h3>Parameters</h3>
+
+<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+	<tr>
+		<th class="blue">Parameter</th>
+		<th class="blue">Default Value</th>
+		<th class="blue">Options</th>
+		<th class="blue">Description</th>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>ID</strong></td>
+		<td class="td col2"><em>None</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">A numeric user ID</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>limit</strong></td>
+		<td class="td col2"><em>0</em></td>
+		<td class="td col3"><em>None</em></td>
+		<td class="td col4">The number by which to limit the query; use zero for no limit</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>status</strong></td>
+		<td class="td col2"><em>activated</em></td>
+		<td class="td col3"><em>activated, pending, saved, none</em></td>
+		<td class="td col4">The status of logs to pull</td>
 	</tr>
 </table>
 

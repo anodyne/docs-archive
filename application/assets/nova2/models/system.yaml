@@ -181,6 +181,19 @@ system:
           type: string
           notes: The section to get the default for
     -
+      method: <span class="label success">NEW</span> get_skin_by_section()
+      status: active
+      scope: public
+      description: Get skins for a specific section.
+      return: The method will return an object with the skin information or <kbd>FALSE</kbd> if no skin exists.
+      parameters:
+        -
+          name: section
+          default: None
+          options: None
+          type: string
+          notes: The section to pull skins for
+    -
       method: get_skin_info()
       status: active
       scope: public
@@ -282,6 +295,31 @@ system:
           options: bio, award, mission, tour
           type: string
           notes: The type of uploaded images to pull
+    -
+      method: <span class="label success">NEW</span> list_table_columns()
+      status: active
+      scope: public
+      description: Get a list of table columns. While CodeIgniter's Database driver is capable of doing this, there's currently no way to strip the table prefix out so we can use the sms_ prefix instead without creating a whole new database connection group.
+      return: The method will return an array table columns.
+      parameters:
+        -
+          name: table
+          default: None
+          options: None
+          type: string
+          notes: The table to pull columns for
+        -
+          name: like
+          default: "FALSE"
+          options: None
+          type: string
+          notes: Any LIKE statement used to pull the columns
+        -
+          name: prefix
+          default: "FALSE"
+          options: TRUE/FALSE
+          type: boolean
+          notes: Whether to prepend the table name with the database prefix
 
   update:
     -
@@ -539,7 +577,7 @@ system:
           type: integer
           notes: A numeric ID of the skin to remove
     -
-      method: delete_skin_section()
+      method: <span class="label warning">UPDATED</span> delete_skin_section()
       status: active
       scope: public
       description: Delete a skin section from the database.
@@ -551,6 +589,12 @@ system:
           options: None
           type: integer
           notes: A numeric ID of the skin section to remove
+        -
+          name: identifier
+          default: skinsec_id
+          options: None
+          type: string
+          notes: The column to use as the identifier
     -
       method: delete_upload_record()
       status: active
