@@ -72,7 +72,7 @@
 
 <p>If the third parameter is set to <dfn>object</dfn>, the method will return an object with the position IDs for the positions that match the criteria. If the third parameter is set to <dfn>array</dfn>, the method will return an array with the position IDs for the positions that match the criteria.</p>
 
-<h2>get_open_positions()</h2>
+<h2><span class="label warning">UPDATED</span> get_open_positions()</h2>
 
 <p>Get all the open positions out of the database.</p>
 
@@ -91,6 +91,12 @@
 		<td class="td col2"><em>y</em></td>
 		<td class="td col3"><em>y, n, none</em></td>
 		<td class="td col4">Whether to pull back items that are set to display or not; use a blank string to pull back all open positions</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>top position</strong></td>
+		<td class="td col2"><em>FALSE</em></td>
+		<td class="td col3"><em>TRUE/FALSE</em></td>
+		<td class="td col4">Whether to pull back the top open positions</td>
 	</tr>
 </table>
 

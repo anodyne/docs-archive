@@ -76,3 +76,27 @@
 <p>One of the most requested features since SMS 2 was the ability to "lock" a post when someone was working on it so that another user couldn't come in and overwrite the work being done. This was a tricky request and one that took a lot of time to come up with a good solution, but we've done it. Post locking relies on a very simple premise: when you start editing a post, no one else can edit it until you're done.</p>
 
 <p>Of course, it's significantly more complicated than that, but that's the basic idea. When you edit a post, you're granted a 5 minute lock. After 5 minutes, Nova will check to see if you're still editing the post. If you are, it'll renew the lock for another 5 minutes, but if you've walked away and left the page up, it'll auto-save your work and then release the lock. If you go to a post that's locked, you'll see a notification the post is locked and you won't be able to edit anything.</p>
+
+<h2>Top Open Positions</h2>
+
+<p>Sometimes, you want to highlight a few open positions to prospective players, but the open positions listing can be daunting, especially if you have a lot of positions open. Now, the top open positions listing makes it easier to nudge prospective players toward the positions you want to fill. To get started, simply update the position you want to highlight and change the Top Open Position option to Yes. The next time you go to the manifest and click on Open Positions, a new section will appear at the top of the manifest that highlights those top open positions.</p>
+
+<h2>Bug Fixes</h2>
+
+<p>As with any update, we've taken time to fix several nagging issues in Nova, some of which have existed from the very beginning. In all, we've address over a dozen bugs to make your experience with Nova 2 even better than with version 1. Some of the major issues addressed include:</p>
+
+<ul>
+	<li>Using seamless substitution with images in the <samp>_base_override</samp> directory didn't work properly</li>
+	<li>When replying to or forwarding private messages, the RE and FWD prefixes would always be added to the subject line instead of just once</li>
+	<li>When replying to a private message, the person sending the message would end up on the recipient list and the message would appear in their inbox</li>
+	<li>The join form could be submitted without an email address and password</li>
+	<li>Users who were deactivated kept their system flags (webmaster, system administrator, game master, etc.)</li>
+	<li>Reactivated users didn't have their access role properly set</li>
+	<li>Inactive users saw a link to upload images even though they don't have permission to do so</li>
+	<li>Users could reset their password without needing a security question</li>
+	<li>Open slots for positions always weren't properly updated when a character was deactivated</li>
+	<li>Pulsar and Titan didn't always display properly in Internet Explorer 9</li>
+	<li>The "Nominated By" line was shown even when there was no nominee (only an issue for people who upgraded from SMS)</li>
+	<li>The Enterprise genre file had several issues</li>
+	<li>Patched several potential security issues</li>
+	<li>Much more...</li>
