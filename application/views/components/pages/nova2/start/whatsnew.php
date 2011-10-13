@@ -10,6 +10,10 @@
 
 <p>Taking cues from SMS, Nova 2 includes a brand new database configuration process. Instead of having to open files up and edit them before starting the Nova 2 install, you'll simply go to the site and if there's no database configuration file, you'll be taken through a simple process that will collect your information and create the file for you. Before the file is created though, Nova will actually try to connect to the database and will let you know right away if something is wrong. We think this new process will make it easier and faster to get your game up and running on Nova 2.</p>
 
+<h2>Refreshed Default Look</h2>
+
+<p>After a year and a half with the same default look, Nova 2 has gotten a facelift. Sporting an updated and simpler default interface, Nova 2 leverages HTML5 and CSS3 to a greater degree than previous versions of Nova. The old version of the skin will continue to work, but we felt that given the larger nature of the changes, a refreshed look and feel was appropriate.</p>
+
 <h2>Thresher R2</h2>
 
 <p>By far, the majority of our focus has been on Thresher and getting it up to Release 2. There are a ton of improvements to our mini-wiki that will make using it even better than before.</p>
