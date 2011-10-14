@@ -11,6 +11,7 @@
 	<li>Anatomy of a Nova skin</li>-->
 	<li><a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML</a> (w3schools)</li>
 	<li><a href="http://www.w3schools.com/css/default.asp" target="_blank">CSS</a> (w3schools)</li>
+	<li><a href="<?php echo Url::site('nova2/skin/changes');?>">Changes to Skinning in Nova 2</a></li>
 </ul><br>
 
 <div class="row">

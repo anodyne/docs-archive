@@ -23,4 +23,11 @@ class Controller_Nova2_Skin extends Controller_Template {
 		
 		$this->template->title.= 'Skinning Nova';
 	}
+	
+	public function action_changes()
+	{
+		$this->template->content = View::factory('components/pages/nova2/developers/skin/changes');
+		
+		$this->template->title.= 'Changes to Skinning in Nova 2';
+	}
 }
