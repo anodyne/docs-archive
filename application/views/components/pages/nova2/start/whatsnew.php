@@ -85,6 +85,10 @@
 
 <p>Sometimes, you want to highlight a few open positions to prospective players, but the open positions listing can be daunting, especially if you have a lot of positions open. Now, the top open positions listing makes it easier to nudge prospective players toward the positions you want to fill. To get started, simply update the position you want to highlight and change the Top Open Position option to Yes. The next time you go to the manifest and click on Open Positions, a new section will appear at the top of the manifest that highlights those top open positions.</p>
 
+<h2>Rules</h2>
+
+<p>Returning from the ashes of SMS 2, Nova now includes a dedicated rules page that admins can update from Site Messages.</p>
+
 <h2>Bug Fixes</h2>
 
 <p>As with any update, we've taken time to fix several nagging issues in Nova, some of which have existed from the very beginning. In all, we've address over a dozen bugs to make your experience with Nova 2 even better than with version 1. Some of the major issues addressed include:</p>
