@@ -29,12 +29,60 @@ class Controller_Nova2_Core extends Controller_Template {
 	
 	public function action_helpers()
 	{
-		# code...
+		switch ($this->request->param('id'))
+		{
+			default:
+				$item = $this->request->param('id');
+				
+				if (empty($item))
+				{
+					$item = 'index';
+				}
+				
+				$title = ucfirst($item);
+				$helper = false;
+				$view = 'helper_'.$item;
+			break;
+		}
+		
+		$this->template->content = View::factory('components/pages/nova2/developers/core/'.$view);
+		$this->template->content->header = $title;
+		$this->template->content->helper = $helper;
+		$this->template->title.= $title.' Helper';
 	}
 	
 	public function action_libraries()
 	{
-		# code...
+		switch ($this->request->param('id'))
+		{
+			default:
+				$item = $this->request->param('id');
+				
+				if (empty($item))
+				{
+					$item = 'index';
+				}
+				
+				switch ($item)
+				{
+					case 'userpanel':
+						$title = 'User Panel';
+					break;
+					
+					default:
+						$title = ucfirst($item);
+					break;
+				}
+				
+				$library = false;
+				$view = 'lib_'.$item;
+			break;
+		}
+		
+		$this->template->content = View::factory('components/pages/nova2/developers/core/'.$view);
+		$this->template->content->header = $title;
+		$this->template->content->library = $library;
+		$this->template->title.= $title.' Library';
 	}
 	
 	public function action_models()
