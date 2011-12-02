@@ -11,13 +11,11 @@ class Controller_Nova1_Overview extends Controller_Template {
 		$this->imagepath = Url::base().'application/views/design/images/nova1/';
 		
 		$this->template = View::factory('template');
-		$this->template->title = 'Nova 1 - ';
+		$this->template->title = 'AnodyneDocs :: Nova 1 - ';
 	}
 	
 	public function after()
 	{
-		$this->template->title.= ' :: AnodyneDocs';
-		
 		$this->response->body($this->template);
 	}
 	

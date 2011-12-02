@@ -7,13 +7,11 @@ class Controller_Nova3_Overview extends Controller_Template {
 		parent::before();
 		
 		$this->template = View::factory('template');
-		$this->template->title = 'Nova 3 - ';
+		$this->template->title = 'AnodyneDocs :: Nova 3 - ';
 	}
 	
 	public function after()
 	{
-		$this->template->title.= ' :: AnodyneDocs';
-		
 		$this->response->body($this->template);
 	}
 	

@@ -7,13 +7,11 @@ class Controller_Sms_Overview extends Controller_Template {
 		parent::before();
 		
 		$this->template = View::factory('template');
-		$this->template->title = 'SMS - ';
+		$this->template->title = 'AnodyneDocs :: SMS - ';
 	}
 	
 	public function after()
 	{
-		$this->template->title.= ' :: AnodyneDocs';
-		
 		$this->response->body($this->template);
 	}
 	

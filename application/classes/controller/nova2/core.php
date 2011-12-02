@@ -7,7 +7,7 @@ class Controller_Nova2_Core extends Controller_Template {
 		parent::before();
 		
 		$this->template = View::factory('template');
-		$this->template->title = 'Nova 2 - ';
+		$this->template->title = 'AnodyneDocs :: Nova 2 - ';
 		
 		// load Spyc
 		Kohana::load(Kohana::find_file('vendor', 'spyc/spyc'));
@@ -15,8 +15,6 @@ class Controller_Nova2_Core extends Controller_Template {
 	
 	public function after()
 	{
-		$this->template->title.= ' :: AnodyneDocs';
-		
 		$this->response->body($this->template);
 	}
 	

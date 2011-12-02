@@ -7,7 +7,7 @@ class Controller_Main extends Controller_Template {
 		parent::before();
 		
 		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs - ';
+		$this->template->title = 'AnodyneDocs :: Main';
 	}
 	
 	public function after()
@@ -18,8 +18,6 @@ class Controller_Main extends Controller_Template {
 	public function action_index()
 	{
 		$this->template->content = View::factory('components/pages/main');
-		
-		$this->template->title.= 'Main';
 	}
 
 }

@@ -54,16 +54,16 @@ $controllers = array(
 		<meta charset="utf-8">
 		<title><?php echo $title;?></title>
 		
-		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/bootstrap.min.css">
-		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/bootstrap.change.css">
-		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/main.css">
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/base.css">
+		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/custom.css">
 		
-		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/jquery-1.6.4.min.js"></script>
-		<script type="text/javascript" src="<?php echo Url::base();?>application/assets/js/bootstrap-twipsy.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-twipsy.js"></script>
 		
 		<!--[if IE 8]>
 		<style type="text/css">
-			#container { display:table; height:100%; }
+			#page_container { display:table; height:100%; }
 		</style>
 		<![endif]-->
 		
@@ -74,22 +74,19 @@ $controllers = array(
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('.tip').twipsy({
-					delayOut: 500,
-					offset: 2
+					offset: 5
 				});
 			});
 		</script>
 	</head>
 	<body>
-		<div id="container">
-			<a name="top" class="top"></a>
+		<div id="page_container">
 			<header>
-				<div class="wrapper">
+				<div class="container">
 					<div class="logo"></div>
 					<nav>
 						<ul>
 							<li><a href="<?php echo Url::site();?>" id="nav-home"></a></li>
-							<!--<li><a href="<?php echo Url::site('nova1');?>" id="nav-nova1"></a></li>-->
 							<li><a href="<?php echo Url::site('nova2');?>" id="nav-nova2"></a></li>
 							<!--<li><a href="<?php echo Url::site('nova3');?>" id="nav-nova3"></a></li>-->
 							<li><a href="<?php echo Url::site('sms');?>" id="nav-sms"></a></li>
@@ -99,44 +96,42 @@ $controllers = array(
 				</div>
 			</header>
 			
-			<div id="content">
-				<div class="wrapper">
-					<div class="inner">
-						<ul class="breadcrumb">
-							<li><a href="<?php echo Url::site();?>">Home</a></li>
+			<div class="container">
+				<div class="inner-container">
+					<ul class="breadcrumb">
+						<li><a href="<?php echo Url::site();?>">Home</a></li>
+						
+						<?php if ($req->directory()): ?>
+							<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
+							<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
+								<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
+							<?php endif;?>
 							
-							<?php if ($req->directory()): ?>
-								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
-								<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
-								<?php endif;?>
+							<?php if ($req->controller()): ?>
+								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
 								
-								<?php if ($req->controller()): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
-									
-									<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
-										<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
-									<?php endif;?>
+								<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
 								<?php endif;?>
 							<?php endif;?>
-						</ul>
-						
-						<?php echo $content;?>
-					</div>
+						<?php endif;?>
+					</ul>
+					
+					<?php echo $content;?>
 				</div>
-				
-				<div style="clear:both;"></div>
 			</div>
+			
+			<div style="clear:both;"></div>
 		</div>
 		
 		<footer>
-			<div class="wrapper">
-				<table width="950" height="50" cellpadding="0" cellspacing="0">
+			<div class="container">
+				<table width="100%" height="50" cellpadding="0" cellspacing="0">
 					<tbody>
 						<tr>
 							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com" target="_blank" class="anodyne"></a></td>
 							<td class="footer-copyright">
-								<a href="" class="tip" title="Icons used were created by Drew Wilson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality created Bootstrap from Twitter.">Credits</a>
+								<a href="" class="tip" title="Icons used were created by Drew Wilson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
 								&nbsp; | &nbsp;
 								&copy; <?php echo date('Y');?> Anodyne Productions.
 							</td>
