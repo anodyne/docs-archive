@@ -53,13 +53,15 @@ $controllers = array(
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo $title;?></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		
-		<link rel="stylesheet" href="<?php echo ASSETS;?>design/bootstrap.min.css">
-		<link rel="stylesheet" href="<?php echo ASSETS;?>design/base.css">
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
 		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/custom.css">
 		
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery.js"></script>
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-twipsy.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tooltip.js"></script>
 		
 		<!--[if IE 8]>
 		<style type="text/css">
@@ -73,9 +75,7 @@ $controllers = array(
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.tip').twipsy({
-					offset: 5
-				});
+				$('.tip').tooltip();
 			});
 		</script>
 	</head>
@@ -97,27 +97,30 @@ $controllers = array(
 			</header>
 			
 			<div class="container">
-				<div class="inner-container">
-					<ul class="breadcrumb">
-						<li><a href="<?php echo Url::site();?>">Home</a></li>
-						
-						<?php if ($req->directory()): ?>
-							<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
-							<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
-								<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
-							<?php endif;?>
+				<div class="inner-container"></div>
+				<div class="row">
+					<div class="span12">
+						<ul class="breadcrumb">
+							<li><a href="<?php echo Url::site();?>">Home</a></li>
 							
-							<?php if ($req->controller()): ?>
-								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
+							<?php if ($req->directory()): ?>
+								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
+								<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
+								<?php endif;?>
 								
-								<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
+								<?php if ($req->controller()): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
+									
+									<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
+									<?php endif;?>
 								<?php endif;?>
 							<?php endif;?>
-						<?php endif;?>
-					</ul>
-					
-					<?php echo $content;?>
+						</ul>
+						
+						<?php echo $content;?>
+					</div>
 				</div>
 			</div>
 			
@@ -131,7 +134,7 @@ $controllers = array(
 						<tr>
 							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com" target="_blank" class="anodyne"></a></td>
 							<td class="footer-copyright">
-								<a href="" class="tip" title="Icons used were created by Drew Wilson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
+								<a href="" class="tip" title="Icons used were created by Drew Wilson and Kevin Andersson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
 								&nbsp; | &nbsp;
 								&copy; <?php echo date('Y');?> Anodyne Productions.
 							</td>

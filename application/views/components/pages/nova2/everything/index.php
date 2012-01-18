@@ -1,11 +1,11 @@
 <h1>The Kitchen Sink</h1>
 
 <div class="row">
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/info.png" alt="">
-			<h1>General Information</h1>
-		</div>
+			<h3 class="align-center">General Information</h3>
+		</div><br>
 		
 		<ul>
 			<li><a href="<?php echo Url::site('nova2/everything/structure');?>">File structure of Nova 2</a></li>
@@ -16,11 +16,11 @@
 		</ul>
 	</div>
 	
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/beaker.png" alt="">
-			<h1>Tutorials</h1>
-		</div>
+			<h3 class="align-center">Tutorials</h3>
+		</div><br>
 		
 		<ul>
 			<li><a href="<?php echo Url::site('nova2/everything/configure');?>">Configuring Nova</a></li>
@@ -28,11 +28,11 @@
 		</ul>
 	</div>
 	
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/history.png" alt="">
-			<h1>History</h1>
-		</div>
+			<h3 class="align-center">History</h3>
+		</div><br>
 		
 		<ul>
 			<li><a href="<?php echo Url::site('nova2/everything/changes');?>">Changes Since SMS 2</a></li>

@@ -46,6 +46,7 @@
 	<li>Nova 2 will automatically look for this stylesheet and import if it exists, so you don't have to do anything else.</li>
 	<li>If you don't like the colors used, you can change them from the <dfn>jquery.chosen.css</dfn> stylesheet.</li>
 	<li>Copy the <dfn>chosen-sprite.png</dfn> image from the <samp>admin/images</samp> directory of whichever skin you're using as reference and paste it into your own <samp>admin/images</samp> directory.</li>
+	<li>If you're using Titan or a modified version of Titan, you will need to pull Titan 2.0's <dfn>admin.css</dfn> file from the <samp>admin/css</samp> directory of the new version of Titan and paste it into to your skin's <samp>admin/css</samp> directory (if you've skinned the admin section). The reason this is needed only for Titan is because of the use of popovers that are styled with white backgrounds instead of dark backgrounds.</li>
 </ol>
 
 <h2>What About My Mods?</h2>

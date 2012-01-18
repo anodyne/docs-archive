@@ -15,13 +15,11 @@
 </ul><br>
 
 <div class="row">
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/basic.png" alt="">
-			<h1>Basic Skinning</h1>
-		</div>
-		
-		<p class="n2-sub-text">With only a little knowledge of HTML and CSS required, you can do some pretty basic things with Nova skins to customize them to match your tastes. These tutorials will get you started with a few basic changes to a skin to get you comfortable for future tutorials.</p>
+			<h3 class="align-center">Basic Skinning</h3>
+		</div><br>
 		
 		<ul>
 			<!--<li>Change colors and fonts in a skin</li>
@@ -30,13 +28,11 @@
 		</ul>
 	</div>
 	
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/intermediate.png" alt="">
-			<h1>Intermediate Skinning</h1>
-		</div>
-		
-		<p class="n2-sub-text">Now that you've gotten your feet wet with some of the basic changes to a skin, let's dive in a little deeper and look at some intermediate skinning topics to take your small tweaks and turn them in to a more unique skin for your game.</p>
+			<h3 class="align-center">Intermediate Skinning</h3>
+		</div><br>
 		
 		<ul>
 			<!--<li>Create a new skin</li>-->
@@ -44,13 +40,11 @@
 		</ul>
 	</div>
 	
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/advanced.png" alt="">
-			<h1>Advanced Skinning</h1>
-		</div>
-		
-		<p class="n2-sub-text">With the basic and intermediate topics behind us, it's time to tackle the tough stuff that really makes a skin unique. These are the more difficult of the tutorials and will require solid understanding of HTML and CSS as well as how Nova works.</p>
+			<h3 class="align-center">Advanced Skinning</h3>
+		</div><br>
 		
 		<ul>
 			<!--<li>Using icons in the main navigation</li>-->

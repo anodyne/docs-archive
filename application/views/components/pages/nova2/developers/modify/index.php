@@ -3,13 +3,11 @@
 <p>Like the first version of Nova, version 2 allows developers to extend the core and create new ways to manage a game or present information. A good grasp of PHP and the Nova <a href="<?php echo Url::site('nova2/developers/concepts');?>">development concepts</a> is required to do any significant modifications to Nova.</p><br>
 
 <div class="row">
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/basic.png" alt="">
-			<h1>Basic Modifications</h1>
-		</div>
-		
-		<p class="n2-sub-text">There are several things you can do with Nova that we consider to be pretty basic. These tutorials will get you started with a few basic changes to Nova using code or some of Nova's built-in developer tools.</p>
+			<h3 class="align-center">Basic Modifications</h3>
+		</div><br>
 		
 		<ul>
 			<li><a href="<?php echo Url::site('nova2/modify/changeicons');?>">Change some system icons</a></li>
@@ -18,13 +16,11 @@
 		</ul>
 	</div>
 	
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/intermediate.png" alt="">
-			<h1>Intermediate Modifications</h1>
-		</div>
-		
-		<p class="n2-sub-text">Now that you have a grasp on the basics behind using Nova's built-in tools to modify the system, let's take a tour through a few intermediate topics to change some more things about Nova.</p>
+			<h3 class="align-center">Intermediate Modifications</h3>
+		</div><br>
 		
 		<ul>
 			<li><a href="<?php echo Url::site('nova2/modify/newpage');?>">Create a brand new page</a></li>
@@ -36,13 +32,11 @@
 		</ul>
 	</div>
 	
-	<div class="span-one-third">
-		<div class="n2-col-header">
+	<div class="span4">
+		<div class="thumbnail">
 			<img src="<?php echo Url::base();?>application/views/design/images/nova2/advanced.png" alt="">
-			<h1>Advanced Modifications</h1>
-		</div>
-		
-		<p class="n2-sub-text">With a whole slew of tutorials behind you, it's time to tackle the tough stuff. It may be difficult, but these are where Nova's developer tools really shine.</p>
+			<h3 class="align-center">Advanced Modifications</h3>
+		</div><br>
 		
 		<ul>
 			<!--<li>Create new models methods</li>
