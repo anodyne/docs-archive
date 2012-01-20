@@ -104,7 +104,7 @@
 
 <p><strong><a href="#" class="show_versions" myID="12"><span class="action">Show</span> Nova 1.2.x Changes &raquo;</a></strong></p>
 
-<div id="versions_12" class="hidden">
+<div id="versions_12" class="hide">
 	<h2>Version 1.2.4</h2>
 	
 	<p><strong>Release Date:</strong> &ndash; 25 January 2011</p>
@@ -387,7 +387,7 @@
 
 <p><strong><a href="#" class="show_versions" myID="11"><span class="action">Show</span> Nova 1.1.x Changes &raquo;</a></strong></p>
 
-<div id="versions_11" class="hidden">
+<div id="versions_11" class="hide">
 	<h2>Version 1.1.2</h2>
 
 	<p><strong>Release Date:</strong> 14 October 2010</p>
@@ -582,7 +582,7 @@
 
 <p><strong><a href="#" class="show_versions" myID="1"><span class="action">Show</span> Nova 1.0.x Changes &raquo;</a></strong></p>
 
-<div id="versions_1" class="hidden">
+<div id="versions_1" class="hide">
 	<h2>Version 1.0.6</h2>
 
 	<p><strong>Release Date:</strong> July 14, 2010</p>

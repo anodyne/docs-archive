@@ -10,6 +10,12 @@ header .logo {
 	background: transparent url(images/sprite.png) no-repeat 0 -24px;
 }
 
+nav {
+	margin: 53px 0 0 0;
+}
+nav ul li {
+	margin: 0 25px 0 0;
+}
 nav ul li a {
 	height: 26px;
 }
