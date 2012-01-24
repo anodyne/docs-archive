@@ -39,12 +39,10 @@
 <p>Countless user interface improvements make Nova a pleasure to use. Sliders for a position's open slots, drag-n-drop sortable items, loading graphics, progress bars and much more enhance Nova and make it feel like a top-notch web application.</p>
 
 <br /><br />
-<div class="float-right">
-	<?php echo Html::anchor('nov1a/tour/internationalization', '&laquo; Internationalization', array('class' => 'btn-tour'));?>
-	&nbsp;&nbsp;&nbsp;&nbsp;
-	<?php echo Html::anchor('nova1/tour/index', 'Back to Tour Home', array('class' => 'btn-tour'));?>
-	&nbsp;&nbsp;&nbsp;&nbsp;
-	<?php echo Html::anchor('nova1/overview/changes', 'Complete Changelog &raquo;', array('class' => 'btn-tour'));?>
+<div class="btn-group pull-right">
+	<?php echo Html::anchor('nov1a/tour/internationalization', '&laquo; Internationalization', array('class' => 'btn large'));?>
+	<?php echo Html::anchor('nova1/tour/index', 'Back to Tour Home', array('class' => 'btn large'));?>
+	<?php echo Html::anchor('nova1/overview/changes', 'Complete Changelog &raquo;', array('class' => 'btn large'));?>
 </div>
 
 &nbsp;

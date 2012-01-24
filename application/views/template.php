@@ -124,7 +124,7 @@ $controllers = array(
 				</div>
 			</div>
 			
-			<div style="clear:both;"></div>
+			<div class="bottom-container"></div>
 		</div>
 		
 		<footer>
@@ -135,8 +135,10 @@ $controllers = array(
 							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com" target="_blank" class="anodyne"></a></td>
 							<td class="footer-copyright">
 								<a href="" class="tip" title="Icons used were created by Drew Wilson and Kevin Andersson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
-								&nbsp; | &nbsp;
-								&copy; <?php echo date('Y');?> Anodyne Productions.
+								<span class="footer-subtle">
+									&nbsp; | &nbsp;
+									&copy; <?php echo date('Y');?> Anodyne Productions.
+								</span>
 							</td>
 						</tr>
 					</tbody>

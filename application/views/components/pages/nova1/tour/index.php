@@ -4,9 +4,9 @@
 
 <p>Use the links below to check out some of Nova's key new features and the little things that'll make your life a little easier on your RPG.</p>
 
-<p>&nbsp;</p>
+<br>
 
-<ul class="none tour-list">
+<ul class="unstyled tour-list">
 	<li><?php echo Html::image('application/views/design/images/nova1/tour/direction.png');?> <strong><?php echo Html::anchor('nova1/tour/genres', 'Genres');?></strong> &ndash; choose which genre you want to use for your RPG from a list of a dozen choices</li>
 	<li><?php echo Html::image('application/views/design/images/nova1/tour/users.png');?> <strong><?php echo Html::anchor('nova1/tour/characters', 'Characters');?></strong> &ndash; now you can control multiple characters from a single account</li>
 	<li><?php echo Html::image('application/views/design/images/nova1/tour/notebook--pencil.png');?> <strong><?php echo Html::anchor('nova1/tour/writing', 'Writing');?></strong> &ndash; write mission posts and personal logs as any of your characters</li>
