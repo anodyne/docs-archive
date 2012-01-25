@@ -6,7 +6,7 @@
 
 <p>A complete change can be found <a href="<?php echo Url::site('nova1/overview/changelog');?>">here</a>.</p>
 
-<p class="important"><strong>Note:</strong> These update notes only apply to the physical Nova files and not the database update portion. You can update the database from any version of Nova to a higher version.</p>
+<p class="alert alert-info"><strong>Note:</strong> These update notes only apply to the physical Nova files and not the database update portion. You can update the database from any version of Nova to a higher version.</p>
 
 <ul>
 	<li><a href="<?php echo Url::site('nova1/overview/update/126');?>">Updating from 1.2.5 to 1.2.6</a></li>
@@ -41,7 +41,7 @@
 
 <h3>Important Note</h3>
 
-<p class="critical">When uploading files to your server, there are some files you <strong>do not</strong> want to overwrite. Pay careful attention to the list below!</p>
+<p class="alert alert-danger">When uploading files to your server, there are some files you <strong>do not</strong> want to overwrite. Pay careful attention to the list below!</p>
 
 <ul>
 	<li>application/assets/backups</li>

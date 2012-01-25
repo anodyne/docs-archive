@@ -2,7 +2,7 @@
 
 <p>Nova was built with internationalization in mind, so nearly every piece of text hard-coded to the system is actually stored in one massive language array. This allows Nova to be translated into a wide variety of languages to be used all around the world.</p>
 
-<p class="important"><strong>Note:</strong> Your text editor must be set up to use UTF-8 file encodings. If your editor is set to something, including automatic, make sure you change it to UTF-8 to avoid your browser being unable to interpret accented and special characters.</p>
+<p class="alert alert-info"><strong>Note:</strong> Your text editor must be set up to use UTF-8 file encodings. If your editor is set to something, including automatic, make sure you change it to UTF-8 to avoid your browser being unable to interpret accented and special characters.</p>
 
 <h2>The Process</h2>
 
@@ -16,7 +16,7 @@
 
 <p>The CodeIgniter community has provided a lot of different <a href="http://codeigniter.com/wiki/Language_Translation/" target="_blank">translations</a>, but if the language you're translating Nova to isn't included in that list, you'll need to translate CodeIgniter as well using the same process as Nova.</p>
 
-<p class="important"><strong>Note:</strong> Translation questions should be sent to Anodyne directly for the fastest and most accurate answer.</p>
+<p class="alert alert-info"><strong>Note:</strong> Translation questions should be sent to Anodyne directly for the fastest and most accurate answer.</p>
 
 <h2>HTML Entities</h2>
 

@@ -2,7 +2,7 @@
 
 <p>By now, you've created the directories you need for your skin and used jQuery UI's powerful ThemeRoller tool to customize the UI widgets like sliders, headers, icons and much more for use by your skin section. But if you've gone to your browser, you've undoubtedly noticed that this skin still looks suspiciously like the Lightness theme, so we'll need to get our hands dirty with some CSS and change that. Open up <dfn>skin.css</dfn> and we'll get started!</p>
 
-<p class="important"><strong>Note:</strong> In most cases, these style declarations are going to be scattered around the skin stylesheet, so you'll need to search for the style before you can make any changes. <strong>Don't just copy and paste the whole thing in because it'll cause problems with your skin!</strong></p>
+<p class="alert alert-info"><strong>Note:</strong> In most cases, these style declarations are going to be scattered around the skin stylesheet, so you'll need to search for the style before you can make any changes. <strong>Don't just copy and paste the whole thing in because it'll cause problems with your skin!</strong></p>
 
 <h2>The Header</h2>
 
@@ -107,7 +107,7 @@
 	border: 1px solid #f3d8d8;
 }</pre>
 
-<p class="important"><strong>Note:</strong> To make sure we're not showing stuff we don't need, you'll need to delete the <strong>.nav-sub ul li:first-child a:hover</strong> and <strong>.nav-sub ul li:last-child a:hover</strong> items. If you don't feel comfortable doing that, at least clear out the styles in the declarations.</p>
+<p class="alert alert-info"><strong>Note:</strong> To make sure we're not showing stuff we don't need, you'll need to delete the <strong>.nav-sub ul li:first-child a:hover</strong> and <strong>.nav-sub ul li:last-child a:hover</strong> items. If you don't feel comfortable doing that, at least clear out the styles in the declarations.</p>
 
 <p>Like other places in this tutorial, all we've done is change some colors and border radii to get a look that's familiar yet has our own touch to it. You can experiment with all kinds of changes to the way the sub navigation works. You'll see in skins like Redmond and Sunny, we go about presenting menu items in a very different way. The sky really is the limit if you have a little CSS knowledge.</p>
 

@@ -61,7 +61,7 @@
 	&lt;/object>
 &lt;/div></pre>
 
-<p class="important"><strong>Note:</strong> For spacing purposes, we've wrapped our object tag, it's parameters and embed object in div tags. They aren't required for this to work. Also, the above example doesn't include the necessary code for showing news items on the main page. This was done for brevity. The final view code is below.</p>
+<p class="alert alert-info"><strong>Note:</strong> For spacing purposes, we've wrapped our object tag, it's parameters and embed object in div tags. They aren't required for this to work. Also, the above example doesn't include the necessary code for showing news items on the main page. This was done for brevity. The final view code is below.</p>
 
 <p>With this content in our view file, we can save the file to our server and fire up a browser. Once we navigate to your Nova site, you'll see that the YouTube video is placed directly below the intro text just like we wanted.</p>
 

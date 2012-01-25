@@ -8,7 +8,7 @@
 
 <pre>$this->load->model('system_model', 'sys');</pre>
 
-<p class="important"><strong>Note:</strong> We load this model in the constructor of every controller, so it is unnecessary to load this again unless you're creating a new controller.</p>
+<p class="alert alert-info"><strong>Note:</strong> We load this model in the constructor of every controller, so it is unnecessary to load this again unless you're creating a new controller.</p>
 
 <h2>Using the Model</h2>
 
@@ -43,7 +43,7 @@
 			<?php if (isset($m['parameters'])): ?>
 				<h3>Parameters</h3>
 				
-				<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+				<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 					<thead>
 						<tr>
 							<th class="blue">Parameter</th>

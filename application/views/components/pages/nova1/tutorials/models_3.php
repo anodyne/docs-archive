@@ -80,7 +80,7 @@ $this->email->send();</pre>
 
 <p>The above code would send an email to those four players with the subject of Hey and the message I specified.</p>
 
-<p class="important"><strong>Note:</strong> Lines of code unnecessary to this example have been removed from the email example above. The code will not work as is and is meant only for explanation purposes.</p>
+<p class="alert alert-info"><strong>Note:</strong> Lines of code unnecessary to this example have been removed from the email example above. The code will not work as is and is meant only for explanation purposes.</p>
 
 <h2>Working with Objects</h2>
 
@@ -144,7 +144,7 @@ if ($character !== FALSE)
 
 <p>In this example, we've assigned the single row object that <dfn>get_character()</dfn> returns to a variable. In models that return a single row object, Nova does some of the sanity check for you. If there's nothing there, the model returns <dfn>FALSE</dfn>, otherwise, it'll give you the row object. Because of that, we now have our object assigned to the character variable. After we make sure that there's something in the object, we can simply assign items to our array like we did with a full result set object and then pass our array on to the view.</p>
 
-<p class="important"><strong>Note:</strong> You can pass objects to views instead of arrays if you want, but generally speaking, Nova will always pass an array as it's a little more straightforward to work with and eliminates the need to do more loops in the view files.</p>
+<p class="alert alert-info"><strong>Note:</strong> You can pass objects to views instead of arrays if you want, but generally speaking, Nova will always pass an array as it's a little more straightforward to work with and eliminates the need to do more loops in the view files.</p>
 
 <br />
 <p>

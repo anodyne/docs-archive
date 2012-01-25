@@ -2,9 +2,9 @@
 
 <p>The Date Helper file contains functions that help you work with dates.</p>
 
-<p class="critical"><strong>Note:</strong> This helper is initialized automatically by Nova so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This helper is initialized automatically by Nova so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_date_helper.php</strong> file in <strong>application/helpers</strong>. Do not edit the CodeIgniter core helper file!</p>
+<p class="alert alert-info"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_date_helper.php</strong> file in <strong>application/helpers</strong>. Do not edit the CodeIgniter core helper file!</p>
 
 <h2>timespan_short</h2>
 
@@ -16,7 +16,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

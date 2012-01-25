@@ -4,4 +4,4 @@
 
 <p>From the archive index, simply click on the positions link and you'll be shown the listing of all positions out the SMS table. At the top are links for the departments to navigate through the various positions available. In addition to name and description, the listing also shows the number of open slots for each position.</p>
 
-<p class="important"><strong>Note:</strong> Unless you've made no changes whatsoever to the SMS positions, you will need to manually make changes to your positions.</p>
+<p class="alert alert-info"><strong>Note:</strong> Unless you've made no changes whatsoever to the SMS positions, you will need to manually make changes to your positions.</p>

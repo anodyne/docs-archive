@@ -18,4 +18,4 @@
 
 <p>Deleting a position in Nova is as easy as clicking the delete checkbox on all the positions you want to delete and clicking Update at the bottom of the page. After Nova finishes updating the positions, it will go through and delete the marked positions.</p>
 
-<p class="critical"><strong>Warning:</strong> Deleting positions is permanent and cannot be undone!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Deleting positions is permanent and cannot be undone!</p>

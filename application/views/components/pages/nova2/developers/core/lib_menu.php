@@ -2,7 +2,7 @@
 
 <p>Nova's Menu library handles building all the menus throughout the system.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
 <h2>Menu::build()</h2>
 
@@ -10,7 +10,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

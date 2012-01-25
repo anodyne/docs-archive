@@ -8,7 +8,7 @@
 
 <pre>$this->load->helper('panel');</pre>
 
-<p class="important"><strong>Note:</strong> If you want to use this in a skin, you should load the helper in your template file instead of auto-loading it since not all skins will use this helper.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you want to use this in a skin, you should load the helper in your template file instead of auto-loading it since not all skins will use this helper.</p>
 
 <h2>panel_dashboard</h2>
 
@@ -16,7 +16,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -51,7 +51,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -107,7 +107,7 @@ Inbox [2]</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

@@ -2,7 +2,7 @@
 
 <p>There's always a lot of talking about making sure to back up Nova before attempting to update it or upgrade from SMS. So how exactly do you backup Nova? Creating a backup is pretty straightforward. Before you attempt to update Nova, you should create a backup of your system in the event something goes wrong. The last thing you want is to lose data and be out of luck.</p>
 
-<p class="important"><strong>Note:</strong> We can't stress enough the importance of a solid backup!</p>
+<p class="alert alert-info"><strong>Note:</strong> We can't stress enough the importance of a solid backup!</p>
 
 <h2>The Files</h2>
 

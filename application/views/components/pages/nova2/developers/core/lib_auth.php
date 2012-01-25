@@ -2,7 +2,7 @@
 
 <p>Nova's Auth library handles all authentication to the system and authorization once logged in.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
 <h3>Circumventing the Lockout</h3>
 
@@ -14,7 +14,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -67,7 +67,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -92,7 +92,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -117,7 +117,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -142,7 +142,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -167,7 +167,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -192,7 +192,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -217,7 +217,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -267,7 +267,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 <h4>Parameters</h4>
 
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -297,7 +297,7 @@ Auth::check_access('site/settings', FALSE, TRUE);</pre>
 <pre>Auth::set('allowed_login_attempts', 5);
 Auth::set('lockout_time', 900) // 5 minutes</pre>
 
-<p class="important"><strong>Note:</strong> The lockout time variable must be stored as seconds for the library to make the necessary calculations for whether a user is allowed to login or not.</p>
+<p class="alert alert-info"><strong>Note:</strong> The lockout time variable must be stored as seconds for the library to make the necessary calculations for whether a user is allowed to login or not.</p>
 
 <h2>Auth::verify()</h2>
 
@@ -306,7 +306,7 @@ Auth::set('lockout_time', 900) // 5 minutes</pre>
 <h4>Parameters</h4>
 
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -330,7 +330,7 @@ Auth::set('lockout_time', 900) // 5 minutes</pre>
 <h4>Return</h4>
 
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Error Code</th>
 		<th class="blue">Description</th>
@@ -364,4 +364,4 @@ $password = sha1($this->input->post('password', TRUE));
 
 $verify = Auth::verify($email, $password);</pre>
 
-<p class="important"><strong>Note:</strong> The method will only return the numerical error code. You can use the <var>error_login_X</var> language items to display the proper error message.</p>
+<p class="alert alert-info"><strong>Note:</strong> The method will only return the numerical error code. You can use the <var>error_login_X</var> language items to display the proper error message.</p>

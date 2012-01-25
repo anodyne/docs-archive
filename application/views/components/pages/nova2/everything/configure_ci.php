@@ -6,13 +6,13 @@
 
 <p>In SMS, it was called the web location variable. In CI, it's called the base URL. Nova sets the base URL dynamically so you should never have to touch this variable. If you find a situation where the base URL isn't accurate, you can change it in <samp>application/config/config.php</samp>.</p>
 
-<p class="important"><strong>Note:</strong> Take great care when changing the base URL as it can cause Nova to break!</p>
+<p class="alert alert-info"><strong>Note:</strong> Take great care when changing the base URL as it can cause Nova to break!</p>
 
 <h3>Index File</h3>
 
 <p>CodeIgniter comes with the ability to rename index.php to whatever you want. This is advantageous for a variety of reasons, namely if you want to run multiple sims from the same directory or if you want to create a splash page at index.php and point to another page for Nova. You can change the index.php file in <samp>application/config/config.php</samp>. Make sure you have changed the name of the index.php file, then put the changed name in the file.</p>
 
-<p class="important"><strong>Note:</strong> The file must be a PHP file or Nova will not work!</p>
+<p class="alert alert-info"><strong>Note:</strong> The file must be a PHP file or Nova will not work!</p>
 
 <h3>Default Language</h3>
 
@@ -42,7 +42,7 @@
 
 <p>By default, Nova auto-loads the following libraries: Database, Template, Menu, Input, Auth and User Panel. By default, Nova auto-loads the following helpers: Location, URL, Date, HTML, Language, and Form. For models, Nova auto-loads settings_model and messages_model. Finally, Nova auto-loads it's own configuration file (covered later in this document). For more information about auto-loading in CodeIgniter, please visit the <a href="http://codeigniter.com/user_guide/general/autoloader.html" target="_blank">CodeIgniter User Guide</a>.</p>
 
-<p class="critical"><strong>Warning:</strong> We don't recommend removing any of these as doing so will break Nova. In addition, use great care when adding items to auto-load as it will slow down Nova's run time.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> We don't recommend removing any of these as doing so will break Nova. In addition, use great care when adding items to auto-load as it will slow down Nova's run time.</p>
 
 <h3>URI Protocol</h3>
 
@@ -68,19 +68,19 @@
 
 <p>By default CodeIgniter uses search-engine friendly segment based URLs: <var>www.your-site.com/who/what/where/</var>. You can optionally enable standard query string based URLs <var>www.your-site.com?who=me&amp;what=something&amp;where=here</var>. The other items let you set the query string "words" that will invoke your controllers and its functions: <var>www.your-site.com/index.php?c=controller&m=function</var>. You can change this in <samp>application/config/config.php</samp>.</p>
 
-<p class="important"><strong>Note:</strong> Some of the helpers won't work as expected when this feature is enabled, since CodeIgniter is designed primarily to use segment based URLs.</p>
+<p class="alert alert-info"><strong>Note:</strong> Some of the helpers won't work as expected when this feature is enabled, since CodeIgniter is designed primarily to use segment based URLs.</p>
 
 <h3>Session Settings</h3>
 
 <p>Nova stores session data right in the database and CodeIgniter provides some configuration options. You shouldn't need to touch any of the session settings, but in the event you do need to, they can be found in the <samp>application/config/config.php</samp> file. You can change the name of the table where the data is stored, the time to update the session, whether to use the database or not, encrypting cookies (if they're being used to store session data), and other options. In addition, CodeIgniter also provides the ability to change cookie specific options.</p>
 
-<p class="critical"><strong>Warning:</strong> Changing any of these values can cause Nova to stop working altogether!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Changing any of these values can cause Nova to stop working altogether!</p>
 
 <h3>Global XSS Filtering</h3>
 
 <p>CodeIgniter has the option to filter everything for cross site scripting (XSS) attacks. By default, we don't enable this option as it can cause issues with passwords that use any special characters. Instead, we filter POST values for XSS issues in the controllers. If you want to change this, you can simply enable XSS filtering. The option can be found in the <samp>application/config/config.php</samp> file.</p>
 
-<p class="critical"><strong>Warning:</strong> Changing this will cause a pretty decent performance drop with Nova as filtering everything for XSS takes more resources.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Changing this will cause a pretty decent performance drop with Nova as filtering everything for XSS takes more resources.</p>
 
 <h3>Output Compression</h3>
 
@@ -94,7 +94,7 @@
 
 <p>CodeIgniter comes with a small group of system constants for working with files and some characters. Those constants can be found in <samp>application/config/constants.php</samp>.</p>
 
-<p class="important"><strong>Note:</strong> Anodyne will regularly update the constants in this file for system updates, so any constants you want to create should be put in the controllers or in the Nova config file. Altering any of these constants can cause some of Nova's feature to stop working!</p>
+<p class="alert alert-info"><strong>Note:</strong> Anodyne will regularly update the constants in this file for system updates, so any constants you want to create should be put in the controllers or in the Nova config file. Altering any of these constants can cause some of Nova's feature to stop working!</p>
 
 <h3>Routes</h3>
 
@@ -108,7 +108,7 @@
 
 <p>Depending on your server, you can change the protocol used to deliver email. By default, Nova uses PHP's <var>mail()</var> function. The options you can specify are <dfn>mail</dfn>, <dfn>sendmail</dfn> or <dfn>smtp</dfn>.</p>
 
-<p class="important"><strong>Note:</strong> If you specify SMTP as the delivery method, you will also have to specify the SMTP host, user, password, port and timeout. If you specify sendmail as the delivery method, you will also have to specify the path to sendmail. Please contact your host about these items.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you specify SMTP as the delivery method, you will also have to specify the SMTP host, user, password, port and timeout. If you specify sendmail as the delivery method, you will also have to specify the path to sendmail. Please contact your host about these items.</p>
 
 <h3>Mail Type</h3>
 

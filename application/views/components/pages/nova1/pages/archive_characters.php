@@ -4,4 +4,4 @@
 
 <p>From the archive index, simply click on the characters link and you'll be shown the listing of all active characters out the SMS table. At the top are links for inactive characters and NPCs as well.</p>
 
-<p class="important"><strong>Note:</strong> Unless you've made no changes whatsoever to the SMS positions, departments or ranks, you will need to manually make changes to your characters.</p>
+<p class="alert alert-info"><strong>Note:</strong> Unless you've made no changes whatsoever to the SMS positions, departments or ranks, you will need to manually make changes to your characters.</p>

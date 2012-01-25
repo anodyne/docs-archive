@@ -8,7 +8,7 @@
 
 <h2>Nova Settings</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<thead>
 		<tr>
 			<th class="blue">Setting</th>

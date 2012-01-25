@@ -12,7 +12,7 @@
 
 <p>To add a rank to Nova, simply click on the <strong>Add Rank</strong> link near the top of the page. A pop-up window will appear with all the fields needed for creating a new rank. Once you have filled out all the fields, click submit and Nova will create the rank for you. Once the rank has been created, you can assign the rank to characters.</p>
 
-<p class="important"><strong>Note:</strong> If you're trying to add a new rank to a brand new rank class, make sure the first rank you create has an order of zero in order for the preview image to show up in the info box.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you're trying to add a new rank to a brand new rank class, make sure the first rank you create has an order of zero in order for the preview image to show up in the info box.</p>
 
 <h2>Editing a Rank</h2>
 
@@ -22,4 +22,4 @@
 
 <p>Deleting a rank in Nova is as easy as clicking the delete checkbox on all the ranks you want to delete and clicking Update at the bottom of the page. After Nova finishes updating the ranks, it will go through and delete the marked ranks as well.</p>
 
-<p class="critical"><strong>Warning:</strong> Deleting ranks is permanent and cannot be undone!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Deleting ranks is permanent and cannot be undone!</p>

@@ -20,4 +20,4 @@
 
 <p>To delete a mission from Nova, simply click on the delete icon to the right of the mission information. A modal window will appear and ask you to confirm you want to delete the mission. If you do, click <strong>Submit</strong> and Nova will delete the mission. If you don't want to delete the mission, you can click anywhere outside of the modal window, click the X or hit the Escape key to abort the delete process.</p>
 
-<p class="critical"><strong>Warning:</strong> Deleting missions is permanent and cannot be undone! It will affect any mission posts included in that mission.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Deleting missions is permanent and cannot be undone! It will affect any mission posts included in that mission.</p>

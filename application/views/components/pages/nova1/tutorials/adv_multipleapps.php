@@ -6,7 +6,7 @@
 
 <p>You are running a small group of Star Trek RPGs. Because there are only 3 RPGs in the group (the Enterprise, Excelsior and Voyager), none of you want to buy separate domains, so you insted decide to pool your money together and buy one domain then run all your RPGs from that domain. Your group is called 1st Fleet, so you buy the domain 1stfleet.com. Now that you have your domain and are set up, you want to run all 3 RPGs from ships.1stfleet.com.</p>
 
-<p class="important"><strong>Note:</strong> The RPGs, fleet and all data in this tutorial are fake. Do not attempt to visit the sites or use the connection information.</p>
+<p class="alert alert-info"><strong>Note:</strong> The RPGs, fleet and all data in this tutorial are fake. Do not attempt to visit the sites or use the connection information.</p>
 
 <h2>The Steps</h2>
 

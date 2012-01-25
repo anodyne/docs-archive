@@ -19,4 +19,4 @@
 
 <p>At this time there is no way to upload multiple images simultaneously. Attempting to upload multiple images at the same time will result in problems with your upload records.</p>
 
-<p class="important"><strong>Note:</strong> Nova will automatically remove underscores (_), dashes (-) and equal signs (=) from the filename when uploading. This is necessary because of the way jQuery serializes its data for use in the sortable plugin that allows users to drag and drop their images in the order they want. If your image contains those characters, they'll be removed.</p>
+<p class="alert alert-info"><strong>Note:</strong> Nova will automatically remove underscores (_), dashes (-) and equal signs (=) from the filename when uploading. This is necessary because of the way jQuery serializes its data for use in the sortable plugin that allows users to drag and drop their images in the order they want. If your image contains those characters, they'll be removed.</p>

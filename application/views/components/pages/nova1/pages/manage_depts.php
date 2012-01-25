@@ -20,7 +20,7 @@
 
 <p>The first option you're given is to either delete all positions in that department or reassign the positions to another department. Like deleting a department, removing all positions is permanent and cannot be undone! If the department you're deleting has sub-departments, you'll be given a second dropdown menu to decide where to reassign those departments to. Selecting <dfn>none</dfn> will make all the sub-departments parent level departments, otherwise, the sub-departments will be moved to the new department you select.</p>
 
-<p class="critical"><strong>Warning:</strong> Deleting departments is permanent and cannot be undone!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Deleting departments is permanent and cannot be undone!</p>
 
 <br />
 <p class="fontSmall"><em>*At this time, there is no way to create nested sub-departments (children of children).</em></p>

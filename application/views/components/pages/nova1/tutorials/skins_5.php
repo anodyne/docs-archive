@@ -24,7 +24,7 @@
 
 <p>Here is where you have to make a crucial decision: do you want to use the Nova-style tabs or the jQuery UI-style tabs? (If you don't remember the difference, make sure you look at Nova's tabs and jQuery UI's tabs to figure out which you like better.) If you want to use the Nova-style tabs, you have to take one extra step before downloading. Click on the advanced theme settings link in the right column and specify a CSS scope. In the textbox, you must specify the scope as <dfn>.UITheme</dfn>. Once you've done that, you can download the theme by clicking the download button.</p>
 
-<p class="important"><strong>Note:</strong> If you want to use the jQuery UI-style tabs, you don't need to specify a CSS scope and can simply download the theme using the download button.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you want to use the jQuery UI-style tabs, you don't need to specify a CSS scope and can simply download the theme using the download button.</p>
 
 <h2>Making Nova Sing</h2>
 
@@ -42,7 +42,7 @@
 
 <p>Once your images and theme stylesheet are up on the server, Nova does the rest for you. If it finds the theme stylesheet in your skin, it'll immediately start to use it instead of the system default. If you want to use the jQuery UI-style tabs, you'll need to make one additional change and remove the ui.tabs.css import declaration from your main stylesheet. Once those changes are made, your skin section should be using your changes like clockwork. If you want to roll these changes out to all your skin sections, you'll need to add these files to all your skins.</p>
 
-<p class="important"><strong>Note:</strong> Because of the way skins are built, you cannot use the <dfn>_base_override</dfn> directory for jQuery UI theme changes, they have to be made in each skin.</p>
+<p class="alert alert-info"><strong>Note:</strong> Because of the way skins are built, you cannot use the <dfn>_base_override</dfn> directory for jQuery UI theme changes, they have to be made in each skin.</p>
 
 <br />
 <p>

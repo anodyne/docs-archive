@@ -19,4 +19,4 @@
     ErrorDocument 404 /index.php
 &lt;/IfModule></pre>
 
-<p class="important"><strong>Note:</strong> If you have changed the name of your index file, you need to make the necessary change to the script where it tries to find the file. In addition, you'll need to set the RewriteBase to the proper subfolder or simple a slash if you aren't installing Nova in a subfolder.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you have changed the name of your index file, you need to make the necessary change to the script where it tries to find the file. In addition, you'll need to set the RewriteBase to the proper subfolder or simple a slash if you aren't installing Nova in a subfolder.</p>

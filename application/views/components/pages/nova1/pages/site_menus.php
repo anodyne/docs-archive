@@ -12,7 +12,7 @@
 
 <p>To add a menu item, click on the Add Menu Item link at the top of the page. A modal window will open giving you a wide variety of fields to fill-in with information about your menu item. (Full explanations of the options are available below.) Once you have completed all the fields, click Submit and Nova will add your menu item to the database. You must have a name, URL, category and type in order to create a new menu item!</p>
 
-<p class="important"><strong>Note:</strong> If you want to separate menu items into groups, all subsequent groups <strong>must</strong> have their first item's order set to zero or the grouping will not work.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you want to separate menu items into groups, all subsequent groups <strong>must</strong> have their first item's order set to zero or the grouping will not work.</p>
 
 <h2>Editing a Menu Item</h2>
 
@@ -24,7 +24,7 @@
 
 <h2>Menu Item Options</h2>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<thead>
 		<tr>
 			<th class="blue">Field Name</th>

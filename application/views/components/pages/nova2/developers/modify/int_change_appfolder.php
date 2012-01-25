@@ -20,4 +20,4 @@
 
 <p>Once you've saved and uploaded the index file back up to your server, you can navigate to your Nova installation and you should see Nova as usual.</p>
 
-<p class="important"><strong>Important:</strong> Since this change doesn't happen in the application directory, it's possible a change in the future to the index file may force you to re-apply this change after an update.</p>
+<p class="alert alert-info"><strong>Important:</strong> Since this change doesn't happen in the application directory, it's possible a change in the future to the index file may force you to re-apply this change after an update.</p>

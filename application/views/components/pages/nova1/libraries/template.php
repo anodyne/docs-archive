@@ -4,9 +4,9 @@
 
 <p>More information about this library, including documentation, can be found at <a href="http://williamsconcepts.com/ci/codeigniter/libraries/template/" target="_blank">WillamsConcepts.com</a>.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This library has been extended from the Template library created by Colin Williams. Changes to this library can be found in the <strong>MY_Template.php</strong> file in <strong>application/libraries</strong>. Do not edit the core library file! Any bugs with the library should be reported to WilliamsConcepts.</p>
+<p class="alert alert-info"><strong>Note:</strong> This library has been extended from the Template library created by Colin Williams. Changes to this library can be found in the <strong>MY_Template.php</strong> file in <strong>application/libraries</strong>. Do not edit the core library file! Any bugs with the library should be reported to WilliamsConcepts.</p>
 
 <h2>$this->template->add_redirect()</h2>
 
@@ -14,7 +14,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -45,13 +45,13 @@
 
 <h2>$this->template->set_regions()</h2>
 
-<p class="important"><strong>Note:</strong> This method has been extended from the original in the library.</p>
+<p class="alert alert-info"><strong>Note:</strong> This method has been extended from the original in the library.</p>
 
 <p>Sets the regions usable by the library.</p>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

@@ -2,7 +2,7 @@
 
 <p>The index page of the personnel section is the crew manifest. From here, a person can see all the playing characters, all the non-playing characters, former characters, and open positions. They can also click a link to move to the join page and apply for an open position.</p>
 
-<p class="important"><strong>Note:</strong> Any active characters not assigned to a player will not be displayed on the manifest.</p>
+<p class="alert alert-info"><strong>Note:</strong> Any active characters not assigned to a player will not be displayed on the manifest.</p>
 
 <p>For large manifests, a loading icon will be shown while Nova loads the manifest. Once the page is ready to be displayed, the loading graphic goes away and is replaced by the manifest. The image can be replaced by placing an image called loader.gif into your skin's image folder. Nova will recognize that it's there and use that instead of the system default.</p>
 

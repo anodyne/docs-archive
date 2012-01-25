@@ -12,7 +12,7 @@
 	<li>You can replace native libraries.</li>
 </ul>
 
-<p class="important">Complete documentation about native libraries and creating your own libraries can be found in the <a href="http://codeigniter.com/user_guide/general/creating_libraries.html" target="_blank">CodeIgniter User Guide</a>.</p>
+<p class="alert alert-info">Complete documentation about native libraries and creating your own libraries can be found in the <a href="http://codeigniter.com/user_guide/general/creating_libraries.html" target="_blank">CodeIgniter User Guide</a>.</p>
 
 <h2>Libraries in Nova</h2>
 

@@ -31,7 +31,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -57,7 +57,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -83,7 +83,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -109,7 +109,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -135,7 +135,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -169,7 +169,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -207,7 +207,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -239,7 +239,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -285,7 +285,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -311,7 +311,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -338,7 +338,7 @@
 
 <a name="delete"></a><h1>Deleting Data</h1>
 
-<p class="important"><strong>Note:</strong> Nova does not actually delete records from the database, instead, Nova simply hides the messages from being displayed. This was required to ensure that a sender would know exactly who they sent their private messages to.</p>
+<p class="alert alert-info"><strong>Note:</strong> Nova does not actually delete records from the database, instead, Nova simply hides the messages from being displayed. This was required to ensure that a sender would know exactly who they sent their private messages to.</p>
 
 <?php
 /**
@@ -355,7 +355,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

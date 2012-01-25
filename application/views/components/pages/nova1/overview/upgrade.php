@@ -13,7 +13,7 @@
 
 <p>Before you begin, you'll also need to set the <a href="#password">upgrade password</a> and <a href="#email">email address</a>.</p>
 
-<p class="important"><strong>Note:</strong> This upgrade guide is long and can seem daunting, but we encourage you to read through the whole thing <strong>before</strong> beginning the upgrade process.</p>
+<p class="alert alert-info"><strong>Note:</strong> This upgrade guide is long and can seem daunting, but we encourage you to read through the whole thing <strong>before</strong> beginning the upgrade process.</p>
 
 <h2>Step 1: Upload Nova</h2>
 
@@ -111,7 +111,7 @@ $db['default']['dbprefix'] = "nova_";</pre>
 	<li>Tour Items</li>
 </ul>
 
-<p class="important"><strong>Note:</strong> Characters and players will be automatically upgraded and the option cannot be turned off.</p>
+<p class="alert alert-info"><strong>Note:</strong> Characters and players will be automatically upgraded and the option cannot be turned off.</p>
 
 <h3>Changing the Upgrade Options</h3>
 
@@ -134,7 +134,7 @@ $db['default']['dbprefix'] = "nova_";</pre>
 
 <pre>$config['sms_password'] = 'password';</pre>
 
-<p class="critical"><strong>Note:</strong> We highly recommend you change the password before beginning the upgrade process!</p>
+<p class="alert alert-danger"><strong>Note:</strong> We highly recommend you change the password before beginning the upgrade process!</p>
 
 <a name="email"></a><h3>Setting Your Email Address</h3>
 
@@ -142,13 +142,13 @@ $db['default']['dbprefix'] = "nova_";</pre>
 
 <pre>$config['sms_email'] = 'me@example.com';</pre>
 
-<p class="critical"><strong>Note:</strong> If you don't change the email address, you will not have access to the management features when you log in!</p>
+<p class="alert alert-danger"><strong>Note:</strong> If you don't change the email address, you will not have access to the management features when you log in!</p>
 
 <h2>Step 5: Backup Your Database</h2>
 
 <p>Before you do anything with Nova, we recommend that you follow the <a href="<?php echo Url::site('nova1/tutorials/intro/backup');?>">Backup Guide</a> to back up your SMS files and database before beginning.</p>
 
-<p class="important"><strong>Note:</strong> The first thing Nova attempts to do when upgrading is backup your database and store it as a zip archive on your server. Larger SMS database may not be able to be backed up because of the resources required to do so. You should always manually backup your database before making major changes.</p>
+<p class="alert alert-info"><strong>Note:</strong> The first thing Nova attempts to do when upgrading is backup your database and store it as a zip archive on your server. Larger SMS database may not be able to be backed up because of the resources required to do so. You should always manually backup your database before making major changes.</p>
 
 <h2>Step 6: Install Nova</h2>
 
@@ -158,7 +158,7 @@ $db['default']['dbprefix'] = "nova_";</pre>
 
 <h2>Step 7: Upgrade SMS</h2>
 
-<p class="important"><strong>Note:</strong> The only time Nova touches the SMS tables is to read or copy them and will never make any changes to them. The SMS tables will remain intact throughout the upgrade process.</p>
+<p class="alert alert-info"><strong>Note:</strong> The only time Nova touches the SMS tables is to read or copy them and will never make any changes to them. The SMS tables will remain intact throughout the upgrade process.</p>
 
 <p>Due to the vast amount of data being transferred from the SMS tables to the Nova tables, the upgrade process can take several minutes to complete depending on your server and internet connection. Please be patient and don't hit the back button or close the browser. Doing so may require you to wipe out the Nova database tables and start all over again.</p>
 
@@ -176,7 +176,7 @@ $db['default']['dbprefix'] = "nova_";</pre>
 	<li>The email subject is transferred</li>
 </ul>
 
-<p class="important"><strong>Note:</strong> The first thing Nova does during this step is checks for the existence of a table called <dfn>sms_settings</dfn>. This is done because of issues some users have had that have required changing the name of the globals table in SMS. If Nova doesn't find that table, it'll fall back and use <dfn>sms_globals</dfn>. You do not need to change anything in your database to continue.</p>
+<p class="alert alert-info"><strong>Note:</strong> The first thing Nova does during this step is checks for the existence of a table called <dfn>sms_settings</dfn>. This is done because of issues some users have had that have required changing the name of the globals table in SMS. If Nova doesn't find that table, it'll fall back and use <dfn>sms_globals</dfn>. You do not need to change anything in your database to continue.</p>
 
 <p>In addition to site globals, Nova will also pull six of the messages out of SMS and put them into the proper places. The messages that will be pulled for the upgrade are:</p>
 
@@ -213,13 +213,13 @@ $db['default']['dbprefix'] = "nova_";</pre>
 
 <p>Nova's specifications system was built in a very similar way to the way SMS is set up for specifications, so upgrading the data is relatively easy, though you may find some things are slightly off when it comes to defensive systems and weapons systems that you may have to manually update to be more accurate. Besides these minor issues, all your information should be transferred.</p>
 
-<p class="important"><strong>Note:</strong> If you have made modifications to the specs pages and database table, those changes will not be transferred and you'll have to make those changes after the upgrade process is complete.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you have made modifications to the specs pages and database table, those changes will not be transferred and you'll have to make those changes after the upgrade process is complete.</p>
 
 <h3>Tour Items</h3>
 
 <p>Nova's tour items system was built in a very similar way to the way SMS is set up for tour items, so upgrading the data is relatively easy.</p>
 
-<p class="important"><strong>Note:</strong> If you have made modifications to the tour pages and database table, those changes will not be transferred and you'll have to make those changes after the upgrade process is complete.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you have made modifications to the tour pages and database table, those changes will not be transferred and you'll have to make those changes after the upgrade process is complete.</p>
 
 <h3>Characters &amp; Players</h3>
 
@@ -229,7 +229,7 @@ $db['default']['dbprefix'] = "nova_";</pre>
 
 <p>After creating the player records, Nova will pull the character specific information out of SMS and insert basic data into the characters table and the rest of the data into the characters data table. For the basic information, Nova will use first name, middle name, last name, first position, second position, rank and images.</p>
 
-<p class="important"><strong>Note:</strong> Nova uses a position translation function to try and convert SMS positions to Nova DS9 positions. For this to work perfectly, you need to have not made any changes to your positions table. If you have, you'll just have to update some of the characters' positions after the upgrade process is finished. The same goes for ranks.</p>
+<p class="alert alert-info"><strong>Note:</strong> Nova uses a position translation function to try and convert SMS positions to Nova DS9 positions. For this to work perfectly, you need to have not made any changes to your positions table. If you have, you'll just have to update some of the characters' positions after the upgrade process is finished. The same goes for ranks.</p>
 
 <h4>Passwords</h4>
 

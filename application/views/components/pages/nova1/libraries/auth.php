@@ -2,7 +2,7 @@
 
 <p>Nova's Auth library handles all authentication to the system and authorization once logged in.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
 <h3>Circumventing the Lockout</h3>
 
@@ -14,7 +14,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -67,7 +67,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -92,7 +92,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -117,7 +117,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -142,7 +142,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -167,7 +167,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -192,7 +192,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -217,7 +217,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -267,7 +267,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -297,7 +297,7 @@ $this->auth->check_access('site/settings', FALSE, TRUE);</pre>
 <pre>$this->auth->set('allowed_login_attempts', 5);
 $this->auth->set('lockout_time', 900) // 5 minutes</pre>
 
-<p class="important"><strong>Note:</strong> The lockout time variable must be stored as seconds for the library to make the necessary calculations for whether a user is allowed to login or not.</p>
+<p class="alert alert-info"><strong>Note:</strong> The lockout time variable must be stored as seconds for the library to make the necessary calculations for whether a user is allowed to login or not.</p>
 
 <h2>$this->auth->verify()</h2>
 
@@ -305,7 +305,7 @@ $this->auth->set('lockout_time', 900) // 5 minutes</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -328,7 +328,7 @@ $this->auth->set('lockout_time', 900) // 5 minutes</pre>
 
 <h3>Return</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Error Code</th>
 		<th class="blue">Description</th>
@@ -362,4 +362,4 @@ $password = sha1($this->input->post('password', TRUE));
 
 $verify = $this->auth->verify($email, $password);</pre>
 
-<p class="important"><strong>Note:</strong> The method will only return the numerical error code. You can use the <var>error_login_X</var> language items to display the proper error message.</p>
+<p class="alert alert-info"><strong>Note:</strong> The method will only return the numerical error code. You can use the <var>error_login_X</var> language items to display the proper error message.</p>

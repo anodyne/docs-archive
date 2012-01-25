@@ -32,7 +32,7 @@ The css directory is for, obviously, storing cascading stylesheets. You can have
 
 <p>The pages directory is for storing view files that Nova uses. Like images and Javascript, Nova checks your skin's section to find out if there are any view files it should use instead of the base ones. View files are almost entirely HTML, though there is some basic PHP scattered throughout. We've decided to use PHP's alternate syntax for control structures (if, elseif, else, switch, for, foreach, while, etc.) to make it easier for non-PHP coders to work with the PHP code.</p>
 
-<p class="important"><strong>Note:</strong> This is the only place in the system where the alternate syntax should be used.</p>
+<p class="alert alert-info"><strong>Note:</strong> This is the only place in the system where the alternate syntax should be used.</p>
 
 <br />
 <p>

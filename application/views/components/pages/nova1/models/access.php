@@ -29,7 +29,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -60,7 +60,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -103,7 +103,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -129,7 +129,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -155,7 +155,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -180,7 +180,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -238,7 +238,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -270,7 +270,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -302,7 +302,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -334,7 +334,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -374,7 +374,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -400,7 +400,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -426,7 +426,7 @@
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -455,14 +455,14 @@
 
 <h2>delete_group()</h2>
 
-<p class="critical"><strong>Warning:</strong> Use caution when deleting access groups!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use caution when deleting access groups!</p>
 
 <p>Deletes the group specified by the group ID passed to the first parameter.</p>
 
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -483,14 +483,14 @@
 
 <h2>delete_page()</h2>
 
-<p class="critical"><strong>Warning:</strong> Use caution when deleting access pages!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use caution when deleting access pages!</p>
 
 <p>Deletes the page specified by the page ID passed to the first parameter.</p>
 
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -511,14 +511,14 @@
 
 <h2>delete_role()</h2>
 
-<p class="critical"><strong>Warning:</strong> Use caution when deleting access roles!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use caution when deleting access roles!</p>
 
 <p>Deletes the role specified by the role ID passed to the first parameter.</p>
 
 <h3>Parameters</h3>
 
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

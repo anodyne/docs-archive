@@ -13,4 +13,4 @@
 	<li>Actual duration</li>
 </ul>
 
-<p class="important"><strong>Note:</strong> At this time, there is no ability to filter by user or sort the data. We hope to bring this functionality in a future update.</p>
+<p class="alert alert-info"><strong>Note:</strong> At this time, there is no ability to filter by user or sort the data. We hope to bring this functionality in a future update.</p>

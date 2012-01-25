@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p class="important"><strong>Note:</strong> The example here uses DS9 as an example, but the same process can be used for any genre in the system.</p>
+<p class="alert alert-info"><strong>Note:</strong> The example here uses DS9 as an example, but the same process can be used for any genre in the system.</p>
 
 <p>With the fairly recent advent of Kuro-RPG's alpha transparency rank sets, Anodyne's made a committment to use only alpha transparency rank sets if they're available from Kuro-RPG. However, there may be those who want to use a non-alpha transparency rank set. In this tutorial, we're going to create a new rank set that uses the Kuro-RPG DS9 Dress ranks (at the time of this publishing there was no alpha transparency available for that set).</p>
 
@@ -14,7 +14,7 @@
 
 <p>The first step is to download the rank set from Kuro-RPG. For this tutorial, we're going to use the white color version. Once you have the rank set, make sure you've unzipped it to your Desktop.</p>
 
-<p class="important"><strong>Note:</strong> Star Trek canon dictates that non-commissioned officers have different dress uniforms, but for the sake of brevity and clarity, we are ignoring that for this tutorial.</p>
+<p class="alert alert-info"><strong>Note:</strong> Star Trek canon dictates that non-commissioned officers have different dress uniforms, but for the sake of brevity and clarity, we are ignoring that for this tutorial.</p>
 
 <h3>2. Create Our Folder</h3>
 

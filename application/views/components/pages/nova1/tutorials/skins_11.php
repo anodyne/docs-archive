@@ -60,7 +60,7 @@ sections:
 	
 <p>That's it! When an admin uploads your skin to their <samp>views</samp> directory then navigates to the skin catalogue page, they'll be prompted to install the new skin and will be able to use it only a few seconds later.</p>
 
-<p class="important"><strong>Note:</strong> For the best results, you should copy one of the skin.yml files from an existing skin and use that as a starting point.</p>
+<p class="alert alert-info"><strong>Note:</strong> For the best results, you should copy one of the skin.yml files from an existing skin and use that as a starting point.</p>
 	
 <br />
 <p>

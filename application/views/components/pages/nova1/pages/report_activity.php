@@ -8,4 +8,4 @@
 
 <p>The additional columns to the left will show post counts for two time periods. The first is the posting requirement timeframe that you set in Site Settings. Nova will count each player's posts for that number of days. The second is a 30-day timeframe to give you an idea of how the player has done with their posting levels over the last month.</p>
 
-<p class="important"><strong>Note:</strong> The 30-day timeframe is just that, 30 days prior and does not correlate to the start of the current month.</strong>
+<p class="alert alert-info"><strong>Note:</strong> The 30-day timeframe is just that, 30 days prior and does not correlate to the start of the current month.</strong>

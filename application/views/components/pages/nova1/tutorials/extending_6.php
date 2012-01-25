@@ -23,7 +23,7 @@ Content: Welcome back to Nova! Make sure you check your private messages for any
 
 <p>The way extending a controller works is that you're essentially laying a new method over top of the existing one. That means Nova only understands the new method and not the old one, but if you were rename or remove your method, it'll be able to see the old method and use that. We're going to cover up the old method. To do this, we need to copy the entire <dfn>index</dfn> method.</p>
 
-<p class="important"><strong>Note:</strong> In object oriented programming like Nova, a method is how a function inside a class is described.</p>
+<p class="alert alert-info"><strong>Note:</strong> In object oriented programming like Nova, a method is how a function inside a class is described.</p>
 
 <p>In <samp>application/controllers/base/main_base.php</samp>, copy the entire <dfn>index</dfn> function. This includes everthing from the word <strong>function</strong> all the way to the curly brace before the next word function.</p>
 

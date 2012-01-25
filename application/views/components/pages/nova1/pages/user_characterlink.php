@@ -4,7 +4,7 @@
 
 <p>At the top of the page, a player info section shows you which account you're currently editing. If you don't want to edit that account, simply click on the All Players link. Below the player info section is a section listing all the current characters associated with that player. From here, you can remove a character or change the main character for that account. Finally, at the bottom of the page are two tabs with playing and non-playing characters. The listings in each of these tabs are for characters and NPCs who are not currently assigned to a player.</p>
 
-<p class="important"><strong>Note:</strong> In order to re-assign a character from one account to another, the character must first be removed from the original account before it can be assigned to the new account.</p>
+<p class="alert alert-info"><strong>Note:</strong> In order to re-assign a character from one account to another, the character must first be removed from the original account before it can be assigned to the new account.</p>
 
 <p>The link character page can be accessed from the admin sub navigation menu or from a user's account page.</p>
 

@@ -2,7 +2,7 @@
 
 <p>Pages are at the heart of Thresher, so managing the creation and editing of pages is an incredibly easy and straightforward process.</p>
 
-<p class="important"><strong>Note:</strong> More information about configuring Thresher can be found in the <?php echo Html::anchor('nova1/tutorials/config/nova', 'Configuring Nova');?> page.</p>
+<p class="alert alert-info"><strong>Note:</strong> More information about configuring Thresher can be found in the <?php echo Html::anchor('nova1/tutorials/config/nova', 'Configuring Nova');?> page.</p>
 
 <h3>Permissions</h3>
 
@@ -14,7 +14,7 @@
 
 <p>The content text area is different from other text areas in the system as it is a rich text editor field. Using a simple plugin, Thresher will allows users to write their wiki pages using either HTML, BBCode, Markdown or Textile markups. Clicking one of the icons in the toolbar will create the appropriate tags in the text area and put the cursor inside the tags. You can use any amount of HTML you want in your wiki page content. The toolbar over the text area will allow you to add header elements, paragraph elements, bold, italics, underline, bulleted and numbered lists, images and links.</p>
 
-<p class="important"><strong>Note:</strong> If you are using the HTML parse type, you can preview your work by clicking on the green checkmark icon. The other parse types don't support previews in Thresher yet.</p> 
+<p class="alert alert-info"><strong>Note:</strong> If you are using the HTML parse type, you can preview your work by clicking on the green checkmark icon. The other parse types don't support previews in Thresher yet.</p> 
 
 <p>In order to select a category, you simply need to click the checkbox or the text of the item you want to add. To remove a category from the list, uncheck the checkbox. In addition, hovering over the question mark will display the category's description (if there is one).</p>
 

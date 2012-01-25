@@ -2,7 +2,7 @@
 
 <p>Nova's User Panel library handles building the user panel shown when a user is logged in to the system.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
 <h2>$this->user_panel->panel_1()</h2>
 
@@ -20,7 +20,7 @@
 
 <pre>$this->user_panel->panel_1();</pre>
 
-<p class="important"><strong>Note:</strong> There are 2 additional panels available to be built, <dfn>panel_2</dfn> and <dfn>panel_3</dfn>. They work identical to <dfn>panel_1</dfn>.</p>
+<p class="alert alert-info"><strong>Note:</strong> There are 2 additional panels available to be built, <dfn>panel_2</dfn> and <dfn>panel_3</dfn>. They work identical to <dfn>panel_1</dfn>.</p>
 
 <h2>$this->user_panel->panel_workflow()</h2>
 
@@ -44,7 +44,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -79,7 +79,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -135,7 +135,7 @@ Inbox [2]</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

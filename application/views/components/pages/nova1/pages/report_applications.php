@@ -20,4 +20,4 @@
 	<li>The email message sent to the player (if any)</li>
 </ul>
 
-<p class="important"><strong>Note:</strong> To save space in the database, the applications table does not retain character bio information.</p>
+<p class="alert alert-info"><strong>Note:</strong> To save space in the database, the applications table does not retain character bio information.</p>

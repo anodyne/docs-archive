@@ -14,7 +14,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -45,7 +45,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -77,7 +77,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -119,11 +119,11 @@ $content = parse_dynamic_message($message, $args);
 
 <p>The Who&rsquo;s Online helper does just what you&rsquo;d think it does, it returns a list of all current users who are logged in based on the timespan given.</p>
 
-<p class="important"><strong>Note:</strong> If you want to use this helper in your template file to show the list at the bottom of the page (or in any other location), you must first auto-load the utility helper as it is not automatically loaded by Nova. You can set the auto-load in <strong>application/config/autoload.php</strong> in the <var>helpers</var> array.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you want to use this helper in your template file to show the list at the bottom of the page (or in any other location), you must first auto-load the utility helper as it is not automatically loaded by Nova. You can set the auto-load in <strong>application/config/autoload.php</strong> in the <var>helpers</var> array.</p>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -153,11 +153,11 @@ Captain Jean-Luc Picard, Commander William Riker, Commander Worf</pre>
 
 <p>If you're using a MySQL database, you can invoke this helper to backup the contents of the database and either save it to the server or download the file.</p>
 
-<p class="important"><strong>Note:</strong> The backup function used consumes a lot of server memory. Large database will require a significantly higher server memory limit.</p>
+<p class="alert alert-info"><strong>Note:</strong> The backup function used consumes a lot of server memory. Large database will require a significantly higher server memory limit.</p>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -228,11 +228,11 @@ else
 
 <p>This helper function will translate a Nova position ID to an SMS position ID.</p>
 
-<p class="important"><strong>Note:</strong> This function assumes the default set of position values found in an SMS installation. If a lot of changes have been made to the positions, this will not translate positions properly.</p>
+<p class="alert alert-info"><strong>Note:</strong> This function assumes the default set of position values found in an SMS installation. If a lot of changes have been made to the positions, this will not translate positions properly.</p>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

@@ -19,7 +19,7 @@
 
 <p>To delete an upload record, simply click the checkbox to the right of the record. You can select as many items from a single tab as you want and delete several at a time. Once you're satisified with the items you want to delete, click <strong>Submit</strong> and Nova will go through and remove those records. If you have set up your FTP connection, Nova will attempt to connect to the server and delete the files of the records you're deleting. If it isn't able to delete the files, you'll be notified that you need to manually delete the files from the server.</p>
 
-<p class="critical"><strong>Warning:</strong> If your FTP connection is set up and Nova deletes the file, there is no way to recover it, so make sure you have a backup!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> If your FTP connection is set up and Nova deletes the file, there is no way to recover it, so make sure you have a backup!</p>
 
 <h3>Stopping the File Deletion Attempt</h3>
 

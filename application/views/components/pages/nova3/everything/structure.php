@@ -35,7 +35,7 @@
 
 <h2>The Nova Directory</h2>
 
-<p class="critical"><strong>Warning:</strong> Never edit core files unless you know what you're doing! Editing core files can cause the entire system and framework to fail.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Never edit core files unless you know what you're doing! Editing core files can cause the entire system and framework to fail.</p>
 
 <?php echo Html::image(null);?>
 

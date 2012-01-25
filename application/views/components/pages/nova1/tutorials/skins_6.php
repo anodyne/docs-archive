@@ -32,7 +32,7 @@ $('#loaded').removeClass('hidden');</pre>
 
 <p>If you create a custom page for Nova and want to use some of the UI widgets found throughout Nova, you can pretty easily add a few of them (adding things like the sortable widget is incredibly complicated as it involves AJAX calls, callbacks and many other complex Nova elements). In this case, let's add a tab panel to our page so we can split up the information we want to display. Let's create a page in the main section for holding fleet rules and sim rules.</p>
 
-<p class="important"><strong>Note:</strong> This tutorial does not cover creating the controller method for such a page, just creating the view file and Javascript view file.</p>
+<p class="alert alert-info"><strong>Note:</strong> This tutorial does not cover creating the controller method for such a page, just creating the view file and Javascript view file.</p>
 
 <p>To start, we'll create our main_rules.php file in <samp>_base_override/main/pages</samp>. Once it's been created, we'll need to flesh out the content a little to look something like this:</p>
 

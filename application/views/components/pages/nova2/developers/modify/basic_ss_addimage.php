@@ -24,4 +24,4 @@
 
 <p>This same process will work for any view file in Nova!</p>
 
-<p class="important">Why do I need to copy the file to another location? Why not just change the file in the <em>_base</em> folder? The short answer is <strong>because putting it in the application folder is the right way to do it</strong> (kinda like your Mom telling you "because I said so"). The longer answer is that the <em>_base</em> folder in the Nova core will get replaced with every update, so unless you want to update your views after every update, best to use seamless substitution and put your changes in the application folder.</p>
+<p class="alert alert-info">Why do I need to copy the file to another location? Why not just change the file in the <em>_base</em> folder? The short answer is <strong>because putting it in the application folder is the right way to do it</strong> (kinda like your Mom telling you "because I said so"). The longer answer is that the <em>_base</em> folder in the Nova core will get replaced with every update, so unless you want to update your views after every update, best to use seamless substitution and put your changes in the application folder.</p>

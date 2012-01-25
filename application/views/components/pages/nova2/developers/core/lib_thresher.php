@@ -2,7 +2,7 @@
 
 <p>Nova's Thresher library handles all interaction between Thresher and the text coming out of the database.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by Thresher so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by Thresher so there is no need to do it manually.</p>
 
 <h2>$this->thresher->parse()</h2>
 
@@ -10,7 +10,7 @@
 
 <h4>Parameters</h4>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

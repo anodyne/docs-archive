@@ -18,7 +18,7 @@
 
 <p>On some Windows computers, simply trying to overwrite a file with your FTP client won't work and cause issues. Because of that, you should delete the files you're trying to update and then upload fresh copies to ensure everything is properly updated.</p>
 
-<p class="critical"><strong>Warning:</strong> When uploading files to your server, there are some files you don't want to overwrite. Pay careful attention to the list below!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> When uploading files to your server, there are some files you don't want to overwrite. Pay careful attention to the list below!</p>
 
 <ul>
 	<li>application/assets/backups</li>

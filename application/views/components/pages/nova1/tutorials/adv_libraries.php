@@ -57,7 +57,7 @@ class Someclass {
 	}
 }</pre>
 
-<p class="important">You can also pass parameters stored in a config file. Simply create a config file named identically to the class file name and store it in your <samp>application/config</samp> folder. <strong>Note:</strong> if you dynamically pass parameters as described above, the config file option will not be available.</p>
+<p class="alert alert-info">You can also pass parameters stored in a config file. Simply create a config file named identically to the class file name and store it in your <samp>application/config</samp> folder. <strong>Note:</strong> if you dynamically pass parameters as described above, the config file option will not be available.</p>
 
 <h3>Utilizing CodeIgniter Resources within Your Library</h3>
 
@@ -83,7 +83,7 @@ $CI->load->helper('url');
 $CI->load->library('session');
 $CI->config->item('base_url');</pre>
 
-<p class="important"><strong>Note:</strong> You'll notice that the above get_instance() function is being passed by reference:<br /><br />
+<p class="alert alert-info"><strong>Note:</strong> You'll notice that the above get_instance() function is being passed by reference:<br /><br />
 
 $CI =& get_instance();<br /><br />
 
@@ -95,7 +95,7 @@ Also, please note: If you are running PHP 4 it's usually best to avoid calling g
 
 <p>CodeIgniter comes with a wide variety of pre-built helpers that are handy in doing simple tasks, but every so often, you might need to change the default behavior of one of those helpers. The framework actually provides a simple way of extending and overwriting core helpers by simply using the <dfn>MY_</dfn> prefix in the name of the helper.</p>
 
-<p class="important"><strong>Note:</strong> This only applies to CodeIgniter's core helpers and not helpers built by Anodyne.</p>
+<p class="alert alert-info"><strong>Note:</strong> This only applies to CodeIgniter's core helpers and not helpers built by Anodyne.</p>
 
 <h3>Replacing Core Libraries</h3>
 
@@ -105,11 +105,11 @@ Also, please note: If you are running PHP 4 it's usually best to avoid calling g
 
 }</pre>
 
-<p class="important"><strong>Note:</strong> Most native classes are prefixed with <dfn>CI_</dfn>.</p>
+<p class="alert alert-info"><strong>Note:</strong> Most native classes are prefixed with <dfn>CI_</dfn>.</p>
 
 <p>You would then load the library the same way you would the native library.</p>
 
-<p class="critical"><strong>Note:</strong> At this time, EllisLab does not provide a way to replace the Database classes with your own versions.</p>
+<p class="alert alert-danger"><strong>Note:</strong> At this time, EllisLab does not provide a way to replace the Database classes with your own versions.</p>
 
 <h3>Extending Core Libraries</h3>
 
@@ -126,7 +126,7 @@ Also, please note: If you are running PHP 4 it's usually best to avoid calling g
 
 }</pre>
 
-<p class="important"><strong>Note:</strong> If you need to use a constructor in your class make sure you extend the parent constructor:</p>
+<p class="alert alert-info"><strong>Note:</strong> If you need to use a constructor in your class make sure you extend the parent constructor:</p>
 
 <pre>class MY_Email extends CI_Email {
 

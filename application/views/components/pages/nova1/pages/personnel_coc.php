@@ -4,7 +4,7 @@
 
 <p>One change in Nova is that, now, non-playing characters can hold positions within the chain of command.</p>
 
-<p class="important"><strong>Note:</strong> Any active characters not assigned to a player will not be displayed on the chain of command.</p>
+<p class="alert alert-info"><strong>Note:</strong> Any active characters not assigned to a player will not be displayed on the chain of command.</p>
 
 <p>Rank images are stored in <samp>application/assets/common/[YOUR GENRE]/ranks</samp> and are displayed from the database based on the ID that's put in to the database for each character's rank field. You can change someone's rank through the Character Management page. Ranks can be changed through the Rank Management page.</p>
 

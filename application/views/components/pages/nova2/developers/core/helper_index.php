@@ -4,7 +4,7 @@
 
 <p>Unlike most other systems in CodeIgniter, Helpers are not written in an Object Oriented format. They are simple, procedural functions. Each helper function performs one specific task, with no dependence on other functions.</p>
 
-<p class="important">Complete documentation about helpers in CodeIgniter can be found in the <a href="http://codeigniter.com/user_guide/general/helpers.html" target="_blank">CodeIgniter User Guide</a>.</p>
+<p class="alert alert-info">Complete documentation about helpers in CodeIgniter can be found in the <a href="http://codeigniter.com/user_guide/general/helpers.html" target="_blank">CodeIgniter User Guide</a>.</p>
 
 <h2>Loading a Helper</h2>
 

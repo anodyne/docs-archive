@@ -2,7 +2,7 @@
 
 <p>Models in Nova are PHP classes designed to work with information in your database. We have created a wide variety of models for inserting, updating, deleting and retrieving data from the Nova database. Creating these items separately allows us to re-use much of the code for retrieving information from the database from all over the system.</p>
 
-<p class="important">Complete documentation about models in CodeIgniter can be found in the <a href="http://codeigniter.com/user_guide/general/models.html" target="_blank">CodeIgniter User Guide</a>.</p>
+<p class="alert alert-info">Complete documentation about models in CodeIgniter can be found in the <a href="http://codeigniter.com/user_guide/general/models.html" target="_blank">CodeIgniter User Guide</a>.</p>
 
 <h2>Loading a Model</h2>
 

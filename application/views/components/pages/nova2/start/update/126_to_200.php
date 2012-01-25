@@ -6,13 +6,13 @@
 
 <p>Once you've finished backing up your stuff, remove all of the files in your site.</p>
 
-<p class="critical">When we say remove, we mean it. Delete every Nova file on your server and <strong>then</strong> upload the new copy. If you don't do this, there's no telling what could go wrong.</p>
+<p class="alert alert-danger">When we say remove, we mean it. Delete every Nova file on your server and <strong>then</strong> upload the new copy. If you don't do this, there's no telling what could go wrong.</p>
 
 <h2>Step 2: Upload Nova 2</h2>
 
 <p>Now that you've got an empty directory (kinda scary to hit that delete button, huh?), it's time to upload Nova 2 to your site. It may take a few minutes since there are a lot of files that will need to be uploaded. In addition, if you have any skins you want, you can upload those from the backups on your desktop to the <samp>application/views</samp> directory on your server.</p>
 
-<p class="important"><strong>Important:</strong> Don't try to cram all of your modifications and skins in at this point. Do the update from Nova 1 and <strong>then</strong> go back and do your modifications and skins after the fact.</p>
+<p class="alert alert-info"><strong>Important:</strong> Don't try to cram all of your modifications and skins in at this point. Do the update from Nova 1 and <strong>then</strong> go back and do your modifications and skins after the fact.</p>
 
 <h2>Step 3: Setup Your Database Connection</h2>
 
@@ -28,7 +28,7 @@
 
 <p>Nova's skinning system didn't change for version 2, so any of your skins from Nova 1 should work with little modification (we say "little" modification because there are some small changes that need to be made to Thresher and the admin system for Nova 2). For each of your Nova 1 skins you want to use in Nova 2, use the following steps to make sure they're working as expected in Nova 2.</p>
 
-<p class="important">Your skins will fall in to one of two categories: light or dark. If the skin you're updating uses a light-colored background, all of the materials you'll need to copy can be found in the Pulsar skin (<strong>application/views/default</strong>). If the skin you're updating uses a dark-colored background, all of the materials you'll need to copy can be found in the Titan skin (<strong>application/views/titan</strong>). If you've edited a skin taken off of AnodyneXtras, you can download the new copy of the skin now and uses the resources found in those skins as well.</p>
+<p class="alert alert-info">Your skins will fall in to one of two categories: light or dark. If the skin you're updating uses a light-colored background, all of the materials you'll need to copy can be found in the Pulsar skin (<strong>application/views/default</strong>). If the skin you're updating uses a dark-colored background, all of the materials you'll need to copy can be found in the Titan skin (<strong>application/views/titan</strong>). If you've edited a skin taken off of AnodyneXtras, you can download the new copy of the skin now and uses the resources found in those skins as well.</p>
 
 <h3>Thresher Updates</h3>
 
@@ -53,4 +53,4 @@
 
 <p>Nova's file structure has changed, but the controllers themselves have also changed. You won't simply be able to copy and paste your old code in to Nova 2 and have it working again. You'll need to copy the appropriate controller method from <samp>nova/modules/core/controllers</samp> and paste it into the appropriate controller in <samp>application/controllers</samp> and re-apply your modifications that way. Sadly, there's no quick and easy way to do this.</p>
 
-<p class="important">Fortunately, one of Nova 2's new features is that you can embed YouTube and other media tags right in site messages, so if you've used seamless substitution to add stuff to a page because certain types of HTML tags aren't allowed, you won't have to do that again, simply copy and paste the HTML into the site message in the Admin Control Panel!</p>
+<p class="alert alert-info">Fortunately, one of Nova 2's new features is that you can embed YouTube and other media tags right in site messages, so if you've used seamless substitution to add stuff to a page because certain types of HTML tags aren't allowed, you won't have to do that again, simply copy and paste the HTML into the site message in the Admin Control Panel!</p>

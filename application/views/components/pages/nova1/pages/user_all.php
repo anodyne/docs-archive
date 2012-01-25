@@ -18,4 +18,4 @@
 
 <p>To delete a player, click on the delete icon to the right of their name. A modal window will pop-up asking you to confirm you want to delete the player. Once you have clicked <strong>Submit</strong>, Nova will delete the player. In the process, Nova will also update any characters associated with that player to not be associated with any player.</p>
 
-<p class="critical"><strong>Warning:</strong> Use extreme caution when deleting players. Deleted players cannot be recovered. All changes are final.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use extreme caution when deleting players. Deleted players cannot be recovered. All changes are final.</p>

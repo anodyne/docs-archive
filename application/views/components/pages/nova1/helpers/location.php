@@ -2,7 +2,7 @@
 
 <p>The Location Helper file contains functions that assist in dynamically determining the location of an asset.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
 
 <h2>view_location</h2>
 
@@ -10,7 +10,7 @@
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -58,7 +58,7 @@ $this->template->write_view('content', $view_loc, $data);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -118,7 +118,7 @@ application/views/[skin]/main/images/monkey.png</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -174,7 +174,7 @@ application/views/_base/main/images/combadge.png</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -229,7 +229,7 @@ $this->template->write_view('javascript', $js_loc);</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -273,7 +273,7 @@ application/assets/images/missions/mission_1.jpg</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -329,7 +329,7 @@ application/assets/common/[GENRE]/ranks/default/a4.png</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -403,7 +403,7 @@ application/assets/images/awards/mega/award.jpg</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -437,7 +437,7 @@ application/assets/images/awards/mega/award.jpg</pre>
 // would produce (by default):
 application/views/_base/emails/html/main_join</pre>
 
-<p class="important">The mailtype is pulled from the <strong>application/config/email.php</strong> file. Changing that variable to <var>text</var> would change where the email location helper looks by default.</p>
+<p class="alert alert-info">The mailtype is pulled from the <strong>application/config/email.php</strong> file. Changing that variable to <var>text</var> would change where the email location helper looks by default.</p>
 
 <h2>ajax_location</h2>
 
@@ -445,7 +445,7 @@ application/views/_base/emails/html/main_join</pre>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

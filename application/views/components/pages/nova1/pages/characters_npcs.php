@@ -10,7 +10,7 @@
 
 <p>To delete a character, click on the delete icon to the right of their name. A modal window will pop-up asking you to confirm you want to delete the character. Once you have clicked <strong>Submit</strong>, Nova will delete the character. In the process, if that character is someone's main character, it will be changed.</p>
 
-<p class="critical"><strong>Warning:</strong> Use caution when deleting characters. Mission posts, personal logs and news items use character ID numbers so deleting a character can leave posts orphaned and without an author.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use caution when deleting characters. Mission posts, personal logs and news items use character ID numbers so deleting a character can leave posts orphaned and without an author.</p>
 
 <h2>Editing a Character</h2>
 

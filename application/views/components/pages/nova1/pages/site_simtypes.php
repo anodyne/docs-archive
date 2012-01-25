@@ -18,4 +18,4 @@
 
 <p>Like editing a sim type, Nova lets you delete several sim types at the same time. All you have to do is click the checkbox next to the sim type you want to delete. Once you have selected all the items you want to delete, click Update and Nova will delete the items you checked. It's possible to update and delete items at the same time.</p>
 
-<p class="critical"><strong>Warning:</strong> Use caution when deleting sim types as it will affect the entire system!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use caution when deleting sim types as it will affect the entire system!</p>

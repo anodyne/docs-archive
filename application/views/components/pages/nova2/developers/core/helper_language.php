@@ -2,9 +2,9 @@
 
 <p>The Language Helper file contains functions that assist in working with language files.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_language_helper.php</samp> file in <samp>nova/modules/core/helpers</samp>. Do not edit the CodeIgniter core helper file!</p>
+<p class="alert alert-info"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_language_helper.php</samp> file in <samp>nova/modules/core/helpers</samp>. Do not edit the CodeIgniter core helper file!</p>
 
 <h2>lang_output</h2>
 
@@ -12,7 +12,7 @@
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>
@@ -67,7 +67,7 @@ The text in the $lang['text'] string</pre>
 
 <h4>Parameters</h4>
 <br />
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

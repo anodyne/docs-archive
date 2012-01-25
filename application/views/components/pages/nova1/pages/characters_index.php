@@ -10,7 +10,7 @@
 
 <p>To delete a character, click on the delete icon to the right of their name. A modal window will pop-up asking you to confirm you want to delete the character. Once you have clicked <strong>Submit</strong>, Nova will delete the character. In the process, if that character is someone's main character, it will be changed.</p>
 
-<p class="critical"><strong>Warning:</strong> Use caution when deleting characters. Mission posts, personal logs and news items use character ID numbers so deleting a character can leave posts orphaned and without an author.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Use caution when deleting characters. Mission posts, personal logs and news items use character ID numbers so deleting a character can leave posts orphaned and without an author.</p>
 
 <h2>Editing a Character</h2>
 
@@ -24,7 +24,7 @@
 
 <p>To accept a pending character, click on the accept icon to the right of their name. A modal window will pop-up asking you to confirm their position and rank and give you the opportunity to change the email message they will receive. If the character is associated with a player that is inactive or pending, you will also be able to set their access role as well. Once you click <strong>Submit</strong> the character will be activated and an email will be sent to the player who applied as well as anyone with <kbd>characters/index</kbd> privileges.</p>
 
-<p class="important"><strong>Note:</strong> If a player is at or above the allowed limit of playing characters and they submit a character, you will still be able to accept the player, but it will have to be assigned to the player from the <?php echo Html::anchor('nova1/pages/user/link', 'character linking');?> page once they are below the allowed playing character limit.</p>
+<p class="alert alert-info"><strong>Note:</strong> If a player is at or above the allowed limit of playing characters and they submit a character, you will still be able to accept the player, but it will have to be assigned to the player from the <?php echo Html::anchor('nova1/pages/user/link', 'character linking');?> page once they are below the allowed playing character limit.</p>
 
 <h3>Customizing the Acceptance Email</h3>
 
@@ -38,13 +38,13 @@
 	<li><strong>#position#</strong> &ndash; your position the character will have</li>
 </ul>
 
-<p class="important"><strong>Note:</strong> To maintain SMS upgrade compatability, using the variable <strong>#ship#</strong> will still work, but we recommend switching over to <strong>#sim#</strong>.</p>
+<p class="alert alert-info"><strong>Note:</strong> To maintain SMS upgrade compatability, using the variable <strong>#ship#</strong> will still work, but we recommend switching over to <strong>#sim#</strong>.</p>
 
 <h2>Rejecting a Pending Character</h2>
 
 <p>To reject a pending character, click on the reject icon to the right of their name.</p>
 
-<p class="important"><strong>Note:</strong> If a player only has one character, it's pending and the character is rejected, Nova will also delete the player record as well.</p>
+<p class="alert alert-info"><strong>Note:</strong> If a player only has one character, it's pending and the character is rejected, Nova will also delete the player record as well.</p>
 
 <h3>Customizing the Rejection Email</h3>
 
@@ -57,10 +57,10 @@
 	<li><strong>#position#</strong> &ndash; your position the character will have</li>
 </ul>
 
-<p class="important"><strong>Note:</strong> To maintain SMS upgrade compatability, using the variable <strong>#ship#</strong> will still work, but we recommend switching over to <strong>#sim#</strong>.</p>
+<p class="alert alert-info"><strong>Note:</strong> To maintain SMS upgrade compatability, using the variable <strong>#ship#</strong> will still work, but we recommend switching over to <strong>#sim#</strong>.</p>
 
 <h2>Editing a Player Account</h2>
 
 <p>To edit a player's account, click on the account icon to the right of their name and you will be redirected to their account page.</p>
 
-<p class="important"><strong>Note:</strong> The account icon will only appear if the character is assigned to a player. If the character does not have a character associated with them, a warning message will appear below their name indicating they have no player associated with them.</p>
+<p class="alert alert-info"><strong>Note:</strong> The account icon will only appear if the character is assigned to a player. If the character does not have a character associated with them, a warning message will appear below their name indicating they have no player associated with them.</p>

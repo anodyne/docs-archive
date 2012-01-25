@@ -4,4 +4,4 @@
 
 <p>From the archive index, simply click on the departments link and you'll be shown the listing of all departments out the SMS table. The listing will display the name and description of each department in the SMS tables.</p>
 
-<p class="important"><strong>Note:</strong> Unless you've made no changes whatsoever to the SMS departments, you will need to manually make changes to your departments.</p>
+<p class="alert alert-info"><strong>Note:</strong> Unless you've made no changes whatsoever to the SMS departments, you will need to manually make changes to your departments.</p>

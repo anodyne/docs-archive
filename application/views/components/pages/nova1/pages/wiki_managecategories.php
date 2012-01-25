@@ -18,4 +18,4 @@
 
 <p>Deleting a category is only a matter of clicking on the delete icon and confirming you want to delete the category by clicking <strong>Submit</strong>. If you decide that you don't want to delete the category, you can get out of the modal window by either clicking the X in the upper corner, hitting escape on your keyboard or clicking anywhere outside the window.</p>
 
-<p class="critical"><strong>Warning:</strong> Deleting categories will affect any wiki pages that have that category. We recommend you manually clear out a category of its pages before deleting the category.</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Deleting categories will affect any wiki pages that have that category. We recommend you manually clear out a category of its pages before deleting the category.</p>

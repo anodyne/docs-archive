@@ -2,19 +2,19 @@
 
 <p>The URI Class provides functions that help you retrieve information from your URI strings. If you use URI routing, you can also retrieve information about the re-routed segments.</p>
 
-<p class="critical"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
+<p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
-<p class="important"><strong>Note:</strong> This library has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_URI.php</strong> file in <strong>application/libraries</strong>. Do not edit the CodeIgniter core library file!</p>
+<p class="alert alert-info"><strong>Note:</strong> This library has been extended from the CodeIgniter default. Changes to this library can be found in the <strong>MY_URI.php</strong> file in <strong>application/libraries</strong>. Do not edit the CodeIgniter core library file!</p>
 
 <h2>$this->uri->segment()</h2>
 
-<p class="important">The original documentation on the segment method can be found in the <a href="http://codeigniter.com/user_guide/libraries/uri.html" target="_blank">CodeIgniter User Guide</a>.</p>
+<p class="alert alert-info">The original documentation on the segment method can be found in the <a href="http://codeigniter.com/user_guide/libraries/uri.html" target="_blank">CodeIgniter User Guide</a>.</p>
 
 <p>Permits you to retrieve a specific segment. Where <var>n</var> is the segment number you wish to retrieve. Segments are numbered from left to right.</p>
 
 <h3>Parameters</h3>
 
-<table cellpadding="0" cellspacing="1" border="0" class="tableborder zebra">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<tr>
 		<th class="blue">Parameter</th>
 		<th class="blue">Default Value</th>

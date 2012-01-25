@@ -26,4 +26,4 @@
 
 <pre>$data['message'] = $this->messages_model->get_message('your_message_key');</pre>
 
-<p class="important">If you are planning on using the message more than once in your controller, you should assign the message to a variable and use that variable throughout your code to reduce the number of calls to the database.</p>
+<p class="alert alert-info">If you are planning on using the message more than once in your controller, you should assign the message to a variable and use that variable throughout your code to reduce the number of calls to the database.</p>

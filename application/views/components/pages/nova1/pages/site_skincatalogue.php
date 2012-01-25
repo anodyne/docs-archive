@@ -24,13 +24,13 @@
 
 <p>To create a skin, click on the <strong>Add Skin</strong> link at the top of the page. A pop-up window will appear with all the information you need to complete to build the skin. You will need to provide a name for the skin, it's location on the server (just the name of the folder) and its credits. Once all the information is filled in, click <strong>Submit</strong> and Nova will create your skin record. Once the record is created, you can add sections to it.</p>
 
-<p class="important"><strong>Note:</strong> Always provide credits for your skin. If you use any icons or images that need to receive credit, this is where you should do it. Since sections do not use credits, put all your credits for all sections in the skin credits.</p>
+<p class="alert alert-info"><strong>Note:</strong> Always provide credits for your skin. If you use any icons or images that need to receive credit, this is where you should do it. Since sections do not use credits, put all your credits for all sections in the skin credits.</p>
 
 <h2>Adding a Skin Section</h2>
 
 <p>To create a new skin section, simply click the <strong>Add Skin Section</strong> link near the top of the page. A pop-up window will appear with all the fields you need to fill-in. After supplying the section (main, admin, login, wiki), the skins, a preview image, its status and whether it's the default for that section, click <strong>Submit</strong> and your skin section will be created. Once created, players will be able to use the sections for their own display preferences.</p>
 
-<p class="important"><strong>Note:</strong> Nova includes the ability to set a skin section as being "in development". If a skin section status is set to that, only those with permissions to the skin catalogue will be able to use that skin section, allowing skin developers to work on skins without interfering with players skin choices.</p>
+<p class="alert alert-info"><strong>Note:</strong> Nova includes the ability to set a skin section as being "in development". If a skin section status is set to that, only those with permissions to the skin catalogue will be able to use that skin section, allowing skin developers to work on skins without interfering with players skin choices.</p>
 
 <h2>Editing a Skin</h2>
 
@@ -42,7 +42,7 @@
 
 <h2>Deleting a Skin</h2>
 
-<p class="critical"><strong>Warning:</strong> You must delete all skin sections from a skin before you will be allowed to delete it. In addition, make sure that you have changed all skin section defaults before deleting a skin!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> You must delete all skin sections from a skin before you will be allowed to delete it. In addition, make sure that you have changed all skin section defaults before deleting a skin!</p>
 
 <p>To delete a skin, click on the delete icon to the right of the list of skins. A modal window will pop-up confirming that you want to delete that skin. If you want to delete the skin, simply click Submit. If you do not want to delete that access role, you can hit Escape, click anywhere outside of the modal window or click the X icon in the upper lefthand corner of the modal window.</p> 
 

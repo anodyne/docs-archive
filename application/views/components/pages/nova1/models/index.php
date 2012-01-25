@@ -2,11 +2,11 @@
 
 <p>Models in Nova are PHP classes designed to work with information in your database. We have created a wide variety of models for inserting, updating, deleting and retrieving data from the Nova database. Creating these items separately allows us to re-use much of the code for retrieving information from the database from all over the system.</p>
 
-<p class="important">Complete documentation about models in CodeIgniter can be found in the <a href="http://codeigniter.com/user_guide/general/models.html" target="_blank">CodeIgniter User Guide</a>.</p>
+<p class="alert alert-info">Complete documentation about models in CodeIgniter can be found in the <a href="http://codeigniter.com/user_guide/general/models.html" target="_blank">CodeIgniter User Guide</a>.</p>
 
 <h2>Models in Nova</h2>
 
-<p class="important"><strong>Note:</strong> We do not provide documentation for the archive model as it's considered bad practice to be referencing data from old SMS tables instead of manually moving the data over.</p>
+<p class="alert alert-info"><strong>Note:</strong> We do not provide documentation for the archive model as it's considered bad practice to be referencing data from old SMS tables instead of manually moving the data over.</p>
 
 <ul>
 	<li><?php echo Html::anchor('nova1/models/access', 'Access');?></li>
@@ -41,7 +41,7 @@
 
 <p>The following table shows the model object name assigned throughout the system:</p>
 
-<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<thead>
 		<tr>
 			<th class="blue">Model</th>

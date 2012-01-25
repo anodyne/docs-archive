@@ -18,4 +18,4 @@
 
 <p>To delete an award from Nova, simply click on the delete icon to the right of the award information. A modal window will appear and ask you to confirm you want to delete the award. If you do, click <strong>Submit</strong> and Nova will delete the award. If you don't want to delete the award, you can click anywhere outside of the modal window, click the X or hit the Escape key to abort the delete process.</p>
 
-<p class="critical"><strong>Warning:</strong> Deleting awards is permanent and cannot be undone!</p>
+<p class="alert alert-danger"><strong>Warning:</strong> Deleting awards is permanent and cannot be undone!</p>

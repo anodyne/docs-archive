@@ -38,7 +38,7 @@
 
 <p>Now that we've made a few tweaks to our skin, we're ready to upload it. Upload the images from <samp>ui/development-bundle/themes/anodyne/images</samp> to our skin's images folder then upload the <dfn>jquery.ui.theme.css</dfn> file to the skin's css folder. We don't need to make any other changes related to the widget theme now because Nova is smart enough to know that if the theme stylesheet is in the skin to use it.</p>
 
-<p class="important"><strong>Note:</strong> Now that we've gone through that, it's my unfortunate duty to tell you that the main section doesn't actually use any UI widgets, but in the event we add UI widgets to the main section, you'll want to make sure you go through these steps. The admin section uses UI widgets extensively.</p>
+<p class="alert alert-info"><strong>Note:</strong> Now that we've gone through that, it's my unfortunate duty to tell you that the main section doesn't actually use any UI widgets, but in the event we add UI widgets to the main section, you'll want to make sure you go through these steps. The admin section uses UI widgets extensively.</p>
 
 <p>In the next section we're going to go through the stylesheet and customize our skin a bit!</p>
 

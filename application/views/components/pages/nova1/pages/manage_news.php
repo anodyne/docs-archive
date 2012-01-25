@@ -12,7 +12,7 @@
 
 <p>Like most other components in Nova, you can easily edit a news item by clicking on the edit icon and making your changes in the pop-up window that appears. Clicking <strong>Submit</strong> will complete the update and the changes will be seen immediately for that news item.</p>
 
-<p class="important"><strong>Note:</strong> News items that have been edited will not be emailed out to the players again. If it's an important change, you're better off deleting the news item and creating a new one.</p>
+<p class="alert alert-info"><strong>Note:</strong> News items that have been edited will not be emailed out to the players again. If it's an important change, you're better off deleting the news item and creating a new one.</p>
 
 <h2>Deleting a News Item</h2>
 

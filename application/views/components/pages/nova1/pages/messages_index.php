@@ -8,7 +8,7 @@
 
 <p>Clicking on the checkboxes and clicking remove will set the message's flag to n, meaning you will not see the message in your inbox/outbox again. While the message has not been deleted, there is no way to recover the message to your inbox/outbox without the game master manually going in to the database.</p>
 
-<p class="important"><strong>Note:</strong> Use caution when removing items from your inbox/outbox!</p>
+<p class="alert alert-info"><strong>Note:</strong> Use caution when removing items from your inbox/outbox!</p>
 
 <h3>Permissions</h3>
 

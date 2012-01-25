@@ -52,7 +52,7 @@ echo $string;
 
 <p>CodeIgniter comes with a wide variety of pre-built helpers that are handy in doing simple tasks, but every so often, you might need to change the default behavior of one of those helpers. The framework actually provides a simple way of extending and overwriting core helpers by simply using the <dfn>MY_</dfn> prefix in the name of the helper.</p>
 
-<p class="important"><strong>Note:</strong> This only applies to CodeIgniter's core helpers and not helpers built by Anodyne.</p>
+<p class="alert alert-info"><strong>Note:</strong> This only applies to CodeIgniter's core helpers and not helpers built by Anodyne.</p>
 
 <h3>Adding to Core Helpers</h3>
 

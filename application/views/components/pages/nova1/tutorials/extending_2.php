@@ -20,7 +20,7 @@ $this->template->render();</pre>
 
 <p>These 3 lines of code are paramount to getting Nova to display what we want; these tell the template where to pull the content from. The first line tells our method to write something to the title region, and the second parameter tells it what to write. In this case, we're adding Ranks to the title of the page after the ship name. The second line tells our method to write a view to the content region. The second parameter tells the template where to look for the view file, and the third parameter is actually going to be passing data from the controller method to the view file for the browser to display. Finally, the last line renders the template in it's entirety.</p>
 
-<p class="important"><strong>Note:</strong> Without the last line, your page won't display, it'll just be a blank, white page.</p>
+<p class="alert alert-info"><strong>Note:</strong> Without the last line, your page won't display, it'll just be a blank, white page.</p>
 
 <p>In the line that writes the view file to the content region, you see the $view_loc variable where I said we were telling the system where to look for our view file. That variable will contain information about where our view file is. In our method, above the code we just added, let's add the following line of code:</p>
 

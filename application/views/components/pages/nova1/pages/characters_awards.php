@@ -8,7 +8,7 @@
 
 <p>To give a character an award, simply select the award from the dropdown menu. After selecting the award, Nova will display the description for the award to make sure you have the right one. If you're satisfied it's the award you want to give, put your reason in and click <strong>Submit</strong> and the award will immediately be added to the database and will be seen on their character bio.</p>
 
-<p class="important"><strong>Note:</strong> Nova determines which awards should be shown in the dropdown menu based on the type of character it is. Non-playing characters are only allowed to receive in character awards. Playing characters can receive all awards.</p>
+<p class="alert alert-info"><strong>Note:</strong> Nova determines which awards should be shown in the dropdown menu based on the type of character it is. Non-playing characters are only allowed to receive in character awards. Playing characters can receive all awards.</p>
 
 <h2>Removing an Award</h2>
 
