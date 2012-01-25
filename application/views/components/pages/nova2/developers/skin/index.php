@@ -24,7 +24,7 @@
 		<ul>
 			<!--<li>Change colors and fonts in a skin</li>
 			<li>Add/change the header image of a skin</li>-->
-			<li><em>No basic skinning tutorials available</em></li>
+			<li><em class="muted">No basic skinning tutorials available</em></li>
 		</ul>
 	</div>
 	
@@ -36,7 +36,7 @@
 		
 		<ul>
 			<!--<li>Create a new skin</li>-->
-			<li><em>No intermediate skinning tutorials available</em></li>
+			<li><em class="muted">No intermediate skinning tutorials available</em></li>
 		</ul>
 	</div>
 	
@@ -48,7 +48,7 @@
 		
 		<ul>
 			<!--<li>Using icons in the main navigation</li>-->
-			<li><em>No advanced skinning tutorials available</em></li>
+			<li><em class="muted">No advanced skinning tutorials available</em></li>
 		</ul>
 	</div>
 </div>

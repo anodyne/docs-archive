@@ -50,7 +50,7 @@
 
 <p>The following table shows the model object name assigned throughout the system:</p>
 
-<table cellpadding="0" cellspacing="1" border="0" class="zebra-striped">
+<table cellpadding="0" cellspacing="1" border="0" class="table table-bordered">
 	<thead>
 		<tr>
 			<th class="blue">Model</th>

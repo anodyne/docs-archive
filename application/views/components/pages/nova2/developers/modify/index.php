@@ -47,7 +47,7 @@
 			<li>Create and modify helpers</li>
 			<li>Create and modify libraries</li>
 			<li><a href="<?php echo Url::site('nova2/modify/github');?>">Nova and Github</a></li>-->
-			<li><em>No advanced modification tutorials available</em></li>
+			<li><em class="muted">No advanced modification tutorials available</em></li>
 		</ul>
 	</div>
 </div>
