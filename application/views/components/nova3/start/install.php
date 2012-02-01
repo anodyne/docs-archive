@@ -13,7 +13,7 @@
 
 <p>To begin the installation, you need to upload the Nova 3 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.</p>
 
-<p class="alert alert-info">Once you've uploaded the files, you'll need to make sure that you have the proper permissions on the application/cache and application/logs directory. You should set the permissions to 777. If you don't know how to do that, contact your host.</p>
+<p class="alert alert-info">Once you've uploaded the files, you'll need to make sure that you have the proper permissions on the <em>application/cache</em> and <em>application/logs</em> directories. You should set the permissions to <strong>777</strong>. If you don't know how to do that, contact your host.</p>
 
 <h2>Step 2: Setting Up the Database Connection</h2>
 
@@ -25,13 +25,22 @@
 
 <h3>Explaining the Options</h3>
 
-<ul>
-	<li><strong>Database Name</strong> &ndash; The name of the database you're trying to connect to and install Nova to in to. If you don't know the name of your database, contact your host.</li>
-	<li><strong>Username</strong> &ndash; The username used to connect to your database. This may or may not be the same as your FTP username, so if you don't know, contact your host.</li>
-	<li><strong>Password</strong> &ndash; The password used to connect to your database. This may or may not be the same as your FTP password, so if you don't know, contact your host.</li>
-	<li><strong>Database Host</strong> &ndash; This is where the database lives. 99% of the time, this will be <em>localhost</em> though if your host has a different setup, they may have sent you a different host name. If you aren't sure about this, contact your host.</li>
-	<li><strong>Table Prefix</strong> &ndash; This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to <em>nova_</em> by default.</li>
-</ul>
+<dl>
+	<dt>Database Name</dt>
+	<dd>The name of the database you're trying to connect to and install Nova to in to. If you don't know the name of your database, contact your host.</dd>
+	
+	<dt>Username</dt>
+	<dd>The username used to connect to your database. This may or may not be the same as your FTP username, so if you don't know, contact your host.</dd>
+	
+	<dt>Password</dt>
+	<dd>The password used to connect to your database. This may or may not be the same as your FTP password, so if you don't know, contact your host.</dd>
+	
+	<dt>Database Host</dt>
+	<dd>This is where the database lives. 99% of the time, this will be <em>localhost</em> though if your host has a different setup, they may have sent you a different host name. If you aren't sure about this, contact your host.</dd>
+	
+	<dt>Table Prefix</dt>
+	<dd>This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to <em>nova_</em> by default.</dd>
+</dl>
 
 <h2>Step 4: Install the System</h2>
 
