@@ -13,7 +13,7 @@ $application = 'application';
  *
  * @see  http://kohanaframework.org/guide/about.install#modules
  */
-$modules = '../anodynecore/modules';
+$modules = '../assets/core/modules';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -21,7 +21,7 @@ $modules = '../anodynecore/modules';
  *
  * @see  http://kohanaframework.org/guide/about.install#system
  */
-$system = '../anodynecore/system';
+$system = '../assets/core/system';
 
 /**
  * The default extension of resource files. If you change this, all resources
@@ -73,7 +73,7 @@ define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
 define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
 define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
 
-define('ASSETS', 'http://localhost/anodyne/anodynecore/modules/anodyne/');
+define('ASSETS', 'http://localhost/anodyne/assets/core/modules/anodyne/');
 
 // Clean up the configuration vars
 unset($application, $modules, $system);
