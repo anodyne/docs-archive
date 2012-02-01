@@ -6,7 +6,7 @@
 
 <p>Once you've finished backing up your stuff, remove all of the files in your site.</p>
 
-<p class="alert alert-danger">When we say remove, we mean it. Delete every Nova file on your server and <strong>then</strong> upload the new copy. If you don't do this, there's no telling what could go wrong.</p>
+<p class="alert alert-danger">When we say remove, we mean it. Delete every Nova file on your server and <strong>then</strong> upload the new copy. There have been a massive number of changes to Nova and if you don't delete all the files and upload fresh copies, there's no telling what your FTP client could do to the files.</p>
 
 <h2>Step 2: Upload Nova 2</h2>
 

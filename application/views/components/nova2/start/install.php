@@ -9,15 +9,15 @@
 	<li>Your FTP username and password</li>
 </ul>
 
-<h2>Step 1: Upload Nova</h2>
+<h2>Step 1 <small>Upload Nova</small></h2>
 
 <p>To begin the installation, you need to upload the Nova 2 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.</p>
 
-<h2>Step 2: Configure Nova</h2>
+<h2>Step 2 <small>Configure Nova</small></h2>
 
 <p>Before beginning the installation, you can choose to change any of Nova's configuration options in the config files located in the <samp>application/config</samp> directory. This is completely optional and Nova 2 will install fine without any changes to any files in the <samp>config</samp> directory.</p>
 
-<h2>Step 3: Setting Up the Database Connection</h2>
+<h2>Step 3 <small>Setting Up the Database Connection</small></h2>
 
 <p>This is the part where everyone panics and says it's too complicated and difficult to get started. This is also the part where we prove you wrong.</p>
 
@@ -35,7 +35,7 @@
 	<li><strong>Table Prefix</strong> &ndash; This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to <em>nova_</em> by default.</li>
 </ul>
 
-<h2>Step 4: Install the System</h2>
+<h2>Step 4 <small>Install the System</small></h2>
 
 <p>Once you've stepped through creating the config file, you'll be sent over to the Install Center where you'll be given all your available options for installing Nova 2. Select Fresh Install from the list and follow the prompts to install Nova 2 in to your database. The steps of the install process are as follows:</p>
 
@@ -47,7 +47,7 @@
 	<li>Set up some basic system settings</li>
 </ol>
 
-<h2>Step 5: Post-Installation</h2>
+<h2>Step 5 <small>Post-Installation</small></h2>
 
 <p>At the end of the installation Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:</p>
 

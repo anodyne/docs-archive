@@ -4,8 +4,8 @@
 
 <ul>
 	<li>All new file structure that's easier to update</li>
-	<li>Updated to CodeIgniter 2.0.3 (up from version 1.7.3)</li>
-	<li>Updated to jQuery 1.6 (up from version 1.4)</li>
+	<li>Updated to CodeIgniter 2.1 (up from version 1.7.3)</li>
+	<li>Updated to jQuery 1.7 (up from version 1.4)</li>
 	<li>Removed the banned.php file and replaced it with a messages.php file that handles more errors than just bans</li>
 	<li>Re-wrote the license to be even more flexible</li>
 	<li>Updated the system requirements to require PHP 5.1 and higher</li>
@@ -69,8 +69,8 @@
 <h3>Private Messages</h3>
 
 <ul>
+	<li>Added the ability to mark all unread private messages as read</li>
 	<li>Fixed bugs with subject lines when replying and forwarding private messages</li>
-	
 </ul>
 
 <h3>Site Management</h3>

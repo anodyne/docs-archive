@@ -6,17 +6,17 @@
 
 <p>You probably read the part above about "most" of your SMS data being upgraded, but what exactly will and won't be upgraded? The table below will show you the different pieces and whether they'll be upgraded or not.</p>
 
-<table class="zebra-striped">
+<table class="table table-striped table-bordered">
 	<thead>
 		<tr>
-			<th class="blue">Item</th>
-			<th class="blue">Status</th>
+			<th class="blue span3">Item</th>
+			<th class="blue span1">Status</th>
 			<th class="blue">Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td width="25%">Access Levels</td>
+			<td>Access Levels</td>
 			<td class="smsupgrade-icon"><img src="<?php echo Url::base();?>application/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
 			<td>If you've made changes to the default access levels in SMS they will not be saved since Nova uses a new user access control system.</td>
 		</tr>
@@ -144,19 +144,19 @@
 	<li>Your FTP username and password</li>
 </ul>
 
-<h2>Step 1: Backup and Remove</h2>
+<h2>Step 1 <small>Backup and Remove</small></h2>
 
 <p>Before you get started, you should export your SMS database from phpMyAdmin as a .sql file in case something happens during the upgrade process. Don't drop the tables or do anything like that since you'll still need all the information in those database tables. You should also backup all your SMS files to your desktop in case you need them. Once you've done both backups, delete all the SMS files on your server.</p>
 
-<h2>Step 2: Upload Nova</h2>
+<h2>Step 2 <small>Upload Nova</small></h2>
 
 <p>Next, you'll need to upload the Nova 2 files up to your server where the SMS files were. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.</p>
 
-<h2>Step 3: Configure Nova</h2>
+<h2>Step 3 <small>Configure Nova</small></h2>
 
 <p>Before beginning the upgrade, you can choose to change any of Nova's configuration options in the config files located in the <samp>application/config</samp> directory. This is completely optional and Nova 2 will install fine without any changes to any files in the <samp>config</samp> directory.</p>
 
-<h2>Step 4: Setting Up the Database Connection</h2>
+<h2>Step 4 <small>Setting Up the Database Connection</small></h2>
 
 <p>This is the part where everyone panics and says it's too complicated and difficult to get started. This is also the part where we prove you wrong.</p>
 
@@ -174,7 +174,7 @@
 	<li><strong>Table Prefix</strong> &ndash; This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to <em>nova_</em> by default.</li>
 </ul>
 
-<h2>Step 5: Upgrade to Nova</h2>
+<h2>Step 5 <small>Upgrade to Nova</small></h2>
 
 <p>When you start in to the upgrade process, the first thing that will happen is that Nova 2 will be installed as normal, except you won't be prompted to create your character and set the system settings. Once Nova is installed, there are 3 distinct sections to the upgrade process, but don't worry, they're all very straightforward.</p>
 
@@ -194,7 +194,7 @@
 
 <p>In addition, you can select the members of the crew that should have system administrator rights. Once you've set the password and selected the users, click the button to run the process. Once the process has finished running (you'll know because icons will indicate the success/failure of the two final steps), you'll be able to continue on to your site.</p>
 
-<h2>Step 6: That's It?</h2>
+<h2>Step 6 <small>That's It?</small></h2>
 
 <p>Yep, that's it. Pretty easy, huh?</p>
 
