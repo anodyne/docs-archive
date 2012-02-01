@@ -21,21 +21,21 @@ class Controller_Nova1_Developers extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova1/developers/index');
+		$this->template->content = View::factory('components/nova1/developers/index');
 		
 		$this->template->title.= 'Developers';
 	}
 	
 	public function action_fields()
 	{
-		$this->template->content = View::factory('components/pages/nova1/developers/dbfields');
+		$this->template->content = View::factory('components/nova1/developers/dbfields');
 		
 		$this->template->title.= 'Database Field Index';
 	}
 	
 	public function action_images()
 	{
-		$this->template->content = View::factory('components/pages/nova1/developers/images');
+		$this->template->content = View::factory('components/nova1/developers/images');
 		
 		$this->template->title.= 'Image Index';
 	}

@@ -24,7 +24,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova1/pages/index');
+		$this->template->content = View::factory('components/nova1/pages/index');
 		$this->template->title.= 'Pages';
 	}
 	
@@ -49,7 +49,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -95,7 +95,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -141,7 +141,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -172,7 +172,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -218,7 +218,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -309,7 +309,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -340,7 +340,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -393,7 +393,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -449,7 +449,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -535,7 +535,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -646,7 +646,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -672,7 +672,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -718,7 +718,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -774,7 +774,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
@@ -810,7 +810,7 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova1/pages/'.$view);
+		$this->template->content = View::factory('components/nova1/pages/'.$view);
 		$this->template->content->header = $header;
 		$this->template->title.= $header;
 	}
