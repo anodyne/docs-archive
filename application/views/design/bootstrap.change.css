@@ -6,6 +6,6 @@ table th {
 	font-size: 1.3em;
 }
 
-.label.error {
+.label-error {
   background-color: #c43c35;
 }
