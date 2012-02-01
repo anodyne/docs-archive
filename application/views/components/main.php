@@ -29,7 +29,7 @@
 		<div class="thumbnail">
 			<div class="caption">
 				<h2>Nova 3 <small>The next generation</small></h2>
-				<p>Despite being in early development, the Nova 3 user guide contains information about troubleshooting and installation.</p>
+				<p>Despite being in early development, the Nova 3 user guide contains information about requirements and installation.</p>
 				<p><a href="<?php echo Url::site('nova3/overview/index');?>" class="btn">Go to Nova 3 user guide</a></p>
 			</div>
 		</div>
