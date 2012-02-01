@@ -17,14 +17,14 @@ class Controller_Nova2_Skin extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/developers/skin/index');
+		$this->template->content = View::factory('components/nova2/developers/skin/index');
 		
 		$this->template->title.= 'Skinning Nova';
 	}
 	
 	public function action_changes()
 	{
-		$this->template->content = View::factory('components/pages/nova2/developers/skin/changes');
+		$this->template->content = View::factory('components/nova2/developers/skin/changes');
 		
 		$this->template->title.= 'Changes to Skinning in Nova 2';
 	}

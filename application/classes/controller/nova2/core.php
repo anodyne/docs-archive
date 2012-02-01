@@ -20,7 +20,7 @@ class Controller_Nova2_Core extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova2/developers/core/index');
+		$this->template->content = View::factory('components/nova2/developers/core/index');
 		
 		$this->template->title.= 'Nova Core';
 	}
@@ -43,7 +43,7 @@ class Controller_Nova2_Core extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova2/developers/core/'.$view);
+		$this->template->content = View::factory('components/nova2/developers/core/'.$view);
 		$this->template->content->header = $title;
 		$this->template->content->helper = $helper;
 		$this->template->title.= $title.' Helper';
@@ -77,7 +77,7 @@ class Controller_Nova2_Core extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova2/developers/core/'.$view);
+		$this->template->content = View::factory('components/nova2/developers/core/'.$view);
 		$this->template->content->header = $title;
 		$this->template->content->library = $library;
 		$this->template->title.= $title.' Library';
@@ -152,7 +152,7 @@ class Controller_Nova2_Core extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/pages/nova2/developers/core/'.$view);
+		$this->template->content = View::factory('components/nova2/developers/core/'.$view);
 		$this->template->content->header = $title;
 		$this->template->content->model = $model;
 		$this->template->title.= $title.' Model';
