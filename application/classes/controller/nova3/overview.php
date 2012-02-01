@@ -17,7 +17,7 @@ class Controller_Nova3_Overview extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova3/overview/index');
+		$this->template->content = View::factory('components/nova3/overview/index');
 
 		$this->template->title.= 'Main';
 	}

@@ -17,21 +17,21 @@ class Controller_Nova3_Start extends Controller_Template {
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/pages/nova3/start/index');
+		$this->template->content = View::factory('components/nova3/start/index');
 		
 		$this->template->title.= 'Getting Started';
 	}
 	
 	public function action_install()
 	{
-		$this->template->content = View::factory('components/pages/nova3/start/install');
+		$this->template->content = View::factory('components/nova3/start/install');
 		
 		$this->template->title.= 'Fresh Install';
 	}
 	
 	public function action_requirements()
 	{
-		$this->template->content = View::factory('components/pages/nova3/start/requirements');
+		$this->template->content = View::factory('components/nova3/start/requirements');
 		
 		$this->template->title.= 'Nova 3 Requirements';
 	}
@@ -41,12 +41,12 @@ class Controller_Nova3_Start extends Controller_Template {
 		switch ($version)
 		{
 			case '300_to_301':
-				$view = 'components/pages/nova3/start/update/300_to_301';
+				$view = 'components/nova3/start/update/300_to_301';
 				$title = 'Nova 3.0 to Nova 3.0.1';
 			break;
 			
 			default:
-				$view = 'components/pages/nova3/start/update';
+				$view = 'components/nova3/start/update';
 				$title = 'Updating Nova';
 			break;
 		}
@@ -59,7 +59,7 @@ class Controller_Nova3_Start extends Controller_Template {
 	
 	public function action_whatsnew()
 	{
-		$this->template->content = View::factory('components/pages/nova3/start/whatsnew');
+		$this->template->content = View::factory('components/nova3/start/whatsnew');
 		
 		$this->template->title.= "What's New in Nova 3";
 	}
