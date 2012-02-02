@@ -53,7 +53,7 @@ $controllers = array(
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo $title;?></title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="<?php echo Url::base();?>favicon.ico" type="image/x-icon">
 		
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
