@@ -1,4 +1,6 @@
-@import url(bootstrap.change.css);
+table .blue{color:#076cb0;border-bottom-color:#076cb0;}
+table th{font-size:1.3em;}
+.label-error{background-color:#c43c35;}
 #page_container{min-height:100%;}
 header{background:#577f98 url(images/glass-light-blue.jpg) no-repeat top center;}
 header .logo{width:396px;background:transparent url(images/sprite.png) no-repeat 0 -24px;}
