@@ -62,6 +62,7 @@ $controllers = array(
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-transition.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tooltip.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tab.js"></script>
 		
 		<!--[if IE 8]>
 		<style type="text/css">
