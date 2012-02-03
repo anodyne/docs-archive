@@ -100,24 +100,26 @@ $controllers = array(
 				<div class="inner-container"></div>
 				<div class="row">
 					<div class="span12">
-						<ul class="breadcrumb">
-							<li><a href="<?php echo Url::site();?>">Home</a></li>
-							
-							<?php if ($req->directory()): ?>
-								<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
-								<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
-								<?php endif;?>
+						<?php if ($req->controller() != 'main' and $req->action() != 'index'): ?>
+							<ul class="breadcrumb">
+								<li><a href="<?php echo Url::site();?>">Home</a></li>
 								
-								<?php if ($req->controller()): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
+								<?php if ($req->directory()): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
+									<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
+									<?php endif;?>
 									
-									<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
-										<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
+									<?php if ($req->controller()): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
+										
+										<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
+											<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
+										<?php endif;?>
 									<?php endif;?>
 								<?php endif;?>
-							<?php endif;?>
-						</ul>
+							</ul>
+						<?php endif;?>
 						
 						<?php echo $content;?>
 					</div>
