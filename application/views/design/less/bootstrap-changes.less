@@ -1,9 +1,15 @@
-table .blue {
+.table {
+	font-size: 14px;
+}
+.table .blue {
 	color: #076cb0;
 	border-bottom-color: #076cb0;
 }
-table th {
-	font-size: 1.3em;
+.table th {
+	font-size: 1.2em;
+}
+.table td {
+	line-height: 1.6;
 }
 
 .label-error {
@@ -27,4 +33,7 @@ table th {
 .nav-pills > li > a {
 	outline: 0;
 	text-shadow: 0 0 0 transparent;
+}
+.nav-pills .active > a, .nav-pills .active > a:hover {
+	background: @color-base;
 }
