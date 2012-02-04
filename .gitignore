@@ -1,2 +1,5 @@
-core/logs/
-!core/logs/index.html
+application/logs/
+!application/logs/.gitkeep
+
+application/cache/
+!application/cache/.gitkeep

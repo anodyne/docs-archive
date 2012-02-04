@@ -1,124 +1,113 @@
 <?php
-/*
-|---------------------------------------------------------------
-| PHP ERROR REPORTING LEVEL
-|---------------------------------------------------------------
-|
-| By default CI runs with error reporting set to ALL.  For security
-| reasons you are encouraged to change this when your site goes live.
-| For more info visit:  http://www.php.net/error_reporting
-|
-*/
-	error_reporting(E_ALL);
-	//error_reporting(0);
 
-/*
-|---------------------------------------------------------------
-| SYSTEM FOLDER NAME
-|---------------------------------------------------------------
-|
-| This variable must contain the name of your "system" folder.
-| Include the path if the folder is not in the same  directory
-| as this file.
-|
-| NO TRAILING SLASH!
-|
-*/
-	$system_folder = "core";
+/**
+ * The directory in which your application specific resources are located.
+ * The application directory must contain the bootstrap.php file.
+ *
+ * @see  http://kohanaframework.org/guide/about.install#application
+ */
+$application = 'application';
 
-/*
-|---------------------------------------------------------------
-| APPLICATION FOLDER NAME
-|---------------------------------------------------------------
-|
-| If you want this front controller to use a different "application"
-| folder then the default one you can set its name here. The folder 
-| can also be renamed or relocated anywhere on your server.
-| For more info please see the user guide:
-| http://codeigniter.com/user_guide/general/managing_apps.html
-|
-|
-| NO TRAILING SLASH!
-|
-*/
-	$abspath = getcwd();
-	$app_folder = "application";
-	
-	$application_folder = $abspath . "/" . $app_folder;
+/**
+ * The directory in which your modules are located.
+ *
+ * @see  http://kohanaframework.org/guide/about.install#modules
+ */
+$modules = '../assets/core/modules';
 
-/*
-|===============================================================
-| END OF USER CONFIGURABLE SETTINGS
-|===============================================================
-*/
+/**
+ * The directory in which the Kohana resources are located. The system
+ * directory must contain the classes/kohana.php file.
+ *
+ * @see  http://kohanaframework.org/guide/about.install#system
+ */
+$system = '../assets/core/system';
 
+/**
+ * The default extension of resource files. If you change this, all resources
+ * must be renamed to use the new extension.
+ *
+ * @see  http://kohanaframework.org/guide/about.install#ext
+ */
+define('EXT', '.php');
 
-/*
-|---------------------------------------------------------------
-| SET THE SERVER PATH
-|---------------------------------------------------------------
-|
-| Let's attempt to determine the full-server path to the "system"
-| folder in order to reduce the possibility of path problems.
-| Note: We only attempt this if the user hasn't specified a 
-| full server path.
-|
-*/
-if (strpos($system_folder, '/') === FALSE)
+/**
+ * Set the PHP error reporting level. If you set this in php.ini, you remove this.
+ * @see  http://php.net/error_reporting
+ *
+ * When developing your application, it is highly recommended to enable notices
+ * and strict warnings. Enable them by using: E_ALL | E_STRICT
+ *
+ * In a production environment, it is safe to ignore notices and strict warnings.
+ * Disable them by using: E_ALL ^ E_NOTICE
+ *
+ * When using a legacy application with PHP >= 5.3, it is recommended to disable
+ * deprecated notices. Disable with: E_ALL & ~E_DEPRECATED
+ */
+error_reporting(E_ALL | E_STRICT);
+
+/**
+ * End of standard configuration! Changing any of the code below should only be
+ * attempted by those with a working knowledge of Kohana internals.
+ *
+ * @see  http://kohanaframework.org/guide/using.configuration
+ */
+
+// Set the full path to the docroot
+define('DOCROOT', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
+
+// Make the application relative to the docroot, for symlink'd index.php
+if ( ! is_dir($application) AND is_dir(DOCROOT.$application))
+	$application = DOCROOT.$application;
+
+// Make the modules relative to the docroot, for symlink'd index.php
+if ( ! is_dir($modules) AND is_dir(DOCROOT.$modules))
+	$modules = DOCROOT.$modules;
+
+// Make the system relative to the docroot, for symlink'd index.php
+if ( ! is_dir($system) AND is_dir(DOCROOT.$system))
+	$system = DOCROOT.$system;
+
+// Define the absolute paths for configured directories
+define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
+define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
+define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
+
+define('ASSETS', 'http://localhost/anodyne/assets/core/modules/anodyne/');
+
+// Clean up the configuration vars
+unset($application, $modules, $system);
+
+if (file_exists('install'.EXT))
 {
-	if (function_exists('realpath') AND @realpath(dirname(__FILE__)) !== FALSE)
-	{
-		$system_folder = realpath(dirname(__FILE__)).'/'.$system_folder;
-	}
-}
-else
-{
-	// Swap directory separators to Unix style for consistency
-	$system_folder = str_replace("\\", "/", $system_folder); 
-}
-
-/*
-|---------------------------------------------------------------
-| DEFINE APPLICATION CONSTANTS
-|---------------------------------------------------------------
-|
-| EXT		- The file extension.  Typically ".php"
-| FCPATH	- The full server path to THIS file
-| SELF		- The name of THIS file (typically "index.php)
-| BASEPATH	- The full server path to the "system" folder
-| APPPATH	- The full server path to the "application" folder
-| APPFOLDER - The name of the application folder (if it's changed)
-|
-*/
-define('EXT', '.'.pathinfo(__FILE__, PATHINFO_EXTENSION));
-define('FCPATH', __FILE__);
-define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
-define('BASEPATH', $system_folder.'/');
-define('APPFOLDER', $app_folder);
-
-if (is_dir($application_folder))
-{
-	define('APPPATH', $application_folder.'/');
-}
-else
-{
-	if ($application_folder == '')
-	{
-		$application_folder = 'application';
-	}
-
-	define('APPPATH', BASEPATH.$application_folder.'/');
+	// Load the installation check
+	return include 'install'.EXT;
 }
 
-/*
-|---------------------------------------------------------------
-| LOAD THE FRONT CONTROLLER
-|---------------------------------------------------------------
-|
-| And away we go...
-|
-*/
-require_once BASEPATH.'codeigniter/CodeIgniter'.EXT;
+/**
+ * Define the start time of the application, used for profiling.
+ */
+if ( ! defined('KOHANA_START_TIME'))
+{
+	define('KOHANA_START_TIME', microtime(TRUE));
+}
 
-/* End of file index.php */
-/* Location: ./index.php */
+/**
+ * Define the memory usage at the start of the application, used for profiling.
+ */
+if ( ! defined('KOHANA_START_MEMORY'))
+{
+	define('KOHANA_START_MEMORY', memory_get_usage());
+}
+
+// Bootstrap the application
+require APPPATH.'bootstrap'.EXT;
+
+/**
+ * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
+ * If no source is specified, the URI will be automatically detected.
+ */
+echo Request::factory()
+	->execute()
+	->send_headers()
+	->body();

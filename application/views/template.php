@@ -1,124 +1,152 @@
-<?php include_once APPPATH .'views/modules/' . $this->router->fetch_module() .'/assets.php';?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<?php
+
+// grab the current request object
+$req = Request::current();
+
+// set up the translation for directories
+$directories = array(
+	'nova1' 	=> 'Nova 1',
+	'nova2' 	=> 'Nova 2',
+	'nova3' 	=> 'Nova 3',
+	'satellite'	=> 'Satellite',
+	'sms'		=> 'SMS',
+);
+
+// set up the translation for controllers
+$controllers = array(
+	'nova1' => array(
+		'overview'		=> 'Overview',
+		'developers'	=> 'Developers',
+		'helpers'		=> 'Helpers',
+		'libraries'		=> 'Libraries',
+		'models'		=> 'Models',
+		'tour'			=> 'Take a Tour',
+		'tutorials'		=> 'Tutorials',
+		'pages'			=> 'Page Guides',
+	),
+	'nova2' => array(
+		'overview'		=> 'Overview',
+		'start'			=> 'Getting Started',
+		'developers'	=> 'Developers',
+		'everything'	=> 'The Kitchen Sink',
+		'modify'		=> 'Modifying Nova',
+		'skin'			=> 'Skinning Nova',
+		'core'			=> 'The Nova Core',
+	),
+	'nova3' => array(
+		'overview'		=> 'Overview',
+		'start'			=> 'Getting Started',
+		'developers'	=> 'Developers',
+		'everything'	=> 'The Kitchen Sink',
+		'modify'		=> 'Modifying Nova',
+		'skin'			=> 'Skinning Nova',
+		'core'			=> 'The Nova Core',
+	),
+	'satellite' => array(),
+	'sms' => array(
+		'overview'		=> 'Overview',
+	),
+);
+
+?><!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8">
 		<title><?php echo $title;?></title>
+		<link rel="icon" href="<?php echo Url::base();?>favicon.ico" type="image/x-icon">
 		
-		<!-- STYLESHEETS -->
-		<?php echo link_tag($css_main); ?>
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
+		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/custom.css">
 		
-		<script type="text/javascript" src="<?php echo base_url() . APPFOLDER;?>/assets/js/jquery.js"></script>
-		<script type="text/javascript" src="<?php echo base_url() . APPFOLDER;?>/assets/js/jquery.qtip.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url() . APPFOLDER;?>/assets/js/jquery.scrollto.min.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tooltip.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tab.js"></script>
 		
-		<!-- JAVASCRIPT FILES -->
-		<?php echo $javascript;?>
+		<!--[if IE 8]>
+		<style type="text/css">
+			#page_container { display:table; height:100%; }
+		</style>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('a[tooltip]').each(function(){
-					$(this).qtip({
-						content: $(this).attr('tooltip'),
-						style: { 
-							border: {
-								width: 1,
-								radius: 3,
-								color: '#444'
-							},
-							background: '#888',
-							color: 'white',
-							fontSize: '90%'
-						}
-					});
-				});
-				
-				$('a.shortcut').click(function(){
-					var id = $(this).attr('myID');
-					
-					$.scrollTo('.' + id, 900, {easing:'swing'});
-					
-					return false;
-				});
-				
-				$('a.backtop').click(function(){
-					$.scrollTo('h1:first', 900, {easing:'swing'});
-					
-					return false;
-				});
-				
-				$('table.zebra tbody > tr:nth-child(odd)').addClass('alt');
+				$('.tip').tooltip();
 			});
 		</script>
-		
-		<meta http-equiv='expires' content='-1' />
-		<meta http-equiv= 'pragma' content='no-cache' />
-		<meta name='robots' content='all' />
 	</head>
 	<body>
-		<!-- HEAD -->
-		<div id="head">
-			<div class="wrapper">
-				<ul id="nav-main">
-					<li><a href="<?php echo site_url('main/index');?>"<?php if ($this->router->fetch_module() == 'main'): echo ' class="active-main"'; endif;?>>Home</a></li>
-					<li><a href="<?php echo site_url('nova/overview/index');?>"<?php if ($this->router->fetch_module() == 'nova'): echo ' class="active-nova"'; endif;?>>Nova</a></li>
-					<!--<li><a href="<?php echo site_url('nova2/overview/index');?>"<?php if ($this->router->fetch_module() == 'nova2'): echo ' class="active-nova"'; endif;?>>Nova 2</a></li>-->
-					<li><a href="<?php echo site_url('sms/overview/index');?>"<?php if ($this->router->fetch_module() == 'sms'): echo ' class="active-sms"'; endif;?>>SMS</a></li>
-				</ul>
-				
-				<?php if ($this->router->fetch_module() == 'main'): ?>
-					<?php echo anchor('main/index', img($logo));?>
-				<?php else: ?>
-					<?php echo anchor($this->router->fetch_module() .'/overview/index', img($logo));?>
-				<?php endif;?>
-			</div>
-		</div>
-		
-		<!-- BODY -->
-		<div id="body">
-			<div class="wrapper">
-				<?php include_once APPPATH .'views/modules/' . $this->router->fetch_module() .'/head.php';?>
-				
-				<!-- PAGE CONTENT -->
-				<div class="content">
-					<?php include_once APPPATH .'views/search.php'; ?>
-					<?php if ($this->uri->segment(3) != 'index' && $this->uri->segment(3) !== FALSE): ?>
-						<ul id="breadcrumb">
-							<li><?php echo anchor($this->router->fetch_module() .'/'. $this->uri->segment(2, 'overview'), ucfirst($this->uri->segment(2, 'overview')));?></li>
-							<?php if (isset($sub) && $sub > ''): ?>
-								<li>&laquo;</li>
-								<li><?php echo anchor($this->router->fetch_module() .'/'. $this->uri->segment(2) .'/'. $this->uri->segment(3, 'index'), $sub);?></li>
-							<?php endif;?>
+		<div id="page_container">
+			<header>
+				<div class="container">
+					<div class="logo"></div>
+					<nav>
+						<ul>
+							<li><a href="<?php echo Url::site();?>" id="nav-home"></a></li>
+							<li><a href="<?php echo Url::site('nova2');?>" id="nav-nova2"></a></li>
+							<!--<li><a href="<?php echo Url::site('nova3');?>" id="nav-nova3"></a></li>-->
+							<li><a href="<?php echo Url::site('sms');?>" id="nav-sms"></a></li>
+							<!--<li><a href="<?php echo Url::site('satellite');?>" id="nav-satellite"></a></li>-->
 						</ul>
+					</nav>
+				</div>
+			</header>
+			
+			<div class="container">
+				<div class="inner-container"></div>
+				<div class="row">
+					<div class="span12">
+						<?php if ($req->controller() != 'main' and $req->action() != 'index'): ?>
+							<ul class="breadcrumb">
+								<li><a href="<?php echo Url::site();?>">Home</a></li>
+								
+								<?php if ($req->directory()): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory());?>"><?php echo $directories[$req->directory()];?></a></li>
+									<?php if ($req->directory() == 'nova2' and ($req->controller() == 'modify' or $req->controller() == 'skin' or $req->controller() == 'core')): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Url::site('nova2/developers/index');?>">Developers</a></li>
+									<?php endif;?>
+									
+									<?php if ($req->controller()): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller());?>"><?php echo $controllers[$req->directory()][$req->controller()];?></a></li>
+										
+										<?php if ($req->param('id') and ($req->controller() == 'pages' or ($req->controller() == 'pages' and $req->param('id') != 'index'))): ?>
+											<li><span class="divider">/</span> <a href="<?php echo Url::site($req->directory().'/'.$req->controller().'/'.$req->action());?>"><?php echo ucfirst($req->action());?></a></li>
+										<?php endif;?>
+									<?php endif;?>
+								<?php endif;?>
+							</ul>
+						<?php endif;?>
 						
-						<div class="clear"></div>
-					<?php endif;?>
-				
-					<?php echo $content;?>
-					
-					<?php if (isset($related)):?>
-					<br />
-					<p class="related"><strong>See Also</strong>:
-						<?php $count = count($related);?>
-						<?php $i = 0;?>
-						<?php foreach ($related as $url => $title): ?>
-							<?php echo anchor($url, $title);?>
-							
-							<?php if ($count > 0 && $i < ($count -1)): ?>
-								&nbsp; | &nbsp;
-							<?php endif;?>
-							
-							<?php ++$i;?>
-						<?php endforeach;?>
-					</p>
-					<?php endif;?>
+						<?php echo $content;?>
+					</div>
 				</div>
 			</div>
+			
+			<div class="bottom-container"></div>
 		</div>
 		
-		<div id="footer">
-			&copy; <?php echo date('Y');?> Anodyne Productions<br />
-			Powered by <a href="http://codeigniter.com" target="_blank">CodeIgniter</a> &nbsp; | &nbsp; <a href="http://www.anodyne-productions.com/index.php/main/credits">Site Credits</a>
-		</div>
+		<footer>
+			<div class="container">
+				<table width="100%" height="50" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com" target="_blank" class="anodyne"></a></td>
+							<td class="footer-copyright">
+								<a href="" class="tip" title="Icons used were created by Drew Wilson and Kevin Andersson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
+								<span class="footer-subtle">
+									&nbsp; | &nbsp;
+									&copy; <?php echo date('Y');?> Anodyne Productions.
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</footer>
 	</body>
 </html>
