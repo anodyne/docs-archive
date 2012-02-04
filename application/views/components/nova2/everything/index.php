@@ -35,7 +35,6 @@
 		</div><br>
 		
 		<ul>
-			<li><a href="<?php echo Url::site('nova2/everything/changes');?>">Changes Since SMS 2</a></li>
 			<li><a href="<?php echo Url::site('nova2/everything/changes/nova');?>">Changes Since Nova 1.2</a></li>
 			<li><a href="<?php echo Url::site('nova2/everything/changelog');?>">Nova 2 Changelog</a></li>
 		</ul>
