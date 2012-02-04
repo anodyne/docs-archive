@@ -18,88 +18,128 @@
 
 <h2>Version 2.0</h2>
 
-<p><strong>Release Date:</strong> &ndash;</p>
+<p><strong>Release Date:</strong> 04 February 2012</p>
+
 
 <ul>
-	<li><strong>General</strong>
+	<li>Site Messages can now contain previously disallowed HTML tags (like <code>embed</code>, <code>iframe</code>, etc) for adding media from YouTube and Vimeo to site messages (like the welcome message) without needing to use seamless substitution.</li>
+	<li>Mission groups can now be added inside other mission groups (nesting only allowed one level deep).</li>
+	<li>Users with Level 2 user admin access rights can now reset someone's password for them. The new password will be generated and emailed to the user and they'll be prompted to reset the password the next time they log in. At no time does the user with Level 2 user admin access rights see what the newly generated password is. (<a href="https://github.com/anodyne/nova/issues/16" target="_blank">#16</a>)</li>
+	<li>Multi-author posts are now locked during editing to prevent users editing the same post at the same time. The lock is released after the user saves their changes or they've gone 5 minutes without making a change. (In the event a user has changed something and walked away, their changes will be saved to the post first.)</li>
+	<li>Admins now have the option of showing the latest personal logs and mission posts on the main page. (Admins will be able to select any combination of news, logs and posts.)</li>
+	<li>Admins now have the option of setting the top open positions (from Position Management) that will be shown at the top of each manifest (not manifest-specific).</li>
+	<li>Added a rules page to the main section that can be updated from the Site Messages page.</li>
+	<li>The instructions on the upload page now include the maximum file size and maximum image dimensions (pulled from the upload config file) for reference to anyone uploading images. (<a href="https://github.com/anodyne/nova/issues/143">#143</a>)</li>
+	<li>The deck listing page now uses a table-less layout for a cleaner look.</li>
+	<li>The deck listing page now has a menu of decks at the top of the page for quickly moving to a deck item without having to scroll. (We think RPGs with a lot of decks are going to love this!)</li>
+	<li>Overhauled the user interface for mission groups to provide more information (and look a lot better too).</li>
+	<li>When composing a mission post, the dropdown will now show who owns a linked NPC.</li>
+	<li>When composing a mission post, personal log or private message, users only have to start typing a name and the options will be narrowed down for them. (<a href="https://github.com/anodyne/nova/issues/23">#23</a>)</li>
+	<li>The skin catalogue now allows removing an entire skin (with sections) and letting admins choose which skin users will beupdated to for each section.</li>
+	<li>The user account page now has options to make activating and deactivating users a lot easier.
 		<ul>
-			<li>All new file structure that further separates the Nova core from user modifications</li>
-			<li>Updated to jQuery 1.6.4</li>
-			<li>Updated to jQueryUI 1.8.16</li>
-			<li>Updated to jQuery Uniform 1.7.5</li>
-			<li>Updated to prettyPhoto 3.1.3</li>
-			<li>Updated seamless substitution to be able to override email view files</li>
-			<li>Added new process to write the database config file for you</li>
-			<li>Re-wrote the upgrade process to be shorter and simpler</li>
-			<li>Added the ability to upgrade SMS Database entries to Thresher pages</li>
-			<li>Added the ability to set top open positions to be displayed in the Open Positions section of the manifest</li>
-			<li>Removed the banned.php file</li>
-			<li>Added the message.php file to handle notification of bans, a missing "nova" directory and incompatible PHP version</li>
+			<li>When deactivating a user, all active characters associated with that account with also be deactivated.</li>
+			<li>When activating a user, admins will be prompted about which of the user's inactive characters should be reactivated.</li>
 		</ul>
 	</li>
-	
-	<li><strong>Controllers</strong>
+	<li>The character bio page now has options to make activating and deactivating characters a lot easier.
 		<ul>
-			<li>Updated the upload controller to pull the maximum dimensions for image uploads and put them in the instructions text</li>
-			<li>Updated the sim controller to let mission groups be nested one level deep</li>
-			<li>Updated the site controller to have previously disallowed HTML tags (like embed, iframe, etc.) for embedding media assets from YouTube and Vimeo in site messages</li>
+			<li>Activating an inactive character (and all related actions) can now be done with the push of a button.</li>
+			<li>Deactivating an active character (and all related actions) can now be done with the push of a button.</li>
+			<li>Making an NPC an active character (and all related actions) can now be done with the push of a button.</li>
+			<li>Making a character an NPC (and all related actions) can now be done with the push of a button.</li>
 		</ul>
 	</li>
-	
-	<li><strong>Helpers</strong>
-		<ul>
-			<li>Removed the location helper (it's now a library)</li>
-		</ul>
-	</li>
-	
-	<li><strong>Libraries</strong>
-		<ul>
-			<li>Refactored the location helper into a full-blown class with static methods</li>
-		</ul>
-	</li>
-	
-	<li><strong>Models</strong>
-		<ul>
-			<li>Updated the missions model to allow group missions to be pulled from <dfn><em>get_all_missions</em></dfn></li>
-			<li>Added a method to the missions model to count mission groups</li>
-			<li>Added a method to the users model to pull all of a users' LOA records</li>
-			<li>Removed the RSS model since it isn't necessary</li>
-		</ul>
-	</li>
-	
-	<li><strong>Views</strong>
-		<ul>
-			<li>Updated the deck listing page (sim/decks) to not use a table which makes for a much cleaner layout</li>
-			<li>Updated the deck listing page (sim/decks) to have a menu of decks for quickly moving to a deck item without having to scroll (handy for sim with lots of decks)</li>
-			<li>Updated the interface for the mission group listing to provide more information and be better all around</li>
-			<li>Updated the mission post writing page to show who owns a linked NPC</li>
-		</ul>
-	</li>
-	
-	<li><strong>Thresher</strong>
-		<ul>
-			<li>Thresher is now Release 2 (R2)</li>
-			<li>Added a new way to manage categories on the create/edit pages</li>
-			<li>Added the ability to create categories from the create/edit pages if the user has the appropriate access level</li>
-			<li>Added the ability to set restrictions on a Thresher page based on access role</li>
-			<li>Added system pages to let admins change several of the Thresher core pages' content without seamless substitution</li>
-			<li>Added a search field to the main page for quick access to searching Thresher</li>
-			<li>Removed the recently changed/updated listing from the main page</li>
-			<li>New interface for viewing Thresher pages</li>
-			<li>New interface for managing Thresher pages</li>
-		</ul>
-	</li>
+	<li>When viewing a character's posts, the entries will be paginated to help with load times and usability.</li>
+	<li>When viewing a character's logs, the entries will be paginated to help with load times and usability.</li>
+	<li>Site manifests can now store default view information so that different manifests can have different view settings. (This is now handled through Site Manifest management instead of Site Settings.) (<a href="https://github.com/anodyne/nova/issues/157">#157</a>)</li>
+	<li>Gave the Pulsar skin a refreshed look and feel.</li>
+	<li>Gave the Titan skin a refreshed look and feel. (If you're interested in changing the header image, please see Titan's README.md file for instructions.)</li>
+	<li>The Writing Control Panel now shows a notification for any entires that have been commented on in the last 30 days (along with a link to the comments section of the entry).</li>
+	<li>The manifest has been reorganized (for the first time ever) with a slightly different look.</li>
+	<li>The email sent to the game master when a user applies now goes to anyone who can approve or reject character applications.</li>
+	<li>Acceptance and rejection emails now CC in anyone who can approve or reject character applications.</li>
+	<li>Users can now search within their sent and received private messages.</li>
+	<li>Private messages have now been split in to separate inbox and sent message pages. This will help improve performance since the page doesn't have to load all the messages at once then split them off in to tabs.</li>
+	<li>Private messages in the inbox and sent messages list are now paginated.</li>
+	<li>The Reply to All link when reading a private message is only displayed if there's more than one recipient.</li>
+	<li>The Reply, Reply to All and Forward options when reading a private message are now displayed above and below the private message.</li>
+	<li>Users can now mark all unread private messages as read with a single click.</li>
+	<li>An all-new redesigned character bio page provides a better, cleaner user experience.</li>
+</ul>
+
+<h3>The Nova Core</h3>
+
+<ul>
+	<li>Moved to CodeIgniter 2.1 (was previously 1.7.3).</li>
+	<li>Moved to a brand new file structure that further removes the Nova Core from any changes an admin might be making.</li>
+	<li>Added <strong>experimental</strong> module support.</li>
+	<li>Updated to jQuery 1.7.1.</li>
+	<li>Updated to jQuery UI 1.8.17.</li>
+	<li>Updated to jQuery Uniform 1.7.5.</li>
+	<li>Updated to jQuery prettyPhoto 3.1.3.</li>
+	<li>Updated to markItUp! 1.1.12.</li>
+	<li>Added the jQuery Chosen plugin.</li>
+	<li>Added the Bootstrap by Twitter Twipsy plugin (version 1.4).</li>
+	<li>Added the Bootstrap by Twitter Popover plugin (version 1.4).</li>
+	<li>Removed the qTip plugin. (Please use the Bootstrap Twipsy plugin instead.)</li>
+	<li>Changed the <code>banned.php</code> file to <code>message.php</code> that now contains notifications of Level 2 bans, a missing <code>nova</code> directory and incompatible PHP version information.</li>
+	<li>Seamless substitution can now be used to override email view files from the <code>_base_override</code> directory.</li>
+	<li>Added seaQuest DSV as a genre option. (<a href="https://github.com/anodyne/nova/issues/144">#144</a>)</li>
+	<li>Changed the Location helper into a library with static methods (<code>Location::view</code> instead of <code>view_location</code>).</li>
+	<li>Removed the RSS model. (It isn't necessary since most of the calls were duplicated in the appropriate post type models.)</li>
+	<li>Added constants to the Access model for the default access roles.</li>
+	<li>The Missions model now allows group missions to be pulled from <code>get_all_missions()</code>.</li>
+	<li>The Missions model now has a method to count mission groups: <code>count_mission_groups()</code>.</li>
+	<li>The Users model now has a method to pull all of a user's LOA records: <code>get_user_loa_records()</code>.</li>
+	<li>The Auth library now uses static methods to be able to call quicker (<code>Auth::check_access()</code> instead of <code>$this-&gt;auth-&gt;check_access()</code>).</li>
+	<li>Nova will always check for the existence of the database config file. If the file isn't found, Nova will enter a new config setup wizard that will walk admins through setting up the config file, test the connection and then write the file for them.</li>
+	<li>The SMS Upgrade process will now migrate SMS Database entries to the Thresher wiki page format.</li>
+	<li>Completely re-wrote the upgrade process to not use config files (admins select the components they want upgraded through a user interface), to show more useful validation messages and be a shorter, more pleasant process (reduced the number of steps from 14 to 4).</li>
+	<li>View files now check for the existence of the BASEPATH constant before rendering. On some servers, random <code>error_log</code> files are generated all over the place. A big part of this is view files that are accessed apart from the framework and generate PHP fatal errors. This fix should help eliminate those error log files.</li>
+	<li>In preparation for future deprecation, we've removed all references to jQuery's <code>.live()</code> method. Third party developers should ensure their own code is updated as soon as possible to avoid any issues once the method is removed from the jQuery core.</li>
+</ul>
+
+<h3>Thresher</h3>
+
+<ul>
+	<li>Changed the way users manage categories when creating and editing a wiki page. (<a href="https://github.com/anodyne/nova/issues/137">#137</a>)</li>
+	<li>Users with the proper permissions can now create categories when creating and editing a wiki page. (<a href="https://github.com/anodyne/nova/issues/64">#64</a>)</li>
+	<li>If there are no categories set in Thresher and the user has the proper permissions, they will be prompted to create some new categories when creating and editing a wiki page.</li>
+	<li>Changed the user experience for managing wiki pages that puts more controls at the user's disposal and simplifies the entire page. (<a href="https://github.com/anodyne/nova/issues/141">#141</a>)</li>
+	<li>Changed the user interface for viewing wiki pages to make it simpler.</li>
+	<li>Users must have Level 1 wiki page access to see the page history now.</li>
+	<li>Only users who are logged in can see comments on a wiki page.</li>
+	<li>Added system pages to Thresher that allow some of the system pages to have their content changed like a normal wiki page. (<a href="https://github.com/anodyne/nova/issues/123">#123</a>)</li>
+	<li>Users can now search Thresher from the main Thresher page.</li>
+	<li>Fixed several bugs with the listing of Thresher search results.</li>
+	<li>Removed the recently changed and recently updated listings from the main Thresher page.</li>
+	<li>Users can now subscribe to an RSS feed for created wiki pages as well as updated wiki pages.</li>
+	<li>Admins can now restrict access to a wiki page based on access role. (<a href="https://github.com/anodyne/nova/issues/11">#11</a>, <a href="https://github.com/anodyne/nova/issues/12">#12</a>)</li>
 </ul>
 
 <h3>Bug Fixes</h3>
 
 <ul>
-	<li>Seamless substitution of images wouldn't work when the images were in the _base_override directory</li>
-	<li>Private messages would constantly add RE: and FWD: to the subject line instead of just once</li>
-	<li>Private messages would put the person sending the message on the recipient list and any message they sent would show up in their inbox as well as their outbox</li>
-	<li>The join form could be submitted without an email address or password</li>
-	<li>Users who were deactivated kept their account flags (sysadmin, game master, etc.) and their access role</li>
-	<li>Users who were reactivated didn't have their access role set to Standard User</li>
+	<li>Seamless substitution of images wouldn't work when the images were in the <code>_base_override</code> directory.</li>
+	<li>The <code>RE:</code> and <code>FWD:</code> tags would be added to private message subjects when replying and forwarding indefinitely until there was no space left for the actual subject line. Now, Nova will make sure it's only added once. (<a href="https://github.com/anodyne/nova/issues/158">#158</a>)</li>
+	<li>When replying to a private message, the author of the message would be added to the recipient list, so any message they send would also show up in their inbox as well. (This behavior can be duplicated by manually adding themselves to the recipients list.)</li>
+	<li>The join form could be submitted without an email address or password.</li>
+	<li>Users who were deactivated kept their account flags (system administrator, game master, webmaster) and their access role. Now, all account flags and access roles are changed on deactivation.</li>
+	<li>Users who were reactivated didn't have their access role set to Standard User.</li>
+	<li>Inactive users were shown a link in the sub-navigation to upload an image even though they don't have permissions to upload images.</li>
+	<li>A password could be reset for a user even if they don't have a security question chosen.</li>
+	<li>Patched several potential security and access issues.</li>
+	<li>Positions weren't properly updated when deleting an active character.</li>
+	<li>Pulsar styling issues in Internet Explorer 9.</li>
+	<li>Titan styling issues in Internet Explorer 9.</li>
+	<li>When viewing character or user award, the "Nominated By" line was shown even if there was no nomineed. (This is only an issue for RPGs who upgraded from SMS.)</li>
+	<li>The Enterprise-era (ENT) genre install file had several issues and typos. (<a href="https://github.com/anodyne/nova/issues/155">#155</a>)</li>
+	<li>The database automatically set a default rank for pending users potentially resulting in some confusion as to why a pending user already has a rank. (<a href="https://github.com/anodyne/nova/issues/148">#148</a>)</li>
+	<li>If there is only one specification item, the list of items would be dispalyed instead of automatically sending the user to the only specification item. (<a href="https://github.com/anodyne/nova/issues/146">#146</a>)</li>
+	<li>If there is only one specification item, the list of decks would be dispalyed instead of automatically sending the user to the only deck listing. (<a href="https://github.com/anodyne/nova/issues/147">#147</a>)</li>
+	<li>During fresh installs, the user ID constraint wasn't consistent with the rest of the user ID fields throughout the system.</li>
+	<li>Under some circumstances, users could edit posts they weren't even a part of. (Thanks to evshell18 on the Anodyne forums for pointing this out and getting the ball rolling on a fix.)</li>
 </ul>
 
 <p><strong><a href="#" class="show_versions" myID="12"><span class="action">Show</span> Nova 1.2.x Changes &raquo;</a></strong></p>
