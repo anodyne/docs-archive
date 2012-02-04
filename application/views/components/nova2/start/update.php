@@ -22,6 +22,10 @@
 	</thead>
 	<tbody>
 		<tr>
+			<td><a href="<?php echo Url::site('nova2/start/update/200_to_201');?>">Nova 2.0.1</a></td>
+			<td>Fixes a minor display issue and an error thrown about not being able to load a language file.</td>
+		</tr>
+		<tr>
 			<td><a href="<?php echo Url::site('nova2/start/update/126_to_200');?>">Nova 2.0</a></td>
 			<td>You've spoken and we've listened. The feedback we've consistently heard about Nova is that it's great, but there are some things that could be better. Instead of waiting for the next generation of Nova, we've decided to address some of theses issues now. Think Nova is difficult to update? We've fixed that with a brand-new file structure that makes updating as easy as deleting a folder and uploading a new copy of that folder. Think Thresher is a bit limited? We've addressed that with enhancements to just about every part of the wiki (all-new category selection UI, creating categories while creating/editing pages, page restrictions, the ability to edit the content of core wiki pages, better UIs for several pages, etc.). Frustrated by editing a post only to have it wiped out because someone was editing the post at the same time? No more with a brand-new post locking feature that makes sure those frustrations are a thing of the past. On top of that, we've added or enhanced a ton of features in Nova 2 (users will be automatically removed from a post if they didn't participate in it, add previous disallowed HTML content in site messages like script tags and embedded videos, simplified user and character management controls, all-new character selection mechanism for posts and messages, private messaging updates, a new look and feel for Pulsar and Titan, Writing Control Panel improvements, and much more). No matter what way you slice, Nova 2 is a big step forward.</td>
 		</tr>

@@ -59,6 +59,11 @@ class Controller_Nova2_Start extends Controller_Template {
 				$title = 'Nova 1.2.6 to Nova 2.0';
 			break;
 			
+			case '200_to_201':
+				$view = 'components/nova2/start/update/200_to_201';
+				$title = 'Nova 2.0 to Nova 2.0.1';
+			break;
+			
 			default:
 				$view = 'components/nova2/start/update';
 				$title = 'Updating Nova';
