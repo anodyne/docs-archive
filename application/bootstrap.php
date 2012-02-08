@@ -102,6 +102,7 @@ Kohana::$config->attach(new Config_File);
  */
 Kohana::modules(array(
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
+	'anodyne'		=> MODPATH.'anodyne',
 	));
 
 /**
