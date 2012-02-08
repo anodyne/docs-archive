@@ -26,6 +26,25 @@ class Controller_Nova2_Everything extends Controller_Template {
 	{
 		$this->template->content = View::factory('components/nova2/everything/changelog');
 		
+		// find the markdown plugin
+		$path = Kohana::find_file('vendor', 'markdown/markdown');
+		
+		// load markdown if it exists
+		if ($path)
+		{
+			Kohana::load($path);
+		}
+		
+		$nova20 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova20.md');
+		$nova12 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova12.md');
+		$nova11 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova11.md');
+		$nova10 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova10.md');
+		
+		$this->template->content->nova20 = Markdown($nova20);
+		$this->template->content->nova12 = Markdown($nova12);
+		$this->template->content->nova11 = Markdown($nova11);
+		$this->template->content->nova10 = Markdown($nova10);
+		
 		$this->template->title.= 'Nova 2 Changelog';
 	}
 	
