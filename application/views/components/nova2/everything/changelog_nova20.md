@@ -1,5 +1,10 @@
 ## 2.0.2 <small>09 February 2012</small>
 
+### Nova Core
+
+* Removed the social interaction tools from prettyPhoto image modals. ([#169](https://github.com/anodyne/nova/issues/169))
+* Added some code to try and make the mission post locking auto-release a little smarter.
+
 ### Bug Fixes
 
 * Under some (strange) circumstances, Nova could throw errors from the Ajax controller.
@@ -8,6 +13,8 @@
 * The new manifest layout has some display issues when using sub departments. ([#168](https://github.com/anodyne/nova/issues/168))
 * When updating the content of a deck, the submit process went back to the select screen instead of staying on the current item's page.
 * When deleting specification items, if there are decks associated with that spec item, they're orphaned and not deleted.
+* The Who's Online listing displayed random spaces and commas.
+* Character image galleries duplicated the primary image.
 
 ## 2.0.1 <small>04 February 2012</small>
 
