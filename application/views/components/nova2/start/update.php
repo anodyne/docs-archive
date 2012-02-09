@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Url::site('nova2/start/update/201_to_202');?>">2.0.2</a></td>
+						<td>Fixes issues related to the display of the manifest with sub departments, the Who's Online listing, character bio image galleries, orphaned data, the milestone report listing, typos, and deck management. In addition, some minor tweaks were made to post locking to make it smarter when auto-releasing as well as changes to the image modal popups.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Url::site('nova2/start/update/200_to_201');?>">2.0.1</a></td>
 						<td>Fixes a minor display issue and an error thrown about not being able to load a language file.</td>
 					</tr>
