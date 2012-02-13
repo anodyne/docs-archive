@@ -13,6 +13,7 @@
 			<li><a href="<?php echo Url::site('nova2/everything/versioning');?>">Versioning in Nova</a></li>
 			<li><a href="<?php echo Url::site('nova2/everything/genres');?>">Genres in Nova</a></li>
 			<li><a href="<?php echo Url::site('nova2/everything/license');?>">The Nova License</a></li>
+			<li><a href="<?php echo Url::site('nova2/everything/components');?>">Nova Components</a></li>
 		</ul>
 	</div>
 	

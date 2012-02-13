@@ -69,6 +69,13 @@ class Controller_Nova2_Everything extends Controller_Template {
 		$this->template->title.= $title;
 	}
 	
+	public function action_components()
+	{
+		$this->template->content = View::factory('components/nova2/everything/components');
+		
+		$this->template->title.= 'Nova Components';
+	}
+	
 	public function action_configure()
 	{
 		switch ($this->request->param('id'))
