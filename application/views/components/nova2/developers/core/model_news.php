@@ -34,7 +34,7 @@
 
 <p>The method will return an object with all the information for the news items that match the criteria.</p>
 
-<h2><span class="label success">NEW</span> get_character_news()</h2>
+<h2><span class="label label-success">NEW</span> get_character_news()</h2>
 
 <p>Get news items for a specific character.</p>
 

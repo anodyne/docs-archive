@@ -72,7 +72,7 @@
 
 <p>If the third parameter is set to <dfn>object</dfn>, the method will return an object with the position IDs for the positions that match the criteria. If the third parameter is set to <dfn>array</dfn>, the method will return an array with the position IDs for the positions that match the criteria.</p>
 
-<h2><span class="label warning">UPDATED</span> get_open_positions()</h2>
+<h2><span class="label label-warning">UPDATED</span> get_open_positions()</h2>
 
 <p>Get all the open positions out of the database.</p>
 

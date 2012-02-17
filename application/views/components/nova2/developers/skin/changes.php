@@ -1,6 +1,6 @@
 <h1>Changes to Skinning in Nova 2</h1>
 
-<p><span class="label warning">UPDATED - 14 OCT 2011</span></p>
+<p><span class="label label-warning">UPDATED - 14 OCT 2011</span></p>
 
 <p>For the most part, skinning works identically in Nova 2 as it does in previous versions of the system. In fact, you should be able to use a Nova 1 skin in Nova 2 without a single modification. For those who have skinned Nova 1 though, you'll likely notice some differences in the skins that ship with Nova 2. Below are some explanations about those changes.</p>
 

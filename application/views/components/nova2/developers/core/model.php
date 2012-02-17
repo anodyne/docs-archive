@@ -8,9 +8,9 @@
 			<h2><?php echo $m['method'];?></h2>
 			
 			<?php if ($m['status'] == 'removed'): ?>
-				<p><span class="label warning">WARNING</span> This method has been removed from the system and can no longer be used.</p>
+				<p><span class="label label-danger">WARNING</span> This method has been removed from the system and can no longer be used.</p>
 			<?php elseif ($m['status'] == 'deprecated'): ?>
-				<p><span class="label warning">WARNING</span> This method has been deprecated and is scheduled for removal from the system.</p>
+				<p><span class="label label-warning">WARNING</span> This method has been deprecated and is scheduled for removal from the system.</p>
 			<?php endif;?>
 			
 			<p><?php echo $m['description'];?></p>

@@ -78,7 +78,7 @@
 
 <p>The method will return an object with all the content messages for the given private message.</p>
 
-<h2><span class="label warning">UPDATED</span> get_message_recipients()</h2>
+<h2><span class="label label-warning">UPDATED</span> get_message_recipients()</h2>
 
 <p>Get a private message's recipient list.</p>
 
@@ -329,7 +329,7 @@
 
 <h1>Count Data</h1>
 
-<h2><span class="label success">NEW</span> count_pms()</h2>
+<h2><span class="label label-success">NEW</span> count_pms()</h2>
 
 <p>Counts the number of private messages a user has based on the parameters.</p>
 
@@ -361,7 +361,7 @@
 
 <p>The method returns the number of rows (number of private messages) returned by the query.</p>
 
-<h2><span class="label error">DEPRECATED</span> count_unread_pms()</h2>
+<h2><span class="label label-important">DEPRECATED</span> count_unread_pms()</h2>
 
 <p>Counts the number of unread private messages a user has.</p>
 
@@ -391,7 +391,7 @@
 
 <h1>Search Data</h1>
 
-<h2><span class="label success">NEW</span> search_private_messages()</h2>
+<h2><span class="label label-success">NEW</span> search_private_messages()</h2>
 
 <p>Search through a user's private messages (sent and received).</p>
 

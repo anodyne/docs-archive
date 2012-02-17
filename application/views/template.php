@@ -77,6 +77,10 @@ $controllers = array(
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('.tip').tooltip();
+				
+				$('.tip-below').tooltip({
+					placement: 'bottom'
+				});
 			});
 		</script>
 	</head>
@@ -92,6 +96,7 @@ $controllers = array(
 							<!--<li><a href="<?php echo Url::site('nova3');?>" id="nav-nova3"></a></li>-->
 							<li><a href="<?php echo Url::site('sms');?>" id="nav-sms"></a></li>
 							<!--<li><a href="<?php echo Url::site('satellite');?>" id="nav-satellite"></a></li>-->
+							<li><a href="http://www.anodyne-productions.com" id="nav-anodyne" class="tip-below" title="Anodyne-Productions.com"></a></li>
 						</ul>
 					</nav>
 				</div>

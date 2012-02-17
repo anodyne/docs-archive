@@ -665,7 +665,7 @@
 
 <h1>Count Posts</h1>
 
-<h2><span class="label success">NEW</span> count_spec_items()</h2>
+<h2><span class="label label-success">NEW</span> count_spec_items()</h2>
 
 <p>Counts the number of specification items.</p>
 

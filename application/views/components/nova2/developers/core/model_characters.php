@@ -1000,7 +1000,7 @@
 
 <p>The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.</p>
 
-<h2><span class="label warning">UPDATED</span> create_character_data_fields()</h2>
+<h2><span class="label label-warning">UPDATED</span> create_character_data_fields()</h2>
 
 <p>Adds all of the character data to the database as blank values.</p>
 

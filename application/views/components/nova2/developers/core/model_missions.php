@@ -2,7 +2,7 @@
 
 <h1>Get Data</h1>
 
-<h2><span class="label warning">UPDATED</span> get_all_mission_groups()</h2>
+<h2><span class="label label-warning">UPDATED</span> get_all_mission_groups()</h2>
 
 <p>Get all the mission groups out of the database.</p>
 
@@ -27,7 +27,7 @@
 
 <p>The method will return an object with all the information for the mission groups in the database.</p>
 
-<h2><span class="label warning">UPDATED</span> get_all_missions()</h2>
+<h2><span class="label label-warning">UPDATED</span> get_all_missions()</h2>
 
 <p>Get all the missions out of the database.</p>
 
@@ -359,7 +359,7 @@
 
 <h1>Count Data</h1>
 
-<h2><span class="label success">NEW</span> count_mission_groups()</h2>
+<h2><span class="label label-success">NEW</span> count_mission_groups()</h2>
 
 <p>Count mission groups.</p>
 

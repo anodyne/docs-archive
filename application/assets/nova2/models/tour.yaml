@@ -362,7 +362,7 @@ tour:
 
   count:
     -
-      method: <span class="label success">NEW</span> count_deck_items()
+      method: <span class="label label-success">NEW</span> count_deck_items()
       status: active
       scope: public
       description: Find the number of unique deck items in the database.

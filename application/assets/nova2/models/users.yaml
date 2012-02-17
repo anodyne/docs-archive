@@ -243,7 +243,7 @@ users:
           type: string
           notes: An email address to use to pull user information
     -
-      method: <span class="label success">NEW</span> get_user_loa_records()
+      method: <span class="label label-success">NEW</span> get_user_loa_records()
       status: active
       scope: public
       description: Pull all of a user's LOA records.

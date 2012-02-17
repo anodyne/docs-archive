@@ -2,7 +2,7 @@
 
 <h1>Get Data</h1>
 
-<h2><span class="label warning">UPDATED</span> get_character_logs()</h2>
+<h2><span class="label label-warning">UPDATED</span> get_character_logs()</h2>
 
 <p>Get personal logs by a specific character.</p>
 
@@ -261,7 +261,7 @@
 
 <p>The method will return an object with all the information for the personal logs that match the criteria.</p>
 
-<h2><span class="label success">NEW</span> get_user_logs()</h2>
+<h2><span class="label label-success">NEW</span> get_user_logs()</h2>
 
 <p>Get personal logs for a specific user.</p>
 

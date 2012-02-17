@@ -181,7 +181,7 @@ system:
           type: string
           notes: The section to get the default for
     -
-      method: <span class="label success">NEW</span> get_skin_by_section()
+      method: <span class="label label-success">NEW</span> get_skin_by_section()
       status: active
       scope: public
       description: Get skins for a specific section.
@@ -296,7 +296,7 @@ system:
           type: string
           notes: The type of uploaded images to pull
     -
-      method: <span class="label success">NEW</span> list_table_columns()
+      method: <span class="label label-success">NEW</span> list_table_columns()
       status: active
       scope: public
       description: Get a list of table columns. While CodeIgniter's Database driver is capable of doing this, there's currently no way to strip the table prefix out so we can use the sms_ prefix instead without creating a whole new database connection group.
@@ -577,7 +577,7 @@ system:
           type: integer
           notes: A numeric ID of the skin to remove
     -
-      method: <span class="label warning">UPDATED</span> delete_skin_section()
+      method: <span class="label label-warning">UPDATED</span> delete_skin_section()
       status: active
       scope: public
       description: Delete a skin section from the database.

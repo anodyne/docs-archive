@@ -27,7 +27,7 @@
 
 <p>The method will return an array of email address if authors are found or <dfn>FALSE</dfn> if no authors are found.</p>
 
-<h2><span class="label warning">UPDATED</span> get_character_posts()</h2>
+<h2><span class="label label-warning">UPDATED</span> get_character_posts()</h2>
 
 <p>Get all a character's posts from the database.</p>
 
@@ -292,7 +292,7 @@
 
 <p>The method will return an object with all the information for the mission posts that match the criteria.</p>
 
-<h2><span class="label success">NEW</span> get_user_posts()</h2>
+<h2><span class="label label-success">NEW</span> get_user_posts()</h2>
 
 <p>Get mission posts for a specific user.</p>
 
@@ -401,7 +401,7 @@
 
 <p>The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.</p>
 
-<h2><span class="label success">NEW</span> update_post_lock()</h2>
+<h2><span class="label label-success">NEW</span> update_post_lock()</h2>
 
 <p>Update a mission post lock in the database.</p>
 
@@ -664,7 +664,7 @@
 
 <p>The method returns the number of rows (number of posts) returned by the query.</p>
 
-<h2><span class="label warning">UPDATED</span> count_mission_posts()</h2>
+<h2><span class="label label-warning">UPDATED</span> count_mission_posts()</h2>
 
 <p>Counts the number of posts in a given mission.</p>
 
