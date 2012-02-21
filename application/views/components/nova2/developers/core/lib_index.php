@@ -22,6 +22,7 @@
 
 <ul>
 	<li><?php echo Html::anchor('nova2/core/libraries/auth', 'Auth Library');?></li>
+	<li><?php echo Html::anchor('nova2/core/libraries/location', 'Location Library');?></li>
 	<li><?php echo Html::anchor('nova2/core/libraries/menu', 'Menu Library');?></li>
 	<li><?php echo Html::anchor('nova2/core/libraries/thresher', 'Thresher Library');?></li>
 	<li><?php echo Html::anchor('nova2/core/libraries/userpanel', 'User Panel Library');?></li>

@@ -55,11 +55,13 @@ $controllers = array(
 		<title><?php echo $title;?></title>
 		<link rel="icon" href="<?php echo Url::base();?>favicon.ico" type="image/x-icon">
 		
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/prettify.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
 		<link rel="stylesheet" href="<?php echo Url::base();?>application/views/design/custom.css">
 		
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/google-code-prettify/prettify.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-transition.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tooltip.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tab.js"></script>
@@ -84,7 +86,7 @@ $controllers = array(
 			});
 		</script>
 	</head>
-	<body>
+	<body onload="prettyPrint()">
 		<div id="page_container">
 			<header>
 				<div class="container">
