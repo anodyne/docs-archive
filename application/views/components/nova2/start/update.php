@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Url::site('nova2/start/update/202_to_203');?>">2.0.3</a></td>
+						<td>Fixes an issue where memory consumption and execution time psuedo-variables didn't work because of the Template engine. In addition, jQuery UI has been updated to version 1.8.18.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Url::site('nova2/start/update/201_to_202');?>">2.0.2</a></td>
 						<td>Fixes issues related to the display of the manifest with sub departments, the Who's Online listing, character bio image galleries, orphaned data, the milestone report listing, typos, and deck management. In addition, some minor tweaks were made to post locking to make it smarter when auto-releasing as well as changes to the image modal popups.</td>
 					</tr>

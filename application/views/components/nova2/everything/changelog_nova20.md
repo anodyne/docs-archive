@@ -1,3 +1,13 @@
+## 2.0.3 <small>01 March 2012</small>
+
+### Nova Core
+
+* Updated jQuery UI to version 1.8.18.
+
+### Bug Fixes
+
+* Benchmarking psuedo-variables are not handled properly because of the fact the Template library doesn't use the Output library for sending content to the browser.
+
 ## 2.0.2 <small>09 February 2012</small>
 
 ### Nova Core

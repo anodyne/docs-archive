@@ -62,6 +62,7 @@ class Controller_Nova2_Start extends Controller_Template {
 			
 			case '200_to_201':
 			case '201_to_202':
+			case '202_to_203':
 				$view = 'components/nova2/start/update/standard_update';
 				
 				switch ($this->request->param('id'))
@@ -72,6 +73,10 @@ class Controller_Nova2_Start extends Controller_Template {
 					
 					case '201_to_202':
 						$title = 'Nova 2.0.1 to Nova 2.0.2';
+					break;
+					
+					case '202_to_203':
+						$title = 'Nova 2.0.2 to Nova 2.0.3';
 					break;
 				}
 			break;
