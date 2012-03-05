@@ -115,6 +115,10 @@
 							<li>Copy the <strong>chosen-sprite.png</strong> image from the <strong>admin/images</strong> directory of whichever skin you're using as reference and paste it into your own <strong>admin/images</strong> directory.</li>
 							<li>If you're using Titan or a modified version of Titan, you will need to pull Titan 2.0's <strong>admin.css</strong> file from the <strong>admin/css</strong> directory of the new version of Titan and paste it into to your skin's <strong>admin/css</strong> directory (if you've skinned the admin section). The reason this is needed only for Titan is because of the use of popovers that are styled with white backgrounds instead of dark backgrounds.</li>
 						</ol>
+						
+						<h3>Gotchas</h3>
+						
+						<p>If you've followed the above directions to the letter but you're finding pieces of your skin don't work right or errors are thrown, the odds are your skin uses seamless substitution to swap out one of the default view files for your own. In particular, the posting pages have been subject to this oversight. The fix is to simply go in to your skin and find the view file(s) that are causing the problem. (View files are found in the <code>pages</code> directory in the main/wiki/admin folders.)</p>
 					</div>
 					
 					<div id="3_mods" class="pill-pane">
