@@ -1,0 +1,369 @@
+tour:
+  get:
+    -
+      method: get_deck_details()
+      status: active
+      scope: public
+      description: Get detailed information about a deck.
+      return: The method will return an object with the information about a specific deck or <kbd>FALSE</kbd> if no deck exists.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the deck
+    -
+      method: get_decks()
+      status: active
+      scope: public
+      description: Get all decks listed in the database.
+      return: The method will return an object with the information about all the decks in the database.
+    -
+      method: get_tour_data()
+      status: active
+      scope: public
+      description: Get the data associated with a specific tour field.
+      return: The method will return an object with the information about the tour field data or <kbd>FALSE</kbd> if no data exists.
+      parameters:
+        -
+          name: item
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the tour item
+        -
+          name: field
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the field
+    -
+      method: get_tour_field_details()
+      status: active
+      scope: public
+      description: Get the information about a specific tour field.
+      return: The method will return an object with the information about the tour field.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the tour field
+    -
+      method: get_tour_fields()
+      status: active
+      scope: public
+      description: Get the tour fields based on the parameters passed to the method.
+      return: The method will return an object with the information about the tour fields.
+      parameters:
+        -
+          name: display
+          default: y
+          options: y, n, none
+          type: string
+          notes: Whether to pull tour fields that are displayed or not; use an empty string to pull all fields regardless of display flag
+        -
+          name: type
+          default: None
+          options: text, textarea, select, none
+          type: string
+          notes: Which type of field to pull from the database; use an empty string to pull all types of fields
+    -
+      method: get_tour_item()
+      status: active
+      scope: public
+      description: Get a specific tour item from the database.
+      return: The method will return an object with the information about the tour item.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the item to pull
+    -
+      method: get_tour_items()
+      status: active
+      scope: public
+      description: Get all tour items from the database.
+      return: The method will return an object with the tour items requested.
+      parameters:
+        -
+          name: display
+          default: y
+          options: y, n, none
+          type: string
+          notes: Whether to pull items which are set to display or not; use an empty string to pull all items
+    -
+      method: get_tour_value_details()
+      status: active
+      scope: public
+      description: Get a specific field value from the database.
+      return: The method will return an object with information about the tour field value requested.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the value being requested
+    -
+      method: get_tour_values()
+      status: active
+      scope: public
+      description: Get the fields values for a specific field.
+      return: The method will return an object with information about the field values requested.
+      parameters:
+        -
+          name: field
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the field whose values are being requested
+
+  update:
+    -
+      method: update_deck()
+      status: active
+      scope: public
+      description: Update a specific deck.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the deck to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+    -
+      method: update_tour_data()
+      status: active
+      scope: public
+      description: Update a specific piece of tour data.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the data to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+    -
+      method: update_tour_field()
+      status: active
+      scope: public
+      description: Update a specific tour field.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the field to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+    -
+      method: update_tour_field_value()
+      status: active
+      scope: public
+      description: Update a specific tour field value.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the field value to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+    -
+      method: update_tour_item()
+      status: active
+      scope: public
+      description: Update a specific tour item.
+      return: The method returns the number of affected rows returned by the query. In a successful update query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID for the tour item to update
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data to use in updating the record
+
+  create:
+    -
+      method: add_deck()
+      status: active
+      scope: public
+      description: Add a deck to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+    -
+      method: add_tour_field()
+      status: active
+      scope: public
+      description: Add a tour field to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+    -
+      method: add_tour_field_data()
+      status: active
+      scope: public
+      description: Add data about a tour field to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+    -
+      method: add_tour_field_value()
+      status: active
+      scope: public
+      description: Add a tour field value to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+    -
+      method: add_tour_item()
+      status: active
+      scope: public
+      description: Add a tour item to the database.
+      return: The method returns the number of affected rows returned by the query. In a successful creation query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: data
+          default: None
+          options: None
+          type: array/object
+          notes: The data used to create the record
+
+  delete:
+    -
+      method: delete_deck()
+      status: active
+      scope: public
+      description: Delete a deck from the database.
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the deck to be removed
+    -
+      method: delete_tour_field()
+      status: active
+      scope: public
+      description: Delete a tour field from the database.
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the field to be removed
+    -
+      method: delete_tour_field_data()
+      status: active
+      scope: public
+      description: Delete some tour field data from the database.
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: value
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the field whose data should be removed
+        -
+          name: identifier
+          default: data_field
+          options: None
+          type: string
+          notes: The identifying field to use for the value passed to the method
+    -
+      method: delete_tour_item()
+      status: active
+      scope: public
+      description: Delete a tour item from the database.
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the tour item to be removed
+    -
+      method: delete_tour_value()
+      status: active
+      scope: public
+      description: Delete a tour field value from the database.
+      return: The method returns the number of affected rows returned by the query. In a successful deletion query, this should be <dfn>1</dfn>.
+      parameters:
+        -
+          name: ID
+          default: None
+          options: None
+          type: integer
+          notes: A numeric ID of the field value to be removed
+
+  count:
+    -
+      method: <span class="label label-success">NEW</span> count_deck_items()
+      status: active
+      scope: public
+      description: Find the number of unique deck items in the database.
+      return: The method returns the number of deck items.

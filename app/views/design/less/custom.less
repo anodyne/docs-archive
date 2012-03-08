@@ -1,0 +1,155 @@
+@import "variables.less";
+@import "mixins.less";
+@import "bootstrap-changes.less";
+
+#page_container { min-height: 100%; }
+
+header {
+	background: @color-base url(images/glass-light-blue.jpg) no-repeat top center;
+}
+header .logo {
+	width: 396px;
+	background: transparent url(images/sprite.png) no-repeat 0 -24px;
+}
+
+nav {
+	margin: 53px 0 0 0;
+}
+nav ul li {
+	margin: 0 25px 0 0;
+}
+nav ul li a {
+	height: 26px;
+}
+#nav-home {
+	width: 61px;
+	background: transparent url(images/sprite.png) no-repeat 0 -90px;
+}
+#nav-home:hover {
+	background-position: 0 -120px;
+}
+#nav-nova1 {
+	width: 81px;
+	background: transparent url(images/sprite.png) no-repeat 0 -150px;
+}
+#nav-nova1:hover {
+	background-position: 0 -180px;
+}
+#nav-nova2 {
+	width: 81px;
+	background: transparent url(images/sprite.png) no-repeat 0 -210px;
+}
+#nav-nova2:hover {
+	background-position: 0 -240px;
+}
+#nav-sms {
+	width: 54px;
+	background: transparent url(images/sprite.png) no-repeat 0 -270px;
+}
+#nav-sms:hover {
+	background-position: 0 -300px;
+}
+#nav-nova3 {
+	width: 81px;
+	background: transparent url(images/sprite.png) no-repeat 0 -330px;
+}
+#nav-nova3:hover {
+	background-position: 0 -360px;
+}
+#nav-satellite {
+	width: 114px;
+	background: transparent url(images/sprite.png) no-repeat 0 -390px;
+}
+#nav-satellite:hover {
+	background-position: 0 -420px;
+}
+#nav-anodyne {
+	width: 97px;
+	background: transparent url(images/sprite.png) no-repeat -129px -90px;
+}
+#nav-anodyne:hover {
+	background-position: -129px -120px;
+}
+
+h1 {
+	color: @color-base;
+}
+
+footer {
+	background: @color-base;
+}
+.anodyne {
+	background: transparent url(images/sprite.png) no-repeat 0 0;
+}
+
+.separator {
+	background: transparent url(images/sprite.png) no-repeat 0 -493px;
+}
+
+a {
+	color: @color-link;
+}
+a:hover {
+	color: desaturate(@color-link, 50%);
+}
+
+.smsupgrade-icon {
+	text-align: center !important;
+	vertical-align: middle;
+}
+
+.important, .critical {
+	padding: 5px;
+	
+	.rounded;
+}
+.critical {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3) !important;
+	color: #fff;
+	border: 1px solid #9E0000;
+	
+	.gradient(#ed3131, #db2800);
+	.box-shadow(~"inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px #d4c6b8");
+}
+.important {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3) !important;
+	color: #725a00;
+	border-top: 1px solid #e0af00;
+	border-bottom: 1px solid #9d7d00;
+	border-left: 1px solid #b99100;
+	border-right: 1px solid #b99100;
+	
+	.gradient(#ffe266, #e5b900);
+	.box-shadow(~"inset 0 1px 0 #fffe77, 0 1px 1px #c8c7b7");
+}
+
+ul.changelog li {
+	height: 24px;
+	line-height: 24px;
+	padding: 0 0 0 24px;
+	list-style: none !important;
+}
+li.script {
+	background: transparent url('images/nova1/script-code.png') no-repeat center left;
+}
+li.folder {
+	background: transparent url('images/nova1/folder-open.png') no-repeat center left;
+}
+li.image {
+	background: transparent url('images/nova1/image-vertical-sunset.png') no-repeat center left;
+}
+li.added {
+	background: transparent url('images/nova1/plus-button.png') no-repeat center left;
+}
+li.removed {
+	background: transparent url('images/nova1/minus-button.png') no-repeat center left;
+}
+
+.tour-list {
+	font-size: 120%;
+}
+.tour-list li {
+	margin: 0 0 4px 0;
+}
+
+.pages-panel { min-height: 175px !important; }

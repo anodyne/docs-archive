@@ -1,0 +1,5 @@
+<h1><?php echo $header;?></h1>
+
+<p>Nova replaces the SMS database feature with an integrated mini-wiki called Thresher. Because of the diametric database schemas, database entries are not converted to the Thresher format. As a substitute however, we're providing an archive view of the data from SMS' database table as a quick means of copying the content from one page and pasting it into Thresher.</p>
+
+<p>From the archive index, simply click on the database entries link and you'll be shown the listing of all database entries out the SMS table. You can't take any action on these items as the archive is <dfn>read-only</dfn>. Items that have a type of <var>entry</var> are hyperlinks that point to a separate view with the full entry details. If an item isn't a entry, its title and short description are shown without a hyperlink.</p>
