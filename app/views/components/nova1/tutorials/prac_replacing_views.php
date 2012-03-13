@@ -6,17 +6,17 @@
 
 <h2>Prepping the File</h2>
 
-<p>To get started, we're going to copy <samp>application/views/_base/main/pages/main_index.php</samp> and paste that copy into <samp>application/views/_base_override/main/pages</samp>.</p>
+<p>To get started, we're going to copy <code>application/views/_base/main/pages/main_index.php</code> and paste that copy into <code>application/views/_base_override/main/pages</code>.</p>
 
-<p>Why are we copying files and pasting them into different locations? Why not just open the file in the <samp>_base</samp> directory, edit it and be done?</p>
+<p>Why are we copying files and pasting them into different locations? Why not just open the file in the <code>_base</code> directory, edit it and be done?</p>
 
-<p>For those who haven't read up on seamless substitution, it's a way of overriding Nova's defaults without touching the default files. The advantages to a system like this is that you can make all the changes you want to view files without ever touching Nova's core. Not only is that a cool feature, but it means your changes stay intact even when you update to a newer version of Nova. So going from Nova 1.1.2 to Nova 1.2, you won't lose those changes, but you'll still have all the cool new features and handy bug fixes that come along with a newer version. Beacuse of that, we put our files into <samp>_base_override</samp> so that Nova will use those files instead of what's in <samp>_base</samp>. (If you were developing a skin and wanted your skin to override the default, you can do the same kind of thing.)</p>
+<p>For those who haven't read up on seamless substitution, it's a way of overriding Nova's defaults without touching the default files. The advantages to a system like this is that you can make all the changes you want to view files without ever touching Nova's core. Not only is that a cool feature, but it means your changes stay intact even when you update to a newer version of Nova. So going from Nova 1.1.2 to Nova 1.2, you won't lose those changes, but you'll still have all the cool new features and handy bug fixes that come along with a newer version. Beacuse of that, we put our files into <code>_base_override</code> so that Nova will use those files instead of what's in <code>_base</code>. (If you were developing a skin and wanted your skin to override the default, you can do the same kind of thing.)</p>
 
-<p>With the view file in <samp>_base_override</samp>, we're ready to get started!</p>
+<p>With the view file in <code>_base_override</code>, we're ready to get started!</p>
 
 <h2>Doing the Work</h2>
 
-<p>If we open up <samp>application/views/_base_override/main/pages/main_index.php</samp> right now, we'd see that it looks like this:</p>
+<p>If we open up <code>application/views/_base_override/main/pages/main_index.php</code> right now, we'd see that it looks like this:</p>
 
 <pre>&lt;?php echo text_output($header, 'h1', 'page-head');?>
 

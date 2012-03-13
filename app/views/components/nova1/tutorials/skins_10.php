@@ -10,13 +10,13 @@
 
 <p>When you view a news items, you'll notice there's an RSS icon at the bottom of the article. Let's change that icon to another RSS icon that looks similar but has a slightly softer feel. The only requirement is that the name of the icon is identical to the icon we're replacing. In this case, the RSS icon has a name of <strong>feed.png</strong>. Drop the Silk <strong>feed.png</strong> image into the skin's images folder and refresh the view news page and you'll see the page is now using the icon you just provided. If you changed skins back to Lightness, it'd still be using the old RSS icon. We've substituted this icon just for our skin.</p>
 
-<p class="alert alert-info"><strong>Note:</strong> If you want to know what an image is named, you can open <samp>application/views/_base/main/images</samp> to see all the icons.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you want to know what an image is named, you can open <code>application/views/_base/main/images</code> to see all the icons.</p>
 
 <p>Next, let's swap out the comments icon for one in the Silk set. Let's drop <strong>comment_add.png</strong> into the skin's images folder. For this one, we need to rename the icon to <strong>comment-add.png</strong>. Once that change is made, you can refresh the view news page and you'll see the new icon in place of the old comment icon. Seamless substution is really just as easy as putting an icon of a similar name into your skin's images directory.</p>
 
 <h3>Substituting Pages</h3>
 
-<p>Finally, let's say we want to add a little message at the top of the listing of all news. There's no way to do it with a site message out of the box, so let's use seamless substitution to replace the default version with one for our skin that provides a message about the new icons. To do this, we're going to first copy the file <strong>main_news.php</strong> from <samp>application/views/_base/main/pages</strong> and paste the copied file into our skin's <strong>pages</strong> directory. Then, we can open the file and add our message to the top of the page:</p>
+<p>Finally, let's say we want to add a little message at the top of the listing of all news. There's no way to do it with a site message out of the box, so let's use seamless substitution to replace the default version with one for our skin that provides a message about the new icons. To do this, we're going to first copy the file <strong>main_news.php</strong> from <code>application/views/_base/main/pages</strong> and paste the copied file into our skin's <strong>pages</strong> directory. Then, we can open the file and add our message to the top of the page:</p>
 
 <pre>&lt;?php echo text_output($header, 'h1', 'page-head');?>
 

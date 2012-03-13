@@ -9,7 +9,7 @@
 		<p>Spice it up a little bit by posting as other characters that are tied to your account. You can post mission posts and personal logs as any of the character associated with your account to give that little added perspective to the story.</p>
 	</div>
 	
-	<div class="span9"><div class="pull-right"><?php echo Html::image('application/views/design/images/nova1/tour/writing.png');?></div></div>
+	<div class="span9"><div class="pull-right"><?php echo Html::img('application/views/design/images/nova1/tour/writing.png');?></div></div>
 </div>
 
 <div class="btn-group pull-right">

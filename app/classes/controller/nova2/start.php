@@ -1,58 +1,57 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova2_Start extends Controller_Template {
-	
+class Controller_Nova2_Start extends Controller_Base
+{	
 	public function before()
 	{
 		parent::before();
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 2 - ';
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 2 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova2/start/index');
-		
+		$this->_view = 'components/nova2/start/index';
 		$this->template->title.= 'Getting Started';
+		
+		return;
 	}
 	
 	public function action_backup()
 	{
-		$this->template->content = View::factory('components/nova2/start/backup');
-		
+		$this->_view = 'components/nova2/start/backup';
 		$this->template->title.= 'Backup Guide';
+		
+		return;
 	}
 	
 	public function action_install()
 	{
-		$this->template->content = View::factory('components/nova2/start/install');
-		
+		$this->_view = 'components/nova2/start/install';
 		$this->template->title.= 'Fresh Install';
+		
+		return;
 	}
 	
 	public function action_requirements()
 	{
-		$this->template->content = View::factory('components/nova2/start/requirements');
-		
+		$this->_view = 'components/nova2/start/requirements';
 		$this->template->title.= 'Nova 2 Requirements';
+		
+		return;
 	}
 	
 	public function action_sms()
 	{
-		$this->template->content = View::factory('components/nova2/start/sms');
-		
+		$this->_view = 'components/nova2/start/sms';
 		$this->template->title.= 'Upgrade from SMS 2';
+		
+		return;
 	}
 	
-	public function action_update()
+	public function action_update($id = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($id)
 		{
 			case 'nova1':
 			case '126_to_200':
@@ -87,16 +86,18 @@ class Controller_Nova2_Start extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory($view);
-		$this->template->content->title = $title;
-		
+		$this->_view = $view;
+		$this->_data->title = $title;
 		$this->template->title.= $title;
+		
+		return;
 	}
 	
 	public function action_whatsnew()
 	{
-		$this->template->content = View::factory('components/nova2/start/whatsnew');
-		
+		$this->_view = 'components/nova2/start/whatsnew';
 		$this->template->title.= "What's New in Nova 2";
+		
+		return;
 	}
 }

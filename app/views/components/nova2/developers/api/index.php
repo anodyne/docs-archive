@@ -17,8 +17,8 @@
 <h2>How To Use the API</h2>
 
 <ul>
-	<li><a href="<?php echo Url::site('nova2/api/using/curl');?>">With cURL</a></li>
-	<li><a href="<?php echo Url::site('nova2/api/using/simplexml');?>">With SimpleXML</a></li>
+	<li><a href="<?php echo Uri::create('nova2/api/using/curl');?>">With cURL</a></li>
+	<li><a href="<?php echo Uri::create('nova2/api/using/simplexml');?>">With SimpleXML</a></li>
 </ul>
 
 <h2>Limitations</h2>
@@ -33,4 +33,4 @@
 
 <p>The Nova API comes with access to a wide variety of data from your Nova site for you to use however you want. Using this reference, you can check out all of the things you can pull from the NOva API and get started working with the Nova API today!</p>
 
-<h3><a href="<?php echo Url::site('nova2/api/methods');?>">API Methods &raquo;</a></h3>
+<h3><a href="<?php echo Uri::create('nova2/api/methods');?>">API Methods &raquo;</a></h3>

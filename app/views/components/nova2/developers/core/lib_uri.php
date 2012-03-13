@@ -4,7 +4,7 @@
 
 <p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
-<p class="alert alert-info"><strong>Note:</strong> This library has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_URI.php</samp> file in <samp>nova/modules/core/libraries</samp>. Do not edit the CodeIgniter core library file!</p>
+<p class="alert alert-info"><strong>Note:</strong> This library has been extended from the CodeIgniter default. Changes to this library can be found in the <code>MY_URI.php</code> file in <code>nova/modules/core/libraries</code>. Do not edit the CodeIgniter core library file!</p>
 
 <h2>$this->uri->segment()</h2>
 

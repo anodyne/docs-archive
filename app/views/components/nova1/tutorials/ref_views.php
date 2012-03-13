@@ -6,13 +6,13 @@
 
 <h2>Understanding the Views Directory</h2>
 
-<p>In Nova, views are located in the <samp>application/views</samp> directory. Because of seamless substitution, there's a method to the way view files are stored in the view directory.</p>
+<p>In Nova, views are located in the <code>application/views</code> directory. Because of seamless substitution, there's a method to the way view files are stored in the view directory.</p>
 
-<p>The "default" view file that's used by Nova is located in <samp>application/views/_base</samp>. Within the _base directory, we separate view files into the different template types: admin, login, main and wiki. Inside each of the template type directories, we use the same structure: ajax, images, js and pages. The only place we store view files are in the js and pages directories.</p>
+<p>The "default" view file that's used by Nova is located in <code>application/views/_base</code>. Within the _base directory, we separate view files into the different template types: admin, login, main and wiki. Inside each of the template type directories, we use the same structure: ajax, images, js and pages. The only place we store view files are in the js and pages directories.</p>
 
-<p>If you want to create a view file that will be used instead of Nova's default, you can put your version in <samp>application/views/_base_override</samp>, making sure that the view file goes in the right template type directory. So for instance, if you wanted to override the manifest view file, you'd put your copy of the file in <samp>application/views/_base_override/main/pages/personnel_index.php</samp>.</p>
+<p>If you want to create a view file that will be used instead of Nova's default, you can put your version in <code>application/views/_base_override</code>, making sure that the view file goes in the right template type directory. So for instance, if you wanted to override the manifest view file, you'd put your copy of the file in <code>application/views/_base_override/main/pages/personnel_index.php</code>.</p>
 
-<p>Finally, system skins are stored in the views directory as well. Skins, like the _base_override directory, can circumvent Nova's default view files. Much the same as the _base_override directory, a skin is broken down into the different template types. If you wanted to override the manifest view file only for your skin, you'd put your copy of the file in <samp>application/views/[your skin]/main/pages/personnel_index.php</samp>.</p>
+<p>Finally, system skins are stored in the views directory as well. Skins, like the _base_override directory, can circumvent Nova's default view files. Much the same as the _base_override directory, a skin is broken down into the different template types. If you wanted to override the manifest view file only for your skin, you'd put your copy of the file in <code>application/views/[your skin]/main/pages/personnel_index.php</code>.</p>
 
 <h2>Creating a View</h2>
 
@@ -22,7 +22,7 @@
 	
 &lt;p>This is an example of my new view file. It would have a .php extension, but as you can see, there's no PHP in here.&lt;/p></pre>
 
-<p>When creating views for new pages, you should store your view files in <samp>application/views/_base_override</samp> to prevent it from being wiped out during an update. We frequently fix issues within the view files in _base and storing your view files in there could cause issues when updating.</p>
+<p>When creating views for new pages, you should store your view files in <code>application/views/_base_override</code> to prevent it from being wiped out during an update. We frequently fix issues within the view files in _base and storing your view files in there could cause issues when updating.</p>
 
 <h2>Using Views</h2>
 

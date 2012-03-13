@@ -6,7 +6,7 @@
 
 <p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by the system so there is no need to do it manually.</p>
 
-<p class="alert alert-info"><strong>Note:</strong> This library has been extended from the Template library created by Colin Williams. Changes to this library can be found in the <samp>MY_Template.php</samp> file in <samp>application/libraries</samp>. Do not edit the core library file! Any bugs with the library should be reported to WilliamsConcepts.</p>
+<p class="alert alert-info"><strong>Note:</strong> This library has been extended from the Template library created by Colin Williams. Changes to this library can be found in the <code>MY_Template.php</code> file in <code>app/libraries</code>. Do not edit the core library file! Any bugs with the library should be reported to WilliamsConcepts.</p>
 
 <h2>$this->template->add_redirect()</h2>
 

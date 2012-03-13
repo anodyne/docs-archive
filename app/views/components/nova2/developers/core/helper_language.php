@@ -4,7 +4,7 @@
 
 <p class="alert alert-danger"><strong>Note:</strong> This library is initialized automatically by Nova so there is no need to do it manually.</p>
 
-<p class="alert alert-info"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <samp>MY_language_helper.php</samp> file in <samp>nova/modules/core/helpers</samp>. Do not edit the CodeIgniter core helper file!</p>
+<p class="alert alert-info"><strong>Note:</strong> This helper has been extended from the CodeIgniter default. Changes to this library can be found in the <code>MY_language_helper.php</code> file in <code>nova/modules/core/helpers</code>. Do not edit the CodeIgniter core helper file!</p>
 
 <h2>lang_output</h2>
 

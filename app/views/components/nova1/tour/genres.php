@@ -7,7 +7,7 @@
 		<p>Complete with over a dozen genres, Nova will fit the bill for just about any RPG you want to run!</p>
 	</div>
 	
-	<div class="span9"><div class="pull-right"><?php echo Html::image('application/views/design/images/nova1/tour/genres.jpg');?></div></div>
+	<div class="span9"><div class="pull-right"><?php echo Html::img('application/views/design/images/nova1/tour/genres.jpg');?></div></div>
 </div>
 
 <div class="btn-group pull-right">

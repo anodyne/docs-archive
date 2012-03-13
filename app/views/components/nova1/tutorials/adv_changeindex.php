@@ -10,14 +10,14 @@
 
 <h3>1. Rename the index file</h3>
 
-<p>You can rename the index file to whatever you want provided the file is still a PHP file. In this case, we're going to rename the file to <samp>enterprise.php</samp> so our splash page can be index.php.</p>
+<p>You can rename the index file to whatever you want provided the file is still a PHP file. In this case, we're going to rename the file to <code>enterprise.php</code> so our splash page can be index.php.</p>
 
 <h3>2. Change the index page variable</h3>
 
-<p>Open <samp>application/config/config.php</samp> and find the variable <var>$config['index_page']</var>. Now, we're going to change the content in quotes to the name of our file, including the .php extension. In the end, our variable should look like this:</p>
+<p>Open <code>application/config/config.php</code> and find the variable <var>$config['index_page']</var>. Now, we're going to change the content in quotes to the name of our file, including the .php extension. In the end, our variable should look like this:</p>
 
 <pre>$config['index_page'] = 'enterprise.php';</pre>
 
 <h3>3. Save and upload</h3>
 
-<p>Save the <samp>config.php</samp> file and upload it to your server, overwriting the existing one. Next time we navigate to our site, we'll need to use the <samp>enterprise.php</samp> file instead of index.php. We can now develop our splash page at index.php so that users see that first before they get to our site.</p>
+<p>Save the <code>config.php</code> file and upload it to your server, overwriting the existing one. Next time we navigate to our site, we'll need to use the <code>enterprise.php</code> file instead of index.php. We can now develop our splash page at index.php so that users see that first before they get to our site.</p>

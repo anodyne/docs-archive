@@ -8,11 +8,11 @@
 
 <h2>The Solution</h2>
 
-<p>Once you've found the icon you want to use instead, simply make sure it's named the exact same as the RSS feed icon located in <samp><nobr>nova/modules/core/views/_base/main/images</nobr></samp>. (For those too lazy to go look, it's <dfn>feed.png</dfn>.) Now that your new icon is named the same as the system default, all you need to do is put your new image in the right place and Nova will start using your icon instead!</p>
+<p>Once you've found the icon you want to use instead, simply make sure it's named the exact same as the RSS feed icon located in <code><nobr>nova/modules/core/views/_base/main/images</nobr></code>. (For those too lazy to go look, it's <dfn>feed.png</dfn>.) Now that your new icon is named the same as the system default, all you need to do is put your new image in the right place and Nova will start using your icon instead!</p>
 
 <p>So where the hell is the right place?</p>
 
-<p>In order to get this working, simply upload your new image to <samp><nobr>application/views/_base_override/main/images</nobr></samp>. Done! Head over to Nova and see for yourself.</p>
+<p>In order to get this working, simply upload your new image to <code><nobr>app/views/_base_override/main/images</nobr></code>. Done! Head over to Nova and see for yourself.</p>
 
 <h2>A Final Word</h2>
 

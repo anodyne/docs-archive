@@ -1,33 +1,25 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova2_Core extends Controller_Template {
-	
+class Controller_Nova2_Core extends Controller_Base
+{	
 	public function before()
 	{
 		parent::before();
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 2 - ';
-		
-		// load Spyc
-		Kohana::load(Kohana::find_file('vendor', 'spyc/spyc'));
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 2 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova2/developers/core/index');
-		
+		$this->_view = 'components/nova2/developers/core/index';
 		$this->template->title.= 'Nova Core';
+		
+		return;
 	}
 	
-	public function action_helpers()
+	public function action_helpers($id = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($id)
 		{
 			default:
 				$item = $this->request->param('id');
@@ -43,18 +35,20 @@ class Controller_Nova2_Core extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova2/developers/core/'.$view);
-		$this->template->content->header = $title;
-		$this->template->content->helper = $helper;
+		$this->_view = 'components/nova2/developers/core/'.$view;
+		$this->_data->header = $title;
+		$this->_data->helper = $helper;
 		$this->template->title.= $title.' Helper';
+		
+		return;
 	}
 	
-	public function action_libraries()
+	public function action_libraries($id = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($id)
 		{
 			default:
-				$item = $this->request->param('id');
+				$item = $id;
 				
 				if (empty($item))
 				{
@@ -77,51 +71,53 @@ class Controller_Nova2_Core extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova2/developers/core/'.$view);
-		$this->template->content->header = $title;
-		$this->template->content->library = $library;
+		$this->_view = 'components/nova2/developers/core/'.$view;
+		$this->_data->header = $title;
+		$this->_data->library = $library;
 		$this->template->title.= $title.' Library';
+		
+		return;
 	}
 	
-	public function action_models()
+	public function action_models($id = '')
 	{
 		// set the default view
 		$view = 'model';
 		
-		switch ($this->request->param('id'))
+		switch ($id)
 		{
 			case 'access':
 				$title = 'Access';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/access', 'yaml'));
+				$model = Format::forge(file_get_contents(APPPATH.'assets/nova2/models/access.yaml'), 'yaml')->to_array();
 			break;
 			
 			case 'docking':
 				$title = 'Docking';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/docking', 'yaml'));
+				$model = Format::forge(file_get_contents(APPPATH.'assets/nova2/models/docking.yaml'), 'yaml')->to_array();
 			break;
 			
 			case 'system':
 				$title = 'System';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/system', 'yaml'));
+				$model = Format::forge(file_get_contents(APPPATH.'assets/nova2/models/system.yaml'), 'yaml')->to_array();
 			break;
 			
 			case 'tour':
 				$title = 'Tour';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/tour', 'yaml'));
+				$model = Format::forge(file_get_contents(APPPATH.'assets/nova2/models/tour.yaml'), 'yaml')->to_array();
 			break;
 			
 			case 'users':
 				$title = 'Users';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/users', 'yaml'));
+				$model = Format::forge(file_get_contents(APPPATH.'assets/nova2/models/users.yaml'), 'yaml')->to_array();
 			break;
 			
 			case 'wiki':
 				$title = 'Wiki';
-				$model = Spyc::YAMLLoad(Kohana::find_file('assets', 'nova2/models/wiki', 'yaml'));
+				$model = Format::forge(file_get_contents(APPPATH.'assets/nova2/models/wiki.yaml'), 'yaml')->to_array();
 			break;
 			
 			default:
-				$item = $this->request->param('id');
+				$item = $id;
 				
 				if (empty($item))
 				{
@@ -152,9 +148,11 @@ class Controller_Nova2_Core extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova2/developers/core/'.$view);
-		$this->template->content->header = $title;
-		$this->template->content->model = $model;
+		$this->_view = 'components/nova2/developers/core/'.$view;
+		$this->_data->header = $title;
+		$this->_data->model = $model;
 		$this->template->title.= $title.' Model';
+		
+		return;
 	}
 }

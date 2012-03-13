@@ -1,36 +1,29 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova1_Pages extends Controller_Template {
-
+class Controller_Nova1_Pages extends Controller_Base
+{
 	private $imagepath;
 	
 	public function before()
 	{
 		parent::before();
 		
-		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		$this->imagepath = Uri::base(false).'app/views/design/images/nova1/';
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 1 - ';
-		
-		// load Spyc
-		Kohana::load(Kohana::find_file('vendor', 'spyc/spyc'));
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 1 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova1/pages/index');
+		$this->_view = 'components/nova1/pages/index';
 		$this->template->title.= 'Pages';
+		
+		return;
 	}
 	
-	public function action_admin()
+	public function action_admin($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -49,14 +42,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_archive()
+	public function action_archive($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -95,14 +90,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_characters()
+	public function action_characters($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -141,14 +138,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_login()
+	public function action_login($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'index':
 			default:
@@ -172,14 +171,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_main()
+	public function action_main($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -218,14 +219,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_manage()
+	public function action_manage($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -309,14 +312,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_messages()
+	public function action_messages($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -340,16 +345,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_personnel()
+	public function action_personnel($page = '')
 	{
-		$page = 'Personnel';
-		
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -393,14 +398,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_report()
+	public function action_report($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -449,14 +456,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_sim()
+	public function action_sim($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'main':
 			default:
@@ -535,14 +544,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_site()
+	public function action_site($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			default:
 			case 'index':
@@ -646,14 +657,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_upload()
+	public function action_upload($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			default:
 			case 'main':
@@ -672,14 +685,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_user()
+	public function action_user($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			default:
 			case 'index':
@@ -718,14 +733,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_wiki()
+	public function action_wiki($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			default:
 			case 'index':
@@ -774,14 +791,16 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_write()
+	public function action_write($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			default:
 			case 'index':
@@ -810,8 +829,10 @@ class Controller_Nova1_Pages extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/pages/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/pages/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 }

@@ -8,7 +8,7 @@
 
 <p>If your server runs a little slower and is creating some lag situations that you want to hide from your users, you can easily add a loader to your page using a little extra HTML markup and some jQuery code.</p>
 
-<p>For this example, let's use the missions page and let's work in the <samp>_base_override</samp> directory. Start by copying the sim_missions_js.php file from <samp>application/views/_base/main/js</samp> to <samp>application/views/_base_override/main/js</samp> and the sim_missions_all.php file from <samp>application/views/_base/main/pages</samp> to <samp>application/views/_base_override/main/pages</samp>. Copying the files is important because it means we won't lose any of the existing functionality.</p>
+<p>For this example, let's use the missions page and let's work in the <code>_base_override</code> directory. Start by copying the sim_missions_js.php file from <code>application/views/_base/main/js</code> to <code>application/views/_base_override/main/js</code> and the sim_missions_all.php file from <code>application/views/_base/main/pages</code> to <code>application/views/_base_override/main/pages</code>. Copying the files is important because it means we won't lose any of the existing functionality.</p>
 
 <p>To start, we need to wrap the content of our page with a simple loaded div that'll be hidden at the start. Make sure the sim_missions_all.php view file looks like this:</p>
 
@@ -34,7 +34,7 @@ $('#loaded').removeClass('hidden');</pre>
 
 <p class="alert alert-info"><strong>Note:</strong> This tutorial does not cover creating the controller method for such a page, just creating the view file and Javascript view file.</p>
 
-<p>To start, we'll create our main_rules.php file in <samp>_base_override/main/pages</samp>. Once it's been created, we'll need to flesh out the content a little to look something like this:</p>
+<p>To start, we'll create our main_rules.php file in <code>_base_override/main/pages</code>. Once it's been created, we'll need to flesh out the content a little to look something like this:</p>
 
 <pre>&lt;?php echo text_output($header, 'h1', 'page-head');?>
 
@@ -53,7 +53,7 @@ $('#loaded').removeClass('hidden');</pre>
 	&lt;/div>
 &lt;/div></pre>
 
-<p>Now that we have our markup in place, we can use the UI Tabs widget to change our markup to a full-blown tab panel. Create a main_rules_js.php file in <samp>_base_override/main/js</samp>. Once it's been created, add the following code:</p>
+<p>Now that we have our markup in place, we can use the UI Tabs widget to change our markup to a full-blown tab panel. Create a main_rules_js.php file in <code>_base_override/main/js</code>. Once it's been created, add the following code:</p>
 
 <pre>&lt;script type="text/javascript">
 	$(document).ready(function(){
@@ -65,7 +65,7 @@ $('#loaded').removeClass('hidden');</pre>
 
 <h2>Creating New Javascript</h2>
 
-<p>For advanced jQuery users, you can easily add custom jQuery code to do whatever you want in the same manner. Simply copy and paste the original file from the <samp>_base</samp> directory to either your skin section's <samp>js</samp> directory or the <samp>_base_override</samp> directory if you want it to be used for all pages in the system. You can add your custom code and when you navigate to that page, you'll see the results of your new code.</p>
+<p>For advanced jQuery users, you can easily add custom jQuery code to do whatever you want in the same manner. Simply copy and paste the original file from the <code>_base</code> directory to either your skin section's <code>js</code> directory or the <code>_base_override</code> directory if you want it to be used for all pages in the system. You can add your custom code and when you navigate to that page, you'll see the results of your new code.</p>
 
 <br />
 <p>

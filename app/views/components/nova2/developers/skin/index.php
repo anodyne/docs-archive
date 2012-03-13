@@ -11,13 +11,13 @@
 	<li>Anatomy of a Nova skin</li>-->
 	<li><a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML</a> (w3schools)</li>
 	<li><a href="http://www.w3schools.com/css/default.asp" target="_blank">CSS</a> (w3schools)</li>
-	<li><a href="<?php echo Url::site('nova2/skin/changes');?>">Changes to Skinning in Nova 2</a></li>
+	<li><a href="<?php echo Uri::create('nova2/skin/changes');?>">Changes to Skinning in Nova 2</a></li>
 </ul><br>
 
 <div class="row">
 	<div class="span4">
 		<div class="thumbnail">
-			<img src="<?php echo Url::base();?>application/views/design/images/nova2/basic.png" alt="">
+			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/basic.png" alt="">
 			<h3 class="align-center">Basic Skinning</h3>
 		</div><br>
 		
@@ -30,7 +30,7 @@
 	
 	<div class="span4">
 		<div class="thumbnail">
-			<img src="<?php echo Url::base();?>application/views/design/images/nova2/intermediate.png" alt="">
+			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/intermediate.png" alt="">
 			<h3 class="align-center">Intermediate Skinning</h3>
 		</div><br>
 		
@@ -42,7 +42,7 @@
 	
 	<div class="span4">
 		<div class="thumbnail">
-			<img src="<?php echo Url::base();?>application/views/design/images/nova2/advanced.png" alt="">
+			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/advanced.png" alt="">
 			<h3 class="align-center">Advanced Skinning</h3>
 		</div><br>
 		

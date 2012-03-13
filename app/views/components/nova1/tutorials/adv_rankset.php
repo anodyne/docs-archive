@@ -18,7 +18,7 @@
 
 <h3>2. Create Our Folder</h3>
 
-<p>We need a place to put our rank set, so create a folder called <samp>dress</samp> on your Desktop.</p>
+<p>We need a place to put our rank set, so create a folder called <code>dress</code> on your Desktop.</p>
 
 <h3>3. Grab the Blank Images</h3>
 
@@ -42,7 +42,7 @@
 
 <h3>5. Grab the Marine Ranks</h3>
 
-<p>Open the <samp>marine</samp> directory from the Kuro-RPG folder. We want to copy all of the Marine ranks from here over to our folder. The items we're looking for here are the <dfn>g-</dfn> ranks. Copy the following <dfn>g-</dfn> items over to our folder:</p>
+<p>Open the <code>marine</code> directory from the Kuro-RPG folder. We want to copy all of the Marine ranks from here over to our folder. The items we're looking for here are the <dfn>g-</dfn> ranks. Copy the following <dfn>g-</dfn> items over to our folder:</p>
 
 <ul>
 	<li>a5.png</li>
@@ -73,7 +73,7 @@
 
 <h3>5. Grab the Naval Ranks</h3>
 
-<p>Now that we have our Marine ranks transferred over to our folder, let's focus on the naval ranks. Open the <samp>naval-gold</samp> directory from the Kuro-RPG folder. We want to copy all of the colored ranks from here over to our folder. The items we're looking for here are the <dfn>c-</dfn>, <dfn>r-</dfn>, <dfn>s-</dfn>, <dfn>t-</dfn>, <dfn>v-</dfn> and <dfn>y-</dfn>, ranks. Copy the following items from each color over to our folder:</p>
+<p>Now that we have our Marine ranks transferred over to our folder, let's focus on the naval ranks. Open the <code>naval-gold</code> directory from the Kuro-RPG folder. We want to copy all of the colored ranks from here over to our folder. The items we're looking for here are the <dfn>c-</dfn>, <dfn>r-</dfn>, <dfn>s-</dfn>, <dfn>t-</dfn>, <dfn>v-</dfn> and <dfn>y-</dfn>, ranks. Copy the following items from each color over to our folder:</p>
 
 <ul>
 	<li>a5.png</li>
@@ -115,7 +115,7 @@
 
 <h3>7. Create the Rank Quick Install File</h3>
 
-<p>If you want to use the Nova Quick Install feature, you can create the <samp>rank.yml</samp> file in the directory. To create the Quick Install file, create a file called rank.yml and insert the following text inside:</p>
+<p>If you want to use the Nova Quick Install feature, you can create the <code>rank.yml</code> file in the directory. To create the Quick Install file, create a file called rank.yml and insert the following text inside:</p>
 
 <pre>rank: Dress Ranks
 location: dress

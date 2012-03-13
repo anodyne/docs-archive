@@ -9,7 +9,7 @@
 		<p>By default, Nova will allow 1 playing character and 3 non-playing characters to be linked to a player, but if you want to change those numbers, you can do so from the Site Settings page!</p>
 	</div>
 	
-	<div class="span9"><div class="pull-right"><?php echo Html::image('application/views/design/images/nova1/tour/characters.png');?></div></div>
+	<div class="span9"><div class="pull-right"><?php echo Html::img('application/views/design/images/nova1/tour/characters.png');?></div></div>
 </div>
 
 <div class="btn-group pull-right">

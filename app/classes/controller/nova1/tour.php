@@ -1,75 +1,87 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova1_Tour extends Controller_Template {
-
+class Controller_Nova1_Tour extends Controller_Base
+{
 	private $imagepath;
 	
 	public function before()
 	{
 		parent::before();
 		
-		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		$this->imagepath = Uri::base(false).'app/views/design/images/nova1/';
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 1 - ';
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 1 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova1/tour/index');
+		$this->_view = 'components/nova1/tour/index';
 		$this->template->title.= 'Take a Tour';
+		
+		return;
 	}
 	
 	public function action_characters()
 	{
-		$this->template->content = View::factory('components/nova1/tour/characters');
+		$this->_view = 'components/nova1/tour/characters';
 		$this->template->title.= 'Nova Tour: Characters';
+		
+		return;
 	}
 	
 	public function action_forms()
 	{
-		$this->template->content = View::factory('components/nova1/tour/forms');
+		$this->_view = 'components/nova1/tour/forms';
 		$this->template->title.= 'Nova Tour: Dynamic Forms';
+		
+		return;
 	}
 	
 	public function action_genres()
 	{
-		$this->template->content = View::factory('components/nova1/tour/genres');
+		$this->_view = 'components/nova1/tour/genres';
 		$this->template->title.= 'Nova Tour: Genres';
+		
+		return;
 	}
 	
 	public function action_internationalization()
 	{
-		$this->template->content = View::factory('components/nova1/tour/internationalization');
+		$this->_view = 'components/nova1/tour/internationalization';
 		$this->template->title.= 'Nova Tour: Internationalization';
+		
+		return;
 	}
 	
 	public function action_littlethings()
 	{
-		$this->template->content = View::factory('components/nova1/tour/little_things');
-		$this->template->title.= "Nova Tour: It's the Little Things";
+		$this->_view = 'components/nova1/tour/little_things';
+		$this->template->title.= 'Nova Tour: It\'s the Little Things';
+		
+		return;
 	}
 	
 	public function action_seamless()
 	{
-		$this->template->content = View::factory('components/nova1/tour/seamless');
+		$this->_view = 'components/nova1/tour/seamless';
 		$this->template->title.= 'Nova Tour: Seamless Substitution';
+		
+		return;
 	}
 	
 	public function action_wiki()
 	{
-		$this->template->content = View::factory('components/nova1/tour/wiki');
+		$this->_view = 'components/nova1/tour/wiki';
 		$this->template->title.= 'Nova Tour: Thresher';
+		
+		return;
 	}
 	
 	public function action_writing()
 	{
-		$this->template->content = View::factory('components/nova1/tour/writing');
+		$this->_view = 'components/nova1/tour/writing';
 		$this->template->title.= 'Nova Tour: Writing';
+		
+		return;
 	}
 }

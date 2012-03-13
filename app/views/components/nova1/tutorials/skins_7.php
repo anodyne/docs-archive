@@ -8,9 +8,9 @@
 
 <p>The first thing we need to do in order to start is to create the directories and files we'll need in order to build a skin. In this instance, we're only going to create a main section skin, but the principles are the same when creating a login section, admin section and wiki section skin.</p>
 
-<p>Let's start by creating our skin directory in <samp>application/views</samp>; let's call the directory our skin sits in <kbd>anodyne</kbd>.</p>
+<p>Let's start by creating our skin directory in <code>application/views</code>; let's call the directory our skin sits in <kbd>anodyne</kbd>.</p>
 
-<p>The best way to create a skin in Nova is to start with one that already exists. For this tutorial, let's use the Lightness skin as a template. Open the <samp>application/views/lightness</samp> folder and copy the <kbd>main</kbd> folder, <dfn>template_main.php</dfn>, <dfn>index.html</dfn> and <dfn>preview-main.png</dfn> over to the <kbd>anodyne</kbd> directory. This gives us the basis for our skin and makes sure we have all the files, classes and components we need. From here, we'll simply overwrite what's there and build our skin.</p>
+<p>The best way to create a skin in Nova is to start with one that already exists. For this tutorial, let's use the Lightness skin as a template. Open the <code>application/views/lightness</code> folder and copy the <kbd>main</kbd> folder, <dfn>template_main.php</dfn>, <dfn>index.html</dfn> and <dfn>preview-main.png</dfn> over to the <kbd>anodyne</kbd> directory. This gives us the basis for our skin and makes sure we have all the files, classes and components we need. From here, we'll simply overwrite what's there and build our skin.</p>
 
 <h2>Setting Up the Template File</h2>
 

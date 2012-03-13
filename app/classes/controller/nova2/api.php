@@ -1,32 +1,28 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova2_Api extends Controller_Template {
-	
+class Controller_Nova2_Api extends Controller_Base
+{	
 	public function before()
 	{
 		parent::before();
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 2 - ';
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 2 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova2/developers/api/index');
-		
+		$this->_view = 'components/nova2/developers/api/index';
 		$this->template->title.= 'API';
+		
+		return;
 	}
 	
 	public function action_methods()
 	{
-		$this->template->content = View::factory('components/nova2/developers/api/methods');
-		
+		$this->_view = 'components/nova2/developers/api/methods';
 		$this->template->title.= 'API Methods';
+		
+		return;
 	}
 	
 	public function action_using($type = '')
@@ -48,8 +44,10 @@ class Controller_Nova2_Api extends Controller_Template {
 				$title = 'Using the API';
 			break;
 		}
-		$this->template->content = View::factory($view);
 		
+		$this->_view = $view;
 		$this->template->title.= $title;
+		
+		return;
 	}
 }

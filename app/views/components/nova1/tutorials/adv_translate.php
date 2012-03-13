@@ -10,7 +10,7 @@
 
 <h3>Creating the Language Directory</h3>
 
-<p>The first thing to do is duplicate the english directory found in <samp>application/language</samp> and rename the folder to the language you're translating. For this example, we'll use <kbd>spanish</kbd>. Once the directory is created, you will need to go through each language file in the directory and translate the strings one by one. In the process of developing Nova, we tried to do everything as one and two word groups to help translators. While the base language file may be several hundred lines long, each line usually only has one word on it to translate.</p>
+<p>The first thing to do is duplicate the english directory found in <code>application/language</code> and rename the folder to the language you're translating. For this example, we'll use <kbd>spanish</kbd>. Once the directory is created, you will need to go through each language file in the directory and translate the strings one by one. In the process of developing Nova, we tried to do everything as one and two word groups to help translators. While the base language file may be several hundred lines long, each line usually only has one word on it to translate.</p>
 
 <h3>Translate the CodeIgniter Core</h3>
 

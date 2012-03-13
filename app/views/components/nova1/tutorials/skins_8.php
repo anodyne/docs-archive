@@ -32,11 +32,11 @@
 
 <h3>Modifying Our Theme</h3>
 
-<p>Open up <samp>ui/development-bundle/themes/anodyne</samp> from the folder on your desktop. You'll see a directory of images and several CSS files. In order to use the widget theme, we'll need to make a minor change to the way the UI widgets reference images since Nova stores stylesheets and images in their own folders. Open <dfn>jquery.ui.theme.css</dfn> and do a search for all references to <strong>(images</strong> and replace those with <strong>(.images</strong>. That'll ensure Nova is looking in the right place for the image the widgets need.</p>
+<p>Open up <code>ui/development-bundle/themes/anodyne</code> from the folder on your desktop. You'll see a directory of images and several CSS files. In order to use the widget theme, we'll need to make a minor change to the way the UI widgets reference images since Nova stores stylesheets and images in their own folders. Open <dfn>jquery.ui.theme.css</dfn> and do a search for all references to <strong>(images</strong> and replace those with <strong>(.images</strong>. That'll ensure Nova is looking in the right place for the image the widgets need.</p>
 
 <h3>Uploading Our Theme</h3>
 
-<p>Now that we've made a few tweaks to our skin, we're ready to upload it. Upload the images from <samp>ui/development-bundle/themes/anodyne/images</samp> to our skin's images folder then upload the <dfn>jquery.ui.theme.css</dfn> file to the skin's css folder. We don't need to make any other changes related to the widget theme now because Nova is smart enough to know that if the theme stylesheet is in the skin to use it.</p>
+<p>Now that we've made a few tweaks to our skin, we're ready to upload it. Upload the images from <code>ui/development-bundle/themes/anodyne/images</code> to our skin's images folder then upload the <dfn>jquery.ui.theme.css</dfn> file to the skin's css folder. We don't need to make any other changes related to the widget theme now because Nova is smart enough to know that if the theme stylesheet is in the skin to use it.</p>
 
 <p class="alert alert-info"><strong>Note:</strong> Now that we've gone through that, it's my unfortunate duty to tell you that the main section doesn't actually use any UI widgets, but in the event we add UI widgets to the main section, you'll want to make sure you go through these steps. The admin section uses UI widgets extensively.</p>
 

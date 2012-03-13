@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>Further adding to Nova's flexibility, you can create an .htaccess file that will allow users to access your site without the <samp>index.php</samp>. In order to do this, you need to have a host that allows .htaccess files and has mod_rewrite turned on. If you're not sure if your server matches these things, contact your host. Once you (or your host) have created the .htaccess file in your root directory, copy and paste the following code in:</p>
+<p>Further adding to Nova's flexibility, you can create an .htaccess file that will allow users to access your site without the <code>index.php</code>. In order to do this, you need to have a host that allows .htaccess files and has mod_rewrite turned on. If you're not sure if your server matches these things, contact your host. Once you (or your host) have created the .htaccess file in your root directory, copy and paste the following code in:</p>
 
 <pre>&lt;IfModule mod_rewrite.c>
     RewriteEngine On

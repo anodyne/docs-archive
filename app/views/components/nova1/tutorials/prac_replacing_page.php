@@ -10,9 +10,9 @@
 
 <h2>Prepping the Files</h2>
 
-<p>When we replaced the view file, we only had to deal with one file. In this example, we're going to deal with a view file and a controller file. Since we're already familiar with view files from the last tutorial, we'll start there. To get started with this tutorial, we're going to copy the main index page from <samp>application/views/_base/main/pages</samp> into our base override directory located at <samp>application/views/_base_override/main/pages</samp> just like we did in the last tutorial.</p>
+<p>When we replaced the view file, we only had to deal with one file. In this example, we're going to deal with a view file and a controller file. Since we're already familiar with view files from the last tutorial, we'll start there. To get started with this tutorial, we're going to copy the main index page from <code>application/views/_base/main/pages</code> into our base override directory located at <code>application/views/_base_override/main/pages</code> just like we did in the last tutorial.</p>
 
-<p>Next, we're going to open up our main controller base file which is located at <samp>application/controllers/base/main_base.php</samp>. What you'll see will most likely look like Greek to you, but we're only going to be pulling a small portion of this code. What we want to copy is the <dfn>index</dfn> method.</p>
+<p>Next, we're going to open up our main controller base file which is located at <code>application/controllers/base/main_base.php</code>. What you'll see will most likely look like Greek to you, but we're only going to be pulling a small portion of this code. What we want to copy is the <dfn>index</dfn> method.</p>
 
 <pre>function index()
 {
@@ -67,4 +67,4 @@
 	$this->template->render();
 }</pre>
 
-<p>Copy the entire <dfn>index</dfn> method and paste it in to the <samp>application/controllers/main.php</samp> file right below where the comment says <em>/** your methods here **/</em>. Save the file and make sure it's been uploaded to the server. You shouldn't see any difference right now, but that's the point. We'll edit the files next.</p>
+<p>Copy the entire <dfn>index</dfn> method and paste it in to the <code>application/controllers/main.php</code> file right below where the comment says <em>/** your methods here **/</em>. Save the file and make sure it's been uploaded to the server. You shouldn't see any difference right now, but that's the point. We'll edit the files next.</p>

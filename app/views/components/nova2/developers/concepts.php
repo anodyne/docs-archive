@@ -98,7 +98,7 @@ $car->play_radio('99.7');</pre>
 
 <h3>Overriding the System Default</h3>
 
-<p>That's great and all, but if you want to make changes across the entire system, you don't want to have to change something in every single skin. We've thought of that and provide a similar process to override something across the entire system. Instead of storing the images, view files or JavaScript view files in skins, you can use the _base_override directory in the application/views directory. Using the same process as above, just put your assets in the right location and Nova will use those instead of the system default.</p>
+<p>That's great and all, but if you want to make changes across the entire system, you don't want to have to change something in every single skin. We've thought of that and provide a similar process to override something across the entire system. Instead of storing the images, view files or JavaScript view files in skins, you can use the _base_override directory in the app/views directory. Using the same process as above, just put your assets in the right location and Nova will use those instead of the system default.</p>
 
 <h3>Order of Preference</h3>
 

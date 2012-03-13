@@ -18,13 +18,13 @@
 	'key3' => 'value3',
 );</pre>
 
-<p>Now, in order to change the language items, we need to first find the item we're looking to change so we make sure we have the right key. You'll need to open the language file located at <samp>nova/modules/core/language/english/base_lang.php</samp>. This is the primary language file and will store the majority of what you're looking to change. (If you're looking to change a longer piece of text, odds are its in one of the other files.) With the <samp>base_lang.php</samp> file open, you can use your text editor to search for what you're looking for. In this case, we want to search for "mission".</p>
+<p>Now, in order to change the language items, we need to first find the item we're looking to change so we make sure we have the right key. You'll need to open the language file located at <code>nova/modules/core/language/english/base_lang.php</code>. This is the primary language file and will store the majority of what you're looking to change. (If you're looking to change a longer piece of text, odds are its in one of the other files.) With the <code>base_lang.php</code> file open, you can use your text editor to search for what you're looking for. In this case, we want to search for "mission".</p>
 
 <p>Your search will probably return a few results, but the ones you're looking for are the ones that have array keys of <dfn>global_mission</dfn> and <dfn>global_missions</dfn>. Copy both of those items and head on to the next step.</p>
 
 <h3>2. Change the Language Items You Want to Change</h3>
 
-<p>Now that our clipboard has the original items, we can paste them in to the language file located in <samp>application/language/english/app_lang.php</samp>. Open it up and paste the two items at the bottom of the file. Now, we can change the <strong>value</strong> of the array items to what we want and save the file. Your file items will probably look a little something like this:</p>
+<p>Now that our clipboard has the original items, we can paste them in to the language file located in <code>app/language/english/app_lang.php</code>. Open it up and paste the two items at the bottom of the file. Now, we can change the <strong>value</strong> of the array items to what we want and save the file. Your file items will probably look a little something like this:</p>
 
 <pre>$lang['global_mission'] = "episode";
 $lang['global_missions'] = "episodes";</pre>
@@ -35,6 +35,6 @@ $lang['global_missions'] = "episodes";</pre>
 
 <h3>3. Upload Your Changes</h3>
 
-<p>Now that you've made your changes, make sure the <samp>app_lang.php</samp> file is saved and then upload it to your server (or if you're editing it on the server, just save it). Head over to your Nova site and you should see that things should be changed.</p>
+<p>Now that you've made your changes, make sure the <code>app_lang.php</code> file is saved and then upload it to your server (or if you're editing it on the server, just save it). Head over to your Nova site and you should see that things should be changed.</p>
 
 <p>It's important to note that menu items don't respect the language files since they're stored in the database. If you want to change something in a menu item, simply edit the menu item.</p>

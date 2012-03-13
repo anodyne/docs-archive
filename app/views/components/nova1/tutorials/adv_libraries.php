@@ -4,7 +4,7 @@
 
 <h2>Creating Your Own Library</h2>
 
-<p>Sometimes, the things you may want to do will require more than just a simple helper. Sometimes, you'll have to create an entire library to hold everything you want to do. Creating libraries in Nova is straightforward. Your library classes should be placed within your <samp>application/libraries</samp> folder, as this is where CodeIgniter will look for them when they are initialized.</p>
+<p>Sometimes, the things you may want to do will require more than just a simple helper. Sometimes, you'll have to create an entire library to hold everything you want to do. Creating libraries in Nova is straightforward. Your library classes should be placed within your <code>application/libraries</code> folder, as this is where CodeIgniter will look for them when they are initialized.</p>
 
 <p>You can name your library files whatever you want provided they meeting the following naming conventions:</p>
 
@@ -57,7 +57,7 @@ class Someclass {
 	}
 }</pre>
 
-<p class="alert alert-info">You can also pass parameters stored in a config file. Simply create a config file named identically to the class file name and store it in your <samp>application/config</samp> folder. <strong>Note:</strong> if you dynamically pass parameters as described above, the config file option will not be available.</p>
+<p class="alert alert-info">You can also pass parameters stored in a config file. Simply create a config file named identically to the class file name and store it in your <code>application/config</code> folder. <strong>Note:</strong> if you dynamically pass parameters as described above, the config file option will not be available.</p>
 
 <h3>Utilizing CodeIgniter Resources within Your Library</h3>
 
@@ -99,7 +99,7 @@ Also, please note: If you are running PHP 4 it's usually best to avoid calling g
 
 <h3>Replacing Core Libraries</h3>
 
-<p>In some rare instances, you may want to actually replace an entire library with your own version of that library. CodeIgniter allows doing that by simply naming your class files identically to a native library. Doing so will cause CodeIgniter to use your version instead of the native one. To do this, all you need to do is name the file and the class declaration exactly the same as the native library. For example, to replace the native Email library you'd create a file named <samp>application/libraries/Email.php</samp>, and declare your class with:</p>
+<p>In some rare instances, you may want to actually replace an entire library with your own version of that library. CodeIgniter allows doing that by simply naming your class files identically to a native library. Doing so will cause CodeIgniter to use your version instead of the native one. To do this, all you need to do is name the file and the class declaration exactly the same as the native library. For example, to replace the native Email library you'd create a file named <code>application/libraries/Email.php</code>, and declare your class with:</p>
 
 <pre>class CI_Email {
 
@@ -120,7 +120,7 @@ Also, please note: If you are running PHP 4 it's usually best to avoid calling g
 	<li>Your new class name and filename must be prefixed with <dfn>MY_</dfn>.</li>
 </ul>
 
-<p>For example, to extend the native Email class you'd simply create a file named <samp>application/libraries/MY_Email.php</samp> and declare your class with:</p>
+<p>For example, to extend the native Email class you'd simply create a file named <code>application/libraries/MY_Email.php</code> and declare your class with:</p>
 
 <pre>class MY_Email extends CI_Email {
 

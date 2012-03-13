@@ -4,7 +4,7 @@
 
 <h2>The Nova Root Folder</h2>
 
-<?php echo Html::image('application/views/design/images/nova1/folders-root.png');?>
+<?php echo Html::img('application/views/design/images/nova1/folders-root.png');?>
 
 <ul>
 	<li><strong>application</strong> &ndash; This is the heart of Nova. The application folder contains the directories which hold all of the files specific to each instance of Nova.</li>
@@ -15,7 +15,7 @@
 
 <h2>The Application Folder</h2>
 
-<?php echo Html::image('application/views/design/images/nova1/folders-application.png');?>
+<?php echo Html::img('application/views/design/images/nova1/folders-application.png');?>
 
 <ul>
 	<li><strong>assets</strong> &ndash; The assets folder contains a little bit of everything. Install files, update files, images, genre files Javascript files and backups are just a few of the things you'll find if you go exploring the assets folder. It's highly recommended that you don't try to edit anything in this folder since the system as a whole relies on some of the pieces found in this folder.</li>
@@ -35,7 +35,7 @@
 
 <p class="alert alert-danger"><strong>Warning:</strong> Never edit core files unless you know what you're doing! Editing core files can cause the entire system and framework to fail.</p>
 
-<?php echo Html::image('application/views/design/images/nova1/folders-core.png');?>
+<?php echo Html::img('application/views/design/images/nova1/folders-core.png');?>
 
 <ul>
 	<li><strong>cache</strong> &ndash; CodeIgniter comes with the ability to cache view files to help speed up the loading of pages. CI will store its cache files in this directory. (Because of the dynamic nature of Nova, there's little we can cache.)</li>

@@ -119,7 +119,7 @@ $content = parse_dynamic_message($message, $args);
 
 <p>The Who&rsquo;s Online helper does just what you&rsquo;d think it does, it returns a list of all current users who are logged in based on the timespan given.</p>
 
-<p class="alert alert-info"><strong>Note:</strong> If you want to use this helper in your template file to show the list at the bottom of the page (or in any other location), you must first auto-load the utility helper as it is not automatically loaded by Nova. You can set the auto-load in <samp>application/config/autoload.php</samp> in the <var>helpers</var> array.</p>
+<p class="alert alert-info"><strong>Note:</strong> If you want to use this helper in your template file to show the list at the bottom of the page (or in any other location), you must first auto-load the utility helper as it is not automatically loaded by Nova. You can set the auto-load in <code>app/config/autoload.php</code> in the <var>helpers</var> array.</p>
 
 <h4>Parameters</h4>
 <br />
@@ -174,7 +174,7 @@ Captain Jean-Luc Picard, Commander William Riker, Commander Worf</pre>
 		<td class="td col1"><strong>action</strong></td>
 		<td class="td col2"><em>download</em></td>
 		<td class="td col3"><em>download/save</em></td>
-		<td class="td col4">The action to be taken with the final zip archive of the backed up content. Downloading will offer the zip archive for download by the user and Save will save the zip archive to the server in the <samp>./application/assets/backups</samp> directory.</td>
+		<td class="td col4">The action to be taken with the final zip archive of the backed up content. Downloading will offer the zip archive for download by the user and Save will save the zip archive to the server in the <code>./app/assets/backups</code> directory.</td>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>name</strong></td>
@@ -190,7 +190,7 @@ Captain Jean-Luc Picard, Commander William Riker, Commander Worf</pre>
 
 <h4>Example</h4>
 
-<p>The following example is from the upgrade controller. This code grabs all tables with the <dfn>sms_</dfn> prefix and will generate a zip file with the name sms_backup.zip in the <samp>./application/assets/backups</samp> directory.</p>
+<p>The following example is from the upgrade controller. This code grabs all tables with the <dfn>sms_</dfn> prefix and will generate a zip file with the name sms_backup.zip in the <code>./app/assets/backups</code> directory.</p>
 
 <pre>/* set the prefix */
 $prefix = 'sms_';

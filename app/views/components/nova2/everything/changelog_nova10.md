@@ -119,7 +119,7 @@
 * The Rank Catalogue wouldn't work well when multiple genres were installed.
 * Uploaded images (besides bio images) couldn't be deleted.
 * Authors were dropped off of mission posts because of some flawed logic.
-* The sample post wasn't in the email sent to the game master(s).
+* The codele post wasn't in the email sent to the game master(s).
 * Ranks couldn't be added in Internet Explorer.
 * Rank classes wouldn't be shown for rank sets without a blank name rank item.
 * The user bio pointed to the wrong location for user posts and user awards.

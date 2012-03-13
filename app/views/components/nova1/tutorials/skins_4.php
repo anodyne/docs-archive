@@ -22,7 +22,7 @@ The css directory is for, obviously, storing cascading stylesheets. You can have
 
 <h2>Images</h2>
 
-<p>The images directory is for, obviously, storing our images. A section's images folder can be used for both background images for the section itself as well as storing replacement images that are used elsewhere in the system. We've already talked about seamless substitution, so you know that adding an image with the same name as the image found in the <samp>_base</samp> directory will prompt Nova to use your item instead of the system default.</p>
+<p>The images directory is for, obviously, storing our images. A section's images folder can be used for both background images for the section itself as well as storing replacement images that are used elsewhere in the system. We've already talked about seamless substitution, so you know that adding an image with the same name as the image found in the <code>_base</code> directory will prompt Nova to use your item instead of the system default.</p>
 
 <h2>Javascript</h2>
 

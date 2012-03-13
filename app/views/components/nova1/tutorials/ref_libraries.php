@@ -1,6 +1,6 @@
 <h1><?php echo $header;?></h1>
 
-<p>A library is just a normal PHP class. It doesn't need to extend anything or follow any conventions. In Nova, libraries are stored in <samp>application/libraries</samp> and have the first letter of the filename capitalized. Our example library would look like this:</p>
+<p>A library is just a normal PHP class. It doesn't need to extend anything or follow any conventions. In Nova, libraries are stored in <code>application/libraries</code> and have the first letter of the filename capitalized. Our example library would look like this:</p>
 
 <pre>class Example {
 	

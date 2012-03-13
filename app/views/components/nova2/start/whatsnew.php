@@ -4,7 +4,7 @@
 
 <p>One of the biggest reasons for doing Nova 2 was to improve the file structure of Nova. We've heard from people that updating Nova is difficult and time consuming. For a product that promises to "get you back to playing your game" that's unacceptable. We went back to the drawing board with our file structure to make sure updating Nova is dead simple and we think we've nailed it.</p>
 
-<p>When it comes time to update Nova, all you'll need to do is delete the <samp>nova</samp> directory and upload the newer copy. After that, just run the update script from your web browser like you would normally and you're done. No more wading through files and making sure you don't accidentally update a file you shouldn't. In, out and back to your game.</p>
+<p>When it comes time to update Nova, all you'll need to do is delete the <code>nova</code> directory and upload the newer copy. After that, just run the update script from your web browser like you would normally and you're done. No more wading through files and making sure you don't accidentally update a file you shouldn't. In, out and back to your game.</p>
 
 <h2>New Database Configuration Process</h2>
 
@@ -94,7 +94,7 @@
 <p>As with any update, we've taken time to fix several nagging issues in Nova, some of which have existed from the very beginning. In all, we've address over a dozen bugs to make your experience with Nova 2 even better than with version 1. Some of the major issues addressed include:</p>
 
 <ul>
-	<li>Using seamless substitution with images in the <samp>_base_override</samp> directory didn't work properly</li>
+	<li>Using seamless substitution with images in the <code>_base_override</code> directory didn't work properly</li>
 	<li>When replying to or forwarding private messages, the RE and FWD prefixes would always be added to the subject line instead of just once</li>
 	<li>When replying to a private message, the person sending the message would end up on the recipient list and the message would appear in their inbox</li>
 	<li>The join form could be submitted without an email address and password</li>

@@ -7,7 +7,7 @@
 		<p>With rich text editing, categories, full history and commenting on wiki pages, Thresher is the ultimate collaborative tool for you and your players that provides access to tons of information that you build.</p>
 	</div>
 	
-	<div class="span9"><div class="pull-right"><?php echo Html::image('application/views/design/images/nova1/tour/wiki.png');?></div></div>
+	<div class="span9"><div class="pull-right"><?php echo Html::img('application/views/design/images/nova1/tour/wiki.png');?></div></div>
 </div>
 
 <div class="btn-group pull-right">

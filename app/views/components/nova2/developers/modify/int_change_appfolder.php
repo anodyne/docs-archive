@@ -10,11 +10,11 @@
 
 <h3>1. Change the Name of the Application Folder</h3>
 
-<p>Rename the application folder on the server from <samp>application</samp> to <samp>uss_enterprise</samp> (or whatever you want it to be).</p>
+<p>Rename the application folder on the server from <code>application</code> to <code>uss_enterprise</code> (or whatever you want it to be).</p>
 
 <h3>2. Change the Index File</h3>
 
-<p>Next, we need to update the index file to point to the right directory for our application. Open <samp>index.php</samp> and find the <var>$app_folder</var> variable (it's on line 66 or somewhere close by). Make the <var>$app_folder</var> variable point to your new application folder.</p>
+<p>Next, we need to update the index file to point to the right directory for our application. Open <code>index.php</code> and find the <var>$app_folder</var> variable (it's on line 66 or somewhere close by). Make the <var>$app_folder</var> variable point to your new application folder.</p>
 
 <pre>$app_folder = 'uss_enterprise';</pre>
 

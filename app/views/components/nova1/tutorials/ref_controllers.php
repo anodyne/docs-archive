@@ -2,11 +2,11 @@
 
 <h2>What is a controller?</h2>
 
-<p>Controllers are classes that can be reached through the URL and take care of handling the request from the browser. A controller calls models and other classes to fetch the information and finally will pass everything to a view for output. If a URL like <samp>www.yoursite.com/example/index</samp> is requested, the first segment will be which controller is called ("example") and the second which method of that controller is called ("index").</p>
+<p>Controllers are classes that can be reached through the URL and take care of handling the request from the browser. A controller calls models and other classes to fetch the information and finally will pass everything to a view for output. If a URL like <code>www.yoursite.com/example/index</code> is requested, the first segment will be which controller is called ("example") and the second which method of that controller is called ("index").</p>
 
 <h2>Creating a controller</h2>
 
-<p>In Nova, controllers are put in the <samp>application/controllers</samp> directory. At the very least, they need to extend the Controller class. Below is an example of the controller "example":</p>
+<p>In Nova, controllers are put in the <code>application/controllers</code> directory. At the very least, they need to extend the Controller class. Below is an example of the controller "example":</p>
 
 <pre>class Example extends Controller {
 
@@ -32,7 +32,7 @@
 
 <p>In addition to pulling the controller and method from the URL, Nova can also pull additional parameters from the URL that you can pass from page to page. It's important though that you realize the security implications of doing so. Anything like usernames, passwords or any sensitive information should not be passed over the URL.</p>
 
-<p>For the URL <samp>www.yoursite.com/example/index/action/2</samp>, you can access the final two segments using the following code:</p>
+<p>For the URL <code>www.yoursite.com/example/index/action/2</code>, you can access the final two segments using the following code:</p>
 
 <pre>$data['type'] = $this->uri->segment(3);
 $data['id'] = $this->uri->segment(4);</pre>
@@ -41,4 +41,4 @@ $data['id'] = $this->uri->segment(4);</pre>
 
 <h2>Editing a controller</h2>
 
-<p>In Nova, controllers are a two part entity. The first part is the base controller, always located in <samp>application/controllers/base</samp> and having a "_base" after the name of the file. This is the file we create and shouldn't be edited. Instead, if you want to edit a controller, you should use the file located in <samp>application/controllers</samp>. So if you wanted to edit the "sim" controller to edit an existing page, you would copy the method you want from <samp>application/controllers/base/sim_base.php</samp> and paste it into <samp>application/controllers/sim.php</samp>, make your edits, save it and upload it to the server.</p>
+<p>In Nova, controllers are a two part entity. The first part is the base controller, always located in <code>application/controllers/base</code> and having a "_base" after the name of the file. This is the file we create and shouldn't be edited. Instead, if you want to edit a controller, you should use the file located in <code>application/controllers</code>. So if you wanted to edit the "sim" controller to edit an existing page, you would copy the method you want from <code>application/controllers/base/sim_base.php</code> and paste it into <code>application/controllers/sim.php</code>, make your edits, save it and upload it to the server.</p>

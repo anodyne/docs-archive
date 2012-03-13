@@ -14,9 +14,9 @@
 
 <h3>2. Change the application folder variable</h3>
 
-<p>Each copy of Nova references the application folder by name, allowing you to easily change the name and location of the folder. (CodeIgniter, by default, stores the application folder inside the core, which is normally called system instead of core. For Nova, we've renamed the system folder for security reasons and moved the application folder outside of the CI core.) To change this variable, we have to open <samp>index.php</samp> which is located in the root Nova folder.</p>
+<p>Each copy of Nova references the application folder by name, allowing you to easily change the name and location of the folder. (CodeIgniter, by default, stores the application folder inside the core, which is normally called system instead of core. For Nova, we've renamed the system folder for security reasons and moved the application folder outside of the CI core.) To change this variable, we have to open <code>index.php</code> which is located in the root Nova folder.</p>
 
-<p>In <samp>index.php</samp>, find the line that defines the variable <var>$app_folder</var>. Make that line read:</p>
+<p>In <code>index.php</code>, find the line that defines the variable <var>$app_folder</var>. Make that line read:</p>
 
 <pre>$app_folder = 'enterprise';</pre>
 

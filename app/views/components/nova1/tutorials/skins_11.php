@@ -20,7 +20,7 @@
 
 <h2>Building Our YAML File</h2>
 
-<p>Skin Quick Install files rely on two things. First, the file must be named <samp>skin.yml</samp> and second, it must be located in the skin's root directory. So what does a skin.yml file look like? Check out Redmond's sample file.</p>
+<p>Skin Quick Install files rely on two things. First, the file must be named <code>skin.yml</code> and second, it must be located in the skin's root directory. So what does a skin.yml file look like? Check out Redmond's sample file.</p>
 
 <pre>skin: Redmond
 location: redmond
@@ -58,7 +58,7 @@ sections:
     type: main
     preview: preview-main.png</pre>
 	
-<p>That's it! When an admin uploads your skin to their <samp>views</samp> directory then navigates to the skin catalogue page, they'll be prompted to install the new skin and will be able to use it only a few seconds later.</p>
+<p>That's it! When an admin uploads your skin to their <code>views</code> directory then navigates to the skin catalogue page, they'll be prompted to install the new skin and will be able to use it only a few seconds later.</p>
 
 <p class="alert alert-info"><strong>Note:</strong> For the best results, you should copy one of the skin.yml files from an existing skin and use that as a starting point.</p>
 	

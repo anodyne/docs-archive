@@ -1,7 +1,13 @@
 <?php
 
 // grab the current request object
-$req = Request::active();
+$req = Request::main();
+
+// set the different URI segments
+$dir = Uri::segment(1);
+$con = Uri::segment(2);
+$act = Uri::segment(3);
+$param = Uri::segment(4);
 
 // set up the translation for directories
 $directories = array(
@@ -94,10 +100,10 @@ $controllers = array(
 					<nav>
 						<ul>
 							<li><a href="<?php echo Uri::create('main');?>" id="nav-home"></a></li>
-							<li><a href="<?php echo Uri::create('nova2');?>" id="nav-nova2"></a></li>
-							<!--<li><a href="<?php echo Uri::create('nova3');?>" id="nav-nova3"></a></li>-->
-							<li><a href="<?php echo Uri::create('sms');?>" id="nav-sms"></a></li>
-							<!--<li><a href="<?php echo Uri::create('satellite');?>" id="nav-satellite"></a></li>-->
+							<li><a href="<?php echo Uri::create('nova2/overview');?>" id="nav-nova2"></a></li>
+							<!--<li><a href="<?php echo Uri::create('nova3/overview');?>" id="nav-nova3"></a></li>-->
+							<li><a href="<?php echo Uri::create('sms/overview');?>" id="nav-sms"></a></li>
+							<!--<li><a href="<?php echo Uri::create('satellite/overview');?>" id="nav-satellite"></a></li>-->
 							<li><a href="http://www.anodyne-productions.com" id="nav-anodyne" class="tip-below" title="Anodyne-Productions.com"></a></li>
 						</ul>
 					</nav>
@@ -108,21 +114,21 @@ $controllers = array(
 				<div class="inner-container"></div>
 				<div class="row">
 					<div class="span12">
-						<?php if ($req->controller != 'main' and $req->action != 'index'): ?>
+						<?php if ($dir != 'main' and $con != 'index'): ?>
 							<ul class="breadcrumb">
-								<li><a href="<?php echo Uri::create();?>">Home</a></li>
+								<li><a href="<?php echo Uri::create('main');?>">Home</a></li>
 								
-								<?php if ($req->directory): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Uri::create($req->directory);?>"><?php echo $directories[$req->directory];?></a></li>
-									<?php if ($req->directory == 'nova2' and ($req->controller == 'modify' or $req->controller == 'skin' or $req->controller == 'core')): ?>
+								<?php if ($dir): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/overview');?>"><?php echo $directories[$dir];?></a></li>
+									<?php if ($dir == 'nova2' and ($con == 'modify' or $con == 'skin' or $con == 'core')): ?>
 										<li><span class="divider">/</span> <a href="<?php echo Uri::create('nova2/developers/index');?>">Developers</a></li>
 									<?php endif;?>
 									
-									<?php if ($req->controller): ?>
-										<li><span class="divider">/</span> <a href="<?php echo Uri::create($req->directory.'/'.$req->controller);?>"><?php echo $controllers[$req->directory][$req->controller];?></a></li>
+									<?php if ($con): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/'.$con);?>"><?php echo $controllers[$dir][$con];?></a></li>
 										
-										<?php if ($req->param('id') and ($req->controller == 'pages' or ($req->controller == 'pages' and $req->param('id') != 'index'))): ?>
-											<li><span class="divider">/</span> <a href="<?php echo Uri::create($req->directory.'/'.$req->controller.'/'.$req->action);?>"><?php echo ucfirst($req->action);?></a></li>
+										<?php if ($act and ($con == 'pages' or ($con == 'pages' and $act != 'index'))): ?>
+											<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/'.$con.'/'.$act);?>"><?php echo ucfirst($act);?></a></li>
 										<?php endif;?>
 									<?php endif;?>
 								<?php endif;?>

@@ -1,24 +1,19 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova2_Overview extends Controller_Template {
-	
+class Controller_Nova2_Overview extends Controller_Base
+{	
 	public function before()
 	{
 		parent::before();
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 2 - ';
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 2 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova2/overview/index');
-		
+		$this->_view = 'components/nova2/overview/index';
 		$this->template->title.= 'Main';
+		
+		return;
 	}
 }

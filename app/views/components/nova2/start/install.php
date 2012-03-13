@@ -15,7 +15,7 @@
 
 <h2>Step 2 <small>Configure Nova</small></h2>
 
-<p>Before beginning the installation, you can choose to change any of Nova's configuration options in the config files located in the <samp>application/config</samp> directory. This is completely optional and Nova 2 will install fine without any changes to any files in the <samp>config</samp> directory.</p>
+<p>Before beginning the installation, you can choose to change any of Nova's configuration options in the config files located in the <code>app/config</code> directory. This is completely optional and Nova 2 will install fine without any changes to any files in the <code>config</code> directory.</p>
 
 <h2>Step 3 <small>Setting Up the Database Connection</small></h2>
 
@@ -52,8 +52,8 @@
 <p>At the end of the installation Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:</p>
 
 <ul>
-	<li>application/assets/images</li>
-	<li>application/assets/backups</li>
-	<li>application/cache</li>
-	<li>application/logs</li>
+	<li>app/assets/images</li>
+	<li>app/assets/backups</li>
+	<li>app/cache</li>
+	<li>app/logs</li>
 </ul>

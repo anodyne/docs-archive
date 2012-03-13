@@ -1,33 +1,29 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php
 
-class Controller_Nova1_Tutorials extends Controller_Template {
-
+class Controller_Nova1_Tutorials extends Controller_Base
+{
 	private $imagepath;
 	
 	public function before()
 	{
 		parent::before();
 		
-		$this->imagepath = Url::base().'application/views/design/images/nova1/';
+		$this->imagepath = Uri::base(false).'app/views/design/images/nova1/';
 		
-		$this->template = View::factory('template');
-		$this->template->title = 'AnodyneDocs :: Nova 1 - ';
-	}
-	
-	public function after()
-	{
-		$this->response->body($this->template);
+		$this->template->title.= 'Nova 1 - ';
 	}
 	
 	public function action_index()
 	{
-		$this->template->content = View::factory('components/nova1/tutorials/index');
+		$this->_view = 'components/nova1/tutorials/index';
 		$this->template->title.= 'Tutorials';
+		
+		return;
 	}
 	
-	public function action_advanced()
+	public function action_advanced($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'appfolder':
 				$header = 'Changing the Application Folder';
@@ -89,14 +85,16 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_config()
+	public function action_config($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'ci':
 				$header = 'CodeIgniter Configuration';
@@ -109,18 +107,20 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 			
 			default:
-				$this->request->redirect('nova1/tutorials/index');
+				$this->response->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_extending()
+	public function action_extending($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 1:
 				$header = 'Tutorial: An Introduction to Extending Nova';
@@ -162,14 +162,16 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_intro()
+	public function action_intro($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'backup':
 				$header = 'Backup Guide';
@@ -202,18 +204,20 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 				
 			default:
-				$this->request->redirect('nova1/tutorials/index');
+				$this->response->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_models()
+	public function action_models($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 1:
 				$header = 'Tutorial: What is a Model?';
@@ -235,12 +239,14 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_practical()
+	public function action_practical($page = '')
 	{
 		switch ($this->request->param('id'))
 		{
@@ -255,18 +261,20 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 			
 			default:
-				$this->request->redirect('nova1/tutorials/index');
+				$this->response->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_reference()
+	public function action_reference($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 'controllers':
 				$header = 'Controllers';
@@ -284,18 +292,20 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 			
 			default:
-				$this->request->redirect('nova1/tutorials/index');
+				$this->response->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 	
-	public function action_skins()
+	public function action_skins($page = '')
 	{
-		switch ($this->request->param('id'))
+		switch ($page)
 		{
 			case 1:
 				$header = 'Anatomy of a Skin';
@@ -353,12 +363,14 @@ class Controller_Nova1_Tutorials extends Controller_Template {
 			break;
 				
 			default:
-				$this->request->redirect('nova1/tutorials/index');
+				$this->response->redirect('nova1/tutorials/index');
 			break;
 		}
 		
-		$this->template->content = View::factory('components/nova1/tutorials/'.$view);
-		$this->template->content->header = $header;
+		$this->_view = 'components/nova1/tutorials/'.$view;
+		$this->_data->header = $header;
 		$this->template->title.= $header;
+		
+		return;
 	}
 }

@@ -5,9 +5,9 @@
 <h2>The Root</h2>
 
 <ul>
-	<li><strong>application</strong> &ndash; For all intents and purposes, this folder is a placeholder. Blank controllers, config files, models and libraries tell CodeIgniter what to do when those components are accessed, but there is no Nova code in the <samp>application</samp> directory any more. This allows developers to make changes in this directory and not have to worry about their changes being wiped out during an update.</li>
+	<li><strong>application</strong> &ndash; For all intents and purposes, this folder is a placeholder. Blank controllers, config files, models and libraries tell CodeIgniter what to do when those components are accessed, but there is no Nova code in the <code>application</code> directory any more. This allows developers to make changes in this directory and not have to worry about their changes being wiped out during an update.</li>
 	<li><strong>nova</strong> &ndash; This is the heart and soul of Nova. Included in this directory is the CodeIgniter framework (which should never be edited or updated ... always let Anodyne test and release any changes to CI), the CI and Nova licenses and the Nova core.</li>
-	<li><strong>index.php</strong> &ndash; This is the main Nova file that every page uses. It's possible to change the name of this file in the event you want to run several installations from the same server. You could easily name your index.php file, nova.php and then change the reference in the config file to point to the nova.php file. More information about that is available in the <a href="<?php echo Url::site('nova2/developers/index');?>">developers section</a>.</li>
+	<li><strong>index.php</strong> &ndash; This is the main Nova file that every page uses. It's possible to change the name of this file in the event you want to run several installations from the same server. You could easily name your index.php file, nova.php and then change the reference in the config file to point to the nova.php file. More information about that is available in the <a href="<?php echo Uri::create('nova2/developers/index');?>">developers section</a>.</li>
 	<li><strong>message.php</strong> &ndash; The message file is used by Nova to display informational messages to users in the event an error has occurred. If a user's browser doesn't meet the requirements, the server doesn't meet the requirements or a user has been issued a level 2 ban, this page will display information to the user.</li>
 </ul>
 
@@ -67,7 +67,7 @@
 					<li><strong>language</strong> &ndash; Save for one files, all the language files are stored here.</li>
 					<li><strong>libraries</strong> &ndash; The base libraries used by Nova are stored here. If you need to modify an existing library, copy it (or the method(s) you need) to the application's libraries folder and edit from there.</li>
 					<li><strong>models</strong> &ndash; The base models used by Nova are stored here. If you need to modify an existing model, copy it (or the method(s) you need) to the application's models folder and edit from there.</li>
-					<li><strong>views</strong> &ndash; The base views used by Nova are stored here. If you need to modify an existing view, copy it to the specific skin you want it to apply to or the <samp>_base_override</samp> folder and edit from there.</li>
+					<li><strong>views</strong> &ndash; The base views used by Nova are stored here. If you need to modify an existing view, copy it to the specific skin you want it to apply to or the <code>_base_override</code> folder and edit from there.</li>
 				</ul>
 			</li>
 		</ul>

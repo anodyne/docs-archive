@@ -4,7 +4,7 @@
 
 <h2>404s and/or a Blank White Page</h2>
 
-<p>GoDaddy doesn't respect CodeIgniter's URI protocol, so we have to change it and make sure the URI is built the right way to ensure we aren't getting 404s or simply a white page. In order to change the URI protol, you need to open <samp>application/config/config.php</samp>. The first item to change is the index page. Because we're changing the way the URI is handled, we need to add to the index. Find the <var>$config['index_page']</var> variable near the top of the page and add a question mark to the end of it. The final line should look like:</p>
+<p>GoDaddy doesn't respect CodeIgniter's URI protocol, so we have to change it and make sure the URI is built the right way to ensure we aren't getting 404s or simply a white page. In order to change the URI protol, you need to open <code>app/config/config.php</code>. The first item to change is the index page. Because we're changing the way the URI is handled, we need to add to the index. Find the <var>$config['index_page']</var> variable near the top of the page and add a question mark to the end of it. The final line should look like:</p>
 
 <pre>$config['index_page'] = "index.php?";</pre>
 
@@ -16,7 +16,7 @@
 
 <h2>Emails</h2>
 
-<p>GoDaddy's setup doesn't play well with CodeIgniter's email class, so users on a GoDaddy host may notice that emails aren't being sent out from the system. To fix this, open <samp>application/config/email.php</samp> to change several settings. The following items need to be changed:</p>
+<p>GoDaddy's setup doesn't play well with CodeIgniter's email class, so users on a GoDaddy host may notice that emails aren't being sent out from the system. To fix this, open <code>app/config/email.php</code> to change several settings. The following items need to be changed:</p>
 
 <h4>Protocol</h4>
 

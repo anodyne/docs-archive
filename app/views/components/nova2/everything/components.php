@@ -33,7 +33,7 @@
 		<tr>
 			<td>
 				<strong><a href="http://www.jqueryui.com" target="_blank">jQuery UI</a></strong><br>
-				<span class="muted">1.8.17</span>
+				<span class="muted">1.8.18</span>
 			</td>
 			<td>jQuery UI is a lightweight, easily customizable interface library for the jQuery Javascript library.</td>
 		</tr>

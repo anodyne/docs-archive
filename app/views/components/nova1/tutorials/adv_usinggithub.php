@@ -34,7 +34,7 @@
 
 <h3>Translations</h3>
 
-<p>If you've gone through the process of translating Nova and want it to be included, you can issue a pull request for the language files and we'll make sure those items are included on the AnodyneXtras site. If you are translating Nova into a language where the CodeIgniter core language files don't exist, you'll need to translate those as well. <strong>Translations are the only things we'll allow modifications to the <samp>core</samp> directory.</strong>
+<p>If you've gone through the process of translating Nova and want it to be included, you can issue a pull request for the language files and we'll make sure those items are included on the AnodyneXtras site. If you are translating Nova into a language where the CodeIgniter core language files don't exist, you'll need to translate those as well. <strong>Translations are the only things we'll allow modifications to the <code>core</code> directory.</strong>
 
 <h2>What Kinds of Things Shouldn't I Fork For?</h2>
 

@@ -6,7 +6,7 @@
 
 <h3>Asset Files</h3>
 
-<p>Asset files are the integral components of a genre and include images and ranks. Nova stores all genre assets in <samp>application/assets/common</samp>. Each genre is assigned its own directory that lines up with its genre code. For instance, the Deep Space Nine genre code is <dfn>DS9</dfn> and its genre asset folder is <var>ds9</var>.</p>
+<p>Asset files are the integral components of a genre and include images and ranks. Nova stores all genre assets in <code>application/assets/common</code>. Each genre is assigned its own directory that lines up with its genre code. For instance, the Deep Space Nine genre code is <dfn>DS9</dfn> and its genre asset folder is <var>ds9</var>.</p>
 
 <h3>Images</h3>
 
@@ -14,7 +14,7 @@
 
 <h3>Ranks</h3>
 
-<p>Ranks are arguably one of the biggest asset pieces that change from genre to genre. Yes, the database changes, but the most noticable area are rank images. The ranks folder in the genre directory is where all the different rank sets are stored and accessed from. Like SMS, different rank sets are stored in different folders, but unlike SMS, you can name the rank sets independently from the folder name. If you want to add a rank set, you will upload it to <samp>application/assets/common/{genre}/ranks</samp>.</p>
+<p>Ranks are arguably one of the biggest asset pieces that change from genre to genre. Yes, the database changes, but the most noticable area are rank images. The ranks folder in the genre directory is where all the different rank sets are stored and accessed from. Like SMS, different rank sets are stored in different folders, but unlike SMS, you can name the rank sets independently from the folder name. If you want to add a rank set, you will upload it to <code>application/assets/common/{genre}/ranks</code>.</p>
 
 <h3>The Database</h3>
 
@@ -22,7 +22,7 @@
 
 <h3>The Install File</h3>
 
-<p>Nova stores the genre install files in <samp>application/assets/install/genres</samp>. There is one file for each genre that's stored in the format <dfn>{genre}_data.php</dfn>. Essentially, genre files are nothing more than several large PHP arrays with all the information about departments, positions and ranks. That data is fed into the install script and uses the arrays along with CodeIgniter's Database Forge feature to create tables and insert data into them.</p>
+<p>Nova stores the genre install files in <code>application/assets/install/genres</code>. There is one file for each genre that's stored in the format <dfn>{genre}_data.php</dfn>. Essentially, genre files are nothing more than several large PHP arrays with all the information about departments, positions and ranks. That data is fed into the install script and uses the arrays along with CodeIgniter's Database Forge feature to create tables and insert data into them.</p>
 
 <h2>Creating a Genre Install</h2>
 

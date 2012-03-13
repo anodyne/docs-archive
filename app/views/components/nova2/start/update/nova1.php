@@ -64,7 +64,7 @@
 						
 						<p>To get started, just open your browser and head to your site. From there, Nova will take over, push you in to the Setup Config page, and walk you through the process of setting up a connection to your database. Once you've put your information in, Nova will actually try to connect to the database and if there's a problem, will tell you right away so you can correct. After everything is correct, it'll write the database connection file to the right location on your server and you'll be on your way.</p>
 						
-						<p class="alert alert-info">If you've forgotten some of the pieces of your connection, you can always refer to the database file from your backup (ah, see, you're glad you did a backup now). You'll find that in the <strong>application/config/database.php</strong> file wherever you backed Nova 1 up to.</p>
+						<p class="alert alert-info">If you've forgotten some of the pieces of your connection, you can always refer to the database file from your backup (ah, see, you're glad you did a backup now). You'll find that in the <strong>app/config/database.php</strong> file wherever you backed Nova 1 up to.</p>
 					</div>
 					
 					<div id="2_update" class="pill-pane">
@@ -95,7 +95,7 @@
 
 						<p>Nova's skinning system didn't change for version 2, so any of your skins from Nova 1 should work with only a few minor modification (we say "minor" modification because there are some small changes that need to be made to Thresher and the admin system for Nova 2). For each of your Nova 1 skins you want to use in Nova 2, use the following steps to make sure they're working as expected in Nova 2.</p>
 
-						<p>The first thing to do is classify whether your skin is light or dark. In other words, do you have a light-colored background or a dark-colored background? If the skin you're updating has a light-colored background, all of the materials you'll need to copy can be found in the Pulsar skin <strong>application/views/default</strong>. If the skin you're updating uses a dark-colored background, all of the materials you'll need to copy can be found in the Titan skin <strong>application/views/titan</strong>. If you've edited a skin taken off of AnodyneXtras, you can download the new copy of the skin now and use the resources found in those skins instead.</p>
+						<p>The first thing to do is classify whether your skin is light or dark. In other words, do you have a light-colored background or a dark-colored background? If the skin you're updating has a light-colored background, all of the materials you'll need to copy can be found in the Pulsar skin <strong>app/views/default</strong>. If the skin you're updating uses a dark-colored background, all of the materials you'll need to copy can be found in the Titan skin <strong>app/views/titan</strong>. If you've edited a skin taken off of AnodyneXtras, you can download the new copy of the skin now and use the resources found in those skins instead.</p>
 
 						<h3>Thresher Updates</h3>
 
@@ -124,7 +124,7 @@
 					<div id="3_mods" class="pill-pane">
 						<h2>What About My MODs?</h2>
 
-						<p>Not only has Nova's file structure has changed, but the controllers themselves have also changed. You won't simply be able to copy and paste your old code in to Nova 2 and have it work. The best way to go about it is to copy the method from the base controller in <strong>nova/modules/core/controllers</strong> and paste it into the appropriate controller in <strong>application/controllers</strong>. Then, you can re-apply the MOD that way. Sadly, there's no quick and easy way to do this.</p>
+						<p>Not only has Nova's file structure has changed, but the controllers themselves have also changed. You won't simply be able to copy and paste your old code in to Nova 2 and have it work. The best way to go about it is to copy the method from the base controller in <strong>nova/modules/core/controllers</strong> and paste it into the appropriate controller in <strong>app/controllers</strong>. Then, you can re-apply the MOD that way. Sadly, there's no quick and easy way to do this.</p>
 						
 						<p>If you have questions about a specific MOD working in Nova 2, you should contact the MOD developer.</p>
 

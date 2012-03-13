@@ -12,7 +12,8 @@
 
 <ul>
 	<!--<li>What's New in Nova 3?</li>-->
-	<li><a href="<?php echo Url::site('nova3/start/requirements');?>">Requirements</a></li>
-	<li><a href="<?php echo Url::site('nova3/start/install');?>">Doing a fresh install</a></li>
+	<li><a href="<?php echo Uri::create('nova3/start/requirements');?>">Requirements</a></li>
+	<li><a href="<?php echo Uri::create('nova3/start/install');?>">Doing a fresh install</a></li>
+	<li><a href="<?php echo Uri::create('nova3/start/nova2');?>">Upgrading from Nova 2</a></li>
 	<!--<li>Updating Nova 2 to Nova 3</li>-->
 </ul>

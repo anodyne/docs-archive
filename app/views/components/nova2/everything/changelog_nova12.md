@@ -79,7 +79,7 @@
 * The autoload config item tried to autoload the Input library. This isn't necessary since CodeIgniter loads it by default.
 * Fixed some typos in the install data.
 * Users without an active character would be shown in the activity warning panel on the Admin Control Panel.
-* A sample post submitted by an applicant would just be a massive block of text in the email sent to the game master(s).
+* A codele post submitted by an applicant would just be a massive block of text in the email sent to the game master(s).
 * Some specifications weren't properly upgraded during the SMS Upgrade process.
 * A mission closing tag on the Create Characters page was causing some issues.
 * The timezone menu in Site Settings pulled the wrong value from the database to populate the field with.

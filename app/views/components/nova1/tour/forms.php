@@ -7,7 +7,7 @@
 		<p>Driven completely out of the database, the new dynamic forms give admins the ultimate control all from a handful of pages in the Control Panel.</p>
 	</div>
 	
-	<div class="span9"><div class="pull-right"><?php echo Html::image('application/views/design/images/nova1/tour/forms.png');?></div></div>
+	<div class="span9"><div class="pull-right"><?php echo Html::img('application/views/design/images/nova1/tour/forms.png');?></div></div>
 </div>
 
 <div class="btn-group pull-right">

@@ -21,11 +21,11 @@
 <p>Upload these files/directories in your <samp>application</samp> folder with the new versions, making sure to replace the old versions if they exist:</p>
 
 <ul>
-	<li>application/assets/update/100.php</li>
-	<li>application/assets/install</li>
-	<li>application/index.php</li>
-	<li>application/config/constants.php</li>
-	<li>application/controllers/base/upgrade_base.php</li>
+	<li>app/assets/update/100.php</li>
+	<li>app/assets/install</li>
+	<li>app/index.php</li>
+	<li>app/config/constants.php</li>
+	<li>app/controllers/base/upgrade_base.php</li>
 </ul>
 
 <h2>Step 4: Run the Update Script</h2>

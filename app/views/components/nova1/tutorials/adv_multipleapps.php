@@ -18,15 +18,15 @@
 
 <h3>2. Change the application folder variable</h3>
 
-<p>Each copy of Nova references the application folder by name, allowing you to easily change the name and location of the folder. (CodeIgniter, by default, stores the application folder inside the core, which is normally called system instead of core. For Nova, we've renamed the system folder for security reasons and moved the application folder outside of the CI core.) To change this variable, we have to open <samp>index.php</samp> which is located in the root Nova folder.</p>
+<p>Each copy of Nova references the application folder by name, allowing you to easily change the name and location of the folder. (CodeIgniter, by default, stores the application folder inside the core, which is normally called system instead of core. For Nova, we've renamed the system folder for security reasons and moved the application folder outside of the CI core.) To change this variable, we have to open <code>index.php</code> which is located in the root Nova folder.</p>
 
-<p>In <samp>index.php</samp>, find the line that defines the variable <var>$app_folder</var>. Make that line read:</p>
+<p>In <code>index.php</code>, find the line that defines the variable <var>$app_folder</var>. Make that line read:</p>
 
 <pre>$app_folder = 'enterprise';</pre>
 
 <h3>3. Rename the index file</h3>
 
-<p>Now that we've changed the application folder, we need to change the index file. In this instance, rename <samp>index.php</samp> to <dfn>enterprise.php</dfn>. This allows us to get to the Enterprise site by going to http://ships.1stfleet.com/enterprise.php. The other RPGs would be referenced by going to excelsior.php and voyager.php.</p>
+<p>Now that we've changed the application folder, we need to change the index file. In this instance, rename <code>index.php</code> to <dfn>enterprise.php</dfn>. This allows us to get to the Enterprise site by going to http://ships.1stfleet.com/enterprise.php. The other RPGs would be referenced by going to excelsior.php and voyager.php.</p>
 
 <p>At this point, your file structure should look something like this:</p>
 
@@ -42,7 +42,7 @@
 
 <h3>4. Update the Nova config file</h3>
 
-<p>Like the application folder, CodeIgniter references the index file as well so it can be changed to. The index file reference can be found in <samp>application/config/config.php</samp>. Once open, you need to find the <var>$config['index_page']</var> line and change it to read:</p>
+<p>Like the application folder, CodeIgniter references the index file as well so it can be changed to. The index file reference can be found in <code>application/config/config.php</code>. Once open, you need to find the <var>$config['index_page']</var> line and change it to read:</p>
 
 <pre>$config['index_page'] = 'enterprise.php';</pre>
 
@@ -52,13 +52,13 @@
 
 <p><strong>To use the same database:</strong></p>
 
-<p>Open <samp>application/config/database.php</samp> and change the connection parameters to use the proper username, password and database that your host gave you. The only line that will need to be different from application to application is the prefix setting. Change the database prefix to look like this:</p>
+<p>Open <code>application/config/database.php</code> and change the connection parameters to use the proper username, password and database that your host gave you. The only line that will need to be different from application to application is the prefix setting. Change the database prefix to look like this:</p>
 
 <pre>$db['default']['dbprefix'] = "enterprise_";</pre>
 
 <p><strong>To use the different databases:</strong></p>
 
-<p>Open <samp>application/config/database.php</samp> and change the connection parameters to use the proper username, password and database that your host gave you. Unless you have multiple database accounts, it's likely the only line that will need to be different from application to application is the database setting. Change the database line to look like this:</p>
+<p>Open <code>application/config/database.php</code> and change the connection parameters to use the proper username, password and database that your host gave you. Unless you have multiple database accounts, it's likely the only line that will need to be different from application to application is the database setting. Change the database line to look like this:</p>
 
 <pre>$db['default']['database'] = "1stfleet_ships_enterprise";</pre>
 
