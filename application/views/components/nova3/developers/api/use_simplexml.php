@@ -1,1 +1,0 @@
-<h1>Using the Nova API through SimpleXML</h1>

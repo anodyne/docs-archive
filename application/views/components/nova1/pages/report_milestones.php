@@ -1,3 +1,0 @@
-<h1><?php echo $header;?></h1>
-
-<p>Nova keeps track of a lot of things behind the scenes for the sake of providing game masters with detailed stats about the sim. One such stat that's kept are join dates. The milestones report provides an easy to read timespan of how long a player has been a member of the RPG as well as the date they joined on. Players will be displayed with their main character as well as links to their character and player bios.</p>
