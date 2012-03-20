@@ -1,8 +1,5 @@
 <h1>Nova 2</h1>
-
-<p>To make the user guide easier, we've simplified its organization. Everything is now broken down in to one of three sections: Getting Started, The Kitchen Sink and Developers. If you're looking for how to get up and running Nova 2 (including installation, upgrading from SMS, updating Nova and more), check out the Getting Started section. Pretty much everything else can be found in The Kitchen Sink section. Finally, developers will benefit from a wide array of tutorials, resources and documention in the Developers section, including all of our resources on skinning and modifications.</p>
-
-<p class="alert alert-info"><strong>Please note:</strong> Due to difficulty with keeping them accurate as Nova changes through updates, we've discontinued page guides for Nova 2. The Nova 1 page guides still exist for those who want to access them, though the information is likely out of date at this point.</p><br>
+<br>
 
 <ul class="thumbnails">
 	<li class="span4">

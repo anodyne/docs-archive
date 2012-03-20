@@ -11,7 +11,7 @@ class Controller_Nova2_Overview extends Controller_Base
 	
 	public function action_index()
 	{
-		$this->_view = 'components/nova2/overview/index';
+		$this->_view = 'components/nova2/index';
 		$this->template->title.= 'Main';
 		
 		return;
