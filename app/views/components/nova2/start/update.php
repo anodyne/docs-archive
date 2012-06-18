@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/203_to_210');?>">2.1</a></td>
+						<td>Enhancements to mission notes now notify the user when notes have been updated in the last 72 hours and always shows the last time mission notes were updated. Bug fixes address issues with some timespans, potential issues in the control panel, and other fixes.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/202_to_203');?>">2.0.3</a></td>
 						<td>Fixes an issue where memory consumption and execution time psuedo-variables didn't work because of the Template engine. In addition, jQuery UI has been updated to version 1.8.18.</td>
 					</tr>

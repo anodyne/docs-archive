@@ -62,9 +62,10 @@ class Controller_Nova2_Start extends Controller_Base
 			case '200_to_201':
 			case '201_to_202':
 			case '202_to_203':
+			case '203_to_210':
 				$view = 'components/nova2/start/update/standard_update';
 				
-				switch ($this->request->param('id'))
+				switch ($id)
 				{
 					case '200_to_201':
 						$title = 'Nova 2.0 to Nova 2.0.1';
@@ -76,6 +77,10 @@ class Controller_Nova2_Start extends Controller_Base
 					
 					case '202_to_203':
 						$title = 'Nova 2.0.2 to Nova 2.0.3';
+					break;
+					
+					case '203_to_210':
+						$title = 'Nova 2.0.3 to Nova 2.1';
 					break;
 				}
 			break;
@@ -93,10 +98,20 @@ class Controller_Nova2_Start extends Controller_Base
 		return;
 	}
 	
-	public function action_whatsnew()
+	public function action_whatsnew($version = '21')
 	{
+		$version_safe = $version;
+		
+		$version = str_replace('2', '2.', $version);
+		
+		$content = file_get_contents(APPPATH.'views/components/nova2/start/whatsnew_'.$version_safe.'.md');
+		
+		$title = "What's New in Nova ".$version;
+		
 		$this->_view = 'components/nova2/start/whatsnew';
-		$this->template->title.= "What's New in Nova 2";
+		$this->_data->whatsnew = Markdown::parse($content);
+		$this->_data->header = $title;
+		$this->template->title.= $title;
 		
 		return;
 	}
