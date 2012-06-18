@@ -66,31 +66,11 @@ $controllers = array(
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
 		<link rel="stylesheet" href="<?php echo Uri::base(false);?>app/views/design/custom.css">
 		
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/google-code-prettify/prettify.js"></script>
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-transition.js"></script>
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tooltip.js"></script>
-		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap-tab.js"></script>
-		
 		<!--[if IE 8]>
 		<style type="text/css">
 			#page_container { display:table; height:100%; }
 		</style>
 		<![endif]-->
-		
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.tip').tooltip();
-				
-				$('.tip-below').tooltip({
-					placement: 'bottom'
-				});
-			});
-		</script>
 	</head>
 	<body onload="prettyPrint()">
 		<div id="page_container">
@@ -110,31 +90,35 @@ $controllers = array(
 				</div>
 			</header>
 			
+			<?php if ($dir != 'main' and $con != 'index'): ?>
+				<div class="nav-sub">
+					<div class="container">
+						<ul class="breadcrumb">
+							<li><a href="<?php echo Uri::create('main');?>">Home</a></li>
+							
+							<?php if ($dir): ?>
+								<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/overview');?>"><?php echo $directories[$dir];?></a></li>
+								<?php if ($dir == 'nova2' and ($con == 'modify' or $con == 'skin' or $con == 'core')): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Uri::create('nova2/developers/index');?>">Developers</a></li>
+								<?php endif;?>
+								
+								<?php if ($con): ?>
+									<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/'.$con);?>"><?php echo $controllers[$dir][$con];?></a></li>
+									
+									<?php if ($act and ($con == 'pages' or ($con == 'pages' and $act != 'index'))): ?>
+										<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/'.$con.'/'.$act);?>"><?php echo ucfirst($act);?></a></li>
+									<?php endif;?>
+								<?php endif;?>
+							<?php endif;?>
+						</ul>
+					</div>
+				</div>
+			<?php endif;?>
+			
 			<div class="container">
 				<div class="inner-container"></div>
 				<div class="row">
 					<div class="span12">
-						<?php if ($dir != 'main' and $con != 'index'): ?>
-							<ul class="breadcrumb">
-								<li><a href="<?php echo Uri::create('main');?>">Home</a></li>
-								
-								<?php if ($dir): ?>
-									<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/overview');?>"><?php echo $directories[$dir];?></a></li>
-									<?php if ($dir == 'nova2' and ($con == 'modify' or $con == 'skin' or $con == 'core')): ?>
-										<li><span class="divider">/</span> <a href="<?php echo Uri::create('nova2/developers/index');?>">Developers</a></li>
-									<?php endif;?>
-									
-									<?php if ($con): ?>
-										<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/'.$con);?>"><?php echo $controllers[$dir][$con];?></a></li>
-										
-										<?php if ($act and ($con == 'pages' or ($con == 'pages' and $act != 'index'))): ?>
-											<li><span class="divider">/</span> <a href="<?php echo Uri::create($dir.'/'.$con.'/'.$act);?>"><?php echo ucfirst($act);?></a></li>
-										<?php endif;?>
-									<?php endif;?>
-								<?php endif;?>
-							</ul>
-						<?php endif;?>
-						
 						<?php echo $content;?>
 					</div>
 				</div>
@@ -161,5 +145,23 @@ $controllers = array(
 				</table>
 			</div>
 		</footer>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/google-code-prettify/prettify.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap.min.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.tip').tooltip();
+				
+				$('.tip-below').tooltip({
+					placement: 'bottom'
+				});
+			});
+		</script>
 	</body>
 </html>
