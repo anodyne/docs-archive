@@ -11,14 +11,14 @@
 	
 	<div class="tab-content">
 		<div id="modify" class="tab-pane active">
-			<p>Like the first version of Nova, version 2 allows developers to extend the core and create new ways to manage a game or present information. A good grasp of PHP and the Nova <a href="<?php echo Uri::create('nova2/developers/concepts');?>">development concepts</a> is required to do any significant modifications to Nova.</p><br>
+			<p>Like the first version of Nova, version 2 allows developers to extend the core and create new ways to manage a game or present information. A good grasp of PHP and the Nova <a href="<?php echo Uri::create('nova2/developers/concepts');?>">development concepts</a> is required to do any significant modifications to Nova.</p>
 			
 			<div class="row">
 				<div class="span4">
-					<div class="thumbnail">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/basic.png" alt="">
 						<h3 class="align-center">Basic Modifications</h3>
-					</div><br>
+					</div>
 					
 					<ul>
 						<li><a href="<?php echo Uri::create('nova2/modify/changeicons');?>">Change some system icons</a></li>
@@ -28,10 +28,10 @@
 				</div>
 				
 				<div class="span4">
-					<div class="thumbnail">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/intermediate.png" alt="">
 						<h3 class="align-center">Intermediate Modifications</h3>
-					</div><br>
+					</div>
 					
 					<ul>
 						<li><a href="<?php echo Uri::create('nova2/modify/newpage');?>">Create a brand new page</a></li>
@@ -44,10 +44,10 @@
 				</div>
 				
 				<div class="span4">
-					<div class="thumbnail">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/advanced.png" alt="">
 						<h3 class="align-center">Advanced Modifications</h3>
-					</div><br>
+					</div>
 					
 					<ul>
 						<!--<li>Create new models methods</li>
@@ -81,10 +81,10 @@
 
 			<div class="row">
 				<div class="span4">
-					<div class="thumbnail">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/basic.png" alt="">
 						<h3 class="align-center">Basic Skinning</h3>
-					</div><br>
+					</div>
 					
 					<ul>
 						<!--<li>Change colors and fonts in a skin</li>
@@ -94,10 +94,10 @@
 				</div>
 				
 				<div class="span4">
-					<div class="thumbnail">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/intermediate.png" alt="">
 						<h3 class="align-center">Intermediate Skinning</h3>
-					</div><br>
+					</div>
 					
 					<ul>
 						<!--<li>Create a new skin</li>-->
@@ -106,10 +106,10 @@
 				</div>
 				
 				<div class="span4">
-					<div class="thumbnail">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/advanced.png" alt="">
 						<h3 class="align-center">Advanced Skinning</h3>
-					</div><br>
+					</div>
 					
 					<ul>
 						<!--<li>Using icons in the main navigation</li>-->
@@ -120,40 +120,34 @@
 		</div>
 		
 		<div id="core" class="tab-pane">
-			<ul class="thumbnails">
-				<li class="span4">
-					<div class="thumbnail">
-						<div class="caption">
-							<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/nova-core.png" alt="Helpers">
-							<h2>Helpers</h2>
-							<p>Helpers, as the name suggests, help you with tasks. Each helper file is simply a collection of functions in a particular category to help perform specific tasks quickly and easily.</p>
-							<p><a href="<?php echo Uri::create('nova2/core/helpers');?>" class="btn">Helpers Reference</a></p>
-						</div>
+			<div class="row">
+				<div class="span4">
+					<div class="well">
+						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/nova-core.png" alt="Helpers">
+						<h2>Helpers</h2>
+						<p>Helpers, as the name suggests, help you with tasks. Each helper file is simply a collection of functions in a particular category to help perform specific tasks quickly and easily.</p>
+						<p><a href="<?php echo Uri::create('nova2/core/helpers');?>" class="btn">Helpers Reference</a></p>
 					</div>
-				</li>
+				</div>
 				
-				<li class="span4">
-					<div class="thumbnail">
+				<div class="span4">
+					<div class="well">
 						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/libraries.png" alt="Libraries">
-						<div class="caption">
-							<h2>Libraries</h2>
-							<p>Libraries are PHP classes designed to accomplish specific actions. In most cases, libraries will significantly reduce the amount of code you have to write and make it easy to develop advanced applications.</p>
-							<p><a href="<?php echo Uri::create('nova2/core/libraries');?>" class="btn">Libraries Reference</a></p>
-						</div>
+						<h2>Libraries</h2>
+						<p>Libraries are PHP classes designed to accomplish specific actions. In most cases, libraries can reduce the amount of code you have to write and make it easy to develop advanced applications.</p>
+						<p><a href="<?php echo Uri::create('nova2/core/libraries');?>" class="btn">Libraries Reference</a></p>
 					</div>
-				</li>
+				</div>
 				
-				<li class="span4">
-					<div class="thumbnail">
-						<div class="caption">
-							<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/models.png" alt="Models">
-							<h2>Models</h2>
-							<p>Models are PHP classes designed to work with information in your database and remove the need for building queries right in the pages, allowing those queries to be re-used throughout the system.</p>
-							<p><a href="<?php echo Uri::create('nova2/core/models');?>" class="btn">Models Reference</a></p>
-						</div>
+				<div class="span4">
+					<div class="well">
+						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/models.png" alt="Models">
+						<h2>Models</h2>
+						<p>Models are PHP classes designed to work with information in your database and remove the need for building queries right in the pages, allowing those queries to be re-used throughout the system.</p>
+						<p><a href="<?php echo Uri::create('nova2/core/models');?>" class="btn">Models Reference</a></p>
 					</div>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
