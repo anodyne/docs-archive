@@ -2,10 +2,10 @@
 
 <div class="row">
 	<div class="span4">
-		<div class="thumbnail">
+		<div class="well">
 			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/info.png" alt="">
 			<h3 class="align-center">General Information</h3>
-		</div><br>
+		</div>
 		
 		<ul>
 			<li><a href="<?php echo Uri::create('nova2/everything/structure');?>">File structure of Nova 2</a></li>
@@ -18,10 +18,10 @@
 	</div>
 	
 	<div class="span4">
-		<div class="thumbnail">
+		<div class="well">
 			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/beaker.png" alt="">
 			<h3 class="align-center">Tutorials</h3>
-		</div><br>
+		</div>
 		
 		<ul>
 			<li><a href="<?php echo Uri::create('nova2/everything/configure');?>">Configuring Nova</a></li>
@@ -30,10 +30,10 @@
 	</div>
 	
 	<div class="span4">
-		<div class="thumbnail">
+		<div class="well">
 			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/history.png" alt="">
 			<h3 class="align-center">History</h3>
-		</div><br>
+		</div>
 		
 		<ul>
 			<li><a href="<?php echo Uri::create('nova2/everything/changes/nova');?>">Changes Since Nova 1.2</a></li>
