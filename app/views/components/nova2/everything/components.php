@@ -26,21 +26,21 @@
 		<tr>
 			<td>
 				<strong><a href="http://www.jquery.com" target="_blank">jQuery</a></strong><br>
-				<span class="muted">1.7.1</span>
+				<span class="muted">1.7.2</span>
 			</td>
 			<td>jQuery is a lightweight JavaScript library that emphasizes interaction between JavaScript and HTML.</td>
 		</tr>
 		<tr>
 			<td>
 				<strong><a href="http://www.jqueryui.com" target="_blank">jQuery UI</a></strong><br>
-				<span class="muted">1.8.18</span>
+				<span class="muted">1.8.20</span>
 			</td>
 			<td>jQuery UI is a lightweight, easily customizable interface library for the jQuery Javascript library.</td>
 		</tr>
 		<tr>
 			<td>
 				<strong><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">prettyPhoto</a></strong><br>
-				<span class="muted">3.1.3</span>
+				<span class="muted">3.1.4</span>
 			</td>
 			<td>prettyPhoto is a jQuery lightbox clone. Not only does it support images, it also support for videos, flash, YouTube, iframes. It's a full blown media lightbox.</td>
 		</tr>
@@ -53,8 +53,7 @@
 		</tr>
 		<tr>
 			<td>
-				<strong><a href="http://plugins.jquery.com/project/ajaxq" target="_blank">AjaxQ</a></strong><br>
-				<span class="muted">0.0.1</span>
+				<strong><a href="http://plugins.jquery.com/project/ajaxq" target="_blank">AjaxQ</a></strong>
 			</td>
 			<td>AjaxQ is a jQuery plugin that implements an AJAX request queueing mechanism.</td>
 		</tr>
@@ -68,7 +67,7 @@
 		<tr>
 			<td>
 				<strong><a href="http://www.digitalia.be/software/reflectionjs-for-jquery" target="_blank">jQuery Reflection</a></strong><br>
-				<span class="muted">1.0.3</span>
+				<span class="muted">1.1</span>
 			</td>
 			<td>This is an improved version of the reflection.js script rewritten for the jQuery Javascript library. It allows you to add instantaneous reflection effects to your images in modern browsers, in less than 2 KB.</td>
 		</tr>
