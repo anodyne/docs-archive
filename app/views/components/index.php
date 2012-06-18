@@ -2,39 +2,33 @@
 
 <h1>Nova <small>RPG Management. Evolved.</small></h1>
 
-<p>Nova is the result of years of experience in RPG management. Taking cues from SMS, Nova brings a new level of power, flexibility and control to make the system easier to use than ever before. Nova is the ultimate RPG management tool. This user guide is your one-stop-shop to all things Nova.</p><br>
+<p>Nova is the result of years of experience in RPG management. Taking cues from SMS, Nova brings a new level of power, flexibility and control to make the system easier to use than ever before. Nova is the ultimate RPG management tool. This user guide is your one-stop-shop to all things Nova.</p>
 
-<ul class="thumbnails">
-	<li class="span6">
-		<div class="thumbnail">
-			<div class="caption">
-				<h2>Nova 1 <small>The original</small></h2>
-				<p>The original Nova user guide contains a wide array of information about Nova 1, some of which is also applicable to Nova 2.</p>
-				<p><a href="<?php echo Uri::create('nova1/overview/index');?>" class="btn">Go to Nova 1 user guide</a></p>
-			</div>
+<div class="row">
+	<div class="span6">
+		<div class="well">
+			<h2>Nova 1 <small>The original</small></h2>
+			<p>The original Nova user guide contains a wide array of information about Nova 1, some of which is also applicable to Nova 2.</p>
+			<p><a href="<?php echo Uri::create('nova1/overview/index');?>" class="btn">Go to Nova 1 user guide</a></p>
 		</div>
-	</li>
+	</div>
 	
-	<li class="span6">
-		<div class="thumbnail">
-			<div class="caption">
-				<h2>Nova 2 <small>The update</small></h2>
-				<p>The updated Nova 2 user guide contains information about Nova 2 including a wide array of tutorials and general information.</p>
-				<p><a href="<?php echo Uri::create('nova2/overview/index');?>" class="btn">Go to Nova 2 user guide</a></p>
-			</div>
+	<div class="span6">
+		<div class="well">
+			<h2>Nova 2 <small>The update</small></h2>
+			<p>The updated Nova 2 user guide contains information about Nova 2 including a wide array of tutorials and general information.</p>
+			<p><a href="<?php echo Uri::create('nova2/overview/index');?>" class="btn">Go to Nova 2 user guide</a></p>
 		</div>
-	</li>
+	</div>
 	
-	<!--<li class="span4">
-		<div class="thumbnail">
-			<div class="caption">
-				<h2>Nova 3 <small>The next generation</small></h2>
-				<p>Despite being in early development, the Nova 3 user guide contains information about requirements and installation.</p>
-				<p><a href="<?php echo Uri::create('nova3/overview/index');?>" class="btn">Go to Nova 3 user guide</a></p>
-			</div>
+	<!--<div class="span6">
+		<div class="well">
+			<h2>Nova 3 <small>The next generation</small></h2>
+			<p>Despite being in early development, the Nova 3 user guide contains information about requirements and installation.</p>
+			<p><a href="<?php echo Uri::create('nova3/overview/index');?>" class="btn">Go to Nova 3 user guide</a></p>
 		</div>
-	</li>-->
-</ul>
+	</div>-->
+</div>
 
 <h1>SMS <small>The original RPG manager</small></h1>
 
