@@ -21,11 +21,13 @@ class Controller_Nova2_Everything extends Controller_Base
 	{
 		$this->_view = 'components/nova2/everything/changelog';
 		
+		$nova21 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova21.md');
 		$nova20 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova20.md');
 		$nova12 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova12.md');
 		$nova11 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova11.md');
 		$nova10 = file_get_contents(APPPATH.'views/components/nova2/everything/changelog_nova10.md');
 		
+		$this->_data->nova21 = Markdown::parse($nova21);
 		$this->_data->nova20 = Markdown::parse($nova20);
 		$this->_data->nova12 = Markdown::parse($nova12);
 		$this->_data->nova11 = Markdown::parse($nova11);
