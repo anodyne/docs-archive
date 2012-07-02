@@ -6,7 +6,7 @@
 		<tr>
 			<td class="span3">
 				<strong><a href="http://codeigniter.com/" target="_blank">CodeIgniter</a></strong><br>
-				<span class="muted">2.1.0</span>
+				<span class="muted">2.1.2</span>
 			</td>
 			<td>CodeIgniter is an open source web application framework for use in building dynamic web sites with PHP. It enables developers to build applications faster - compared to coding from scratch - by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and a logical structure to access these libraries.</td>
 		</tr>
