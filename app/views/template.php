@@ -62,7 +62,7 @@ $controllers = array(
 		<link rel="icon" href="<?php echo Uri::base(false);?>favicon.ico" type="image/x-icon">
 		
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/prettify.css">
-		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap21.min.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
 		<link rel="stylesheet" href="<?php echo Uri::base(false);?>app/views/design/custom.css">
 		
