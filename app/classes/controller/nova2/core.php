@@ -13,8 +13,6 @@ class Controller_Nova2_Core extends Controller_Base
 	{
 		$this->_view = 'components/nova2/developers/core/index';
 		$this->template->title.= 'Nova Core';
-		
-		return;
 	}
 	
 	public function action_helpers($id = '')
@@ -39,8 +37,6 @@ class Controller_Nova2_Core extends Controller_Base
 		$this->_data->header = $title;
 		$this->_data->helper = $helper;
 		$this->template->title.= $title.' Helper';
-		
-		return;
 	}
 	
 	public function action_libraries($id = '')
@@ -75,8 +71,6 @@ class Controller_Nova2_Core extends Controller_Base
 		$this->_data->header = $title;
 		$this->_data->library = $library;
 		$this->template->title.= $title.' Library';
-		
-		return;
 	}
 	
 	public function action_models($id = '')
@@ -152,7 +146,5 @@ class Controller_Nova2_Core extends Controller_Base
 		$this->_data->header = $title;
 		$this->_data->model = $model;
 		$this->template->title.= $title.' Model';
-		
-		return;
 	}
 }

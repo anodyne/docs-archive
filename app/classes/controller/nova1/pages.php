@@ -17,8 +17,6 @@ class Controller_Nova1_Pages extends Controller_Base
 	{
 		$this->_view = 'components/nova1/pages/index';
 		$this->template->title.= 'Pages';
-		
-		return;
 	}
 	
 	public function action_admin($page = '')
@@ -45,8 +43,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_archive($page = '')
@@ -93,8 +89,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_characters($page = '')
@@ -141,8 +135,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_login($page = '')
@@ -174,8 +166,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_main($page = '')
@@ -222,8 +212,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_manage($page = '')
@@ -315,8 +303,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_messages($page = '')
@@ -348,8 +334,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_personnel($page = '')
@@ -401,8 +385,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_report($page = '')
@@ -459,8 +441,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_sim($page = '')
@@ -547,8 +527,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_site($page = '')
@@ -660,8 +638,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_upload($page = '')
@@ -688,8 +664,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_user($page = '')
@@ -736,8 +710,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_wiki($page = '')
@@ -794,8 +766,6 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_write($page = '')
@@ -832,7 +802,5 @@ class Controller_Nova1_Pages extends Controller_Base
 		$this->_view = 'components/nova1/pages/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 }

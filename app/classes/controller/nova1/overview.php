@@ -17,48 +17,36 @@ class Controller_Nova1_Overview extends Controller_Base
 	{
 		$this->_view = 'components/nova1/overview/index';
 		$this->template->title.= 'Main';
-		
-		return;
 	}
 	
 	public function action_changelog()
 	{
 		$this->_view = 'components/nova1/overview/changelog';
 		$this->template->title.= 'Changelog';
-		
-		return;
 	}
 	
 	public function action_changes()
 	{
 		$this->_view = 'components/nova1/overview/changes';
 		$this->template->title.= 'Changes Since SMS 2';
-		
-		return;
 	}
 	
 	public function action_faq()
 	{
 		$this->_view = 'components/nova1/overview/faq';
 		$this->template->title.= 'Frequently Asked Questions';
-		
-		return;
 	}
 	
 	public function action_godaddy()
 	{
 		$this->_view = 'components/nova1/overview/godaddy';
 		$this->template->title.= 'GoDaddy &amp; Nova';
-		
-		return;
 	}
 	
 	public function action_install()
 	{
 		$this->_view = 'components/nova1/overview/install';
 		$this->template->title.= 'Installation';
-		
-		return;
 	}
 	
 	public function action_license($type = 'nova')
@@ -76,16 +64,12 @@ class Controller_Nova1_Overview extends Controller_Base
 				$this->template->title.= 'Nova License Agreement';
 			break;
 		}
-		
-		return;
 	}
 	
 	public function action_requirements()
 	{
 		$this->_view = 'components/nova1/overview/requirements';
 		$this->template->title.= 'Requirements';
-		
-		return;
 	}
 	
 	public function action_update($id = '')
@@ -180,23 +164,17 @@ class Controller_Nova1_Overview extends Controller_Base
 				$this->template->title.= 'Updating Nova';
 			break;
 		}
-		
-		return;
 	}
 	
 	public function action_upgrade()
 	{
 		$this->_view = 'components/nova1/overview/upgrade';
 		$this->template->title.= 'Upgrading SMS 2 to Nova';
-		
-		return;
 	}
 	
 	public function action_whatsnew()
 	{
 		$this->_view = 'components/nova1/overview/whatsnew';
 		$this->template->title.= "What's New?";
-		
-		return;
 	}
 }

@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/210_to_211');?>">2.1.1</a></td>
+						<td>Fixes issues with debug code on user bios, prompting to update even after the update is done, and display issues throughout the system. In addition, jQuery, jQuery UI, and the CodeIgniter core have been updated.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/203_to_210');?>">2.1</a></td>
 						<td>Enhancements to mission notes now notify the user when notes have been updated in the last 72 hours and always shows the last time mission notes were updated. Bug fixes address issues with some timespans, potential issues in the control panel, and other fixes.</td>
 					</tr>

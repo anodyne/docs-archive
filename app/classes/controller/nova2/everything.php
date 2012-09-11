@@ -13,8 +13,6 @@ class Controller_Nova2_Everything extends Controller_Base
 	{
 		$this->_view = 'components/nova2/everything/index';
 		$this->template->title.= 'Main';
-		
-		return;
 	}
 	
 	public function action_changelog()
@@ -34,8 +32,6 @@ class Controller_Nova2_Everything extends Controller_Base
 		$this->_data->nova10 = Markdown::parse($nova10);
 		
 		$this->template->title.= 'Nova 2 Changelog';
-		
-		return;
 	}
 	
 	public function action_changes($id = '')
@@ -56,16 +52,12 @@ class Controller_Nova2_Everything extends Controller_Base
 		
 		$this->_view = $view;
 		$this->template->title.= $title;
-		
-		return;
 	}
 	
 	public function action_components()
 	{
 		$this->_view = 'components/nova2/everything/components';
 		$this->template->title.= 'Nova Components';
-		
-		return;
 	}
 	
 	public function action_configure($id = '')
@@ -86,55 +78,41 @@ class Controller_Nova2_Everything extends Controller_Base
 		
 		$this->_view = $view;
 		$this->template->title.= $title;
-		
-		return;
 	}
 	
 	public function action_genres()
 	{
 		$this->_view = 'components/nova2/everything/genres';
 		$this->template->title.= 'Genres in Nova';
-		
-		return;
 	}
 	
 	public function action_godaddy()
 	{
 		$this->_view = 'components/nova2/everything/godaddy';
 		$this->template->title.= 'GoDaddy &amp; Nova 2';
-		
-		return;
 	}
 	
 	public function action_license()
 	{
 		$this->_view = 'components/nova2/everything/license';
 		$this->template->title.= 'The Nova License';
-		
-		return;
 	}
 	
 	public function action_structure()
 	{
 		$this->_view = 'components/nova2/everything/structure';
 		$this->template->title.= 'Nova 2 File Structure';
-		
-		return;
 	}
 	
 	public function action_urls()
 	{
 		$this->_view = 'components/nova2/everything/urls';
 		$this->template->title.= 'Nova URLs';
-		
-		return;
 	}
 	
 	public function action_versioning()
 	{
 		$this->_view = 'components/nova2/everything/versioning';
 		$this->template->title.= 'Versioning in Nova';
-		
-		return;
 	}
 }

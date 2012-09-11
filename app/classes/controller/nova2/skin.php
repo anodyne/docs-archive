@@ -13,15 +13,11 @@ class Controller_Nova2_Skin extends Controller_Base
 	{
 		$this->_view = 'components/nova2/developers/skin/index';
 		$this->template->title.= 'Skinning Nova';
-		
-		return;
 	}
 	
 	public function action_changes()
 	{
 		$this->_view = 'components/nova2/developers/skin/changes';
 		$this->template->title.= 'Changes to Skinning in Nova 2';
-		
-		return;
 	}
 }

@@ -13,7 +13,5 @@ class Controller_Nova2_Overview extends Controller_Base
 	{
 		$this->_view = 'components/nova2/index';
 		$this->template->title.= 'Main';
-		
-		return;
 	}
 }

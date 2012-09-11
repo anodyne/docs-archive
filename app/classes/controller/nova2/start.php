@@ -13,40 +13,30 @@ class Controller_Nova2_Start extends Controller_Base
 	{
 		$this->_view = 'components/nova2/start/index';
 		$this->template->title.= 'Getting Started';
-		
-		return;
 	}
 	
 	public function action_backup()
 	{
 		$this->_view = 'components/nova2/start/backup';
 		$this->template->title.= 'Backup Guide';
-		
-		return;
 	}
 	
 	public function action_install()
 	{
 		$this->_view = 'components/nova2/start/install';
 		$this->template->title.= 'Fresh Install';
-		
-		return;
 	}
 	
 	public function action_requirements()
 	{
 		$this->_view = 'components/nova2/start/requirements';
 		$this->template->title.= 'Nova 2 Requirements';
-		
-		return;
 	}
 	
 	public function action_sms()
 	{
 		$this->_view = 'components/nova2/start/sms';
 		$this->template->title.= 'Upgrade from SMS 2';
-		
-		return;
 	}
 	
 	public function action_update($id = '')
@@ -63,6 +53,7 @@ class Controller_Nova2_Start extends Controller_Base
 			case '201_to_202':
 			case '202_to_203':
 			case '203_to_210':
+			case '210_to_211':
 				$view = 'components/nova2/start/update/standard_update';
 				
 				switch ($id)
@@ -82,6 +73,10 @@ class Controller_Nova2_Start extends Controller_Base
 					case '203_to_210':
 						$title = 'Nova 2.0.3 to Nova 2.1';
 					break;
+					
+					case '210_to_211':
+						$title = 'Nova 2.1 to Nova 2.1.1';
+					break;
 				}
 			break;
 			
@@ -94,8 +89,6 @@ class Controller_Nova2_Start extends Controller_Base
 		$this->_view = $view;
 		$this->_data->title = $title;
 		$this->template->title.= $title;
-		
-		return;
 	}
 	
 	public function action_whatsnew($version = '21')
@@ -112,7 +105,5 @@ class Controller_Nova2_Start extends Controller_Base
 		$this->_data->whatsnew = Markdown::parse($content);
 		$this->_data->header = $title;
 		$this->template->title.= $title;
-		
-		return;
 	}
 }

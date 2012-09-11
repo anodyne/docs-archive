@@ -28,13 +28,7 @@ class Controller_Base extends Controller_Template
 		// set the content view
 		$this->template->content = View::forge($this->_view, $this->_data);
 		
-		// set the response body
-		$this->response->body = $this->template;
-
-		// set the status
-		$this->response->status = $this->_status;
-		
 		// return the response object
-		return $this->response;
+		return Response::forge($this->template, $this->_status);
 	}
 }

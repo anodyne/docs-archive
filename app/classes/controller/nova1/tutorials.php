@@ -17,8 +17,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 	{
 		$this->_view = 'components/nova1/tutorials/index';
 		$this->template->title.= 'Tutorials';
-		
-		return;
 	}
 	
 	public function action_advanced($page = '')
@@ -88,8 +86,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_config($page = '')
@@ -114,8 +110,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_extending($page = '')
@@ -165,8 +159,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_intro($page = '')
@@ -211,8 +203,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_models($page = '')
@@ -242,8 +232,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_practical($page = '')
@@ -268,8 +256,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_reference($page = '')
@@ -299,8 +285,6 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 	
 	public function action_skins($page = '')
@@ -370,7 +354,5 @@ class Controller_Nova1_Tutorials extends Controller_Base
 		$this->_view = 'components/nova1/tutorials/'.$view;
 		$this->_data->header = $header;
 		$this->template->title.= $header;
-		
-		return;
 	}
 }

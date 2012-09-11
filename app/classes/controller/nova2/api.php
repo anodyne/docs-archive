@@ -13,16 +13,12 @@ class Controller_Nova2_Api extends Controller_Base
 	{
 		$this->_view = 'components/nova2/developers/api/index';
 		$this->template->title.= 'API';
-		
-		return;
 	}
 	
 	public function action_methods()
 	{
 		$this->_view = 'components/nova2/developers/api/methods';
 		$this->template->title.= 'API Methods';
-		
-		return;
 	}
 	
 	public function action_using($type = '')
@@ -47,7 +43,5 @@ class Controller_Nova2_Api extends Controller_Base
 		
 		$this->_view = $view;
 		$this->template->title.= $title;
-		
-		return;
 	}
 }
