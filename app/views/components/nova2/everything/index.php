@@ -3,7 +3,7 @@
 <div class="row">
 	<div class="span4">
 		<div class="well">
-			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/info.png" alt="">
+			<div class="icn-container"><span class="icn icn-96 icn-blue" data-icon="i"></span></div>
 			<h3 class="align-center">General Information</h3>
 		</div>
 		
@@ -19,7 +19,7 @@
 	
 	<div class="span4">
 		<div class="well">
-			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/beaker.png" alt="">
+			<div class="icn-container"><span class="icn icn-96 icn-green" data-icon="k"></span></div>
 			<h3 class="align-center">Tutorials</h3>
 		</div>
 		
@@ -31,7 +31,7 @@
 	
 	<div class="span4">
 		<div class="well">
-			<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/history.png" alt="">
+			<div class="icn-container"><span class="icn icn-96 icn-red" data-icon="h"></span></div>
 			<h3 class="align-center">History</h3>
 		</div>
 		

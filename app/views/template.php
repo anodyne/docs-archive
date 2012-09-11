@@ -61,6 +61,8 @@ $controllers = array(
 		<title><?php echo $title;?></title>
 		<link rel="icon" href="<?php echo Uri::base(false);?>favicon.ico" type="image/x-icon">
 		
+		<!--[if lte IE 7]><script src="<?php echo ASSETS;?>js/lte-ie7.js"><script><![endif]-->
+		
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/prettify.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">

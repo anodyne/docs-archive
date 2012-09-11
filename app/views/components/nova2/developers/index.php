@@ -16,8 +16,8 @@
 			<div class="row">
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/basic.png" alt="">
-						<h3 class="align-center">Basic Modifications</h3>
+						<div class="icn-container"><span class="icn icn-96" data-icon="1"></span></div>
+						<h4 class="align-center">Basic Modifications</h4>
 					</div>
 					
 					<ul>
@@ -29,8 +29,8 @@
 				
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/intermediate.png" alt="">
-						<h3 class="align-center">Intermediate Modifications</h3>
+						<div class="icn-container"><span class="icn icn-96" data-icon="2"></span></div>
+						<h4 class="align-center">Intermediate Modifications</h4>
 					</div>
 					
 					<ul>
@@ -45,8 +45,8 @@
 				
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/advanced.png" alt="">
-						<h3 class="align-center">Advanced Modifications</h3>
+						<div class="icn-container"><span class="icn icn-96" data-icon="3"></span></div>
+						<h4 class="align-center">Advanced Modifications</h4>
 					</div>
 					
 					<ul>
@@ -82,8 +82,8 @@
 			<div class="row">
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/basic.png" alt="">
-						<h3 class="align-center">Basic Skinning</h3>
+						<div class="icn-container"><span class="icn icn-96" data-icon="1"></span></div>
+						<h4 class="align-center">Basic Skinning</h4>
 					</div>
 					
 					<ul>
@@ -95,8 +95,8 @@
 				
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/intermediate.png" alt="">
-						<h3 class="align-center">Intermediate Skinning</h3>
+						<div class="icn-container"><span class="icn icn-96" data-icon="2"></span></div>
+						<h4 class="align-center">Intermediate Skinning</h4>
 					</div>
 					
 					<ul>
@@ -107,8 +107,8 @@
 				
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/advanced.png" alt="">
-						<h3 class="align-center">Advanced Skinning</h3>
+						<div class="icn-container"><span class="icn icn-96" data-icon="3"></span></div>
+						<h4 class="align-center">Advanced Skinning</h4>
 					</div>
 					
 					<ul>
@@ -123,28 +123,28 @@
 			<div class="row">
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/nova-core.png" alt="Helpers">
+						<div class="icn-container"><span class="icn icn-96 icn-green" data-icon="c"></span></div>
 						<h2>Helpers</h2>
 						<p>Helpers, as the name suggests, help you with tasks. Each helper file is simply a collection of functions in a particular category to help perform specific tasks quickly and easily.</p>
-						<p><a href="<?php echo Uri::create('nova2/core/helpers');?>" class="btn">Helpers Reference</a></p>
+						<p><a href="<?php echo Uri::create('nova2/core/helpers');?>" class="btn btn-block">Helpers Reference</a></p>
 					</div>
 				</div>
 				
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/libraries.png" alt="Libraries">
+						<div class="icn-container"><span class="icn icn-96 icn-red" data-icon="l"></span></div>
 						<h2>Libraries</h2>
 						<p>Libraries are PHP classes designed to accomplish specific actions. In most cases, libraries can reduce the amount of code you have to write and make it easy to develop advanced applications.</p>
-						<p><a href="<?php echo Uri::create('nova2/core/libraries');?>" class="btn">Libraries Reference</a></p>
+						<p><a href="<?php echo Uri::create('nova2/core/libraries');?>" class="btn btn-block">Libraries Reference</a></p>
 					</div>
 				</div>
 				
 				<div class="span4">
 					<div class="well">
-						<img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/models.png" alt="Models">
+						<div class="icn-container"><span class="icn icn-96 icn-yellow" data-icon="b"></span></div>
 						<h2>Models</h2>
 						<p>Models are PHP classes designed to work with information in your database and remove the need for building queries right in the pages, allowing those queries to be re-used throughout the system.</p>
-						<p><a href="<?php echo Uri::create('nova2/core/models');?>" class="btn">Models Reference</a></p>
+						<p><a href="<?php echo Uri::create('nova2/core/models');?>" class="btn btn-block">Models Reference</a></p>
 					</div>
 				</div>
 			</div>

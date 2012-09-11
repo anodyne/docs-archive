@@ -12,36 +12,38 @@
 
 <h2>Browser</h2>
 
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th class="span3"></th>
-			<th class="span3">Windows</th>
-			<th class="span3">Mac</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><img src="<?php echo Uri::base(false);?>app/views/design/images/nova3/browser-chrome.png" alt=""> Google Chrome</td>
-			<td>15 and up</td>
-			<td>15 and up</td>
-		</tr>
-		<tr>
-			<td><img src="<?php echo Uri::base(false);?>app/views/design/images/nova3/browser-firefox.png" alt=""> Firefox</td>
-			<td>10 and up</td>
-			<td>10 and up</td>
-		</tr>
-		<tr>
-			<td><img src="<?php echo Uri::base(false);?>app/views/design/images/nova3/browser-ie.png" alt=""> Internet Explorer</td>
-			<td>9 and up</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><img src="<?php echo Uri::base(false);?>app/views/design/images/nova3/browser-safari.png" alt=""> Safari</td>
-			<td>5 and up</td>
-			<td>5 and up</td>
-		</tr>
-	</tbody>
-</table>
-
-<p class="alert alert-info">IE 9 requires Windows Vista or Windows 7. We realize there may still be a significant number of people on Windows XP, but by the time we release Nova 3, we believe that Windows Vista, Windows 7, and Windows 8 will constitute a large majority of the Nova user base.</p>
+<div class="row">
+	<div class="span6">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th class="span1"></th>
+					<th class="span2"><span class="icn icn-32 tip" title="Windows" data-icon="n"></span></th>
+					<th class="span2"><span class="icn icn-32 tip" title="OS X" data-icon="a"></span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><span class="icn icn-32 icn-red tip" title="Google Chrome" data-icon="r"></span></td>
+					<td>15 and up</td>
+					<td>15 and up</td>
+				</tr>
+				<tr>
+					<td><span class="icn icn-32 icn-orange tip" title="Mozilla Firefox" data-icon="f"></span></td>
+					<td>10 and up</td>
+					<td>10 and up</td>
+				</tr>
+				<tr>
+					<td><span class="icn icn-32 icn-blue tip" title="Internet Explorer" data-icon="e"></span></td>
+					<td><span class="tip" title="IE 9 requires Windows Vista or higher">9 and up</span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="icn icn-32 icn-blue tip" title="Safari" data-icon="s"></span></td>
+					<td>5 and up</td>
+					<td>5 and up</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

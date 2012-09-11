@@ -17,117 +17,117 @@
 	<tbody>
 		<tr>
 			<td>Access Levels</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>If you've made changes to the default access levels in SMS they will not be saved since Nova uses a new user access control system.</td>
 		</tr>
 		<tr>
 			<td>Awards</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>Any awards you've put in to SMS will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>Award Nominations</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>Award nominations that have been submitted will not be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>Chain of Command</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>Because of the complex way we move characters over to Nova and split out characters and users, the chain of command will not be upgraded.</td>
 		</tr>
 		<tr>
 			<td>Characters/Users</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>Characters and users from SMS will be moved to the Nova format. Users will have their passwords and access level automatically reset.</td>
 		</tr>
 		<tr>
 			<td>Database Items</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-warning.png" alt="some"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-yellow" data-icon="!"></span></td>
 			<td>Nova doesn't have a "database" feature like SMS, instead, we've built a mini-wiki called Thresher that does similar things. Any of your database entries that are stored in the database will be converted to Thresher pages. Any content on external pages linked through the Database will not be converted.</td>
 		</tr>
 		<tr>
 			<td>Departments</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>Departments stored in SMS will not be upgraded to Nova. New departments will be created based on the genre selected.</td>
 		</tr>
 		<tr>
 			<td>Settings (Site Globals)</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-warning.png" alt="some"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-yellow" data-icon="!"></span></td>
 			<td>The following settings will be upgraded to Nova: <em>sim name, sim year, post count preference, email subject</em>.</td>
 		</tr>
 		<tr>
 			<td>Menu Items</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>SMS menu items will not be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>Site Messages</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-warning.png" alt="some"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-yellow" data-icon="!"></span></td>
 			<td>The following messages will be upgraded to Nova: <em>welcome message, sim message, join disclaimer, user accept email message, user reject email message, join codele post</em>.</td>
 		</tr>
 		<tr>
 			<td>Missions</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>All missions will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>News Items</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>All news items will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>News Categories</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>All news categories will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>Personal Logs</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>All personal logs will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>Positions</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>Positions stored in SMS will not be upgraded to Nova. New positions will be created based on the genre selected.</td>
 		</tr>
 		<tr>
 			<td>Mission Posts</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-yes.png" alt="will"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-green" data-icon="y"></span></td>
 			<td>All mission posts will be upgraded to the Nova format.</td>
 		</tr>
 		<tr>
 			<td>Private Messages</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>SMS private messages will not be upgraded.</td>
 		</tr>
 		<tr>
 			<td>Ranks</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>Ranks stored in SMS will not be upgraded to Nova. New ranks will be created based on the genre selected.</td>
 		</tr>
 		<tr>
 			<td>Specifications</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-warning.png" alt="some"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-yellow" data-icon="!"></span></td>
 			<td>Only out-of-the-box specifications will be upgraded. If you have modified the specifications database table, your changes will not be upgraded.</td>
 		</tr>
 		<tr>
 			<td>Docking</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>Nova uses a new, highly dynamic form system and docking records will not be upgraded.</td>
 		</tr>
 		<tr>
 			<td>Strikes</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>There is currently no way to handle strikes in Nova and SMS strikes will not be upgraded.</td>
 		</tr>
 		<tr>
 			<td>Tour</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-warning.png" alt="some"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-yellow" data-icon="!"></span></td>
 			<td>Only out-of-the-box tour information will be upgraded. If you have modified the tour database table, your changes will not be upgraded.</td>
 		</tr>
 		<tr>
 			<td>Deck Listing</td>
-			<td class="smsupgrade-icon"><img src="<?php echo Uri::base(false);?>app/views/design/images/nova2/sms-upgrade-no.png" alt="will not"></td>
+			<td class="smsupgrade-icon"><span class="icn icn-24 icn-red" data-icon="x"></span></td>
 			<td>The deck listing will not be upgraded.</td>
 		</tr>
 	</tbody>
