@@ -26,14 +26,14 @@
 		<tr>
 			<td>
 				<strong><a href="http://www.jquery.com" target="_blank">jQuery</a></strong><br>
-				<span class="muted">1.7.2</span>
+				<span class="muted">1.8.2</span>
 			</td>
 			<td>jQuery is a lightweight JavaScript library that emphasizes interaction between JavaScript and HTML.</td>
 		</tr>
 		<tr>
 			<td>
 				<strong><a href="http://www.jqueryui.com" target="_blank">jQuery UI</a></strong><br>
-				<span class="muted">1.8.20</span>
+				<span class="muted">1.8.24</span>
 			</td>
 			<td>jQuery UI is a lightweight, easily customizable interface library for the jQuery Javascript library.</td>
 		</tr>
@@ -80,7 +80,7 @@
 		<tr>
 			<td>
 				<strong><a href="http://markitup.jaysalvat.com/home/" target="_blank">markItUp!</a></strong><br>
-				<span class="muted">1.1.12</span>
+				<span class="muted">1.1.13</span>
 			</td>
 			<td>markItUp! is a JavaScript plugin built on the jQuery library that allows you to turn any textarea into a markup editor.</td>
 		</tr>
