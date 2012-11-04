@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/211_to_212');?>">2.1.2</a></td>
+						<td>Fixes issues with dynamic forms and a critical security vulnerability. In addition, jQuery, jQuery UI, markItUp! and the CodeIgniter core have been updated.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/210_to_211');?>">2.1.1</a></td>
 						<td>Fixes issues with debug code on user bios, prompting to update even after the update is done, and display issues throughout the system. In addition, jQuery, jQuery UI, and the CodeIgniter core have been updated.</td>
 					</tr>

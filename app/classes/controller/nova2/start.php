@@ -54,6 +54,7 @@ class Controller_Nova2_Start extends Controller_Base
 			case '202_to_203':
 			case '203_to_210':
 			case '210_to_211':
+			case '211_to_212':
 				$view = 'components/nova2/start/update/standard_update';
 				
 				switch ($id)
@@ -76,6 +77,10 @@ class Controller_Nova2_Start extends Controller_Base
 					
 					case '210_to_211':
 						$title = 'Nova 2.1 to Nova 2.1.1';
+					break;
+					
+					case '211_to_212':
+						$title = 'Nova 2.1.1 to Nova 2.1.2';
 					break;
 				}
 			break;

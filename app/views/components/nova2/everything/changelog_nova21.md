@@ -1,3 +1,38 @@
+## 2.1.2 <small>04 November 2012</small>
+
+### Nova Core
+
+* Update to jQuery 1.8.2.
+* Update to jQuery UI 1.8.24.
+* Update to markItUp! 1.1.13.
+* Update to CodeIgniter 2.1.3.
+* Update Nova to address a security issue.
+
+### Bug Fixes
+
+* Once a bio field is turned off, the only way to turn it back on is by going in to the database and changing the display value. ([#214](https://github.com/anodyne/nova/issues/214))
+* Once a docking field is turned off, the only way to turn it back on is by going in to the database and changing the display value. ([#214](https://github.com/anodyne/nova/issues/214))
+* Any spec form field that is turned off has no indication that it's disabled.
+* Any tour form field that is turned off has no indication that it's disabled.
+
+## 2.1.1 <small>12 September 2012</small>
+
+### Nova Core
+
+* Update to CodeIgniter 2.1.2.
+* Update to jQuery 1.8.1.
+* Update to jQuery UI 1.8.23.
+* Update the IP Address fields in the database to be compatible with IPv6 addresses.
+
+### Bug Fixes
+
+* During the update process, Nova never updated the system information table with the correct version number.
+* Despite the system version and components database tables being pulled out, the What's New menu item was never removed, throwing a 404 error if someone tried to go to the page.
+* The Admin Control Panel's update notification panel doesn't properly display all the language strings because the proper language file wasn't loaded.
+* The user bio page had debug code from 2.1 development at the top of the page.
+* Under some circumstances, unlinked NPCs had a link to a user bio that threw an error.
+* The User Not Found error was missing a parameter (would show %s instead of the word 'user').
+
 ## 2.1.0 <small>26 June 2012</small>
 
 * Users are now notified when mission notes have been updated in the last 72 hours by the notes box auto-expanding when they arrive at the posting page.
