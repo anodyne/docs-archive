@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/212_to_213');?>">2.1.3</a></td>
+						<td>Fixes issues with some buttons throughout Nova not working as expected. This was a result of the security patch in 2.1.2. We apologize that our internal testing didn't catch these issues.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/211_to_212');?>">2.1.2</a></td>
 						<td>Fixes issues with dynamic forms and a critical security vulnerability. In addition, jQuery, jQuery UI, markItUp! and the CodeIgniter core have been updated.</td>
 					</tr>
