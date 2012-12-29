@@ -3,11 +3,22 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src: url('fonts/icomoon.eot');
-	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.svg#icomoon') format('svg'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype');
+	src: url('fonts/IcoMoon/icomoon-ultimate.eot');
+	src: url('fonts/IcoMoon/icomoon-ultimate.eot?#iefix') format('embedded-opentype'),
+		url('fonts/IcoMoon/icomoon-ultimate.svg#icomoon') format('svg'),
+		url('fonts/IcoMoon/icomoon-ultimate.woff') format('woff'),
+		url('fonts/IcoMoon/icomoon-ultimate.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AltGothicNo3';
+	src: url('fonts/AltGothicNo3/AlternateGothicNo3-webfont.eot');
+	src: url('fonts/AltGothicNo3/AlternateGothicNo3-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AltGothicNo3/AlternateGothicNo3-webfont.woff') format('woff'),
+		url('fonts/AltGothicNo3/AlternateGothicNo3-webfont.ttf') format('truetype'),
+		url('fonts/AltGothicNo3/AlternateGothicNo3-webfont.svg#BebasNeueRegular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -15,70 +26,45 @@
 #page_container { min-height: 100%; }
 
 header {
-	background: @color-base url(images/glass-light-blue.jpg) no-repeat top center;
-}
-header .logo {
-	width: 396px;
-	background: transparent url(images/sprite.png) no-repeat 0 -24px;
+	background-color: @color-base;
+	background-image: url(images/glass-light-blue.jpg);
+	
+	h1 {
+		font-family: @font-headings;
+	}
 }
 
 nav {
-	margin: 53px 0 0 0;
-}
-nav ul li {
-	margin: 0 25px 0 0;
-}
-nav ul li a {
-	height: 26px;
-}
-#nav-home {
-	width: 61px;
-	background: transparent url(images/sprite.png) no-repeat 0 -90px;
-}
-#nav-home:hover {
-	background-position: 0 -120px;
-}
-#nav-nova1 {
-	width: 81px;
-	background: transparent url(images/sprite.png) no-repeat 0 -150px;
-}
-#nav-nova1:hover {
-	background-position: 0 -180px;
-}
-#nav-nova2 {
-	width: 81px;
-	background: transparent url(images/sprite.png) no-repeat 0 -210px;
-}
-#nav-nova2:hover {
-	background-position: 0 -240px;
-}
-#nav-sms {
-	width: 54px;
-	background: transparent url(images/sprite.png) no-repeat 0 -270px;
-}
-#nav-sms:hover {
-	background-position: 0 -300px;
-}
-#nav-nova3 {
-	width: 81px;
-	background: transparent url(images/sprite.png) no-repeat 0 -330px;
-}
-#nav-nova3:hover {
-	background-position: 0 -360px;
-}
-#nav-satellite {
-	width: 114px;
-	background: transparent url(images/sprite.png) no-repeat 0 -390px;
-}
-#nav-satellite:hover {
-	background-position: 0 -420px;
-}
-#nav-anodyne {
-	width: 97px;
-	background: transparent url(images/sprite.png) no-repeat -129px -90px;
-}
-#nav-anodyne:hover {
-	background-position: -129px -120px;
+	margin: 39px 0 0 0;
+	
+	ul {
+		li {
+			margin: 0 25px 0 0;
+			
+			a {
+				color: #000;
+				text-shadow: 0 0 0 transparent;
+				opacity: 0.4;
+				font-family: "AltGothicNo3";
+				font-weight: normal;
+				text-transform: uppercase;
+				font-size: 32px;
+				
+				&:hover {
+					color: @color-white;
+					opacity: 0.8;
+					text-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+					border: none;
+					text-decoration: none;
+				}
+			}
+			
+			.tooltip {
+				text-shadow: 0 0 0 transparent;
+				opacity: 1;
+			}
+		}
+	}
 }
 
 h1 {
@@ -87,9 +73,34 @@ h1 {
 
 footer {
 	background: @color-base;
-}
-.anodyne {
-	background: transparent url(images/sprite.png) no-repeat 0 0;
+	
+	.footer-anodyne {
+		vertical-align: middle;
+		padding-top: 3px;
+		
+		font-family: "AltGothicNo3", helvetica, arial, sans-serif;
+		
+		a {
+			display: block;
+			
+			font-size: 28px;
+			text-transform: uppercase;
+			color: @color-white;
+			opacity: 0.4;
+			text-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+			
+			.by {
+				text-transform: lowercase;
+				font-variant: small-caps;
+			}
+		
+			&:hover {
+				text-decoration: none;
+				color: @color-white;
+				opacity: 0.8;
+			}
+		}
+	}
 }
 
 .separator {
