@@ -9,3 +9,6 @@ application/logs/
 
 application/cache/
 !application/cache/.gitkeep
+
+vendor
+composer.lock
