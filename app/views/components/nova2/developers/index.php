@@ -143,7 +143,7 @@
 					<div class="well">
 						<div class="icn-container"><span class="icn icn-96 icn-yellow" data-icon="b"></span></div>
 						<h2>Models</h2>
-						<p>Models are PHP classes designed to work with information in your database and remove the need for building queries right in the pages, allowing those queries to be re-used throughout the system.</p>
+						<p>Models are PHP classes designed to work with information in your database and remove the need for building queries in the pages and allowing them to be re-used throughout the system.</p>
 						<p><a href="<?php echo Uri::create('nova2/core/models');?>" class="btn btn-block">Models Reference</a></p>
 					</div>
 				</div>

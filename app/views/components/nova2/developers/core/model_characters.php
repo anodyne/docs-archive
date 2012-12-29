@@ -450,13 +450,19 @@
 		<td class="td col1"><strong>field</strong></td>
 		<td class="td col2"><em>None</em></td>
 		<td class="td col3"><em>None</em></td>
-		<td class="td col4">A numeric bio field ID</td>
+		<td class="td col4">A numeric bio field ID or the field_name field</td>
 	</tr>
 	<tr>
 		<td class="td col1"><strong>character</strong></td>
 		<td class="td col2"><em>None</em></td>
 		<td class="td col3"><em>None</em></td>
 		<td class="td col4">A numeric character ID</td>
+	</tr>
+	<tr>
+		<td class="td col1"><strong>value only</strong></td>
+		<td class="td col2"><em>false</em></td>
+		<td class="td col3"><em>true/false</em></td>
+		<td class="td col4">Whether or not to return only the value or the entire query object</td>
 	</tr>
 </table>
 

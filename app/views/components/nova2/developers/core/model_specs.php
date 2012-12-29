@@ -20,12 +20,25 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td class="td col1"><strong>field</strong></td>
+			<td class="td col1"><strong>ID</strong></td>
 			<td class="td col2"><em>integer</em></td>
-
+			<td class="td col2"><em>0</em></td>
+			<td class="td col3"><em>None</em></td>
+			<td class="td col4">The numeric ID of the spec item</td>
+		</tr>
+		<tr>
+			<td class="td col1"><strong>field</strong></td>
+			<td class="td col2"><em>integer/string</em></td>
 			<td class="td col2"><em>None</em></td>
 			<td class="td col3"><em>None</em></td>
-			<td class="td col4">The numeric ID of the field whose data is being retrieved</td>
+			<td class="td col4">The numeric ID of the field whose data is being retrieved or its field_name</td>
+		</tr>
+		<tr>
+			<td class="td col1"><strong>value only</strong></td>
+			<td class="td col2"><em>boolean</em></td>
+			<td class="td col2"><em>false</em></td>
+			<td class="td col3"><em>true/false</em></td>
+			<td class="td col4">Whether to pull back only the value of the field or the entire query object</td>
 		</tr>
 	</tbody>
 </table>
