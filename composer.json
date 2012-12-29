@@ -1,0 +1,6 @@
+{
+	"require": {
+		"ikimea/browser": "dev-master",
+		"swiftmailer/swiftmailer": "4.2.*"
+	}
+}
