@@ -37,7 +37,13 @@ tour:
           default: None
           options: None
           type: integer
-          notes: A numeric ID for the field
+          notes: A numeric ID or field_name for the field
+        -
+          name: value_only
+          default: false
+          options: true/false
+          type: boolean
+          notes: Whether to return just the field's value or the entire query object
     -
       method: get_tour_field_details()
       status: active
