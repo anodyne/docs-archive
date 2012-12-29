@@ -61,7 +61,9 @@ $controllers = array(
 		<title><?php echo $title;?></title>
 		<link rel="icon" href="<?php echo Uri::base(false);?>favicon.ico" type="image/x-icon">
 		
-		<!--[if lte IE 7]><script src="<?php echo ASSETS;?>js/lte-ie7.js"><script><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/prettify.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
@@ -78,15 +80,16 @@ $controllers = array(
 		<div id="page_container">
 			<header>
 				<div class="container">
-					<div class="logo"></div>
+					<h1><span class="faded-anodyne">anodyne</span>docs</h1>
+					
 					<nav>
 						<ul>
-							<li><a href="<?php echo Uri::create('main');?>" id="nav-home"></a></li>
-							<li><a href="<?php echo Uri::create('nova2/overview');?>" id="nav-nova2"></a></li>
-							<!--<li><a href="<?php echo Uri::create('nova3/overview');?>" id="nav-nova3"></a></li>-->
-							<li><a href="<?php echo Uri::create('sms/overview');?>" id="nav-sms"></a></li>
-							<!--<li><a href="<?php echo Uri::create('satellite/overview');?>" id="nav-satellite"></a></li>-->
-							<li><a href="http://www.anodyne-productions.com" id="nav-anodyne" class="tip-below" title="Anodyne-Productions.com"></a></li>
+							<li><a href="<?php echo Uri::create('main');?>">Main</a></li>
+							<li><a href="<?php echo Uri::create('nova2/overview');?>">Nova 2</a></li>
+							<!--<li><a href="<?php echo Uri::create('nova3/overview');?>">Nova 3</a></li>-->
+							<li><a href="<?php echo Uri::create('sms/overview');?>">SMS</a></li>
+							<!--<li><a href="<?php echo Uri::create('satellite/overview');?>">Satellite</a></li>-->
+							<li><a href="http://www.anodyne-productions.com">Anodyne</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -134,9 +137,9 @@ $controllers = array(
 				<table width="100%" height="50" cellpadding="0" cellspacing="0">
 					<tbody>
 						<tr>
-							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com" target="_blank" class="anodyne"></a></td>
+							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com"><span class="by">by</span> Anodyne</a></td>
 							<td class="footer-copyright">
-								<a href="" class="tip" title="Icons used were created by Drew Wilson and Kevin Andersson. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
+								<a href="" class="tip" title="IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
 								<span class="footer-subtle">
 									&nbsp; | &nbsp;
 									&copy; <?php echo date('Y');?> Anodyne Productions.
@@ -148,16 +151,12 @@ $controllers = array(
 			</div>
 		</footer>
 		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/google-code-prettify/prettify.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap.min.js"></script>
-		
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		
 		<script type="text/javascript">
 			$(document).ready(function(){
+				
 				$('.tip').tooltip();
 				
 				$('.tip-below').tooltip({
@@ -165,5 +164,7 @@ $controllers = array(
 				});
 			});
 		</script>
+		
+		<?php include '../assets/fuel/modules/anodyne/lib/contact.php';?>
 	</body>
 </html>
