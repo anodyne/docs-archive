@@ -1,4 +1,4 @@
-<p>Anodyne is committed to providing the best possible documentation for our products and we've gone to great lengths to reach that goal. Contained in this user guide is a wealth of information and resources that covers nearly every facet of our products. We're constantly looking to improve this, so if you have questions about the documentation, would like to report typos or incorrect information, or even get involved with writing documentation, please <a href="http://www.anodyne-productions.com#contact" target="_blank">contact us</a>.</p>
+<p>Anodyne is committed to providing the best possible documentation for our products and we've gone to great lengths to reach that goal. Contained in this user guide is a wealth of information and resources that covers nearly every facet of our products. We're constantly looking to improve this, so if you have questions about the documentation, would like to report typos or incorrect information, or even get involved with writing documentation, please <a href="#contactModal" data-toggle="modal">contact us</a>.</p>
 
 <h1>Nova <small>RPG Management. Evolved.</small></h1>
 
@@ -24,7 +24,7 @@
 	<div class="span4">
 		<div class="well">
 			<h2>Nova 3</h2>
-			<p>Despite only being in early development, the Nova 3 guide contains information about requirements and installation.</p>
+			<p>Despite being in early development, the Nova 3 guide contains information about requirements and installation.</p>
 			<p><a href="<?php echo Uri::create('nova3/overview/index');?>" class="btn btn-block">Go to Nova 3 user guide</a></p>
 		</div>
 	</div>
