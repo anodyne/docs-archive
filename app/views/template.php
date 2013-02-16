@@ -65,6 +65,9 @@ $controllers = array(
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
+		<script type="text/javascript" src="//use.typekit.net/jcc5mfj.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/prettify.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/base.css">
@@ -139,7 +142,7 @@ $controllers = array(
 						<tr>
 							<td class="footer-anodyne"><a href="http://www.anodyne-productions.com"><span class="by">by</span> Anodyne</a></td>
 							<td class="footer-copyright">
-								<a href="" class="tip" title="IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
+								<a href="" class="tip" title="Icons used are from the IcoMoon icon font. Fonts served through TypeKit.com. IE HTML5 compatability achieved with the HTML5 Shim. Additional functionality achieved with Bootstrap from Twitter.">Credits</a>
 								<span class="footer-subtle">
 									&nbsp; | &nbsp;
 									&copy; <?php echo date('Y');?> Anodyne Productions.
