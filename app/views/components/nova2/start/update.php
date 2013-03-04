@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/220_to_221');?>">2.2.1</a></td>
+						<td>Fixes issue with the update notification box always displaying.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/213_to_220');?>">2.2</a></td>
 						<td>Author lists now link directly to the character bio page in most cases. Most emails sent from Nova now have a reply-to header set so that replying to the email will send it back to the original author. Third-party developers now have access to new methods for pulling dynamic form data by field name instead of just ID. Fixes several bugs found throughout the system.</td>
 					</tr>

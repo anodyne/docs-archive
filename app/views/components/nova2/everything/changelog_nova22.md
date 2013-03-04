@@ -1,3 +1,9 @@
+## 2.2.1 <small>04 March 2013</small>
+
+### Bug Fixes
+
+* The update notification box always shows up.
+
 ## 2.2.0 <small>15 February 2013</small>
 
 * Added reply to header to most of the emails that are sent from Nova. ([#217](https://github.com/anodyne/nova/issues/217))
