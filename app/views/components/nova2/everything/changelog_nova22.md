@@ -1,3 +1,10 @@
+## 2.2.2 <small>27 March 2013</small>
+
+### Bug Fixes
+
+* Fixed error thrown when managing NPCs. (Thanks to evshell18 for the fix and pull request.)
+* Fixed issue where users without `wiki/categories` permissions couldn't create or edit wiki pages. ([#239](https://github.com/anodyne/nova/issues/239))
+
 ## 2.2.1 <small>04 March 2013</small>
 
 ### Bug Fixes
