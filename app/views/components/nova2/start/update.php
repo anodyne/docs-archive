@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/222_to_223');?>">2.2.3</a></td>
+						<td>Attempts to fix an error during the update process that some users have reported over the last few months.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/221_to_222');?>">2.2.2</a></td>
 						<td>Fixes issue with some users not being able to create or edit wiki pages. Fixes error thrown when managing NPCs (thanks to evshell18 for the pull request to fix this issue).</td>
 					</tr>

@@ -1,3 +1,9 @@
+## 2.2.3 <small>7 April 2013</small>
+
+### Bug Fixes
+
+* Some users have reported errors being thrown during the update process that prevent them from moving up to newer versions of Nova. We've attempted to create a fix for this, but since we haven't been able to recreate the issue, this may or may not work.
+
 ## 2.2.2 <small>27 March 2013</small>
 
 ### Bug Fixes
@@ -5,7 +11,7 @@
 * Fixed error thrown when managing NPCs. (Thanks to evshell18 for the fix and pull request.)
 * Fixed issue where users without `wiki/categories` permissions couldn't create or edit wiki pages. ([#239](https://github.com/anodyne/nova/issues/239))
 
-## 2.2.1 <small>04 March 2013</small>
+## 2.2.1 <small>09 March 2013</small>
 
 ### Bug Fixes
 
