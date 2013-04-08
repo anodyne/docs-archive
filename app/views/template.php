@@ -154,7 +154,7 @@ $controllers = array(
 			</div>
 		</footer>
 		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/google-code-prettify/prettify.js"></script>
 		<script type="text/javascript" src="<?php echo ASSETS;?>js/bootstrap.min.js"></script>
 		<script type="text/javascript">
