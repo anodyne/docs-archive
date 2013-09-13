@@ -23,6 +23,10 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/223_to_230');?>">2.3</a></td>
+						<td>Character metadata (such as species and gender) can easily be added to any manifest by entering the HTML name of the field you want to show. Dynamic forms now hide blank fields and every field has the option of inline help as well. Sim stats now display statistics for the life of the sim as well as the current and previous months.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/222_to_223');?>">2.2.3</a></td>
 						<td>Attempts to fix an error during the update process that some users have reported over the last few months.</td>
 					</tr>
