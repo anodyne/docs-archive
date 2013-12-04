@@ -13,7 +13,7 @@
 
 <p>To begin the installation, you need to upload the Nova 3 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.</p>
 
-<p class="alert alert-info">Once you've uploaded the files, you'll need to make sure that you have the proper permissions on the <em>app/cache</em> and <em>app/logs</em> directories. You should set the permissions to <strong>777</strong>. If you don't know how to do that, contact your host.</p>
+<p class="alert alert-info">Once you've uploaded the files, you'll need to make sure that you have the proper permissions on the <em>app/storage/cache</em> and <em>app/storage/logs</em> directories. You should set the permissions to <strong>777</strong>. If you don't know how to do that, contact your host.</p>
 
 <h2>Step 2: Setting Up the Database Connection</h2>
 
