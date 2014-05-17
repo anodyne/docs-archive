@@ -23,6 +23,14 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/231_to_232');?>">2.3.2</a></td>
+						<td>The email contact form and the docking request form to the GM now include more recipient information, including the sender's IP address. Allow Nova to be used on secure domains by changing how some files are referenced. Fixed wrong language key being used in a couple of places.</td>
+					</tr>
+					<tr>
+						<td><a href="<?php echo Uri::create('nova2/start/update/230_to_231');?>">2.3.1</a></td>
+						<td>When toggling open positions on the manifest, any open positions in sub-departments would throw off the display of the entire manifest.</td>
+					</tr>
+					<tr>
 						<td><a href="<?php echo Uri::create('nova2/start/update/223_to_230');?>">2.3</a></td>
 						<td>Character metadata (such as species and gender) can easily be added to any manifest by entering the HTML name of the field you want to show. Dynamic forms now hide blank fields and every field has the option of inline help as well. Sim stats now display statistics for the life of the sim as well as the current and previous months.</td>
 					</tr>

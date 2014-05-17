@@ -1,3 +1,17 @@
+## 2.3.2 <small>17 May 2014</small>
+
+### Nova Core
+
+* Updated the email from the contact form and the email to the GM from the docking form to include recipient information. Despite the name and email address are in the headers, we're including those as well as the sender's IP address.
+* Updated the included head files to allow for using Nova on a secure domain.
+* Fixed wrong language key being used for the word "sim" in a couple of places.
+
+## 2.3.1 <small>02 February 2014</small>
+
+### Bug Fixes
+
+* When toggling open positions, any open positions in sub-departments would throw off the display of the entire manifest.
+
 ## 2.3.0 <small>14 September 2013</small>
 
 * When displaying the output of a dynamic form, if there's nothing in the field, we no longer show it.
