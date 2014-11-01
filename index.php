@@ -33,8 +33,8 @@ defined('FUEL_START_MEM') or define('FUEL_START_MEM', memory_get_usage());
 require APPPATH.'bootstrap.php';
 
 $assetpath = (Fuel::$env == Fuel::DEVELOPMENT)
-	? 'http://localhost/anodyne/assets/'
-	: 'http://anodyne-productions.net/';
+	? 'http://localhost/anodyne/docs/'
+	: 'http://docs.anodyne-productions.net/';
 	
 define('ASSETBASE', 	$assetpath);
 define('ASSETS',		ASSETBASE.'fuel/modules/anodyne/');
