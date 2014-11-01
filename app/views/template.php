@@ -64,9 +64,10 @@ $controllers = array(
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		
-		<script type="text/javascript" src="//use.typekit.net/jcc5mfj.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Exo+2:500,500italic,600,600italic" rel="stylesheet">
 		
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/prettify.css">
 		<link rel="stylesheet" href="<?php echo ASSETS;?>design/css/bootstrap.min.css">
@@ -83,7 +84,7 @@ $controllers = array(
 		<div id="page_container">
 			<header>
 				<div class="container">
-					<h1><span class="faded-anodyne">anodyne</span>docs</h1>
+					<h1><span class="faded-anodyne">Anodyne</span>Docs</h1>
 					
 					<nav>
 						<ul>
