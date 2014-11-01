@@ -84,7 +84,7 @@ $controllers = array(
 		<div id="page_container">
 			<header>
 				<div class="container">
-					<h1><span class="faded-anodyne">Anodyne</span>Docs</h1>
+					<h1>AnodyneDocs</h1>
 					
 					<nav>
 						<ul>
