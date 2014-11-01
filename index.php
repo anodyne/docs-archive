@@ -34,7 +34,7 @@ require APPPATH.'bootstrap.php';
 
 $assetpath = (Fuel::$env == Fuel::DEVELOPMENT)
 	? 'http://localhost/anodyne/assets/'
-	: '//';
+	: 'http://anodyne-productions.net/';
 	
 define('ASSETBASE', 	$assetpath);
 define('ASSETS',		ASSETBASE.'fuel/modules/anodyne/');
